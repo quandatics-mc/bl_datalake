@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
   <TalendProperties:Project xmi:id="_PAk3MK_SEeiEF75cLc3dlg" label="BL_DATALAKE_TEMP" language="java" technicalLabel="BL_DATALAKE_TEMP" author="_PAk3Ma_SEeiEF75cLc3dlg" productVersion="Talend Integration Cloud SaaS Edition-6.5.1.20180116_1512" url="{&quot;location&quot;:&quot;https://github.com/quandatics-mc/bl_datalake&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" bigData="false">
+    <technicalStatus xmi:id="_QLlRwK_SEeiEF75cLc3dlg" label="development" code="DEV"/>
+    <technicalStatus xmi:id="_QLlRwa_SEeiEF75cLc3dlg" label="testing" code="TEST"/>
+    <technicalStatus xmi:id="_QLlRwq_SEeiEF75cLc3dlg" label="production" code="PROD"/>
+    <documentationStatus xmi:id="_QLdV8K_SEeiEF75cLc3dlg" label="unchecked" code="UCK"/>
+    <documentationStatus xmi:id="_QLdV8a_SEeiEF75cLc3dlg" label="checked" code="CHK"/>
+    <documentationStatus xmi:id="_QLdV8q_SEeiEF75cLc3dlg" label="validated" code="VAL"/>
     <migrationTask xmi:id="_QJzJEK_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_QJzJEa_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_QJzJEq_SEeiEF75cLc3dlg" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
