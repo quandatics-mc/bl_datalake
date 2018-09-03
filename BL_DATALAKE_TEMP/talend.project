@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_PAk3MK_SEeiEF75cLc3dlg" label="BL_DATALAKE_TEMP" language="java" technicalLabel="BL_DATALAKE_TEMP" author="_PAk3Ma_SEeiEF75cLc3dlg" productVersion="Talend Integration Cloud SaaS Edition-6.5.1.20180116_1512" url="{&quot;location&quot;:&quot;https://github.com/quandatics-mc/bl_datalake&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" bigData="false"/>
+  <TalendProperties:User xmi:id="_PAk3Ma_SEeiEF75cLc3dlg" login="tbd_dev1_talend@airasiabig.com_1519374248" firstName="tbd_dev1_talend" lastName="tbd_dev1_talend" type="DI"/>
+</xmi:XMI>
