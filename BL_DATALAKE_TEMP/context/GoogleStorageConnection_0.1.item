@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_w3j_wK_SEeiEF75cLc3dlg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_w3j_wa_SEeiEF75cLc3dlg" comment="" name="gcp_access_key" prompt="gcp_access_key?" promptNeeded="false" type="id_String" value="GOOG36LCRM3AR2PQOF3J"/>
+  <contextParameter xmi:id="_w3j_wq_SEeiEF75cLc3dlg" comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
+</talendfile:ContextType>

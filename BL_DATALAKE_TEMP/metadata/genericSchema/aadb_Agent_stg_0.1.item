@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_bLlUkq9bEeiVsYAmnhb2Dg" comment="connectionComment" label="connectionLabel" dataPackage="_bLlUk69bEeiVsYAmnhb2Dg"/>
+  <TalendMetadata:GenericPackage xmi:id="_bLlUk69bEeiVsYAmnhb2Dg" dataManager="_bLlUkq9bEeiVsYAmnhb2Dg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bLlUlK9bEeiVsYAmnhb2Dg" id="_nivegK9bEeiVsYAmnhb2Dg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUla9bEeiVsYAmnhb2Dg" name="AgentID" id="4203" label="AgentID" length="-1" sourceType="INTEGER" talendType="id_Integer">
+        <initialValue xmi:id="_bLlUlq9bEeiVsYAmnhb2Dg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUl69bEeiVsYAmnhb2Dg" name="AgentName" id="4204" label="AgentName" length="16" sourceType="STRING" talendType="id_String">
+        <initialValue xmi:id="_bLlUmK9bEeiVsYAmnhb2Dg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUma9bEeiVsYAmnhb2Dg" name="PersonID" id="4205" label="PersonID" length="-1" sourceType="INTEGER" talendType="id_Integer">
+        <initialValue xmi:id="_bLlUmq9bEeiVsYAmnhb2Dg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUm69bEeiVsYAmnhb2Dg" name="Modifieddate" id="4206" label="Modifieddate" length="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;">
+        <initialValue xmi:id="_bLlUnK9bEeiVsYAmnhb2Dg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUna9bEeiVsYAmnhb2Dg" name="LoadedDate" id="4207" label="LoadedDate" length="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;">
+        <initialValue xmi:id="_bLlUnq9bEeiVsYAmnhb2Dg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
