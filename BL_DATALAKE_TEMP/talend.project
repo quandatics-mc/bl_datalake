@@ -531,4 +531,8 @@
     <migrationTask xmi:id="_RSfQZ6_SEeiEF75cLc3dlg" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_PAk3Ma_SEeiEF75cLc3dlg" login="tbd_dev1_talend@airasiabig.com_1519374248" firstName="tbd_dev1_talend" lastName="tbd_dev1_talend" type="DI"/>
+  <TalendProperties:User xmi:id="_r-NP4a_tEeipDePIAKsprg" login="jsmith@airasiabig.com_1519374248" firstName="John" lastName="Smith" type="DI"/>
+  <TalendProperties:User xmi:id="_r-NP4q_tEeipDePIAKsprg" login="tbd_dev2_talend@airasiabig.com_1519374248" firstName="tbd_dev2_talend" lastName="tbd_dev2_talend" type="DI"/>
+  <TalendProperties:User xmi:id="_r-NP46_tEeipDePIAKsprg" login="jsmith_test@airasiabig.com_1519374248" firstName="Johnny" lastName="Smith" type="DI"/>
+  <TalendProperties:User xmi:id="_r-NP5K_tEeipDePIAKsprg" login="mklim@airasiabig.com_1519374248" firstName="Latifah" lastName="Kamarudin" type="DI"/>
 </xmi:XMI>
