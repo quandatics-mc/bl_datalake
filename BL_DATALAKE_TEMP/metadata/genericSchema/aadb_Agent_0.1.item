@@ -4,7 +4,7 @@
   <TalendMetadata:GenericPackage xmi:id="_3OD-Iq8qEeiVsYAmnhb2Dg" name="repository.metadataGenericSchema" dataManager="_3OD-Ia8qEeiVsYAmnhb2Dg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_3OD-I68qEeiVsYAmnhb2Dg" id="_G7JM8K8pEeiVsYAmnhb2Dg" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3OD-JK8qEeiVsYAmnhb2Dg" name="AgentID" label="AgentID" length="-1" sourceType="INTEGER" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3OD-Ja8qEeiVsYAmnhb2Dg" name="AgentName" label="AgentName" length="17" sourceType="STRING" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3OD-Ja8qEeiVsYAmnhb2Dg" name="AgentName" label="AgentName" length="16" sourceType="STRING" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3OD-Jq8qEeiVsYAmnhb2Dg" name="PersonID" label="PersonID" length="-1" sourceType="INTEGER" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3OD-J68qEeiVsYAmnhb2Dg" name="Modifieddate" label="Modifieddate" length="-1" sourceType="TIMESTAMP" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3OD-KK8qEeiVsYAmnhb2Dg" name="LoadedDate" label="LoadedDate" length="-1" sourceType="TIMESTAMP" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
