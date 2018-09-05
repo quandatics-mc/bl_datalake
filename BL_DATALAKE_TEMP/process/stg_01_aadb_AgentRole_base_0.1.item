@@ -785,6 +785,7 @@
       <elementValue elementRef="ARRAY" value="1111.11 "/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="testing full duplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tRowGenerator_1">
       <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
@@ -805,7 +806,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_2" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Eq5kULC4EeikuKk-Yeyr9w - metadata" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="2" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="3" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
       <elementValue elementRef="ARRAY" value=" 67 "/>
@@ -817,6 +818,7 @@
       <elementValue elementRef="ARRAY" value="Mathematical.RND(10000 )"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="testing key duplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tRowGenerator_2">
       <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
