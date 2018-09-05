@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_w3NacK_SEeiEF75cLc3dlg" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_w3Naca_SEeiEF75cLc3dlg" comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" type="id_String" value="C:/AABtoken.properties"/>
-  <contextParameter xmi:id="_w3Nacq_SEeiEF75cLc3dlg" comment="" name="bq_client_id" prompt="bq_client_id?" promptNeeded="false" type="id_String" value="623702074843-ke10u9q6kdcju27oio4qg1pjk20r8gij.apps.googleusercontent.com"/>
-  <contextParameter xmi:id="_w3Nac6_SEeiEF75cLc3dlg" comment="" name="bq_client_secret" prompt="bq_client_secret?" promptNeeded="false" type="id_String" value="CqKUcM4YDJY7Y9rw83gnedcF"/>
-  <contextParameter xmi:id="_w3NadK_SEeiEF75cLc3dlg" comment="" name="bq_auth_code" prompt="bq_auth_code?" promptNeeded="false" type="id_String" value="4/AAC2g_aeDQJ1I5OfHfGsAEk9YVMQI5Xo3EXEeb1pW_vhP6ML43PPYEM"/>
-  <contextParameter xmi:id="_w3Nada_SEeiEF75cLc3dlg" comment="" name="bq_project_id" prompt="bq_project_id?" promptNeeded="false" type="id_String" value="data-mgmt-191603"/>
+  <contextParameter xmi:id="_w3Naca_SEeiEF75cLc3dlg" comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" type="id_String" value="&quot;C:/AABtoken.properties&quot;"/>
+  <contextParameter xmi:id="_w3Nacq_SEeiEF75cLc3dlg" comment="" name="bq_client_id" prompt="bq_client_id?" promptNeeded="false" type="id_String" value="&quot;623702074843-ke10u9q6kdcju27oio4qg1pjk20r8gij.apps.googleusercontent.com&quot;"/>
+  <contextParameter xmi:id="_w3Nac6_SEeiEF75cLc3dlg" comment="" name="bq_client_secret" prompt="bq_client_secret?" promptNeeded="false" type="id_String" value="&quot;CqKUcM4YDJY7Y9rw83gnedcF&quot;"/>
+  <contextParameter xmi:id="_w3NadK_SEeiEF75cLc3dlg" comment="" name="bq_auth_code" prompt="bq_auth_code?" promptNeeded="false" type="id_String" value="&quot;4/AAC2g_aeDQJ1I5OfHfGsAEk9YVMQI5Xo3EXEeb1pW_vhP6ML43PPYEM&quot;"/>
+  <contextParameter xmi:id="_w3Nada_SEeiEF75cLc3dlg" comment="" name="bq_project_id" prompt="bq_project_id?" promptNeeded="false" type="id_String" value="&quot;data-mgmt-191603&quot;"/>
 </talendfile:ContextType>
