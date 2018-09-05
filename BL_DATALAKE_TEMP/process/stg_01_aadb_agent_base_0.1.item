@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="bq_auth_code" prompt="bq_auth_code?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="&quot;4/AAC2g_aeDQJ1I5OfHfGsAEk9YVMQI5Xo3EXEeb1pW_vhP6ML43PPYEM&quot;"/>
-    <contextParameter comment="" name="bq_client_id" prompt="bq_client_id?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="&quot;623702074843-ke10u9q6kdcju27oio4qg1pjk20r8gij.apps.googleusercontent.com&quot;"/>
-    <contextParameter comment="" name="bq_client_secret" prompt="bq_client_secret?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="&quot;CqKUcM4YDJY7Y9rw83gnedcF&quot;"/>
-    <contextParameter comment="" name="bq_project_id" prompt="bq_project_id?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="&quot;data-mgmt-191603&quot;"/>
-    <contextParameter comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="&quot;C:/AABtoken.properties&quot;"/>
+    <contextParameter comment="" name="bq_auth_code" prompt="bq_auth_code?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="4/AAC2g_aeDQJ1I5OfHfGsAEk9YVMQI5Xo3EXEeb1pW_vhP6ML43PPYEM"/>
+    <contextParameter comment="" name="bq_client_id" prompt="bq_client_id?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="623702074843-ke10u9q6kdcju27oio4qg1pjk20r8gij.apps.googleusercontent.com"/>
+    <contextParameter comment="" name="bq_client_secret" prompt="bq_client_secret?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="CqKUcM4YDJY7Y9rw83gnedcF"/>
+    <contextParameter comment="" name="bq_project_id" prompt="bq_project_id?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="data-mgmt-191603"/>
+    <contextParameter comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="C:/AABtoken.properties"/>
     <contextParameter comment="" name="gcp_access_key" prompt="gcp_access_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="&quot;GOOG36LCRM3AR2PQOF3J&quot;"/>
     <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="&quot;ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK&quot;"/>
     <contextParameter comment="" name="processStart" prompt="processStart?" promptNeeded="false" type="id_String" value=""/>
