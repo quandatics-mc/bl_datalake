@@ -6,7 +6,6 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Erjro7C4EeikuKk-Yeyr9w" name="AgentID" label="AgentID" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ErjrpLC4EeikuKk-Yeyr9w" name="RoleCode" label="RoleCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ErjrpbC4EeikuKk-Yeyr9w" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ErjrprC4EeikuKk-Yeyr9w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
