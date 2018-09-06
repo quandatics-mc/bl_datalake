@@ -382,7 +382,7 @@
       <outputTables sizeState="INTERMEDIATE" name="Output1">
         <mapperTableEntries name="PassengerID" expression="row2.PassengerID " type="id_Integer"/>
         <mapperTableEntries name="DOB" expression="new java.util.Date((long)(row2.DOB*1000)) " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row2.BookingID == null ? 0 : row2.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row2.BookingID " type="id_Integer"/>
         <mapperTableEntries name="PaxType" expression="row2.PaxType == null || row2.PaxType.isEmpty() ? &quot;&quot; : row2.PaxType " type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row2.FirstName == null || row2.FirstName.isEmpty() ? &quot;&quot; : row2.FirstName " type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row2.MiddleName == null || row2.MiddleName.isEmpty() ? &quot;&quot; : row2.MiddleName " type="id_String"/>
