@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_WWZRgLC_EeikuKk-Yeyr9w" name="repository.metadataGenericSchema" dataPackage="_WWZRgbC_EeikuKk-Yeyr9w"/>
+  <TalendMetadata:GenericPackage xmi:id="_WWZRgbC_EeikuKk-Yeyr9w" name="repository.metadataGenericSchema" dataManager="_WWZRgLC_EeikuKk-Yeyr9w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WWZRgrC_EeikuKk-Yeyr9w" id="_LsAycLC_EeikuKk-Yeyr9w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WWZRg7C_EeikuKk-Yeyr9w" name="AgentID" label="AgentID" length="-1" talendType="id_Integer" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WWZRhLC_EeikuKk-Yeyr9w" name="RoleCode" label="RoleCode" length="16" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WWZRhbC_EeikuKk-Yeyr9w" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WWZRhrC_EeikuKk-Yeyr9w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -96,31 +96,73 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="_LBltEKw4EeiVsYAmnhb2Dg" name="DQTechnical"/>
-    <routinesParameter id="_LAqgAKw4EeiVsYAmnhb2Dg" name="DataMasking"/>
-    <routinesParameter id="_K5YMQKw4EeiVsYAmnhb2Dg" name="DataOperation"/>
-    <routinesParameter id="_LBHzAKw4EeiVsYAmnhb2Dg" name="DataQualityDependencies"/>
-    <routinesParameter id="_LA6XoKw4EeiVsYAmnhb2Dg" name="DataQuality"/>
-    <routinesParameter id="_LBYRsKw4EeiVsYAmnhb2Dg" name="DqStringHandling"/>
-    <routinesParameter id="_K-RTUKw4EeiVsYAmnhb2Dg" name="Mathematical"/>
-    <routinesParameter id="_K-wbgKw4EeiVsYAmnhb2Dg" name="Numeric"/>
-    <routinesParameter id="_K--d8Kw4EeiVsYAmnhb2Dg" name="Relational"/>
-    <routinesParameter id="_LAdrsKw4EeiVsYAmnhb2Dg" name="SQLike"/>
-    <routinesParameter id="_K_NHcKw4EeiVsYAmnhb2Dg" name="StringHandling"/>
-    <routinesParameter id="_K_cYAKw4EeiVsYAmnhb2Dg" name="TalendDataGenerator"/>
-    <routinesParameter id="_K_tdwKw4EeiVsYAmnhb2Dg" name="TalendDate"/>
-    <routinesParameter id="_LAPpQKw4EeiVsYAmnhb2Dg" name="TalendStringUtil"/>
-    <routinesParameter id="_K_-jgKw4EeiVsYAmnhb2Dg" name="TalendString"/>
+    <routinesParameter id="_QQ52oK_SEeiEF75cLc3dlg" name="DataOperation"/>
+    <routinesParameter id="_QSlRoK_SEeiEF75cLc3dlg" name="Mathematical"/>
+    <routinesParameter id="_QS9sIK_SEeiEF75cLc3dlg" name="Numeric"/>
+    <routinesParameter id="_QTJ5YK_SEeiEF75cLc3dlg" name="Relational"/>
+    <routinesParameter id="_QUvNwK_SEeiEF75cLc3dlg" name="SQLike"/>
+    <routinesParameter id="_QTX70K_SEeiEF75cLc3dlg" name="StringHandling"/>
+    <routinesParameter id="_QTqPsK_SEeiEF75cLc3dlg" name="TalendDataGenerator"/>
+    <routinesParameter id="_QT7VcK_SEeiEF75cLc3dlg" name="TalendDate"/>
+    <routinesParameter id="_QUgkQK_SEeiEF75cLc3dlg" name="TalendStringUtil"/>
+    <routinesParameter id="_QUMbMK_SEeiEF75cLc3dlg" name="TalendString"/>
   </parameters>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="Date dtCurr = TalendDate.getCurrentDate();&#xA;String dtStr2 = TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss.sss&quot;, dtCurr);&#xA;String dtStr = TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.sss&quot;, dtCurr);&#xA;int hrCurr = Integer.parseInt(TalendDate.formatDateInUTC(&quot;HH&quot;, dtCurr));&#xA;//Date dtProcessStart = TalendDate.addDate(TalendDate.getCurrentDate(),-1,&quot;dd&quot;);&#xA;&#xA;System.out.println(dtStr2);&#xA;System.out.println(dtStr);&#xA;System.out.println(hrCurr);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="2"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="VALUE" value="&quot;hello&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false">
+      <elementValue elementRef="message" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
   </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>

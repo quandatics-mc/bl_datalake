@@ -2,8 +2,6 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -96,32 +94,15 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="_LBltEKw4EeiVsYAmnhb2Dg" name="DQTechnical"/>
-    <routinesParameter id="_LAqgAKw4EeiVsYAmnhb2Dg" name="DataMasking"/>
-    <routinesParameter id="_K5YMQKw4EeiVsYAmnhb2Dg" name="DataOperation"/>
-    <routinesParameter id="_LBHzAKw4EeiVsYAmnhb2Dg" name="DataQualityDependencies"/>
-    <routinesParameter id="_LA6XoKw4EeiVsYAmnhb2Dg" name="DataQuality"/>
-    <routinesParameter id="_LBYRsKw4EeiVsYAmnhb2Dg" name="DqStringHandling"/>
-    <routinesParameter id="_K-RTUKw4EeiVsYAmnhb2Dg" name="Mathematical"/>
-    <routinesParameter id="_K-wbgKw4EeiVsYAmnhb2Dg" name="Numeric"/>
-    <routinesParameter id="_K--d8Kw4EeiVsYAmnhb2Dg" name="Relational"/>
-    <routinesParameter id="_LAdrsKw4EeiVsYAmnhb2Dg" name="SQLike"/>
-    <routinesParameter id="_K_NHcKw4EeiVsYAmnhb2Dg" name="StringHandling"/>
-    <routinesParameter id="_K_cYAKw4EeiVsYAmnhb2Dg" name="TalendDataGenerator"/>
-    <routinesParameter id="_K_tdwKw4EeiVsYAmnhb2Dg" name="TalendDate"/>
-    <routinesParameter id="_LAPpQKw4EeiVsYAmnhb2Dg" name="TalendStringUtil"/>
-    <routinesParameter id="_K_-jgKw4EeiVsYAmnhb2Dg" name="TalendString"/>
+    <routinesParameter id="_QQ52oK_SEeiEF75cLc3dlg" name="DataOperation"/>
+    <routinesParameter id="_QSlRoK_SEeiEF75cLc3dlg" name="Mathematical"/>
+    <routinesParameter id="_QS9sIK_SEeiEF75cLc3dlg" name="Numeric"/>
+    <routinesParameter id="_QTJ5YK_SEeiEF75cLc3dlg" name="Relational"/>
+    <routinesParameter id="_QUvNwK_SEeiEF75cLc3dlg" name="SQLike"/>
+    <routinesParameter id="_QTX70K_SEeiEF75cLc3dlg" name="StringHandling"/>
+    <routinesParameter id="_QTqPsK_SEeiEF75cLc3dlg" name="TalendDataGenerator"/>
+    <routinesParameter id="_QT7VcK_SEeiEF75cLc3dlg" name="TalendDate"/>
+    <routinesParameter id="_QUgkQK_SEeiEF75cLc3dlg" name="TalendStringUtil"/>
+    <routinesParameter id="_QUMbMK_SEeiEF75cLc3dlg" name="TalendString"/>
   </parameters>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="Date dtCurr = TalendDate.getCurrentDate();&#xA;String dtStr2 = TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss.sss&quot;, dtCurr);&#xA;String dtStr = TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.sss&quot;, dtCurr);&#xA;int hrCurr = Integer.parseInt(TalendDate.formatDateInUTC(&quot;HH&quot;, dtCurr));&#xA;//Date dtProcessStart = TalendDate.addDate(TalendDate.getCurrentDate(),-1,&quot;dd&quot;);&#xA;&#xA;System.out.println(dtStr2);&#xA;System.out.println(dtStr);&#xA;System.out.println(hrCurr);"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
-  </node>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
 </talendfile:ProcessType>
