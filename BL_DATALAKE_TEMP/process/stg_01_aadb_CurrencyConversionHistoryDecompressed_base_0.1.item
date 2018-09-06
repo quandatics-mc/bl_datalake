@@ -163,7 +163,7 @@
       <column comment="" key="false" length="7" name="RoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata name="dups">
@@ -194,7 +194,7 @@
         <mapperTableEntries name="RoundFactor" expression="row5.RoundFactor " type="id_Float" nullable="true"/>
         <mapperTableEntries name="FareRoundFactor" expression="row5.FareRoundFactor " type="id_Float" nullable="true"/>
         <mapperTableEntries name="TaxRoundFactor" expression="row5.TaxRoundFactor " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="UserControl" expression="row5.UserControl " type="id_Character" nullable="true"/>
+        <mapperTableEntries name="UserControl" expression="row5.UserControl " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row5.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="dups">
@@ -316,7 +316,7 @@
       <column comment="" key="false" length="7" name="RoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="nul">
@@ -347,7 +347,7 @@
         <mapperTableEntries name="RoundFactor" expression="out9.RoundFactor " type="id_Float" nullable="true"/>
         <mapperTableEntries name="FareRoundFactor" expression="out9.FareRoundFactor " type="id_Float" nullable="true"/>
         <mapperTableEntries name="TaxRoundFactor" expression="out9.TaxRoundFactor " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="UserControl" expression="out9.UserControl " type="id_Character" nullable="true"/>
+        <mapperTableEntries name="UserControl" expression="out9.UserControl " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="out9.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="ConversionDayID== null || ConversionDate== null || FromCurrencyCode== null || ToCurrencyCode== null || ConversionRate ==null || ConversionAdjustment == null || RoundFactor == null || FareRoundFactor ==null || TaxRoundFactor==null || UserControl==null || LoadedDate==null" activateExpressionFilter="true">
@@ -375,7 +375,7 @@
         <mapperTableEntries name="RoundFactor" type="id_Float" nullable="true"/>
         <mapperTableEntries name="FareRoundFactor" type="id_Float" nullable="true"/>
         <mapperTableEntries name="TaxRoundFactor" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="UserControl" type="id_Character" nullable="true"/>
+        <mapperTableEntries name="UserControl" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -400,7 +400,7 @@
       <column comment="" key="false" length="7" name="RoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
@@ -477,7 +477,7 @@
       <column comment="" key="false" length="7" name="RoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
