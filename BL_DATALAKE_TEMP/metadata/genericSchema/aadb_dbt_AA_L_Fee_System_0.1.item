@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_GtO-4LG9EeimZKbbQHUOlA" name="repository.metadataGenericSchema" dataPackage="_GtO-4bG9EeimZKbbQHUOlA"/>
+  <TalendMetadata:GenericPackage xmi:id="_GtO-4bG9EeimZKbbQHUOlA" name="repository.metadataGenericSchema" dataManager="_GtO-4LG9EeimZKbbQHUOlA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GtO-4rG9EeimZKbbQHUOlA" id="_0GoQILG8EeimZKbbQHUOlA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GtO-47G9EeimZKbbQHUOlA" name="FeeCode" label="FeeCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GtO-5LG9EeimZKbbQHUOlA" name="System" label="System" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GtO-5bG9EeimZKbbQHUOlA" name="InActive" label="InActive" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GtO-5rG9EeimZKbbQHUOlA" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
