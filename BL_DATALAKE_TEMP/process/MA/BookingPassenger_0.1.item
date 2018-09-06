@@ -390,7 +390,7 @@
         <mapperTableEntries name="Nationality" expression="row2.Nationality == null || row2.Nationality.isEmpty() ? &quot;&quot; : row2.Nationality " type="id_String"/>
         <mapperTableEntries name="ResidentCountry" expression="row2.ResidentCountry == null || row2.ResidentCountry.isEmpty() ? &quot;&quot; : row2.ResidentCountry " type="id_String"/>
         <mapperTableEntries name="CustomerNumber" expression="row2.CustomerNumber == null || row2.CustomerNumber.isEmpty() ? &quot;&quot; : row2.CustomerNumber " type="id_String"/>
-        <mapperTableEntries name="BalanceDue" expression="row2.BalanceDue == null ? 0.0000 : row2.BalanceDue " type="id_BigDecimal"/>
+        <mapperTableEntries name="BalanceDue" expression="row2.BalanceDue == null ? BigDecimal.ZERO : row2.BalanceDue " type="id_BigDecimal"/>
         <mapperTableEntries name="ModifiedDate" expression="new java.util.Date((long)(row2.ModifiedDate)) " type="id_Date"/>
         <mapperTableEntries name="LoadedDate" expression="new java.util.Date((long)(row2.LoadedDate)) " type="id_Date"/>
       </outputTables>
