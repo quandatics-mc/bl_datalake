@@ -1026,7 +1026,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
-        <mapperTableEntries name="TableName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TableName" expression="&quot;AgentRole&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="sourceRowCount" expression="row18.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="row18.count==row19.count ? &quot;Y&quot;:&quot;N&quot;" type="id_String" nullable="true"/>
