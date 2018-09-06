@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_zWq9MLGYEeiYZdt4-rZFBw" name="repository.metadataGenericSchema" dataPackage="_zWq9MbGYEeiYZdt4-rZFBw"/>
+  <TalendMetadata:GenericPackage xmi:id="_zWq9MbGYEeiYZdt4-rZFBw" name="repository.metadataGenericSchema" dataManager="_zWq9MLGYEeiYZdt4-rZFBw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_zWq9MrGYEeiYZdt4-rZFBw" id="_JQ5OQLGYEeiYZdt4-rZFBw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9M7GYEeiYZdt4-rZFBw" name="ConversionDayID" label="ConversionDayID" length="-1" talendType="id_Integer">
+        <initialValue xmi:id="_zWq9NLGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9NbGYEeiYZdt4-rZFBw" name="ConversionDate" label="ConversionDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_zWq9NrGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9N7GYEeiYZdt4-rZFBw" name="FromCurrencyCode" label="FromCurrencyCode" length="12" talendType="id_String">
+        <initialValue xmi:id="_zWq9OLGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9ObGYEeiYZdt4-rZFBw" name="ToCurrencyCode" label="ToCurrencyCode" length="12" talendType="id_String">
+        <initialValue xmi:id="_zWq9OrGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9O7GYEeiYZdt4-rZFBw" name="ConversionRate" label="ConversionRate" length="14" precision="7" talendType="id_Float">
+        <initialValue xmi:id="_zWq9PLGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9PbGYEeiYZdt4-rZFBw" name="ViaCurrency" label="ViaCurrency" length="12" talendType="id_String">
+        <initialValue xmi:id="_zWq9PrGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9P7GYEeiYZdt4-rZFBw" name="ConversionAdjustment" label="ConversionAdjustment" length="3" precision="2" talendType="id_Float">
+        <initialValue xmi:id="_zWq9QLGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9QbGYEeiYZdt4-rZFBw" name="RoundFactor" label="RoundFactor" length="7" precision="3" talendType="id_Float">
+        <initialValue xmi:id="_zWq9QrGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9Q7GYEeiYZdt4-rZFBw" name="FareRoundFactor" label="FareRoundFactor" length="7" precision="3" talendType="id_Float">
+        <initialValue xmi:id="_zWq9RLGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9RbGYEeiYZdt4-rZFBw" name="TaxRoundFactor" label="TaxRoundFactor" length="7" precision="3" talendType="id_Float">
+        <initialValue xmi:id="_zWq9RrGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9R7GYEeiYZdt4-rZFBw" name="UserControl" label="UserControl" length="1" talendType="id_Character">
+        <initialValue xmi:id="_zWq9SLGYEeiYZdt4-rZFBw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9SbGYEeiYZdt4-rZFBw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_zWq9SrGYEeiYZdt4-rZFBw"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
