@@ -949,9 +949,9 @@
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_ODS_STG&quot;"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;Group0_Reference&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_Group0_Reference&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
