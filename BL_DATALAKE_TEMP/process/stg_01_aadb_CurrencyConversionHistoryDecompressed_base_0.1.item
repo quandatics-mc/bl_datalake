@@ -127,7 +127,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_1">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -154,7 +154,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out9">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -253,7 +253,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_2">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -307,7 +307,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out2">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -391,7 +391,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowMeter_2">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -468,7 +468,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_1">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -493,7 +493,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_3">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -579,7 +579,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_4">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -684,7 +684,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_5">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -1414,19 +1414,6 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="896">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
-    <elementParameter field="CHECK" name="AUTOCAST" value="false"/>
-    <elementParameter field="TABLE" name="MANUALTABLE"/>
-    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
-    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tConvertType_1"/>
-    <metadata connector="REJECT" name="REJECT">
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
@@ -1847,11 +1834,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
