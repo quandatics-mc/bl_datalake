@@ -4,7 +4,7 @@
   <TalendMetadata:GenericPackage xmi:id="_bybggbF8EeiVN_ty9dxZrA" name="repository.metadataGenericSchema" dataManager="_bybggLF8EeiVN_ty9dxZrA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bybggrF8EeiVN_ty9dxZrA" id="_-z6iwLF7EeiVN_ty9dxZrA" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgg7F8EeiVN_ty9dxZrA" name="ConversionDayID" label="ConversionDayID" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybghLF8EeiVN_ty9dxZrA" name="ConversionDate" label="ConversionDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybghLF8EeiVN_ty9dxZrA" name="ConversionDate" label="ConversionDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybghbF8EeiVN_ty9dxZrA" name="FromCurrencyCode" label="FromCurrencyCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybghrF8EeiVN_ty9dxZrA" name="ToCurrencyCode" label="ToCurrencyCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgh7F8EeiVN_ty9dxZrA" name="ConversionRate" label="ConversionRate" length="-1" talendType="id_Float"/>
