@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_bybggLF8EeiVN_ty9dxZrA" name="repository.metadataGenericSchema" dataPackage="_bybggbF8EeiVN_ty9dxZrA"/>
+  <TalendMetadata:GenericPackage xmi:id="_bybggbF8EeiVN_ty9dxZrA" name="repository.metadataGenericSchema" dataManager="_bybggLF8EeiVN_ty9dxZrA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bybggrF8EeiVN_ty9dxZrA" id="_-z6iwLF7EeiVN_ty9dxZrA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgg7F8EeiVN_ty9dxZrA" name="ConversionDayID" label="ConversionDayID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybghLF8EeiVN_ty9dxZrA" name="ConversionDate" label="ConversionDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybghbF8EeiVN_ty9dxZrA" name="FromCurrencyCode" label="FromCurrencyCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybghrF8EeiVN_ty9dxZrA" name="ToCurrencyCode" label="ToCurrencyCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgh7F8EeiVN_ty9dxZrA" name="ConversionRate" label="ConversionRate" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgiLF8EeiVN_ty9dxZrA" name="ViaCurrency" label="ViaCurrency" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgibF8EeiVN_ty9dxZrA" name="ConversionAdjustment" label="ConversionAdjustment" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgirF8EeiVN_ty9dxZrA" name="RoundFactor" label="RoundFactor" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgi7F8EeiVN_ty9dxZrA" name="FareRoundFactor" label="FareRoundFactor" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgjLF8EeiVN_ty9dxZrA" name="TaxRoundFactor" label="TaxRoundFactor" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgjbF8EeiVN_ty9dxZrA" name="UserControl" label="UserControl" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bybgjrF8EeiVN_ty9dxZrA" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
