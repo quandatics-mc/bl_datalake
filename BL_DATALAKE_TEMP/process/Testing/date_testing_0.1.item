@@ -148,13 +148,15 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="out1">
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="new java.util.Date((long)(row1.LoadedDate*1000))" type="id_Date"/>
+      </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="LoadedDate" expression="new java.util.Date((long)(row1.LoadedDate*1000))" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSSSSS&quot;,Var.var1) " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
@@ -182,7 +184,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tMap_1">
