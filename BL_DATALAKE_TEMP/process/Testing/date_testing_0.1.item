@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="bq_auth_code" prompt="bq_auth_code?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="4/AAC2g_aeDQJ1I5OfHfGsAEk9YVMQI5Xo3EXEeb1pW_vhP6ML43PPYEM"/>
+    <contextParameter comment="" name="bq_client_id" prompt="bq_client_id?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="623702074843-ke10u9q6kdcju27oio4qg1pjk20r8gij.apps.googleusercontent.com"/>
+    <contextParameter comment="" name="bq_client_secret" prompt="bq_client_secret?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="CqKUcM4YDJY7Y9rw83gnedcF"/>
+    <contextParameter comment="" name="bq_project_id" prompt="bq_project_id?" promptNeeded="false" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="data-mgmt-191603"/>
+    <contextParameter comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="C:/AABtoken.properties"/>
+    <contextParameter comment="" name="gcp_access_key" prompt="gcp_access_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="GOOG36LCRM3AR2PQOF3J"/>
+    <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -140,13 +148,13 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="out1">
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="LoadedDate" expression="new java.util.Date((long)(row1.LoadedDate*1000))" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="new java.util.Date((long)(row1.LoadedDate*1000))" type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
@@ -174,7 +182,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tMap_1">
