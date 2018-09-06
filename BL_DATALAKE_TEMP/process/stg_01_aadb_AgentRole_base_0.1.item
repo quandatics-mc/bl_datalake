@@ -983,6 +983,7 @@
   </node>
   <node componentName="tGSDelete" componentVersion="0.102" offsetLabelX="8" offsetLabelY="3" posX="128" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGSDelete_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="ACCESS_KEY" value="context.gcp_access_key"/>
@@ -1131,6 +1132,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFlowMeterCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeterCatcher_1" target="tGSDelete_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out6" lineStyle="0" metaname="out6" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tBigQueryOutput_3">
