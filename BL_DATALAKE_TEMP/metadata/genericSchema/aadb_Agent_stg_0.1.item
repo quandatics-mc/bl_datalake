@@ -12,10 +12,10 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUma9bEeiVsYAmnhb2Dg" name="PersonID" id="4205" label="PersonID" length="-1" sourceType="INTEGER" talendType="id_Integer">
         <initialValue xmi:id="_bLlUmq9bEeiVsYAmnhb2Dg"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUm69bEeiVsYAmnhb2Dg" name="Modifieddate" id="4206" label="Modifieddate" length="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUm69bEeiVsYAmnhb2Dg" name="Modifieddate" id="4206" label="Modifieddate" length="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;">
         <initialValue xmi:id="_bLlUnK9bEeiVsYAmnhb2Dg"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUna9bEeiVsYAmnhb2Dg" name="LoadedDate" id="4207" label="LoadedDate" length="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUna9bEeiVsYAmnhb2Dg" name="LoadedDate" id="4207" label="LoadedDate" length="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;">
         <initialValue xmi:id="_bLlUnq9bEeiVsYAmnhb2Dg"/>
       </feature>
     </ownedElement>
