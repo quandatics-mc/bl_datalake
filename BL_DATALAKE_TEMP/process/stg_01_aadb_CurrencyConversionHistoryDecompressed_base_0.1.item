@@ -431,7 +431,48 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="352">
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false">
+      <elementValue elementRef="INPUT_COLUMN" value="UserControl"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="UserControl"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tConvertType_1">
+      <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ViaCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ConversionAdjustment" nullable="true" pattern="" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="RoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="1" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="ViaCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ConversionAdjustment" nullable="true" pattern="" precision="2" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="RoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UserControl" nullable="true" pattern="" precision="1" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutput_1" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_aadb_CurrencyConversionHistoryDecompressed.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
@@ -477,7 +518,7 @@
       <column comment="" key="false" length="7" name="RoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_Character" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1068,8 +1109,6 @@
   </node>
   <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bx58ELF8EeiVN_ty9dxZrA - metadata" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
@@ -1546,9 +1585,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="nul" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tFlowMeter_2" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_2" target="tBigQueryOutput_1">
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tFlowMeter_2" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_2" target="tConvertType_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tBigQueryOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tHashInput_3" offsetLabelX="0" offsetLabelY="0" source="tHashInput_3" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
