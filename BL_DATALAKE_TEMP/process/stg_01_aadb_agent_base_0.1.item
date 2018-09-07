@@ -1189,7 +1189,7 @@
     <metadata connector="FLOW" name="endlog">
       <column key="false" length="0" name="EndTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ExcetutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -1201,7 +1201,7 @@
       <outputTables sizeState="INTERMEDIATE" name="endlog" expressionFilter="row15.message !=&quot;start01&quot;" activateExpressionFilter="true">
         <mapperTableEntries name="EndTime" expression="row15.moment " type="id_Date" nullable="true"/>
         <mapperTableEntries name="NameOfJob" expression="&quot;stg_aadb_Agent&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ExcetutionStatus" expression="row15.message ==&quot;end99&quot;?  &quot;Success&quot;:&quot;Error&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ExecutionStatus" expression="row15.message ==&quot;end99&quot;?  &quot;Success&quot;:&quot;Error&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" expression="row15.message ==&quot;end99&quot;?  &quot;None&quot;:  row15.message " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -1251,7 +1251,7 @@
     <metadata connector="FLOW" name="tHashOutput_9">
       <column key="false" length="0" name="EndTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ExcetutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1301,7 +1301,7 @@
       <column key="false" length="0" name="StartTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
       <column key="false" length="0" name="EndTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ExcetutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -1311,7 +1311,7 @@
         <mapperTableEntries name="StartTime" expression="row20.StartTime " type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndTime" expression="row21.EndTime " type="id_Date" nullable="true"/>
         <mapperTableEntries name="NameOfJob" expression="row21.NameOfJob " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ExcetutionStatus" expression="row21.ExcetutionStatus " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ExecutionStatus" expression="row21.ExecutionStatus " type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" expression="row21.ErrorMessage " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row20" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -1320,7 +1320,7 @@
       <inputTables sizeState="INTERMEDIATE" name="row21" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="EndTime" type="id_Date" nullable="true"/>
         <mapperTableEntries name="NameOfJob" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ExcetutionStatus" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ExecutionStatus" type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -1336,7 +1336,7 @@
     <metadata connector="FLOW" label="metadata" name="tHashInput_10">
       <column key="false" length="0" name="EndTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ExcetutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1374,11 +1374,11 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tBigQueryOutput_4">
-      <column comment="" key="false" length="0" name="StartTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="EndTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tBigQueryOutput_4">
+      <column key="false" length="0" name="StartTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="0" name="EndTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ExcetutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
