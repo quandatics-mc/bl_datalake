@@ -1508,8 +1508,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_6" offsetLabelX="0" offsetLabelY="0" source="tHashInput_6" target="tWarn_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_6" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tHashInput_6" target="tWarn_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_6" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tHashInput_6" target="tHashInput_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out8" lineStyle="0" metaname="out8" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tBigQueryOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1527,9 +1530,6 @@
   <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tMap_12">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tHashInput_9">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="stlog" lineStyle="0" metaname="stlog" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_12" target="tHashOutput_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
