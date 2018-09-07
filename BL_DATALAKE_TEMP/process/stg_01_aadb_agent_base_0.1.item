@@ -192,7 +192,7 @@
         <mapperTableEntries name="AgentName" expression="row11.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="row11.PersonID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Modifieddate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.Modifieddate*1000))))) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="new java.util.Date((long)(row11.LoadedDate*1000))" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.Loadeddate*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row11" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="AgentID" type="id_Integer" nullable="true"/>
