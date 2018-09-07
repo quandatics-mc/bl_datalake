@@ -10,7 +10,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCBbJ2EeiF0q_jFENB1A" name="NameOfJob" id="6596" label="NameOfJob" length="-1" precision="-1" sourceType="" talendType="id_String">
         <initialValue xmi:id="_5IWCBrJ2EeiF0q_jFENB1A"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCB7J2EeiF0q_jFENB1A" name="ExcetutionStatus" id="6597" label="ExcetutionStatus" length="-1" precision="-1" sourceType="" talendType="id_String">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCB7J2EeiF0q_jFENB1A" name="ExecutionStatus" id="6597" label="ExecutionStatus" length="-1" precision="-1" sourceType="" talendType="id_String">
         <initialValue xmi:id="_5IWCCLJ2EeiF0q_jFENB1A"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCCbJ2EeiF0q_jFENB1A" name="ErrorMessage" id="6598" label="ErrorMessage" length="-1" precision="-1" sourceType="" talendType="id_String">
