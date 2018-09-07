@@ -422,7 +422,7 @@
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.LoadedDate))))) " type="id_Date"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="InvalidDOB" expressionFilter="row6.LoadedDate &lt; row6.DOB " activateExpressionFilter="true" columnNameFilter="">
-        <mapperTableEntries name="Invalid" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.DOB*1000))))) + &quot; greater than current date.&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Invalid" expression="row6.PassengerID + &quot; with &quot; + TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.DOB*1000))))) + &quot; greater than current date.&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PassengerID" type="id_Integer"/>
