@@ -115,7 +115,466 @@
     <routinesParameter id="_QUgkQK_SEeiEF75cLc3dlg" name="TalendStringUtil"/>
     <routinesParameter id="_QUMbMK_SEeiEF75cLc3dlg" name="TalendString"/>
   </parameters>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_6" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_5"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="InvalidDOB"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_6">
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MyIo8LGvEeimn70juHPJcw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="InvalidRecord1">
+      <column comment="" key="false" length="-1" name="Table" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="InvalidRecord1">
+        <mapperTableEntries name="Table" expression="&quot;Booking Passenger&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PassengerID" expression="row12.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="DOB" expression="row12.DOB " type="id_Date"/>
+        <mapperTableEntries name="BookingID" expression="row12.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="PaxType" expression="row12.PaxType " type="id_String"/>
+        <mapperTableEntries name="FirstName" expression="row12.FirstName " type="id_String"/>
+        <mapperTableEntries name="MiddleName" expression="row12.MiddleName " type="id_String"/>
+        <mapperTableEntries name="LastName" expression="row12.LastName " type="id_String"/>
+        <mapperTableEntries name="Nationality" expression="row12.Nationality " type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" expression="row12.ResidentCountry " type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" expression="row12.CustomerNumber " type="id_String"/>
+        <mapperTableEntries name="BalanceDue" expression="row12.BalanceDue " type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" expression="row12.ModifiedDate " type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" expression="row12.LoadedDate " type="id_Date"/>
+        <mapperTableEntries name="Indicator" expression="&quot;DOB greater than current date&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row12" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="DOB" type="id_Date"/>
+        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="PaxType" type="id_String"/>
+        <mapperTableEntries name="FirstName" type="id_String"/>
+        <mapperTableEntries name="MiddleName" type="id_String"/>
+        <mapperTableEntries name="LastName" type="id_String"/>
+        <mapperTableEntries name="Nationality" type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" type="id_String"/>
+        <mapperTableEntries name="BalanceDue" type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUnite_1">
+      <column comment="" key="false" length="-1" name="Table" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_3" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Duplicate"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_3">
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MyIo8LGvEeimn70juHPJcw-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="InvalidRecord2">
+      <column comment="" key="false" length="-1" name="Table" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="InvalidRecord2">
+        <mapperTableEntries name="Table" expression="&quot;Booking Passenger&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PassengerID" expression="row13.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="DOB" expression="row13.DOB " type="id_Date"/>
+        <mapperTableEntries name="BookingID" expression="row13.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="PaxType" expression="row13.PaxType " type="id_String"/>
+        <mapperTableEntries name="FirstName" expression="row13.FirstName " type="id_String"/>
+        <mapperTableEntries name="MiddleName" expression="row13.MiddleName " type="id_String"/>
+        <mapperTableEntries name="LastName" expression="row13.LastName " type="id_String"/>
+        <mapperTableEntries name="Nationality" expression="row13.Nationality " type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" expression="row13.ResidentCountry " type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" expression="row13.CustomerNumber " type="id_String"/>
+        <mapperTableEntries name="BalanceDue" expression="row13.BalanceDue " type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" expression="row13.ModifiedDate " type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" expression="row13.LoadedDate " type="id_Date"/>
+        <mapperTableEntries name="Indicator" expression="&quot;Duplicate Record&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row13" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="DOB" type="id_Date"/>
+        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="PaxType" type="id_String"/>
+        <mapperTableEntries name="FirstName" type="id_String"/>
+        <mapperTableEntries name="MiddleName" type="id_String"/>
+        <mapperTableEntries name="LastName" type="id_String"/>
+        <mapperTableEntries name="Nationality" type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" type="id_String"/>
+        <mapperTableEntries name="BalanceDue" type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_4" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_3"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MatchDuplicate"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_4">
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MyIo8LGvEeimn70juHPJcw-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="InvalidRecord3">
+      <column comment="" key="false" length="-1" name="Table" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="InvalidRecord3">
+        <mapperTableEntries name="Table" expression="&quot;Booking Passenger&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PassengerID" expression="row14.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="DOB" expression="row14.DOB " type="id_Date"/>
+        <mapperTableEntries name="BookingID" expression="row14.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="PaxType" expression="row14.PaxType " type="id_String"/>
+        <mapperTableEntries name="FirstName" expression="row14.FirstName " type="id_String"/>
+        <mapperTableEntries name="MiddleName" expression="row14.MiddleName " type="id_String"/>
+        <mapperTableEntries name="LastName" expression="row14.LastName " type="id_String"/>
+        <mapperTableEntries name="Nationality" expression="row14.Nationality " type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" expression="row14.ResidentCountry " type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" expression="row14.CustomerNumber " type="id_String"/>
+        <mapperTableEntries name="BalanceDue" expression="row14.BalanceDue " type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" expression="row14.ModifiedDate " type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" expression="row14.LoadedDate " type="id_Date"/>
+        <mapperTableEntries name="Indicator" expression="&quot;Duplicate Record&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row14" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="DOB" type="id_Date"/>
+        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="PaxType" type="id_String"/>
+        <mapperTableEntries name="FirstName" type="id_String"/>
+        <mapperTableEntries name="MiddleName" type="id_String"/>
+        <mapperTableEntries name="LastName" type="id_String"/>
+        <mapperTableEntries name="Nationality" type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" type="id_String"/>
+        <mapperTableEntries name="BalanceDue" type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_5" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_4"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DuplicateAllMatch"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_5">
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MyIo8LGvEeimn70juHPJcw-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="InvalidRecord4">
+      <column comment="" key="false" length="-1" name="Table" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="InvalidRecord4">
+        <mapperTableEntries name="Table" expression="&quot;Booking Passenger&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PassengerID" expression="row15.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="DOB" expression="row15.DOB " type="id_Date"/>
+        <mapperTableEntries name="BookingID" expression="row15.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="PaxType" expression="row15.PaxType " type="id_String"/>
+        <mapperTableEntries name="FirstName" expression="row15.FirstName " type="id_String"/>
+        <mapperTableEntries name="MiddleName" expression="row15.MiddleName " type="id_String"/>
+        <mapperTableEntries name="LastName" expression="row15.LastName " type="id_String"/>
+        <mapperTableEntries name="Nationality" expression="row15.Nationality " type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" expression="row15.ResidentCountry " type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" expression="row15.CustomerNumber " type="id_String"/>
+        <mapperTableEntries name="BalanceDue" expression="row15.BalanceDue " type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" expression="row15.ModifiedDate " type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" expression="row15.LoadedDate " type="id_Date"/>
+        <mapperTableEntries name="Indicator" expression="&quot;Whole column matched duplicate record&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="DOB" type="id_Date"/>
+        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="PaxType" type="id_String"/>
+        <mapperTableEntries name="FirstName" type="id_String"/>
+        <mapperTableEntries name="MiddleName" type="id_String"/>
+        <mapperTableEntries name="LastName" type="id_String"/>
+        <mapperTableEntries name="Nationality" type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" type="id_String"/>
+        <mapperTableEntries name="BalanceDue" type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_3" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/M.A TEW/Desktop/Think Big Loyality/SourcesInExcel/BookingPassengerInvalidRecord.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Table"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PassengerID"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BookingID"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PaxType"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nationality"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResidentCountry"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerNumber"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BalanceDue"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Indicator"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_3">
+      <column comment="" key="false" length="-1" name="Table" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
@@ -148,7 +607,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
@@ -349,13 +808,37 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;StartTime&quot;"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getDate(&quot;yyyy-MM-dd hh:mm:ss&quot;)"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tSetGlobalVar_1">
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_11" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
     <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
     <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value="" show="false"/>
     <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="TEXT" name="LABEL" value="SourceCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFlowMeter_11">
       <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -373,7 +856,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -401,10 +884,22 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="InvalidDOB">
-      <column comment="" key="false" length="-1" name="Invalid" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="row6.LoadedDate >  row6.DOB " activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="PassengerID" expression="row6.PassengerID " type="id_Integer"/>
@@ -422,7 +917,19 @@
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.LoadedDate))))) " type="id_Date"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="InvalidDOB" expressionFilter="row6.LoadedDate &lt; row6.DOB " activateExpressionFilter="true" columnNameFilter="">
-        <mapperTableEntries name="Invalid" expression="row6.PassengerID + &quot; with &quot; + TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.DOB*1000))))) + &quot; greater than current date.&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PassengerID" expression="row6.PassengerID  " type="id_Integer"/>
+        <mapperTableEntries name="DOB" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.DOB*1000)))))  " type="id_Date"/>
+        <mapperTableEntries name="BookingID" expression="row6.BookingID  " type="id_Integer"/>
+        <mapperTableEntries name="PaxType" expression="row6.PaxType" type="id_String"/>
+        <mapperTableEntries name="FirstName" expression="row6.FirstName" type="id_String"/>
+        <mapperTableEntries name="MiddleName" expression="row6.MiddleName" type="id_String"/>
+        <mapperTableEntries name="LastName" expression="row6.LastName" type="id_String"/>
+        <mapperTableEntries name="Nationality" expression="row6.Nationality" type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" expression="row6.ResidentCountry" type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" expression="row6.CustomerNumber" type="id_String"/>
+        <mapperTableEntries name="BalanceDue" expression="row6.BalanceDue" type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.ModifiedDate)))))  " type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.LoadedDate)))))  " type="id_Date"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PassengerID" type="id_Integer"/>
@@ -441,7 +948,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="160">
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_3" show="false"/>
     <elementParameter field="TABLE" name="UNIQUE_KEY">
       <elementValue elementRef="SCHEMA_COLUMN" value="PassengerID"/>
@@ -536,7 +1043,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="160">
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_4" show="false"/>
     <elementParameter field="TABLE" name="UNIQUE_KEY">
       <elementValue elementRef="SCHEMA_COLUMN" value="PassengerID"/>
@@ -631,91 +1138,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PassengerID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BookingID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PaxType"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nationality"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ResidentCountry"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerNumber"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BalanceDue"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Output1" name="tLogRow_3">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Invalid"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_4">
-      <column comment="" key="false" length="-1" name="Invalid" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="160">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
@@ -743,7 +1166,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="256">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
@@ -756,6 +1179,62 @@
     <elementParameter field="TEXT" name="LABEL" value="Duplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tHashOutput_2">
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_4" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DuplicateAllMatch"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Output1" name="tHashOutput_4">
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_5" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="InvalidDOB"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashOutput_5">
       <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -902,7 +1381,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="512">
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
@@ -926,7 +1405,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="512">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_3" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
@@ -954,51 +1433,16 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="384">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PassengerID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BookingID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PaxType"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nationality"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ResidentCountry"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerNumber"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BalanceDue"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+  <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_19" show="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value="" show="false"/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="TEXT" name="LABEL" value="TargetCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
+    <metadata connector="FLOW" name="tFlowMeter_19">
       <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1014,7 +1458,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="384">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -1086,14 +1530,581 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PassengerID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOB"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BookingID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PaxType"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nationality"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResidentCountry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerNumber"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BalanceDue"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="InsertIntoHistoryTable"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="LastName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Nationality" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="ResidentCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="CustomerNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="BalanceDue" nullable="false" pattern="" precision="4" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowMeterCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="128" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeterCatcher_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowMeterCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job_repository_id" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job_version" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="label" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="count" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="reference" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="thresholds" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="label"/>
+      <elementValue elementRef="INPUT_COLUMN" value="label"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="count"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="count"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_1">
+      <column key="false" length="255" name="label" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="count" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MyIo8LGvEeimn70juHPJcw-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="Source">
+      <column defaultValue="" key="false" length="3" name="count" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="Target">
+      <column defaultValue="" key="false" length="3" name="count" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Source" expressionFilter="row17.label.equals(&quot;SourceCount&quot;)" activateExpressionFilter="true">
+        <mapperTableEntries name="count" expression="row17.count " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Target" expressionFilter="row17.label.equals(&quot;TargetCount&quot;)" activateExpressionFilter="true">
+        <mapperTableEntries name="count" expression="row17.count " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row17" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="label" type="id_String" nullable="true"/>
+        <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_6" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Source"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashOutput_6">
+      <column defaultValue="" key="false" length="3" name="count" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_7" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Target"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashOutput_7">
+      <column defaultValue="" key="false" length="3" name="count" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_7" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_6"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="source"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_7">
+      <column defaultValue="" key="false" length="3" name="count" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_8" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MyIo8LGvEeimn70juHPJcw-tMap_8-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="Cheksum">
+      <column comment="" key="false" length="-1" name="TableName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SourceRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TargetRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EqualRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Cheksum">
+        <mapperTableEntries name="TableName" expression="&quot;Booking Passenger&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SourceRowCount" expression="row18.count " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TargetRowCount" expression="row19.count " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EqualRowCount" expression="row18.count == row19.count ? &quot;Y&quot; : &quot;N&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row18" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row19" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="864">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_8" show="false"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_7"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Users/M.A TEW/Desktop/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Target"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_8">
+      <column defaultValue="" key="false" length="3" name="count" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TableName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SourceRowCount"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TargetRowCount"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EqualRowCount"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="TableName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SourceRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TargetRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EqualRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="1056">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobName"/>
+      <elementValue elementRef="VALUE" value="&quot;Job Booking Passenger&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobStarted"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;StartTime&quot;))"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobEnded"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getDate(&quot;yyyy-MM-dd hh:mm:ss&quot;)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobStatus"/>
+      <elementValue elementRef="VALUE" value="&quot;Success&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Error"/>
+      <elementValue elementRef="VALUE" value="&quot;N&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="JobName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobStarted" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobEnded" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1056">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobStarted"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobEnded"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobStatus"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Error"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column comment="" key="false" length="-1" name="JobName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobStarted" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobEnded" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobName"/>
+      <elementValue elementRef="VALUE" value="&quot;Job Booking Passenger&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobStarted"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;StartTime&quot;))"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobEnded"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getDate(&quot;yyyy-MM-dd hh:mm:ss&quot;)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobStatus"/>
+      <elementValue elementRef="VALUE" value="&quot;Fail&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Error"/>
+      <elementValue elementRef="VALUE" value="&quot;Subjob Error&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_2">
+      <column comment="" key="false" length="-1" name="JobName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobStarted" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobEnded" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobStarted"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobEnded"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JobStatus"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Error"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column comment="" key="false" length="-1" name="JobName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobStarted" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobEnded" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JobStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Error" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tHashInput_6" offsetLabelX="0" offsetLabelY="0" source="tHashInput_6" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="PassengerID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nationality"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Indicator"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CustomerNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ResidentCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BalanceDue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BookingID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PaxType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="InvalidRecord1" lineStyle="10" mergeOrder="1" metaname="InvalidRecord1" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="InvalidRecord1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tFileOutputExcel_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="output" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tHashInput_3" offsetLabelX="0" offsetLabelY="0" source="tHashInput_3" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="InvalidRecord2" lineStyle="10" mergeOrder="2" metaname="InvalidRecord2" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="InvalidRecord2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tHashInput_4" offsetLabelX="0" offsetLabelY="0" source="tHashInput_4" target="tMap_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="PassengerID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nationality"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CustomerNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ResidentCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BalanceDue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BookingID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PaxType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="InvalidRecord3" lineStyle="10" mergeOrder="3" metaname="InvalidRecord3" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="InvalidRecord3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tHashInput_5" offsetLabelX="0" offsetLabelY="0" source="tHashInput_5" target="tMap_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="PassengerID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nationality"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CustomerNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ResidentCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BalanceDue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BookingID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PaxType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="InvalidRecord4" lineStyle="10" mergeOrder="4" metaname="InvalidRecord4" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="InvalidRecord4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputExcel_3" offsetLabelX="50" offsetLabelY="-15" source="tFileOutputExcel_3" target="tFlowMeterCatcher_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tFileOutputExcel_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tFlowMeter_11">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tSetGlobalVar_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileInputExcel_1" offsetLabelX="50" offsetLabelY="-19" source="tFileInputExcel_1" target="tFixedFlowInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row20" lineStyle="0" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tFlowMeter_11">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tFlowMeter_11" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_11" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1103,7 +2114,48 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Output1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="InvalidDOB" lineStyle="0" metaname="InvalidDOB" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_4">
+  <connection connectorName="FLOW" label="InvalidDOB" lineStyle="0" metaname="InvalidDOB" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tHashOutput_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="PassengerID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nationality"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CustomerNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DOB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ResidentCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BalanceDue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BookingID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PaxType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="InvalidDOB" show="false"/>
   </connection>
@@ -1111,7 +2163,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
-  <connection connectorName="DUPLICATE" label="row3" lineStyle="0" metaname="DUPLICATE" offsetLabelX="50" offsetLabelY="3" outputId="2" source="tUniqRow_3" target="tLogRow_3">
+  <connection connectorName="DUPLICATE" label="row3" lineStyle="0" metaname="DUPLICATE" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tUniqRow_3" target="tHashOutput_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
@@ -1123,29 +2175,83 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHashOutput_2" offsetLabelX="0" offsetLabelY="0" source="tHashOutput_2" target="tHashInput_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHashOutput_2" offsetLabelX="50" offsetLabelY="-17" source="tHashOutput_2" target="tHashInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Fail" lineStyle="0" metaname="Fail" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tLogRow_1">
+  <connection connectorName="FLOW" label="Fail" lineStyle="0" metaname="Fail" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tFlowMeter_19">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Fail" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="Match" lineStyle="0" metaname="Match" offsetLabelX="-43" offsetLabelY="23" outputId="2" source="tMap_2" target="tHashOutput_3">
+  <connection connectorName="FLOW" label="Match" lineStyle="0" metaname="Match" offsetLabelX="-7" offsetLabelY="50" outputId="2" source="tMap_2" target="tHashOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Match" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tHashInput_2" offsetLabelX="-50" offsetLabelY="23" source="tHashInput_2" target="tMap_2">
+  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tHashInput_2" offsetLabelX="-5" offsetLabelY="15" source="tHashInput_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFileOutputExcel_2">
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tFlowMeter_19" offsetLabelX="22" offsetLabelY="9" source="tFlowMeter_19" target="tFileOutputExcel_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tFileOutputExcel_2" offsetLabelX="-7" offsetLabelY="9" source="tFileOutputExcel_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_1" offsetLabelX="50" offsetLabelY="33" source="tLogRow_1" target="tHashInput_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tFlowMeterCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeterCatcher_1" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Source" lineStyle="0" metaname="Source" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_7" target="tHashOutput_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Source" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Target" lineStyle="0" metaname="Target" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_7" target="tHashOutput_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Target" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHashOutput_7" offsetLabelX="3" offsetLabelY="-40" source="tHashOutput_7" target="tHashInput_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row18" lineStyle="0" metaname="tHashInput_7" offsetLabelX="0" offsetLabelY="0" source="tHashInput_7" target="tMap_8">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Cheksum" lineStyle="0" metaname="Cheksum" offsetLabelX="12" offsetLabelY="14" source="tMap_8" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Cheksum" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row19" lineStyle="8" metaname="tHashInput_8" offsetLabelX="-9" offsetLabelY="1" source="tHashInput_8" target="tMap_8">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogRow_2" offsetLabelX="50" offsetLabelY="-15" source="tLogRow_2" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row21" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
@@ -1158,6 +2264,26 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeterCatcher_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
