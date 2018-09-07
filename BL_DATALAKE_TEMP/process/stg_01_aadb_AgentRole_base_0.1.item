@@ -11,7 +11,7 @@
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="160" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="160" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="192" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -1609,10 +1609,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_6" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tHashInput_6" target="tHashInput_9">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_6" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tHashInput_6" target="tWarn_2">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_6" offsetLabelX="0" offsetLabelY="0" source="tHashInput_6" target="tWarn_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out8" lineStyle="0" metaname="out8" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tBigQueryOutput_3">
@@ -1631,6 +1628,9 @@
   <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tMap_10">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tHashInput_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="stlog" lineStyle="0" metaname="stlog" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_10" target="tHashOutput_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
