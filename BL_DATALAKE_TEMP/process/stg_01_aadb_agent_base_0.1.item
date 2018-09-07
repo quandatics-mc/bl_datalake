@@ -470,9 +470,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="outFinal">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Modifieddate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -487,9 +487,9 @@
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="outFinal">
-        <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="Modifieddate" expression="uniq.Modifieddate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
@@ -552,9 +552,9 @@
     <elementParameter field="TEXT" name="LABEL" value="stgRowCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowMeter_24">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Modifieddate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -595,9 +595,9 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Modifieddate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
