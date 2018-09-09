@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_5IWCALJ2EeiF0q_jFENB1A" comment="connectionComment" label="connectionLabel" dataPackage="_5IWCAbJ2EeiF0q_jFENB1A"/>
+  <TalendMetadata:GenericPackage xmi:id="_5IWCAbJ2EeiF0q_jFENB1A" dataManager="_5IWCALJ2EeiF0q_jFENB1A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5IWCArJ2EeiF0q_jFENB1A" id="_B-3WwLJ3EeiF0q_jFENB1A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Cd0joLJ3EeiF0q_jFENB1A" name="StartTime" label="StartTime" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCA7J2EeiF0q_jFENB1A" name="EndTime" id="6156" label="EndTime" sourceType="" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_5IWCBLJ2EeiF0q_jFENB1A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCBbJ2EeiF0q_jFENB1A" name="NameOfJob" id="6596" label="NameOfJob" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_5IWCBrJ2EeiF0q_jFENB1A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCB7J2EeiF0q_jFENB1A" name="ExecutionStatus" id="6597" label="ExecutionStatus" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_5IWCCLJ2EeiF0q_jFENB1A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCCbJ2EeiF0q_jFENB1A" name="ErrorMessage" id="6598" label="ErrorMessage" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_5IWCCrJ2EeiF0q_jFENB1A"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
