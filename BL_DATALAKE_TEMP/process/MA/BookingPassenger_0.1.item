@@ -159,9 +159,9 @@
         <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="label" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row19" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="count" expression="row18.count " type="id_Integer" nullable="true" operator="="/>
-        <mapperTableEntries name="label" type="id_String" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row19" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="count" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="label" expression="" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
