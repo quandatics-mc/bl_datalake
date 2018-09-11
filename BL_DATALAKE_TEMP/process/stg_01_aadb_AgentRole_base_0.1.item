@@ -235,7 +235,7 @@
         <mapperTableEntries name="ModifiedDate" expression="main.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="main.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="main.AgentID==null || main.RoleCode== null || main.ModifiedDate==&quot;0000-00-00 00:00:00.000&quot; || main.LoadedDate==&quot;0000-00-00 00:00:00.000&quot;" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="main.AgentID==null || main.RoleCode== null || main.ModifiedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;) || main.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="AgentID" expression="main.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="RoleCode" expression="main.RoleCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="main.ModifiedDate " type="id_Date" nullable="true"/>
