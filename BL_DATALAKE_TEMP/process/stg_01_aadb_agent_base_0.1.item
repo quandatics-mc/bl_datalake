@@ -1307,7 +1307,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out3" expressionFilter="row21EndTime!=null&amp;&amp;row21.ErrorMessage!=null" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="out3" expressionFilter="row21.EndTime!=null&amp;&amp;row21.ErrorMessage!=null" activateExpressionFilter="true">
         <mapperTableEntries name="StartTime" expression="row20.StartTime " type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndTime" expression="row21.EndTime " type="id_Date" nullable="true"/>
         <mapperTableEntries name="NameOfJob" expression="row21.NameOfJob " type="id_String" nullable="true"/>
