@@ -185,7 +185,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="AgentID" expression="row11.AgentID " type="id_Long" nullable="true"/>
@@ -400,7 +400,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="uniq" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="AgentID" expression="row5.AgentID " type="id_Long" nullable="true"/>
@@ -477,7 +477,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.PersonID  == null || uniq.Modifieddate  == null || uniq.LoadedDate == null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
@@ -639,7 +639,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="AgentID" expression="row7.AgentID " type="id_Long" nullable="true"/>
@@ -707,7 +707,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
         <mapperTableEntries name="AgentID" expression="row8.AgentID " type="id_Long" nullable="true"/>
@@ -765,7 +765,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout2">
         <mapperTableEntries name="AgentID" expression="row9.AgentID " type="id_Long" nullable="true"/>
@@ -867,7 +867,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout2">
         <mapperTableEntries name="AgentID" expression="row9.AgentID " type="id_Long" nullable="true"/>
@@ -1193,7 +1193,7 @@
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="stlog" expressionFilter="row15.message ==&quot;start01&quot;" activateExpressionFilter="true">
         <mapperTableEntries name="startTime" expression="row15.moment " type="id_Date" nullable="true"/>
@@ -1307,7 +1307,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out3">
+      <outputTables sizeState="INTERMEDIATE" name="out3" expressionFilter="row21EndTime!=null&amp;&amp;row21.ErrorMessage!=null" activateExpressionFilter="true">
         <mapperTableEntries name="StartTime" expression="row20.StartTime " type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndTime" expression="row21.EndTime " type="id_Date" nullable="true"/>
         <mapperTableEntries name="NameOfJob" expression="row21.NameOfJob " type="id_String" nullable="true"/>
