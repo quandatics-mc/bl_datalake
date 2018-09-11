@@ -1002,8 +1002,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_11" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;SourceCount&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Relative"/>
-    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value="row2"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value="row2" show="false"/>
     <elementParameter field="TABLE" name="THRESHLODS"/>
     <elementParameter field="TEXT" name="LABEL" value="SourceCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1604,8 +1604,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_19" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;TargetCount&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Relative"/>
-    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value="Fail"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value="Fail" show="false"/>
     <elementParameter field="TABLE" name="THRESHLODS"/>
     <elementParameter field="TEXT" name="LABEL" value="TargetCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
