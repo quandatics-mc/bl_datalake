@@ -671,8 +671,8 @@
       <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="row2.AgentID==null || row2.RoleCode== null || row2.ModifiedDate== null |row2.LoadedDate== null " activateExpressionFilter="true">
         <mapperTableEntries name="AgentID" expression="row2.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="RoleCode" expression="row2.RoleCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="row2.ModifiedDate " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="row2.LoadedDate " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="row2.ModifiedDate==null? &quot; &quot;:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row2.ModifiedDate*1000))))) " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="row2.LoadedDate==null? &quot; &quot;:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row2.LoadedDate*1000))))) " type="id_Double" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
