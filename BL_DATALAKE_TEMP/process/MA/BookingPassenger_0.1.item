@@ -363,9 +363,9 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tBigQueryOutput_2">
+    <metadata connector="FLOW" label="metadata" name="tBigQueryOutput_2">
       <column comment="" defaultValue="" key="true" length="-1" name="PassengerID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BookingID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
