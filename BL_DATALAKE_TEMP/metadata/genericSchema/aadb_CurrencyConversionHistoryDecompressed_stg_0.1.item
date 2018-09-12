@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_zWq9MLGYEeiYZdt4-rZFBw" name="repository.metadataGenericSchema" dataPackage="_zWq9MbGYEeiYZdt4-rZFBw"/>
   <TalendMetadata:GenericPackage xmi:id="_zWq9MbGYEeiYZdt4-rZFBw" name="repository.metadataGenericSchema" dataManager="_zWq9MLGYEeiYZdt4-rZFBw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_zWq9MrGYEeiYZdt4-rZFBw" id="_JQ5OQLGYEeiYZdt4-rZFBw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9M7GYEeiYZdt4-rZFBw" name="ConversionDayID" label="ConversionDayID" length="-1" talendType="id_Integer" key="true">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9M7GYEeiYZdt4-rZFBw" name="ConversionDayID" label="ConversionDayID" length="-1" talendType="id_Long" key="true">
         <initialValue xmi:id="_zWq9NLGYEeiYZdt4-rZFBw"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9NbGYEeiYZdt4-rZFBw" name="ConversionDate" label="ConversionDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;">
