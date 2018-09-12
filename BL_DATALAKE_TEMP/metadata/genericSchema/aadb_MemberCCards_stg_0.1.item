@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_EEUP8LZfEeiyl5Dva2Pz6w" name="aadb_MemberCCards_stg" label="aadb_MemberCCards_stg" dataPackage="_CDQXIrZfEeiyl5Dva2Pz6w"/>
   <TalendMetadata:GenericPackage xmi:id="_CDQXIrZfEeiyl5Dva2Pz6w" name="repository.metadataGenericSchema" dataManager="_EEUP8LZfEeiyl5Dva2Pz6w">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_CDQXI7ZfEeiyl5Dva2Pz6w" id="_zCg70LZeEeiyl5Dva2Pz6w" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJLZfEeiyl5Dva2Pz6w" name="No" label="No" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJLZfEeiyl5Dva2Pz6w" name="No" label="No" length="-1" talendType="id_Long" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJbZfEeiyl5Dva2Pz6w" name="CRE_TMS" label="CRE_TMS" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJrZfEeiyl5Dva2Pz6w" name="UPD_TMS" label="UPD_TMS" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJ7ZfEeiyl5Dva2Pz6w" name="CUST_ID" label="CUST_ID" length="50" talendType="id_String"/>
