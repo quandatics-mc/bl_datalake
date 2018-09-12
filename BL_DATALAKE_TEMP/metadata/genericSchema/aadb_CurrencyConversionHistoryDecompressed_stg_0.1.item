@@ -33,7 +33,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9RbGYEeiYZdt4-rZFBw" name="TaxRoundFactor" label="TaxRoundFactor" length="7" precision="3" talendType="id_Float">
         <initialValue xmi:id="_zWq9RrGYEeiYZdt4-rZFBw"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9R7GYEeiYZdt4-rZFBw" name="UserControl" label="UserControl" length="-1" talendType="id_String">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9R7GYEeiYZdt4-rZFBw" name="UserControl" label="UserControl" length="1" talendType="id_String">
         <initialValue xmi:id="_zWq9SLGYEeiYZdt4-rZFBw"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9SbGYEeiYZdt4-rZFBw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;">
