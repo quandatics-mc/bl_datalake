@@ -1239,7 +1239,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="ConversionDayID" expression="row2.ConversionDayID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ConversionDate" expression="row2.ConversionDate==null? TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;):TalendDate.parseDateLocale(&quot;yyyy-MM-dd'T'HH:mm:ss.SSS&quot;, row2.ConversionDate,&quot;EN&quot;) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ConversionDate" expression="row2.ConversionDate==null? TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;):TalendDate.parseDateLocale(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, row2.ConversionDate,&quot;EN&quot;) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="FromCurrencyCode" expression="row2.FromCurrencyCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="ToCurrencyCode" expression="row2.ToCurrencyCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="ConversionRate" expression="row2.ConversionRate " type="id_Float" nullable="true"/>
