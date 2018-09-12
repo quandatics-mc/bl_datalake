@@ -229,9 +229,9 @@
     <elementParameter field="TEXT" name="LABEL" value="InvalidDOB"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_6">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -257,9 +257,9 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="InvalidRecord1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -273,12 +273,12 @@
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord1">
-        <mapperTableEntries name="PassengerID" expression="row12.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" expression="row12.PassengerID " type="id_Long"/>
         <mapperTableEntries name="DOB" expression="row12.DOB " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row12.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row12.BookingID " type="id_Long"/>
         <mapperTableEntries name="PaxType" expression="row12.PaxType " type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row12.FirstName " type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row12.MiddleName " type="id_String"/>
@@ -292,9 +292,9 @@
         <mapperTableEntries name="Indicator" expression="&quot;DOB greater than current date&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row12" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" type="id_Long"/>
         <mapperTableEntries name="DOB" type="id_Date"/>
-        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="BookingID" type="id_Long"/>
         <mapperTableEntries name="PaxType" type="id_String"/>
         <mapperTableEntries name="FirstName" type="id_String"/>
         <mapperTableEntries name="MiddleName" type="id_String"/>
@@ -312,9 +312,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnite_1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -337,9 +337,9 @@
     <elementParameter field="TEXT" name="LABEL" value="Duplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_3">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -365,9 +365,9 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="InvalidRecord2">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -381,12 +381,12 @@
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord2">
-        <mapperTableEntries name="PassengerID" expression="row13.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" expression="row13.PassengerID " type="id_Long"/>
         <mapperTableEntries name="DOB" expression="row13.DOB " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row13.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row13.BookingID " type="id_Long"/>
         <mapperTableEntries name="PaxType" expression="row13.PaxType " type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row13.FirstName " type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row13.MiddleName " type="id_String"/>
@@ -400,9 +400,9 @@
         <mapperTableEntries name="Indicator" expression="&quot;Duplicate Record&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row13" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" type="id_Long"/>
         <mapperTableEntries name="DOB" type="id_Date"/>
-        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="BookingID" type="id_Long"/>
         <mapperTableEntries name="PaxType" type="id_String"/>
         <mapperTableEntries name="FirstName" type="id_String"/>
         <mapperTableEntries name="MiddleName" type="id_String"/>
@@ -425,9 +425,9 @@
     <elementParameter field="TEXT" name="LABEL" value="MatchDuplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_4">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -453,9 +453,9 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="InvalidRecord3">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -469,12 +469,12 @@
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord3">
-        <mapperTableEntries name="PassengerID" expression="row14.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" expression="row14.PassengerID " type="id_Long"/>
         <mapperTableEntries name="DOB" expression="row14.DOB " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row14.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row14.BookingID " type="id_Long"/>
         <mapperTableEntries name="PaxType" expression="row14.PaxType " type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row14.FirstName " type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row14.MiddleName " type="id_String"/>
@@ -488,9 +488,9 @@
         <mapperTableEntries name="Indicator" expression="&quot;Duplicate Record&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row14" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" type="id_Long"/>
         <mapperTableEntries name="DOB" type="id_Date"/>
-        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="BookingID" type="id_Long"/>
         <mapperTableEntries name="PaxType" type="id_String"/>
         <mapperTableEntries name="FirstName" type="id_String"/>
         <mapperTableEntries name="MiddleName" type="id_String"/>
@@ -513,9 +513,9 @@
     <elementParameter field="TEXT" name="LABEL" value="DuplicateAllMatch"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_5">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -541,9 +541,9 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="InvalidRecord4">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -557,12 +557,12 @@
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord4">
-        <mapperTableEntries name="PassengerID" expression="row15.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" expression="row15.PassengerID " type="id_Long"/>
         <mapperTableEntries name="DOB" expression="row15.DOB " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row15.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row15.BookingID " type="id_Long"/>
         <mapperTableEntries name="PaxType" expression="row15.PaxType " type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row15.FirstName " type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row15.MiddleName " type="id_String"/>
@@ -576,9 +576,9 @@
         <mapperTableEntries name="Indicator" expression="&quot;Whole column matched duplicate record&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" type="id_Long"/>
         <mapperTableEntries name="DOB" type="id_Date"/>
-        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="BookingID" type="id_Long"/>
         <mapperTableEntries name="PaxType" type="id_String"/>
         <mapperTableEntries name="FirstName" type="id_String"/>
         <mapperTableEntries name="MiddleName" type="id_String"/>
@@ -628,9 +628,9 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_2">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -735,9 +735,9 @@
     <elementParameter field="TEXT" name="LABEL" value="Extract"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tBigQueryInput_1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -758,9 +758,9 @@
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tSetGlobalVar_1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -783,9 +783,9 @@
     <elementParameter field="TEXT" name="LABEL" value="SourceCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFlowMeter_11">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -811,9 +811,9 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="Output1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -826,9 +826,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="InvalidDOB">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -841,12 +841,12 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="row6.LoadedDate >  row6.DOB " activateExpressionFilter="true" columnNameFilter="">
-        <mapperTableEntries name="PassengerID" expression="row6.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" expression="row6.PassengerID " type="id_Long"/>
         <mapperTableEntries name="DOB" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.DOB*1000))))) " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row6.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row6.BookingID " type="id_Long"/>
         <mapperTableEntries name="PaxType" expression="row6.PaxType == null || row6.PaxType.isEmpty() ? &quot;&quot; : row6.PaxType " type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row6.FirstName == null || row6.FirstName.isEmpty() ? &quot;&quot; : row6.FirstName " type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row6.MiddleName == null || row6.MiddleName.isEmpty() ? &quot;&quot; : row6.MiddleName " type="id_String"/>
@@ -859,9 +859,9 @@
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.LoadedDate))))) " type="id_Date"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="InvalidDOB" expressionFilter="row6.LoadedDate &lt; row6.DOB " activateExpressionFilter="true" columnNameFilter="">
-        <mapperTableEntries name="PassengerID" expression="row6.PassengerID  " type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" expression="row6.PassengerID  " type="id_Long"/>
         <mapperTableEntries name="DOB" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.DOB*1000)))))  " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row6.BookingID  " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row6.BookingID  " type="id_Long"/>
         <mapperTableEntries name="PaxType" expression="row6.PaxType" type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row6.FirstName" type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row6.MiddleName" type="id_String"/>
@@ -874,9 +874,9 @@
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.LoadedDate)))))  " type="id_Date"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" type="id_Long"/>
         <mapperTableEntries name="DOB" type="id_Double"/>
-        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="BookingID" type="id_Long"/>
         <mapperTableEntries name="PaxType" type="id_String"/>
         <mapperTableEntries name="FirstName" type="id_String"/>
         <mapperTableEntries name="MiddleName" type="id_String"/>
@@ -940,9 +940,9 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tUniqRow_3">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -955,9 +955,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" label="Output1" name="UNIQUE">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -970,9 +970,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" label="Output1" name="DUPLICATE">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1035,9 +1035,9 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tUniqRow_4">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1050,9 +1050,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" label="Output1" name="UNIQUE">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1065,9 +1065,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" label="Output1" name="DUPLICATE">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1093,9 +1093,9 @@
     <elementParameter field="TEXT" name="LABEL" value="Uniques"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tHashOutput_1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1121,9 +1121,9 @@
     <elementParameter field="TEXT" name="LABEL" value="Duplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tHashOutput_2">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1149,9 +1149,9 @@
     <elementParameter field="TEXT" name="LABEL" value="DuplicateAllMatch"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tHashOutput_4">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1177,9 +1177,9 @@
     <elementParameter field="TEXT" name="LABEL" value="InvalidDOB"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_5">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1330,9 +1330,9 @@
     <elementParameter field="TEXT" name="LABEL" value="Uniques"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1358,9 +1358,9 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Fail">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1373,9 +1373,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="Match">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1388,12 +1388,12 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Fail" activateCondensedTool="true" rejectInnerJoin="true">
-        <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Long"/>
         <mapperTableEntries name="DOB" expression="row8.DOB " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row8.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row8.BookingID " type="id_Long"/>
         <mapperTableEntries name="PaxType" expression="row8.PaxType " type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row8.FirstName " type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row8.MiddleName " type="id_String"/>
@@ -1406,9 +1406,9 @@
         <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate " type="id_Date"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Match">
-        <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Long"/>
         <mapperTableEntries name="DOB" expression="row8.DOB " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row8.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="BookingID" expression="row8.BookingID " type="id_Long"/>
         <mapperTableEntries name="PaxType" expression="row8.PaxType " type="id_String"/>
         <mapperTableEntries name="FirstName" expression="row8.FirstName " type="id_String"/>
         <mapperTableEntries name="MiddleName" expression="row8.MiddleName " type="id_String"/>
@@ -1421,9 +1421,9 @@
         <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate " type="id_Date"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="PassengerID" type="id_Integer"/>
+        <mapperTableEntries name="PassengerID" type="id_Long"/>
         <mapperTableEntries name="DOB" type="id_Date"/>
-        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="BookingID" type="id_Long"/>
         <mapperTableEntries name="PaxType" type="id_String"/>
         <mapperTableEntries name="FirstName" type="id_String"/>
         <mapperTableEntries name="MiddleName" type="id_String"/>
@@ -1436,9 +1436,9 @@
         <mapperTableEntries name="LoadedDate" type="id_Date"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row9" activateCondensedTool="true" columnNameFilter="" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Integer" operator="="/>
+        <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Long" operator="="/>
         <mapperTableEntries name="DOB" type="id_Date"/>
-        <mapperTableEntries name="BookingID" type="id_Integer"/>
+        <mapperTableEntries name="BookingID" type="id_Long"/>
         <mapperTableEntries name="PaxType" type="id_String"/>
         <mapperTableEntries name="FirstName" type="id_String"/>
         <mapperTableEntries name="MiddleName" type="id_String"/>
@@ -1461,9 +1461,9 @@
     <elementParameter field="TEXT" name="LABEL" value="Duplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_2">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1489,9 +1489,9 @@
     <elementParameter field="TEXT" name="LABEL" value="MatchDuplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_3">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1514,9 +1514,9 @@
     <elementParameter field="TEXT" name="LABEL" value="TargetCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowMeter_19">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1533,9 +1533,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tReplicate_1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1584,9 +1584,9 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1645,9 +1645,9 @@
     <elementParameter field="TEXT" name="LABEL" value="InsertIntoHistoryTable"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="-1" name="PassengerID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DOB" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BookingID" nullable="false" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="PaxType" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="MiddleName" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
