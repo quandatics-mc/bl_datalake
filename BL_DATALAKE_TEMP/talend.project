@@ -245,7 +245,6 @@
       <relatedItems xmi:id="_Tzc8XLG_EeimZKbbQHUOlA" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Tzc8XbG_EeimZKbbQHUOlA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Tzc8X7G_EeimZKbbQHUOlA" id="_WTUi8LG9EeimZKbbQHUOlA - metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_Tzc8YLG_EeimZKbbQHUOlA" id="_GtF08LG9EeimZKbbQHUOlA - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="__qIH8LYvEeifOfwXzcOyWA">
       <baseItem xmi:id="__qIH8bYvEeifOfwXzcOyWA" id="_n3E-MLC4EeikuKk-Yeyr9w" version="0.1" type="job"/>
