@@ -18,6 +18,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxDrGyEeimn70juHPJcw" name="BalanceDue" label="BalanceDue" length="15" precision="4" talendType="id_BigDecimal"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxD7GyEeimn70juHPJcw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxELGyEeimn70juHPJcw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_T99YcLZ7Eeifh-sNLhzqew" name="Indicator" label="Indicator" length="255" talendType="id_String"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
