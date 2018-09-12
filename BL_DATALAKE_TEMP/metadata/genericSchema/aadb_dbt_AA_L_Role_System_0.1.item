@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_oV6v4bZWEeiyl5Dva2Pz6w" name="repository.metadataGenericSchema" dataPackage="_oV6v4rZWEeiyl5Dva2Pz6w"/>
+  <TalendMetadata:GenericPackage xmi:id="_oV6v4rZWEeiyl5Dva2Pz6w" name="repository.metadataGenericSchema" dataManager="_oV6v4bZWEeiyl5Dva2Pz6w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_oV6v47ZWEeiyl5Dva2Pz6w" id="_d3LgILZWEeiyl5Dva2Pz6w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5LZWEeiyl5Dva2Pz6w" name="RoleCode" label="RoleCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5bZWEeiyl5Dva2Pz6w" name="MID" label="MID" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5rZWEeiyl5Dva2Pz6w" name="System" label="System" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v57ZWEeiyl5Dva2Pz6w" name="InActive" label="InActive" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v6LZWEeiyl5Dva2Pz6w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
