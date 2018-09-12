@@ -1527,7 +1527,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Date"/>
         <mapperTableEntries name="LoadedDate" type="id_Date"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row9" activateCondensedTool="true" columnNameFilter="" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row9" activateCondensedTool="true" columnNameFilter="" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Integer" operator="="/>
         <mapperTableEntries name="DOB" type="id_Date"/>
         <mapperTableEntries name="BookingID" type="id_Integer"/>
