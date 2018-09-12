@@ -781,6 +781,8 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_WTUi8LG9EeimZKbbQHUOlA - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_5"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/Studio/6.5.1/workspace/in.hash&quot;" show="false"/>
