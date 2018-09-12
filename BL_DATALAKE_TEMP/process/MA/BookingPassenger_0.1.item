@@ -149,7 +149,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Cheksum" expressionFilter="!(row18.count == null &amp;&amp; row19.count == null)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Cheksum">
         <mapperTableEntries name="TableName" expression="&quot;Booking Passenger&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="SourceRowCount" expression="row18.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="TargetRowCount" expression="row19.count " type="id_Integer" nullable="true"/>
