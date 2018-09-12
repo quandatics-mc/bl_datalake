@@ -485,14 +485,14 @@
         <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="uniq.Modifieddate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="uniq.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="outFinal">
         <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="uniq.Modifieddate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="uniq.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="uniq" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -775,7 +775,7 @@
         <mapperTableEntries name="AgentID" expression="row9.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="row9.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="row9.PersonID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="row9.Modifieddate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="row9.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row9.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Exception" expression="&quot;Nullability&quot;" type="id_String" nullable="true"/>
       </outputTables>
@@ -877,7 +877,7 @@
         <mapperTableEntries name="AgentID" expression="row9.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="row9.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="row9.PersonID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="row9.Modifieddate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="row9.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row9.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Exception" expression="&quot;Full Row Duplicate&quot;" type="id_String" nullable="true"/>
       </outputTables>
