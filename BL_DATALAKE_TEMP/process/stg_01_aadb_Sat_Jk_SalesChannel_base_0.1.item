@@ -162,7 +162,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="rrow4.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="row4.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="saleschannel" expression="row4.saleschannel " type="id_String" nullable="true"/>
         <mapperTableEntries name="rolecode" expression="row4.rolecode " type="id_String" nullable="true"/>
         <mapperTableEntries name="status" expression="row4.status " type="id_String" nullable="true"/>
