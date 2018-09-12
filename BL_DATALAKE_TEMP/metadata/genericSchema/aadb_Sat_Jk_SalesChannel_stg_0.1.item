@@ -3,11 +3,11 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_zL2PQLZkEeiyl5Dva2Pz6w" name="aadb_Sat_Jk_SalesChannel_stg" label="aadb_Sat_Jk_SalesChannel_stg" dataPackage="_wjMyArZkEeiyl5Dva2Pz6w"/>
   <TalendMetadata:GenericPackage xmi:id="_wjMyArZkEeiyl5Dva2Pz6w" name="repository.metadataGenericSchema" dataManager="_zL2PQLZkEeiyl5Dva2Pz6w">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_wjMyA7ZkEeiyl5Dva2Pz6w" id="_SETmoLZkEeiyl5Dva2Pz6w" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyBLZkEeiyl5Dva2Pz6w" name="saleschannel" label="saleschannel" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyBbZkEeiyl5Dva2Pz6w" name="rolecode" label="rolecode" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyBrZkEeiyl5Dva2Pz6w" name="status" label="status" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyB7ZkEeiyl5Dva2Pz6w" name="saleschannelrpt" label="saleschannelrpt" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyCLZkEeiyl5Dva2Pz6w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyBLZkEeiyl5Dva2Pz6w" name="saleschannel" label="saleschannel" length="50" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyBbZkEeiyl5Dva2Pz6w" name="rolecode" label="rolecode" length="50" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyBrZkEeiyl5Dva2Pz6w" name="status" label="status" length="10" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyB7ZkEeiyl5Dva2Pz6w" name="saleschannelrpt" label="saleschannelrpt" length="10" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyCLZkEeiyl5Dva2Pz6w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
