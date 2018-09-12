@@ -6,7 +6,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxA7GyEeimn70juHPJcw" name="PassengerID" label="PassengerID" length="-1" talendType="id_Long" key="true" nullable="false">
         <initialValue xmi:id="_PcyxBLGyEeimn70juHPJcw" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxBbGyEeimn70juHPJcw" name="DOB" label="DOB" length="-1" talendType="id_Double" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxBbGyEeimn70juHPJcw" name="DOB" label="DOB" length="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxBrGyEeimn70juHPJcw" name="BookingID" label="BookingID" length="-1" talendType="id_Long" nullable="false"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxB7GyEeimn70juHPJcw" name="PaxType" label="PaxType" length="16" talendType="id_String" nullable="false"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxCLGyEeimn70juHPJcw" name="FirstName" label="FirstName" length="128" talendType="id_String" nullable="false"/>
@@ -16,8 +16,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxDLGyEeimn70juHPJcw" name="ResidentCountry" label="ResidentCountry" length="8" talendType="id_String" nullable="false"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxDbGyEeimn70juHPJcw" name="CustomerNumber" label="CustomerNumber" length="128" talendType="id_String" nullable="false"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxDrGyEeimn70juHPJcw" name="BalanceDue" label="BalanceDue" length="15" precision="4" talendType="id_BigDecimal" nullable="false"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxD7GyEeimn70juHPJcw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxELGyEeimn70juHPJcw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxD7GyEeimn70juHPJcw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PcyxELGyEeimn70juHPJcw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
