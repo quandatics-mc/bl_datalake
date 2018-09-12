@@ -155,9 +155,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="row4.LoadedDate== null " activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="row4.LoadedDate== TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="FeeCode" expression="row4.FeeCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="System" expression="row4.System " type="id_String" nullable="true"/>
         <mapperTableEntries name="Inactive" expression="row4.Inactive " type="id_Integer" nullable="true"/>
