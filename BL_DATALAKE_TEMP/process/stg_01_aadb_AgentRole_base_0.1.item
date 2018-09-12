@@ -1023,11 +1023,11 @@
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout3" expressionFilter="row24.EndTime!=null&amp;&amp;row24.ErrorMessage!=null" activateExpressionFilter="true">
-        <mapperTableEntries name="StartTime" expression="row23.StartTime " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="EndTime" expression="row24.EndTime " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row23.StartTime )) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EndTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row24.EndTime )) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="NameOfJob" expression="row24.NameOfJob " type="id_String" nullable="true"/>
         <mapperTableEntries name="ExecutionStatus" expression="row24.ExecutionStatus " type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" expression="row24.ErrorMessage " type="id_String" nullable="true"/>
