@@ -3,11 +3,11 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_raG5oLZWEeiyl5Dva2Pz6w" name="aadb_dbt_AA_L_Role_System_stg" label="aadb_dbt_AA_L_Role_System_stg" dataPackage="_oV6v4rZWEeiyl5Dva2Pz6w"/>
   <TalendMetadata:GenericPackage xmi:id="_oV6v4rZWEeiyl5Dva2Pz6w" name="repository.metadataGenericSchema" dataManager="_raG5oLZWEeiyl5Dva2Pz6w">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_oV6v47ZWEeiyl5Dva2Pz6w" id="_d3LgILZWEeiyl5Dva2Pz6w" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5LZWEeiyl5Dva2Pz6w" name="RoleCode" label="RoleCode" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5bZWEeiyl5Dva2Pz6w" name="MID" label="MID" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5rZWEeiyl5Dva2Pz6w" name="System" label="System" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5LZWEeiyl5Dva2Pz6w" name="RoleCode" label="RoleCode" length="16" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5bZWEeiyl5Dva2Pz6w" name="MID" label="MID" length="80" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v5rZWEeiyl5Dva2Pz6w" name="System" label="System" length="50" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v57ZWEeiyl5Dva2Pz6w" name="InActive" label="InActive" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v6LZWEeiyl5Dva2Pz6w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oV6v6LZWEeiyl5Dva2Pz6w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
