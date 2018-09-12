@@ -1498,19 +1498,19 @@
         <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate " type="id_Date"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Match">
-        <mapperTableEntries name="PassengerID" expression="row9.PassengerID " type="id_Integer"/>
-        <mapperTableEntries name="DOB" expression="row9.DOB " type="id_Date"/>
-        <mapperTableEntries name="BookingID" expression="row9.BookingID " type="id_Integer"/>
-        <mapperTableEntries name="PaxType" expression="row9.PaxType " type="id_String"/>
-        <mapperTableEntries name="FirstName" expression="row9.FirstName " type="id_String"/>
-        <mapperTableEntries name="MiddleName" expression="row9.MiddleName " type="id_String"/>
-        <mapperTableEntries name="LastName" expression="row9.LastName " type="id_String"/>
-        <mapperTableEntries name="Nationality" expression="row9.Nationality " type="id_String"/>
-        <mapperTableEntries name="ResidentCountry" expression="row9.ResidentCountry " type="id_String"/>
-        <mapperTableEntries name="CustomerNumber" expression="row9.CustomerNumber " type="id_String"/>
-        <mapperTableEntries name="BalanceDue" expression="row9.BalanceDue " type="id_BigDecimal"/>
-        <mapperTableEntries name="ModifiedDate" expression="row9.ModifiedDate " type="id_Date"/>
-        <mapperTableEntries name="LoadedDate" expression="row9.LoadedDate " type="id_Date"/>
+        <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Integer"/>
+        <mapperTableEntries name="DOB" expression="row8.DOB " type="id_Date"/>
+        <mapperTableEntries name="BookingID" expression="row8.BookingID " type="id_Integer"/>
+        <mapperTableEntries name="PaxType" expression="row8.PaxType " type="id_String"/>
+        <mapperTableEntries name="FirstName" expression="row8.FirstName " type="id_String"/>
+        <mapperTableEntries name="MiddleName" expression="row8.MiddleName " type="id_String"/>
+        <mapperTableEntries name="LastName" expression="row8.LastName " type="id_String"/>
+        <mapperTableEntries name="Nationality" expression="row8.Nationality " type="id_String"/>
+        <mapperTableEntries name="ResidentCountry" expression="row8.ResidentCountry " type="id_String"/>
+        <mapperTableEntries name="CustomerNumber" expression="row8.CustomerNumber " type="id_String"/>
+        <mapperTableEntries name="BalanceDue" expression="row8.BalanceDue " type="id_BigDecimal"/>
+        <mapperTableEntries name="ModifiedDate" expression="row8.ModifiedDate " type="id_Date"/>
+        <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate " type="id_Date"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PassengerID" type="id_Integer"/>
@@ -1527,7 +1527,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Date"/>
         <mapperTableEntries name="LoadedDate" type="id_Date"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row9" activateCondensedTool="true" columnNameFilter="" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row9" activateCondensedTool="true" columnNameFilter="" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Integer" operator="="/>
         <mapperTableEntries name="DOB" type="id_Date"/>
         <mapperTableEntries name="BookingID" type="id_Integer"/>
