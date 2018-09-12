@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_CDQXIbZfEeiyl5Dva2Pz6w" name="repository.metadataGenericSchema" dataPackage="_CDQXIrZfEeiyl5Dva2Pz6w"/>
+  <TalendMetadata:GenericPackage xmi:id="_CDQXIrZfEeiyl5Dva2Pz6w" name="repository.metadataGenericSchema" dataManager="_CDQXIbZfEeiyl5Dva2Pz6w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_CDQXI7ZfEeiyl5Dva2Pz6w" id="_zCg70LZeEeiyl5Dva2Pz6w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJLZfEeiyl5Dva2Pz6w" name="No" label="No" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJbZfEeiyl5Dva2Pz6w" name="CRE_TMS" label="CRE_TMS" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJrZfEeiyl5Dva2Pz6w" name="UPD_TMS" label="UPD_TMS" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXJ7ZfEeiyl5Dva2Pz6w" name="CUST_ID" label="CUST_ID" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXKLZfEeiyl5Dva2Pz6w" name="CARD_NUMBER" label="CARD_NUMBER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXKbZfEeiyl5Dva2Pz6w" name="CRD_BRN" label="CRD_BRN" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXKrZfEeiyl5Dva2Pz6w" name="ACT_IND" label="ACT_IND" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CDQXK7ZfEeiyl5Dva2Pz6w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
