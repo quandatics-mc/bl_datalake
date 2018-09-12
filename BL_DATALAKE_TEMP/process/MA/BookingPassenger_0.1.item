@@ -149,7 +149,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Cheksum" expressionFilter="(row18.label.equals(&quot;SourceCount&quot;) &amp;&amp; row19.label.equals(&quot;TargetCount&quot;)) &amp;&amp; !(row18.count == null || row19.count == null)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Cheksum" expressionFilter="!(row18.count == null &amp;&amp; row19.count == null)" activateExpressionFilter="true">
         <mapperTableEntries name="TableName" expression="&quot;Booking Passenger&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="SourceRowCount" expression="row18.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="TargetRowCount" expression="row19.count " type="id_Integer" nullable="true"/>
@@ -2376,9 +2376,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFlowMeterCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeterCatcher_1" target="tHashInput_7">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="Source" lineStyle="0" metaname="Source" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_7" target="tHashOutput_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Source" show="false"/>
@@ -2386,6 +2383,10 @@
   <connection connectorName="FLOW" label="Target" lineStyle="0" metaname="Target" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_7" target="tHashOutput_7">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Target" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tHashOutput_7" offsetLabelX="14" offsetLabelY="2" source="tHashOutput_7" target="tHashInput_7">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tHashOutput_6_NB_LINE&quot;)) > 0 &amp;&amp; ((Integer)globalMap.get(&quot;tHashOutput_7_NB_LINE&quot;)) > 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_7" show="false"/>
