@@ -1230,36 +1230,36 @@
     <elementParameter field="TABLE" name="INTABLE">
       <elementValue elementRef="AgentID" value="11111"/>
       <elementValue elementRef="RoleCode" value="ABC"/>
-      <elementValue elementRef="ModifiedDate" value="(double)(111111)"/>
-      <elementValue elementRef="LoadedDate" value="(double)(11111)"/>
+      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
+      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
       <elementValue elementRef="AgentID" value="11111"/>
       <elementValue elementRef="RoleCode" value="ABC"/>
-      <elementValue elementRef="ModifiedDate" value="(double)(111111)"/>
-      <elementValue elementRef="LoadedDate" value="(double)(11111)"/>
+      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
+      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
       <elementValue elementRef="AgentID" value="222"/>
       <elementValue elementRef="RoleCode" value="ddd"/>
-      <elementValue elementRef="ModifiedDate" value="(double)(123123)"/>
-      <elementValue elementRef="LoadedDate" value="(double)(123123)"/>
+      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
+      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
       <elementValue elementRef="AgentID" value="222"/>
       <elementValue elementRef="RoleCode" value="ddd"/>
-      <elementValue elementRef="ModifiedDate" value="(double)(234234)"/>
-      <elementValue elementRef="LoadedDate" value="(double)(2342342)"/>
+      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
+      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
       <elementValue elementRef="AgentID" value="3333"/>
       <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="ModifiedDate" value="(double)(444)"/>
-      <elementValue elementRef="LoadedDate" value="(double)(444)"/>
+      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
+      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
       <elementValue elementRef="AgentID" value="515"/>
       <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="ModifiedDate" value="(double)(11)"/>
-      <elementValue elementRef="LoadedDate" value="(double)(22)"/>
+      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
+      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
       <elementValue elementRef="AgentID" value="(Long)(&quot;&quot;)"/>
       <elementValue elementRef="RoleCode" value="rrr"/>
-      <elementValue elementRef="ModifiedDate" value="(double)(354)"/>
-      <elementValue elementRef="LoadedDate" value="(double)(354)"/>
+      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
+      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
       <elementValue elementRef="AgentID" value="666"/>
       <elementValue elementRef="RoleCode" value="66"/>
-      <elementValue elementRef="ModifiedDate" value="(double)(0)"/>
-      <elementValue elementRef="LoadedDate" value="(double)(0)"/>
+      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
+      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
