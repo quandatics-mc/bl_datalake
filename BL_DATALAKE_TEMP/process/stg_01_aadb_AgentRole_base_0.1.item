@@ -1232,10 +1232,10 @@
       <elementValue elementRef="RoleCode" value=""/>
       <elementValue elementRef="ModifiedDate" value=""/>
       <elementValue elementRef="LoadedDate" value=""/>
-      <elementValue elementRef="AgentID" value="11111"/>
+      <elementValue elementRef="AgentID" value="new Long(11111)"/>
       <elementValue elementRef="RoleCode" value="&quot;1123123&quot;"/>
-      <elementValue elementRef="ModifiedDate" value="0.00"/>
-      <elementValue elementRef="LoadedDate" value="0.00"/>
+      <elementValue elementRef="ModifiedDate" value="new Double(0.00)"/>
+      <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
