@@ -1258,8 +1258,8 @@
       <elementValue elementRef="LoadedDate" value="354"/>
       <elementValue elementRef="AgentID" value="666"/>
       <elementValue elementRef="RoleCode" value="66"/>
-      <elementValue elementRef="ModifiedDate" value="TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;,&quot;&quot;)"/>
-      <elementValue elementRef="LoadedDate" value="TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;,&quot;&quot;)"/>
+      <elementValue elementRef="ModifiedDate" value="0"/>
+      <elementValue elementRef="LoadedDate" value="0"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
