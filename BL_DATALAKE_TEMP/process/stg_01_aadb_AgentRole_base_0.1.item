@@ -1260,10 +1260,10 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out10">
-        <mapperTableEntries name="AgentID" expression="(long)(row12.AgentID) " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AgentID" expression="Long.parseLong(row12.AgentID) " type="id_Long" nullable="true"/>
         <mapperTableEntries name="RoleCode" expression="row12.RoleCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="(double)(row12.ModifiedDate ) " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="(double)(row12.LoadedDate ) " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="Double.parseDouble(row12.ModifiedDate)" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="Double.parseDouble(row12.LoadedDate)" type="id_Double" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row12" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="AgentID" type="id_String" nullable="true"/>
