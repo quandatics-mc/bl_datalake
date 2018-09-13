@@ -1618,7 +1618,7 @@
         <mapperTableEntries name="BookingPromoCode" expression="row6.BookingPromoCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;,new java.util.Date((long)(row6.LoadedDate*1000)))) " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="NullRecord" expressionFilter="row6.BookingID == null || row6.BookingParentID == null || row6.Status == null || row6.RecordLocator == null || row6.RecordLocator.isEmpty() || row6.BookingDate == null || row6.CreatedAgentID  == null || row6.SourceAgentCode == null || row6.SourceAgentCode.isEmpty() || row6.CreatedDate == null || row6.ModifiedDate == null || row6.LoadedDate == null" activateCondensedTool="true" columnNameFilter="" reject="true">
+      <outputTables sizeState="INTERMEDIATE" name="NullRecord" expressionFilter="row6.BookingID == null || row6.BookingParentID == null || row6.Status == null || row6.RecordLocator == null || row6.RecordLocator.isEmpty() || row6.BookingDate == null || row6.CreatedAgentID  == null || row6.SourceAgentCode == null || row6.SourceAgentCode.isEmpty() || row6.CreatedDate == null || row6.ModifiedDate == null || row6.LoadedDate == null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="BookingID" expression="row6.BookingID  " type="id_Long" nullable="true"/>
         <mapperTableEntries name="BookingParentID" expression="row6.BookingParentID  " type="id_Long" nullable="true"/>
         <mapperTableEntries name="Status" expression="row6.Status  " type="id_Integer" nullable="true"/>
