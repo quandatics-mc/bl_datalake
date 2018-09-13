@@ -1260,9 +1260,9 @@
       <elementValue elementRef="RoleCode" value="&quot;112233112&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(23468)"/>
       <elementValue elementRef="LoadedDate" value="new Double(14135357)"/>
-      <elementValue elementRef="AgentID" value=""/>
+      <elementValue elementRef="AgentID" value="new Long(112233)"/>
       <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="ModifiedDate" value=""/>
+      <elementValue elementRef="ModifiedDate" value="new Double(23468)"/>
       <elementValue elementRef="LoadedDate" value=""/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
