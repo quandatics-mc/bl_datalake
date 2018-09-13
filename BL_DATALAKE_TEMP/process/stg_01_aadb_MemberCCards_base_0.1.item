@@ -583,7 +583,7 @@
         <mapperTableEntries name="ACT_IND" expression="uniq.ACT_IND " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="outFinal">
+      <outputTables sizeState="INTERMEDIATE" name="outFinal" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="No" expression="uniq.No " type="id_Long" nullable="true"/>
         <mapperTableEntries name="CRE_TMS" expression="uniq.CRE_TMS " type="id_Date" nullable="true"/>
         <mapperTableEntries name="UPD_TMS" expression="uniq.UPD_TMS " type="id_Date" nullable="true"/>
@@ -628,7 +628,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="512">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_4" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
