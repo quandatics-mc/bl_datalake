@@ -1210,69 +1210,6 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
-      <elementValue elementRef="VALUE" value="null"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RoleCode"/>
-      <elementValue elementRef="VALUE" value="null"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
-      <elementValue elementRef="VALUE" value="null"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
-      <elementValue elementRef="VALUE" value="null"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="32" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_12" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_yadIQLC2EeikuKk-Yeyr9w-tMap_12-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out10">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out10">
-        <mapperTableEntries name="AgentID" expression="Long.parseLong(row12.AgentID) " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RoleCode" expression="row12.RoleCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="Double.parseDouble(row12.ModifiedDate)" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="Double.parseDouble(row12.LoadedDate)" type="id_Double" nullable="true"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row12" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RoleCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" type="id_String" nullable="true"/>
-      </inputTables>
-    </nodeData>
-  </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_1" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
@@ -1467,6 +1404,69 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
+      <elementValue elementRef="VALUE" value="null"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RoleCode"/>
+      <elementValue elementRef="VALUE" value="null"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="VALUE" value="null"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="VALUE" value="null"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="32" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_12" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yadIQLC2EeikuKk-Yeyr9w-tMap_12-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out10">
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out10">
+        <mapperTableEntries name="AgentID" expression="Long.parseLong(row12.AgentID) " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="RoleCode" expression="row12.RoleCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="Double.parseDouble(row12.ModifiedDate)" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="Double.parseDouble(row12.LoadedDate)" type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row12" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="AgentID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RoleCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
@@ -1635,7 +1635,7 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryOutput_4" offsetLabelX="0" offsetLabelY="0" source="tBigQueryOutput_4" target="tGSDelete_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="10" mergeOrder="1" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tUnite_2">
+  <connection connectorName="FLOW" label="row1" lineStyle="10" mergeOrder="1" metaname="tBigQueryInput_1" offsetLabelX="-1" offsetLabelY="16" source="tBigQueryInput_1" target="tUnite_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
@@ -1645,14 +1645,6 @@
   <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tUnite_2" offsetLabelX="0" offsetLabelY="0" source="tUnite_2" target="tFlowMeter_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_12">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="out10" lineStyle="10" mergeOrder="2" metaname="out10" offsetLabelX="0" offsetLabelY="0" source="tMap_12" target="tUnite_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out10" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFlowMeter_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1677,6 +1669,14 @@
   <connection connectorName="DUPLICATE" label="row14" lineStyle="0" metaname="DUPLICATE" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tUniqRow_2" target="tHashOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_12">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out10" lineStyle="10" mergeOrder="2" metaname="out10" offsetLabelX="0" offsetLabelY="0" source="tMap_12" target="tUnite_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out10" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
