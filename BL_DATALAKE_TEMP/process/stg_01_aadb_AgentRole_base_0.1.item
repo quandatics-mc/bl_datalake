@@ -1210,69 +1210,6 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Eq5kULC4EeikuKk-Yeyr9w - metadata" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
-    <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RoleCode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
-      <elementValue elementRef="VALUE" value=""/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
-    <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="AgentID" value="11111"/>
-      <elementValue elementRef="RoleCode" value="ABC"/>
-      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="AgentID" value="11111"/>
-      <elementValue elementRef="RoleCode" value="ABC"/>
-      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="AgentID" value="222"/>
-      <elementValue elementRef="RoleCode" value="ddd"/>
-      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="AgentID" value="222"/>
-      <elementValue elementRef="RoleCode" value="ddd"/>
-      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="AgentID" value="3333"/>
-      <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="AgentID" value="515"/>
-      <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="AgentID" value="(Long)(&quot;&quot;)"/>
-      <elementValue elementRef="RoleCode" value="rrr"/>
-      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="AgentID" value="666"/>
-      <elementValue elementRef="RoleCode" value="66"/>
-      <elementValue elementRef="ModifiedDate" value="double.parseDouble(111111)"/>
-      <elementValue elementRef="LoadedDate" value="double.parseDouble(111111)"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_1" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
@@ -1467,7 +1404,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="0">
+  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-96" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_3" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Eq5kULC4EeikuKk-Yeyr9w - metadata" show="false"/>
@@ -1678,10 +1615,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row12" lineStyle="10" mergeOrder="2" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tUnite_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFlowMeter_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
@@ -1705,6 +1638,10 @@
   <connection connectorName="DUPLICATE" label="row14" lineStyle="0" metaname="DUPLICATE" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tUniqRow_2" target="tHashOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="10" mergeOrder="2" metaname="tRowGenerator_3" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_3" target="tUnite_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
@@ -1763,11 +1700,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_3" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
