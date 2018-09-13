@@ -12,7 +12,7 @@
     <contextParameter comment="" name="processEnd" prompt="processEnd?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="128" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -152,10 +152,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_2" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tUnite_2">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
@@ -247,10 +248,11 @@
     <elementParameter field="TEXT" name="LABEL" value="sourceRowCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFlowMeter_22">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
@@ -284,7 +286,8 @@
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row11" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RoleCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AgentName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
       </inputTables>
@@ -1355,7 +1358,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_1"/>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="224">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;start01&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="01"/>
