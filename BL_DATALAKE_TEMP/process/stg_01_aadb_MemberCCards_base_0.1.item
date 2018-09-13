@@ -573,7 +573,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.No == null || uniq.CRE_TMS  == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;) || uniq.UPD_TMS  == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.CUST_ID  == null||uniq.CARD_NUMBER==null ||uniq.CRD_BRN==null|| uniq.ACT_IND==null|| uniq.LoadedDate == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.ACT_IND==null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.No == null || uniq.CRE_TMS  == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;) || uniq.UPD_TMS  == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.CUST_ID  == null||uniq.CARD_NUMBER==null ||uniq.CRD_BRN==null|| uniq.ACT_IND==null|| uniq.LoadedDate == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.ACT_IND==null||uniq.ACT_IND==&quot;&quot;" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="No" expression="uniq.No " type="id_Long" nullable="true"/>
         <mapperTableEntries name="CRE_TMS" expression="uniq.CRE_TMS " type="id_Date" nullable="true"/>
         <mapperTableEntries name="UPD_TMS" expression="uniq.UPD_TMS " type="id_Date" nullable="true"/>
