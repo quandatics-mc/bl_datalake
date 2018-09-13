@@ -1415,7 +1415,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="RoleCode"/>
       <elementValue elementRef="ARRAY" value="ASD "/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
-      <elementValue elementRef="ARRAY" value="(double)(123123123123123 ) "/>
+      <elementValue elementRef="ARRAY" value="(double)(1231231) "/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
       <elementValue elementRef="ARRAY" value="(double)(12312312 ) "/>
     </elementParameter>
@@ -1429,7 +1429,7 @@
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;ASD &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;(double)(123123123123123 ) &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;(double)(1231231) &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;(double)(12312312 ) &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
