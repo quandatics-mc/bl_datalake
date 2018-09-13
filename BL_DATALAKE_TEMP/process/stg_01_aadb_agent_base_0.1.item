@@ -479,16 +479,16 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.PersonID  == null || uniq.ModifiedDate  ==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.LoadedDate == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.AgentName.isEmpty() || uniq.PersonID  == null || uniq.ModifiedDate  ==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.LoadedDate == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="uniq.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="outFinal">
+      <outputTables sizeState="INTERMEDIATE" name="outFinal" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
