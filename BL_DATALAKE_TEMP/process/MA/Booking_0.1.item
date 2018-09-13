@@ -159,7 +159,7 @@
         <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="label" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row19" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row19" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="count" expression="" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="label" expression="" type="id_String" nullable="true"/>
       </inputTables>
