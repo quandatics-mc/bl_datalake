@@ -10,7 +10,7 @@
     <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="256" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="320" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="224" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -876,7 +876,7 @@
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-192" posY="160">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-256" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;start01&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="01"/>
@@ -1215,8 +1215,8 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Eq5kULC4EeikuKk-Yeyr9w - metadata" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="RoleCode"/>
@@ -1226,8 +1226,17 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
       <elementValue elementRef="VALUE" value=""/>
     </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
+    <elementParameter field="TABLE" name="INTABLE">
+      <elementValue elementRef="AgentID" value=""/>
+      <elementValue elementRef="RoleCode" value=""/>
+      <elementValue elementRef="ModifiedDate" value=""/>
+      <elementValue elementRef="LoadedDate" value=""/>
+      <elementValue elementRef="AgentID" value="aaaa"/>
+      <elementValue elementRef="RoleCode" value="&quot;1123123&quot;"/>
+      <elementValue elementRef="ModifiedDate" value="0.00"/>
+      <elementValue elementRef="LoadedDate" value="0.00"/>
+    </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
