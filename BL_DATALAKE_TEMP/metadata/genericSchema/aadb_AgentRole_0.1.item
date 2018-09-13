@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_ErjroLC4EeikuKk-Yeyr9w" name="repository.metadataGenericSchema" dataPackage="_ErjrobC4EeikuKk-Yeyr9w"/>
   <TalendMetadata:GenericPackage xmi:id="_ErjrobC4EeikuKk-Yeyr9w" name="repository.metadataGenericSchema" dataManager="_ErjroLC4EeikuKk-Yeyr9w">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ErjrorC4EeikuKk-Yeyr9w" id="_uG39wLC3EeikuKk-Yeyr9w" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Erjro7C4EeikuKk-Yeyr9w" name="AgentID" label="AgentID" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Erjro7C4EeikuKk-Yeyr9w" name="AgentID" label="AgentID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ErjrpLC4EeikuKk-Yeyr9w" name="RoleCode" label="RoleCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ErjrpbC4EeikuKk-Yeyr9w" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vpspILC8EeikuKk-Yeyr9w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
