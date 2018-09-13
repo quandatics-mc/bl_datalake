@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_ng52YLb5EeigQr7_99Jhzw" name="repository.metadataGenericSchema" dataPackage="_ng6dcLb5EeigQr7_99Jhzw"/>
+  <TalendMetadata:GenericPackage xmi:id="_ng6dcLb5EeigQr7_99Jhzw" name="repository.metadataGenericSchema" dataManager="_ng52YLb5EeigQr7_99Jhzw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ng6dcbb5EeigQr7_99Jhzw" id="_-S75MLb4EeigQr7_99Jhzw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6dcrb5EeigQr7_99Jhzw" name="BookingID" label="BookingID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6dc7b5EeigQr7_99Jhzw" name="BookingParentID" label="BookingParentID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6ddLb5EeigQr7_99Jhzw" name="Status" label="Status" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6ddbb5EeigQr7_99Jhzw" name="RecordLocator" label="RecordLocator" length="24" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6ddrb5EeigQr7_99Jhzw" name="BookingDate" label="BookingDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6dd7b5EeigQr7_99Jhzw" name="CreatedAgentID" label="CreatedAgentID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6deLb5EeigQr7_99Jhzw" name="SourceAgentCode" label="SourceAgentCode" length="64" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6debb5EeigQr7_99Jhzw" name="CreatedDate" label="CreatedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6derb5EeigQr7_99Jhzw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6de7b5EeigQr7_99Jhzw" name="BookingPromoCode" label="BookingPromoCode" length="8" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ng6dfLb5EeigQr7_99Jhzw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
