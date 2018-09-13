@@ -1229,7 +1229,7 @@
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="152341524;375;;&#xD;&#xA;15232524;345;;&#xD;&#xA;15211524;225;;&#xD;&#xA;1122;22;111111;1111111&#xD;&#xA;1122;22;111111;1111111"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="152341524;375;;&#xD;&#xA;15232524;345;;&#xD;&#xA;15211524;225;;&#xD;&#xA;15211524;null;11112;2221&#xD;&#xA;1122;22;111111;1111111&#xD;&#xA;1122;22;111111;1111111"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFixedFlowInput_1">
       <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true">
