@@ -1230,7 +1230,7 @@
       <elementValue elementRef="RoleCode" value="11121212"/>
       <elementValue elementRef="ModifiedDate" value="11111"/>
       <elementValue elementRef="LoadedDate" value="11111"/>
-      <elementValue elementRef="AgentID" value="null"/>
+      <elementValue elementRef="AgentID" value=""/>
       <elementValue elementRef="RoleCode" value="11111"/>
       <elementValue elementRef="ModifiedDate" value="2222"/>
       <elementValue elementRef="LoadedDate" value="1111"/>
@@ -1248,7 +1248,7 @@
       <elementValue elementRef="LoadedDate" value="123124"/>
       <elementValue elementRef="AgentID" value="123123"/>
       <elementValue elementRef="RoleCode" value="123123"/>
-      <elementValue elementRef="ModifiedDate" value="null"/>
+      <elementValue elementRef="ModifiedDate" value=""/>
       <elementValue elementRef="LoadedDate" value="null"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
