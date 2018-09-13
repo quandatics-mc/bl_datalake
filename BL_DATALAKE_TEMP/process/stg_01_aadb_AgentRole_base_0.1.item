@@ -227,15 +227,15 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out2">
+      <outputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="AgentID" expression="main.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="RoleCode" expression="main.RoleCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="main.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="main.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="main.AgentID==null || main.RoleCode== null || main.ModifiedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;) || main.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="main.AgentID==null || main.RoleCode== null || main.RoleCode.isEmpty() || main.ModifiedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;) || main.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="AgentID" expression="main.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="RoleCode" expression="main.RoleCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="main.ModifiedDate " type="id_Date" nullable="true"/>
@@ -1210,67 +1210,6 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
-    <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RoleCode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
-      <elementValue elementRef="VALUE" value=""/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
-    <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="AgentID" value="1111222"/>
-      <elementValue elementRef="RoleCode" value="11121212"/>
-      <elementValue elementRef="ModifiedDate" value="11111"/>
-      <elementValue elementRef="LoadedDate" value="11111"/>
-      <elementValue elementRef="AgentID" value=""/>
-      <elementValue elementRef="RoleCode" value="11111"/>
-      <elementValue elementRef="ModifiedDate" value="2222"/>
-      <elementValue elementRef="LoadedDate" value="1111"/>
-      <elementValue elementRef="AgentID" value="1111222"/>
-      <elementValue elementRef="RoleCode" value="11121212"/>
-      <elementValue elementRef="ModifiedDate" value="11111"/>
-      <elementValue elementRef="LoadedDate" value="11111"/>
-      <elementValue elementRef="AgentID" value="223"/>
-      <elementValue elementRef="RoleCode" value="221"/>
-      <elementValue elementRef="ModifiedDate" value="123123"/>
-      <elementValue elementRef="LoadedDate" value="123123"/>
-      <elementValue elementRef="AgentID" value="223"/>
-      <elementValue elementRef="RoleCode" value="221"/>
-      <elementValue elementRef="ModifiedDate" value="11141515"/>
-      <elementValue elementRef="LoadedDate" value="123124"/>
-      <elementValue elementRef="AgentID" value="123123"/>
-      <elementValue elementRef="RoleCode" value="123123"/>
-      <elementValue elementRef="ModifiedDate" value=""/>
-      <elementValue elementRef="LoadedDate" value="null"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="152341524;375;;&#xD;&#xA;15232524;345;;&#xD;&#xA;15211524;225;;&#xD;&#xA;15211524;`Null`;11112;2221&#xD;&#xA;1122;22;111111;1111111&#xD;&#xA;1122;22;111111;1111111" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;67 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;GG\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;RND&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;&quot;,&quot;PARAMETER_VALUE&quot;:&quot;10000 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Mathematical&quot;}"/>
-      </column>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;RND&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;&quot;,&quot;PARAMETER_VALUE&quot;:&quot;10000 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Mathematical&quot;}"/>
-      </column>
-    </metadata>
-  </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_1" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
@@ -1465,6 +1404,67 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RoleCode"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
+    <elementParameter field="TABLE" name="INTABLE">
+      <elementValue elementRef="AgentID" value="1111222"/>
+      <elementValue elementRef="RoleCode" value="11121212"/>
+      <elementValue elementRef="ModifiedDate" value="11111"/>
+      <elementValue elementRef="LoadedDate" value="11111"/>
+      <elementValue elementRef="AgentID" value="null"/>
+      <elementValue elementRef="RoleCode" value="11111"/>
+      <elementValue elementRef="ModifiedDate" value="2222"/>
+      <elementValue elementRef="LoadedDate" value="1111"/>
+      <elementValue elementRef="AgentID" value="1111222"/>
+      <elementValue elementRef="RoleCode" value="11121212"/>
+      <elementValue elementRef="ModifiedDate" value="11111"/>
+      <elementValue elementRef="LoadedDate" value="11111"/>
+      <elementValue elementRef="AgentID" value="223"/>
+      <elementValue elementRef="RoleCode" value="221"/>
+      <elementValue elementRef="ModifiedDate" value="123123"/>
+      <elementValue elementRef="LoadedDate" value="123123"/>
+      <elementValue elementRef="AgentID" value="223"/>
+      <elementValue elementRef="RoleCode" value="221"/>
+      <elementValue elementRef="ModifiedDate" value="11141515"/>
+      <elementValue elementRef="LoadedDate" value="123124"/>
+      <elementValue elementRef="AgentID" value="123123"/>
+      <elementValue elementRef="RoleCode" value="123123"/>
+      <elementValue elementRef="ModifiedDate" value="null"/>
+      <elementValue elementRef="LoadedDate" value="null"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="152341524;375;;&#xD;&#xA;15232524;345;;&#xD;&#xA;15211524;225;;&#xD;&#xA;15211524;`Null`;11112;2221&#xD;&#xA;1122;22;111111;1111111&#xD;&#xA;1122;22;111111;1111111" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;67 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+      </column>
+      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;GG\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+      </column>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;RND&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;&quot;,&quot;PARAMETER_VALUE&quot;:&quot;10000 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Mathematical&quot;}"/>
+      </column>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;RND&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;&quot;,&quot;PARAMETER_VALUE&quot;:&quot;10000 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Mathematical&quot;}"/>
+      </column>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
@@ -1644,10 +1644,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row12" lineStyle="10" mergeOrder="2" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tUnite_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFlowMeter_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
@@ -1671,6 +1667,10 @@
   <connection connectorName="DUPLICATE" label="row14" lineStyle="0" metaname="DUPLICATE" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tUniqRow_2" target="tHashOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="10" mergeOrder="2" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tUnite_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
