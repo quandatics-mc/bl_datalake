@@ -1260,6 +1260,10 @@
       <elementValue elementRef="RoleCode" value="&quot;112233112&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(23468)"/>
       <elementValue elementRef="LoadedDate" value="new Double(14135357)"/>
+      <elementValue elementRef="AgentID" value=""/>
+      <elementValue elementRef="RoleCode" value=""/>
+      <elementValue elementRef="ModifiedDate" value=""/>
+      <elementValue elementRef="LoadedDate" value=""/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -1427,7 +1431,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="256">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_2" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
