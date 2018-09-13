@@ -126,7 +126,7 @@
     <elementParameter field="TEXT" name="LABEL" value="uniqHashIn"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -172,13 +172,13 @@
         <mapperTableEntries name="LoadedDate" expression="row5.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AgentID" type="id_String" nullable="true"/>
         <mapperTableEntries name="RoleCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="AgentID" expression="row5.AgentID " type="id_Long" nullable="true" operator="="/>
+        <mapperTableEntries name="AgentID" expression="row5.AgentID " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="RoleCode" expression="row5.RoleCode " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
@@ -196,7 +196,7 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashIn1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -419,7 +419,7 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashIn2"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_4">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -455,7 +455,7 @@
         <mapperTableEntries name="Exception" expression="&quot;Duplicate&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row9" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AgentID" type="id_String" nullable="true"/>
         <mapperTableEntries name="RoleCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
@@ -473,7 +473,7 @@
     <elementParameter field="TEXT" name="LABEL" value="nullHashIn"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_5">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -509,7 +509,7 @@
         <mapperTableEntries name="Exception" expression="&quot;Nullability&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row10" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AgentID" type="id_String" nullable="true"/>
         <mapperTableEntries name="RoleCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
@@ -570,7 +570,7 @@
     <elementParameter field="TEXT" name="LABEL" value="FullRowHashIn"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_8">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -606,7 +606,7 @@
         <mapperTableEntries name="Exception" expression="&quot;Full Row Duplicate&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row21" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AgentID" type="id_String" nullable="true"/>
         <mapperTableEntries name="RoleCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
@@ -1161,18 +1161,10 @@
     <elementParameter field="TEXT" name="LABEL" value="testing full duplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tRowGenerator_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;2221212121212312 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;ABC\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;999.11 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;1111.11 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-96" posY="160">
@@ -1194,7 +1186,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Extract"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tBigQueryInput_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -1204,7 +1196,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_2" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tUnite_2">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -1232,35 +1224,35 @@
       <elementValue elementRef="RoleCode" value=""/>
       <elementValue elementRef="ModifiedDate" value=""/>
       <elementValue elementRef="LoadedDate" value=""/>
-      <elementValue elementRef="AgentID" value="new Long(11111)"/>
+      <elementValue elementRef="AgentID" value="&quot;11111&quot;"/>
       <elementValue elementRef="RoleCode" value="&quot;1123123&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(0.00)"/>
       <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
-      <elementValue elementRef="AgentID" value="new Long(22211)"/>
+      <elementValue elementRef="AgentID" value="&quot;22211&quot;"/>
       <elementValue elementRef="RoleCode" value="&quot;22112211&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double (5555)"/>
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="AgentID" value="new Long(22211)"/>
+      <elementValue elementRef="AgentID" value="&quot;22211&quot;"/>
       <elementValue elementRef="RoleCode" value="&quot;22112211&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double (5555)"/>
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="AgentID" value="new Long(22211)"/>
+      <elementValue elementRef="AgentID" value="&quot;22211&quot;"/>
       <elementValue elementRef="RoleCode" value="&quot;22112211&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double (5555)"/>
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="AgentID" value="new Long(112233)"/>
+      <elementValue elementRef="AgentID" value="&quot;112233&quot;"/>
       <elementValue elementRef="RoleCode" value="&quot;112233112&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(12312)"/>
       <elementValue elementRef="LoadedDate" value="new Double(5131)"/>
-      <elementValue elementRef="AgentID" value="new Long(112233)"/>
+      <elementValue elementRef="AgentID" value="&quot;112233&quot;"/>
       <elementValue elementRef="RoleCode" value="&quot;112233112&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(1231235)"/>
       <elementValue elementRef="LoadedDate" value="new Double(2346877)"/>
-      <elementValue elementRef="AgentID" value="new Long(112233)"/>
+      <elementValue elementRef="AgentID" value="&quot;112233&quot;"/>
       <elementValue elementRef="RoleCode" value="&quot;112233112&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(23468)"/>
       <elementValue elementRef="LoadedDate" value="new Double(14135357)"/>
-      <elementValue elementRef="AgentID" value="new Long(112233)"/>
+      <elementValue elementRef="AgentID" value="&quot;112233&quot;"/>
       <elementValue elementRef="RoleCode" value=""/>
       <elementValue elementRef="ModifiedDate" value="new Double(23468)"/>
       <elementValue elementRef="LoadedDate" value=""/>
@@ -1271,7 +1263,7 @@
     <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -1287,7 +1279,7 @@
     <elementParameter field="TEXT" name="LABEL" value="sourceRowCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFlowMeter_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
@@ -1321,7 +1313,7 @@
         <mapperTableEntries name="LoadedDate" expression="row2.LoadedDate==null? TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;):TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row2.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AgentID" type="id_String" nullable="true"/>
         <mapperTableEntries name="RoleCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
@@ -1353,19 +1345,19 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tUniqRow_1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" label="metadata" name="UNIQUE">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" label="metadata" name="DUPLICATE">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -1394,19 +1386,19 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tUniqRow_2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" label="metadata" name="UNIQUE">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" label="metadata" name="DUPLICATE">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -1425,7 +1417,7 @@
     <elementParameter field="TEXT" name="LABEL" value="uniqHashOut"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashOutput_1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -1444,7 +1436,7 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashOut1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashOutput_2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -1465,7 +1457,7 @@
     <elementParameter field="TEXT" name="LABEL" value="FullRowDuplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashOutput_7">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="16" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
