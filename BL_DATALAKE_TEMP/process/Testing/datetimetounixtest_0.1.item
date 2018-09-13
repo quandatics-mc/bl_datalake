@@ -121,7 +121,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from `data-mgmt-191603.BL_ODS_STG.stg_AgentRole_Exception`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;select * from `data-mgmt-191603.BL_ODS_STG.stg_AgentRole_Exception`&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Talend/Studio/6.5.1/workspace/token.properties&quot;"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
