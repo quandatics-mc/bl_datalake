@@ -227,7 +227,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="AgentID" expression="main.AgentID " type="id_Long" nullable="true"/>
@@ -235,7 +235,7 @@
         <mapperTableEntries name="ModifiedDate" expression="main.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="main.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="main.AgentID==null || main.RoleCode== null || main.RoleCode.isEmpty() || main.ModifiedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;) || main.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="main.AgentID==null || main.RoleCode== null || main.RoleCode.isEmpty() || TalendDate.compareDate(main.ModifiedDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0 || TalendDate.compareDate(main.LoadedDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0" activateExpressionFilter="true">
         <mapperTableEntries name="AgentID" expression="main.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="RoleCode" expression="main.RoleCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="main.ModifiedDate " type="id_Date" nullable="true"/>
@@ -1689,7 +1689,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
