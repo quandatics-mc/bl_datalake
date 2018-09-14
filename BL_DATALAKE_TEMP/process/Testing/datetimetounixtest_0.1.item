@@ -252,7 +252,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout1">
-        <mapperTableEntries name="newColumn" expression="row1.newColumn==null? TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;):TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row1.newColumn*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="newColumn" expression="row2.newColumn==null? TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;):TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row2.newColumn*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="newColumn" type="id_Double" nullable="true"/>
