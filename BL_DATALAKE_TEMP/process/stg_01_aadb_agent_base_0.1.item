@@ -189,17 +189,17 @@
       <elementValue elementRef="PersonID" value="new Long(123123)"/>
       <elementValue elementRef="ModifiedDate" value="new Double(0.00)"/>
       <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
-      <elementValue elementRef="AgentID" value="new Long(22211)"/>
+      <elementValue elementRef="AgentID" value="new Long(2221)"/>
       <elementValue elementRef="AgentName" value="&quot;wawa&quot;"/>
       <elementValue elementRef="PersonID" value="new Long(555)"/>
       <elementValue elementRef="ModifiedDate" value="new Double (5555)"/>
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="AgentID" value="new Long(22211)"/>
+      <elementValue elementRef="AgentID" value="new Long(2221)"/>
       <elementValue elementRef="AgentName" value="&quot;wawa&quot;"/>
       <elementValue elementRef="PersonID" value="new Long(555)"/>
       <elementValue elementRef="ModifiedDate" value="new Double (5555)"/>
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="AgentID" value="new Long(22211)"/>
+      <elementValue elementRef="AgentID" value="new Long(2221)"/>
       <elementValue elementRef="AgentName" value="&quot;wawa&quot;"/>
       <elementValue elementRef="PersonID" value="new Long(555)"/>
       <elementValue elementRef="ModifiedDate" value="new Double (5555)"/>
@@ -614,7 +614,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="512">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_4" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bLlUkK9bEeiVsYAmnhb2Dg - metadata" show="false"/>
@@ -914,11 +914,11 @@
     <elementParameter field="TEXT" name="LABEL" value="exOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
   </node>
@@ -953,22 +953,22 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfcopyOfcopyOfout2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout2">
-        <mapperTableEntries name="AgentID" expression="row9.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="row9.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="row9.PersonID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="row9.ModifiedDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="row9.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="AgentID" expression="row14.AgentID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AgentName" expression="row14.AgentName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PersonID" expression="row14.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="row14.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="row14.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Exception" expression="&quot;Full Row Duplicate&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row14" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
