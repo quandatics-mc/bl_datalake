@@ -334,7 +334,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="ConversionDayID" expression="out9.ConversionDayID " type="id_Long" nullable="true"/>
@@ -350,7 +350,7 @@
         <mapperTableEntries name="UserControl" expression="out9.UserControl " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="out9.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="out9.ConversionDayID== null || out9.ConversionDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| out9.FromCurrencyCode== null || out9.FromCurrencyCode.isEmpty() || out9.ToCurrencyCode== null || out9.ToCurrencyCode.isEmpty()|| out9.ConversionRate ==null || out9.ConversionAdjustment == null || out9.RoundFactor == null || out9.FareRoundFactor ==null || out9.TaxRoundFactor==null || out9.UserControl==null || out9.UserControl.isEmpty() || out9.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="out9.ConversionDayID== null ||  TalendDate.compareDate(out9.ConversionDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0|| out9.FromCurrencyCode== null || out9.FromCurrencyCode.isEmpty() || out9.ToCurrencyCode== null || out9.ToCurrencyCode.isEmpty()|| out9.ConversionRate ==null || out9.ConversionAdjustment == null || out9.RoundFactor == null || out9.FareRoundFactor ==null || out9.TaxRoundFactor==null || out9.UserControl==null || out9.UserControl.isEmpty() || TalendDate.compareDate(out9.LoadedDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0" activateExpressionFilter="true">
         <mapperTableEntries name="ConversionDayID" expression="out9.ConversionDayID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ConversionDate" expression="out9.ConversionDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="FromCurrencyCode" expression="out9.FromCurrencyCode " type="id_String" nullable="true"/>
@@ -1060,7 +1060,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
         <mapperTableEntries name="TableName" expression="&quot;CurrencyConversionHistoryDecompressed&quot;" type="id_String" nullable="true"/>
@@ -1301,6 +1301,30 @@
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
       <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
       <elementValue elementRef="ConversionDate" value="&quot;0000-09-00T00:00:00&quot;"/>
+      <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
+      <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
+      <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
+      <elementValue elementRef="ViaCurrency" value=""/>
+      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
+      <elementValue elementRef="RoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="UserControl" value="&quot;A&quot;"/>
+      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
+      <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
+      <elementValue elementRef="ConversionDate" value="&quot;0000-09-00T00:00:00&quot;"/>
+      <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
+      <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
+      <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
+      <elementValue elementRef="ViaCurrency" value=""/>
+      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
+      <elementValue elementRef="RoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="UserControl" value="&quot;A&quot;"/>
+      <elementValue elementRef="LoadedDate" value=""/>
+      <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
+      <elementValue elementRef="ConversionDate" value=""/>
       <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
       <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
       <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
@@ -1839,7 +1863,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout3" expressionFilter="row21.EndTime!=null&amp;&amp;row21.ErrorMessage!=null" activateExpressionFilter="true">
         <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row20.StartTime )) " type="id_Date" nullable="true"/>
