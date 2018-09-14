@@ -334,7 +334,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="ConversionDayID" expression="out9.ConversionDayID " type="id_Long" nullable="true"/>
@@ -350,7 +350,7 @@
         <mapperTableEntries name="UserControl" expression="out9.UserControl " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="out9.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="out9.ConversionDayID== null || out9.ConversionDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| out9.FromCurrencyCode== null || out9.FromCurrencyCode.isEmpty() || out9.ToCurrencyCode== null || out9.ToCurrencyCode.isEmpty()|| out9.ConversionRate ==null || out9.ConversionAdjustment == null || out9.RoundFactor == null || out9.FareRoundFactor ==null || out9.TaxRoundFactor==null || out9.UserControl==null || out9.UserControl.isEmpty() || out9.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="out9.ConversionDayID== null ||  TalendDate.compareDate(out9.ConversionDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0|| out9.FromCurrencyCode== null || out9.FromCurrencyCode.isEmpty() || out9.ToCurrencyCode== null || out9.ToCurrencyCode.isEmpty()|| out9.ConversionRate ==null || out9.ConversionAdjustment == null || out9.RoundFactor == null || out9.FareRoundFactor ==null || out9.TaxRoundFactor==null || out9.UserControl==null || out9.UserControl.isEmpty() || TalendDate.compareDate(out9.LoadedDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0" activateExpressionFilter="true">
         <mapperTableEntries name="ConversionDayID" expression="out9.ConversionDayID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ConversionDate" expression="out9.ConversionDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="FromCurrencyCode" expression="out9.FromCurrencyCode " type="id_String" nullable="true"/>
@@ -793,7 +793,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="LABEL" value="CurrencyConversionHistoryDecompressed_Exception"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tBigQueryOutput_2">
+    <metadata connector="FLOW" name="tBigQueryOutput_2">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -804,8 +804,9 @@
       <column comment="" key="false" length="7" name="RoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="768">
@@ -861,7 +862,7 @@
       <column comment="" key="false" length="-1" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out10">
         <mapperTableEntries name="ConversionDayID" expression="row13.ConversionDayID " type="id_Long" nullable="true"/>
@@ -1057,6 +1058,7 @@
       <column comment="" key="false" length="-1" name="sourceRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="stgRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
@@ -1066,6 +1068,7 @@
         <mapperTableEntries name="sourceRowCount" expression="row18.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="row18.count==row19.count ? &quot;Y&quot;:&quot;N&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LoadedTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyyy-MM-dd HH:mm:ss.SSS&quot;)))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row18" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
@@ -1123,9 +1126,10 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_3">
       <column comment="" key="false" length="-1" name="TableName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="-1" name="sourceRowCount" nullable="true" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="-1" name="stgRowCount" nullable="true" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sourceRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="stgRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tGSDelete" componentVersion="0.102" offsetLabelX="8" offsetLabelY="3" posX="704" posY="1472">
@@ -1298,6 +1302,30 @@
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
       <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
       <elementValue elementRef="ConversionDate" value="&quot;0000-09-00T00:00:00&quot;"/>
+      <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
+      <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
+      <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
+      <elementValue elementRef="ViaCurrency" value=""/>
+      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
+      <elementValue elementRef="RoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="UserControl" value="&quot;A&quot;"/>
+      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
+      <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
+      <elementValue elementRef="ConversionDate" value="&quot;0000-09-00T00:00:00&quot;"/>
+      <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
+      <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
+      <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
+      <elementValue elementRef="ViaCurrency" value=""/>
+      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
+      <elementValue elementRef="RoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
+      <elementValue elementRef="UserControl" value="&quot;A&quot;"/>
+      <elementValue elementRef="LoadedDate" value=""/>
+      <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
+      <elementValue elementRef="ConversionDate" value=""/>
       <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
       <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
       <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
@@ -1833,6 +1861,7 @@
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
@@ -1843,6 +1872,7 @@
         <mapperTableEntries name="NameOfJob" expression="row21.NameOfJob " type="id_String" nullable="true"/>
         <mapperTableEntries name="ExecutionStatus" expression="row21.ExecutionStatus " type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" expression="row21.ErrorMessage " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LoadedTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyyy-MM-dd HH:mm:ss.SSS&quot;)))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row20" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="StartTime" type="id_Date" nullable="true"/>
@@ -1910,6 +1940,7 @@
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_2">
@@ -2241,6 +2272,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out8" lineStyle="0" metaname="out8" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tBigQueryOutput_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="LoadedTime"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out8" show="false"/>
   </connection>
@@ -2353,6 +2389,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfout3" lineStyle="0" metaname="copyOfout3" offsetLabelX="0" offsetLabelY="0" source="tMap_11" target="tBigQueryOutput_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="LoadedTime"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout3" show="false"/>
   </connection>
