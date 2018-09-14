@@ -12,7 +12,7 @@
     <contextParameter comment="" name="processEnd" prompt="processEnd?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -151,6 +151,119 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_2" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tUnite_2">
+      <column comment="" key="false" length="-1" name="No" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CRE_TMS" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UPD_TMS" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CUST_ID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CARD_NUMBER" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CRD_BRN" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ACT_IND" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_CDQXILZfEeiyl5Dva2Pz6w - metadata" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="No"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRE_TMS"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UPD_TMS"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ID"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CARD_NUMBER"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRD_BRN"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACT_IND"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
+    <elementParameter field="TABLE" name="INTABLE">
+      <elementValue elementRef="No" value=""/>
+      <elementValue elementRef="CRE_TMS" value=""/>
+      <elementValue elementRef="UPD_TMS" value=""/>
+      <elementValue elementRef="CUST_ID" value=""/>
+      <elementValue elementRef="CARD_NUMBER" value=""/>
+      <elementValue elementRef="CRD_BRN" value=""/>
+      <elementValue elementRef="ACT_IND" value=""/>
+      <elementValue elementRef="LoadedDate" value=""/>
+      <elementValue elementRef="No" value="new Long(1111)"/>
+      <elementValue elementRef="CRE_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="UPD_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
+      <elementValue elementRef="CARD_NUMBER" value="&quot;223344&quot;"/>
+      <elementValue elementRef="CRD_BRN" value="&quot;555%&quot;"/>
+      <elementValue elementRef="ACT_IND" value=""/>
+      <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
+      <elementValue elementRef="No" value="new Long(1111)"/>
+      <elementValue elementRef="CRE_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="UPD_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
+      <elementValue elementRef="CARD_NUMBER" value="&quot;223344&quot;"/>
+      <elementValue elementRef="CRD_BRN" value="&quot;555%&quot;"/>
+      <elementValue elementRef="ACT_IND" value=""/>
+      <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
+      <elementValue elementRef="No" value=""/>
+      <elementValue elementRef="CRE_TMS" value="new Double(0.00)"/>
+      <elementValue elementRef="UPD_TMS" value="new Double(0.00)"/>
+      <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
+      <elementValue elementRef="CARD_NUMBER" value="&quot;223344&quot;"/>
+      <elementValue elementRef="CRD_BRN" value="&quot;223344&quot;"/>
+      <elementValue elementRef="ACT_IND" value=""/>
+      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
+      <elementValue elementRef="No" value="new Long(2324)"/>
+      <elementValue elementRef="CRE_TMS" value="new Double(0.00)"/>
+      <elementValue elementRef="UPD_TMS" value="new Double(0.00)"/>
+      <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
+      <elementValue elementRef="CARD_NUMBER" value=""/>
+      <elementValue elementRef="CRD_BRN" value="&quot;223344&quot;"/>
+      <elementValue elementRef="ACT_IND" value=""/>
+      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
+      <elementValue elementRef="No" value="new Long(1111)"/>
+      <elementValue elementRef="CRE_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="UPD_TMS" value="new Double(0.00)"/>
+      <elementValue elementRef="CUST_ID" value="&quot;223344&quot;"/>
+      <elementValue elementRef="CARD_NUMBER" value="&quot;112233&quot;"/>
+      <elementValue elementRef="CRD_BRN" value=""/>
+      <elementValue elementRef="ACT_IND" value=""/>
+      <elementValue elementRef="LoadedDate" value="new Double(5131)"/>
+      <elementValue elementRef="No" value="new Long(1111)"/>
+      <elementValue elementRef="CRE_TMS" value="new Double(0.00)"/>
+      <elementValue elementRef="UPD_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
+      <elementValue elementRef="CARD_NUMBER" value="&quot;223344&quot;"/>
+      <elementValue elementRef="CRD_BRN" value=""/>
+      <elementValue elementRef="ACT_IND" value=""/>
+      <elementValue elementRef="LoadedDate" value="new Double(2346877)"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="No" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CRE_TMS" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UPD_TMS" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CUST_ID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CARD_NUMBER" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CRD_BRN" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ACT_IND" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowMeter_22" show="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
@@ -194,7 +307,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="No" expression="row11.No " type="id_Long" nullable="true"/>
@@ -473,7 +586,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="uniq" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="No" expression="row5.No " type="id_Long" nullable="true"/>
@@ -571,9 +684,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.No == null || uniq.CRE_TMS  == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;) || uniq.UPD_TMS  == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.CUST_ID  == null||uniq.CARD_NUMBER==null ||uniq.CRD_BRN==null|| uniq.ACT_IND==null|| uniq.LoadedDate == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.No == null || uniq.CRE_TMS  == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;) || uniq.UPD_TMS  == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.CUST_ID  == null|| uniq.CUST_ID.isEmpty() || uniq.CARD_NUMBER==null || uniq.CARD_NUMBER.isEmpty() ||uniq.CRD_BRN==null|| uniq.CRD_BRN.isEmpty()|| uniq.LoadedDate == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="No" expression="uniq.No " type="id_Long" nullable="true"/>
         <mapperTableEntries name="CRE_TMS" expression="uniq.CRE_TMS " type="id_Date" nullable="true"/>
         <mapperTableEntries name="UPD_TMS" expression="uniq.UPD_TMS " type="id_Date" nullable="true"/>
@@ -583,7 +696,7 @@
         <mapperTableEntries name="ACT_IND" expression="uniq.ACT_IND " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="outFinal">
+      <outputTables sizeState="INTERMEDIATE" name="outFinal" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="No" expression="uniq.No " type="id_Long" nullable="true"/>
         <mapperTableEntries name="CRE_TMS" expression="uniq.CRE_TMS " type="id_Date" nullable="true"/>
         <mapperTableEntries name="UPD_TMS" expression="uniq.UPD_TMS " type="id_Date" nullable="true"/>
@@ -628,7 +741,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="512">
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_4" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
@@ -762,7 +875,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="No" expression="row7.No " type="id_Long" nullable="true"/>
@@ -847,7 +960,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
         <mapperTableEntries name="No" expression="row8.No " type="id_Long" nullable="true"/>
@@ -917,7 +1030,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout2">
         <mapperTableEntries name="No" expression="row9.No " type="id_Long" nullable="true"/>
@@ -1034,7 +1147,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout2">
         <mapperTableEntries name="No" expression="row14.No " type="id_Long" nullable="true"/>
@@ -1253,7 +1366,7 @@
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
         <mapperTableEntries name="TableName" expression="&quot;MemberCCards&quot;" type="id_String" nullable="true"/>
@@ -1366,7 +1479,7 @@
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="stlog" expressionFilter="row15.message ==&quot;start01&quot;" activateExpressionFilter="true">
         <mapperTableEntries name="startTime" expression="row15.moment " type="id_Date" nullable="true"/>
@@ -1437,7 +1550,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_1"/>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="128">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;start01&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="01"/>
@@ -1555,12 +1668,20 @@
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tFlowMeter_22">
+  <connection connectorName="FLOW" label="row1" lineStyle="10" mergeOrder="1" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tUnite_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tHashInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row23" lineStyle="0" metaname="tUnite_2" offsetLabelX="0" offsetLabelY="0" source="tUnite_2" target="tFlowMeter_22">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row23" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row22" lineStyle="10" mergeOrder="2" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tUnite_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tFlowMeter_22" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_22" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
