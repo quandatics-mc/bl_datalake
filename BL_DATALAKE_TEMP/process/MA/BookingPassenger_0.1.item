@@ -1770,7 +1770,7 @@
         <mapperTableEntries name="Nationality" expression="row6.Nationality " type="id_String" nullable="true"/>
         <mapperTableEntries name="ResidentCountry" expression="row6.ResidentCountry " type="id_String" nullable="true"/>
         <mapperTableEntries name="CustomerNumber" expression="row6.CustomerNumber " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BalanceDue" expression="row6.BalanceDue == null ? BigDecimal.ZERO : row6.BalanceDue " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="BalanceDue" expression="row6.BalanceDue " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.ModifiedDate*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
