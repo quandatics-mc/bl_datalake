@@ -334,7 +334,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="ConversionDayID" expression="out9.ConversionDayID " type="id_Long" nullable="true"/>
@@ -1248,7 +1248,7 @@
       <elementValue elementRef="TaxRoundFactor" value=""/>
       <elementValue elementRef="UserControl" value=""/>
       <elementValue elementRef="LoadedDate" value=""/>
-      <elementValue elementRef="ConversionDayID" value="&quot;12312&quot;"/>
+      <elementValue elementRef="ConversionDayID" value="12312"/>
       <elementValue elementRef="ConversionDate" value="&quot;123123&quot;"/>
       <elementValue elementRef="FromCurrencyCode" value=""/>
       <elementValue elementRef="ToCurrencyCode" value="&quot;222333&quot;"/>
@@ -1260,7 +1260,7 @@
       <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
       <elementValue elementRef="UserControl" value="&quot;Y&quot;"/>
       <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
-      <elementValue elementRef="ConversionDayID" value="&quot;12312&quot;"/>
+      <elementValue elementRef="ConversionDayID" value="12312"/>
       <elementValue elementRef="ConversionDate" value="&quot;123123&quot;"/>
       <elementValue elementRef="FromCurrencyCode" value="&quot;1111&quot;"/>
       <elementValue elementRef="ToCurrencyCode" value="&quot;2222&quot;"/>
@@ -1272,7 +1272,7 @@
       <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
       <elementValue elementRef="UserControl" value="&quot;N&quot;"/>
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="ConversionDayID" value="&quot;12312&quot;"/>
+      <elementValue elementRef="ConversionDayID" value="12312"/>
       <elementValue elementRef="ConversionDate" value="&quot;123123&quot;"/>
       <elementValue elementRef="FromCurrencyCode" value="&quot;1111&quot;"/>
       <elementValue elementRef="ToCurrencyCode" value="&quot;2222&quot;"/>
@@ -1284,7 +1284,7 @@
       <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
       <elementValue elementRef="UserControl" value="&quot;N&quot;"/>
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="ConversionDayID" value="&quot;222&quot;"/>
+      <elementValue elementRef="ConversionDayID" value="222"/>
       <elementValue elementRef="ConversionDate" value="&quot;99&quot;"/>
       <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
       <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
@@ -1296,7 +1296,7 @@
       <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
       <elementValue elementRef="UserControl" value="&quot;N&quot;"/>
       <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="ConversionDayID" value="&quot;222&quot;"/>
+      <elementValue elementRef="ConversionDayID" value="222"/>
       <elementValue elementRef="ConversionDate" value="&quot;88&quot;"/>
       <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
       <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
