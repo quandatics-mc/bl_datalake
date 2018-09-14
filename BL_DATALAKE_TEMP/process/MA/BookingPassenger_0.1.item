@@ -654,7 +654,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="StartTime"/>
       <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;StartTime&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EndTime"/>
-      <elementValue elementRef="VALUE" value="TalendDate.getDate(&quot;yyyy-MM-dd hh:mm:ss&quot;)"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;)"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExecutionStatus"/>
       <elementValue elementRef="VALUE" value="&quot;Fail&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ErrorMessage"/>
@@ -756,7 +756,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;StartTime&quot;"/>
-      <elementValue elementRef="VALUE" value="TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;)"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;)"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tSetGlobalVar_1">
@@ -1539,9 +1539,9 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="StartTime"/>
-      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,((String)globalMap.get(&quot;StartTime&quot;)))"/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,((String)globalMap.get(&quot;StartTime&quot;)))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EndTime"/>
-      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;))"/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NameOfJob"/>
       <elementValue elementRef="VALUE" value="&quot;Booking Passenger&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExecutionStatus"/>
