@@ -220,8 +220,8 @@
       <elementValue elementRef="ModifiedDate" value="new Double(23468)"/>
       <elementValue elementRef="LoadedDate" value="new Double(14135357)"/>
       <elementValue elementRef="AgentID" value="new Long(112233)"/>
-      <elementValue elementRef="AgentName" value=""/>
-      <elementValue elementRef="PersonID" value=""/>
+      <elementValue elementRef="AgentName" value="&quot;aaa&quot;"/>
+      <elementValue elementRef="PersonID" value="new Long(2342)"/>
       <elementValue elementRef="ModifiedDate" value="new Double(23468)"/>
       <elementValue elementRef="LoadedDate" value=""/>
     </elementParameter>
@@ -569,9 +569,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.AgentName.isEmpty() || uniq.PersonID  == null || uniq.ModifiedDate  ==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)|| uniq.LoadedDate == TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.AgentName.isEmpty() || uniq.PersonID  == null ||  TalendDate.compareDate(uniq.ModifiedDate ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;)) || TalendDate.compareDate(uniq.LoadedDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
@@ -1175,7 +1175,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
         <mapperTableEntries name="TableName" expression="&quot;Agent&quot;" type="id_String" nullable="true"/>
@@ -1403,7 +1403,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3" expressionFilter="row21.EndTime!=null&amp;&amp;row21.ErrorMessage!=null" activateExpressionFilter="true">
         <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row20.StartTime )) " type="id_Date" nullable="true"/>
