@@ -1761,7 +1761,7 @@
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="NullColumns" expressionFilter="row6.PassengerID == null || row6.DOB == null || row6.BookingID == null || row6.PaxType == null || row6.PaxType.isEmpty() || row6.FirstName == null || row6.FirstName.isEmpty() || row6.LastName == null || row6.LastName.isEmpty() || row6.BalanceDue == null || row6.ModifiedDate == null || row6.LoadedDate == null" activateExpressionFilter="true">
         <mapperTableEntries name="PassengerID" expression="row6.PassengerID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="DOB" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.DOB*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DOB" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.DOB*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="BookingID" expression="row6.BookingID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="PaxType" expression="row6.PaxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row6.FirstName " type="id_String" nullable="true"/>
@@ -1771,8 +1771,8 @@
         <mapperTableEntries name="ResidentCountry" expression="row6.ResidentCountry " type="id_String" nullable="true"/>
         <mapperTableEntries name="CustomerNumber" expression="row6.CustomerNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="BalanceDue" expression="row6.BalanceDue " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.ModifiedDate*1000))))) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, (new java.util.Date((long)(row6.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.ModifiedDate*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="PassengerID" type="id_Long" nullable="true"/>
