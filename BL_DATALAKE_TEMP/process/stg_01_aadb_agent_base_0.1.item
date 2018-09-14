@@ -571,7 +571,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.AgentName.isEmpty() || uniq.PersonID  == null ||  TalendDate.compareDate(uniq.ModifiedDate ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;)) || TalendDate.compareDate(uniq.LoadedDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.AgentName.isEmpty() || uniq.PersonID  == null ||  TalendDate.compareDate(uniq.ModifiedDate ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0 || TalendDate.compareDate(uniq.LoadedDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
         <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
