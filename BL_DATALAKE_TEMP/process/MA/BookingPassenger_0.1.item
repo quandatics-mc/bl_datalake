@@ -1511,7 +1511,7 @@
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -1522,7 +1522,7 @@
         <mapperTableEntries name="NameOfJob" expression="row21.NameOfJob " type="id_String" nullable="true"/>
         <mapperTableEntries name="ExecutionStatus" expression="row21.ExecutionStatus " type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" expression="row21.ErrorMessage " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row21.EndTime)) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row21.EndTime)) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row21" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="StartTime" type="id_Date" nullable="true"/>
@@ -1574,7 +1574,7 @@
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFlowMeterCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="128" posY="832">
