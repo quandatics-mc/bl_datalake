@@ -778,13 +778,13 @@
         <mapperTableEntries name="PassengerID" expression="row6.PassengerID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="DOB" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.DOB*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="BookingID" expression="row6.BookingID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="PaxType" expression="row6.PaxType == null || row6.PaxType.isEmpty() ? &quot;&quot; : row6.PaxType " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FirstName" expression="row6.FirstName == null || row6.FirstName.isEmpty() ? &quot;&quot; : row6.FirstName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MiddleName" expression="row6.MiddleName == null || row6.MiddleName.isEmpty() ? &quot;&quot; : row6.MiddleName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LastName" expression="row6.LastName == null || row6.LastName.isEmpty() ? &quot;&quot; : row6.LastName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Nationality" expression="row6.Nationality == null || row6.Nationality.isEmpty() ? &quot;&quot; : row6.Nationality " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ResidentCountry" expression="row6.ResidentCountry == null || row6.ResidentCountry.isEmpty() ? &quot;&quot; : row6.ResidentCountry " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CustomerNumber" expression="row6.CustomerNumber == null || row6.CustomerNumber.isEmpty() ? &quot;&quot; : row6.CustomerNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PaxType" expression="row6.PaxType " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FirstName" expression="row6.FirstName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MiddleName" expression="row6.MiddleName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LastName" expression="row6.LastName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nationality" expression="row6.Nationality " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ResidentCountry" expression="row6.ResidentCountry " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerNumber" expression="row6.CustomerNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="BalanceDue" expression="row6.BalanceDue == null ? BigDecimal.ZERO : row6.BalanceDue " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.ModifiedDate*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
@@ -800,7 +800,7 @@
         <mapperTableEntries name="Nationality" expression="row6.Nationality" type="id_String" nullable="true"/>
         <mapperTableEntries name="ResidentCountry" expression="row6.ResidentCountry" type="id_String" nullable="true"/>
         <mapperTableEntries name="CustomerNumber" expression="row6.CustomerNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BalanceDue" expression="row6.BalanceDue" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="BalanceDue" expression="row6.BalanceDue == null ? BigDecimal.ZERO : row6.BalanceDue " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.ModifiedDate*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row6.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
