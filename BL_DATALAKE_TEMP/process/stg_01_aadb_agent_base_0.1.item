@@ -1182,7 +1182,7 @@
         <mapperTableEntries name="sourceRowCount" expression="row18.count== null? 0:row18.count" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count == null? 0:row19.count" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="row18.count==row19.count ? &quot;Y&quot;:&quot;N&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date(TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;)))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyyy-MM-dd HH:mm:ss.SSS&quot;)))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row18" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
@@ -1411,7 +1411,7 @@
         <mapperTableEntries name="NameOfJob" expression="row21.NameOfJob " type="id_String" nullable="true"/>
         <mapperTableEntries name="ExecutionStatus" expression="row21.ExecutionStatus " type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" expression="row21.ErrorMessage " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LoadedTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date(TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;)))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyyy-MM-dd HH:mm:ss.SSS&quot;)))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row20" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="StartTime" type="id_Date" nullable="true"/>
