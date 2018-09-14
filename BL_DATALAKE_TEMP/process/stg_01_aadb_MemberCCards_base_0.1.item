@@ -199,7 +199,7 @@
       <elementValue elementRef="CRD_BRN" value=""/>
       <elementValue elementRef="ACT_IND" value=""/>
       <elementValue elementRef="LoadedDate" value=""/>
-      <elementValue elementRef="No" value="new Long(1111)"/>
+      <elementValue elementRef="No" value="new Long(11112)"/>
       <elementValue elementRef="CRE_TMS" value="new Double (5555)"/>
       <elementValue elementRef="UPD_TMS" value="new Double (5555)"/>
       <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
@@ -207,7 +207,23 @@
       <elementValue elementRef="CRD_BRN" value="&quot;555%&quot;"/>
       <elementValue elementRef="ACT_IND" value=""/>
       <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
-      <elementValue elementRef="No" value="new Long(1111)"/>
+      <elementValue elementRef="No" value=""/>
+      <elementValue elementRef="CRE_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="UPD_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
+      <elementValue elementRef="CARD_NUMBER" value="&quot;223344&quot;"/>
+      <elementValue elementRef="CRD_BRN" value="&quot;555%&quot;"/>
+      <elementValue elementRef="ACT_IND" value=""/>
+      <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
+      <elementValue elementRef="No" value="new Long(11132)"/>
+      <elementValue elementRef="CRE_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="UPD_TMS" value="new Double (5555)"/>
+      <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
+      <elementValue elementRef="CARD_NUMBER" value="&quot;223344&quot;"/>
+      <elementValue elementRef="CRD_BRN" value="&quot;555%&quot;"/>
+      <elementValue elementRef="ACT_IND" value="1"/>
+      <elementValue elementRef="LoadedDate" value=""/>
+      <elementValue elementRef="No" value="new Long(11112)"/>
       <elementValue elementRef="CRE_TMS" value="new Double (5555)"/>
       <elementValue elementRef="UPD_TMS" value="new Double (5555)"/>
       <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
@@ -244,7 +260,7 @@
       <elementValue elementRef="UPD_TMS" value="new Double (5555)"/>
       <elementValue elementRef="CUST_ID" value="&quot;112233&quot;"/>
       <elementValue elementRef="CARD_NUMBER" value="&quot;223344&quot;"/>
-      <elementValue elementRef="CRD_BRN" value=""/>
+      <elementValue elementRef="CRD_BRN" value="&quot;223344&quot;"/>
       <elementValue elementRef="ACT_IND" value=""/>
       <elementValue elementRef="LoadedDate" value="new Double(2346877)"/>
     </elementParameter>
