@@ -154,7 +154,7 @@
         <mapperTableEntries name="TableName" expression="&quot;Booking&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="sourceRowCount" expression="row18.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Indicator" expression="row18.count==row19.count ? &quot;Y&quot; : &quot;N&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Indicator" expression="row18.count.toString().equals(row19.count.toString()) ? &quot;Y&quot; : &quot;N&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss&quot;,TalendDate.getDate(&quot;yyyy-MM-dd hh:mm:ss&quot;)))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row18" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
