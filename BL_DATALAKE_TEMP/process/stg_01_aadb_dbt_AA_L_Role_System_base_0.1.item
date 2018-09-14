@@ -160,9 +160,9 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="row4.InActive==null || row4.LoadedDate==TalendDate.parseDate(&quot;yyyy-MM-dd hh:mm:ss.sss&quot;,&quot;0000-00-00 00:00:00.000&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="row4.InActive==null || TalendDate.compareDate(row4.LoadedDate ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0" activateExpressionFilter="true">
         <mapperTableEntries name="RoleCode" expression="row4.RoleCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="MID" expression="row4.MID " type="id_String" nullable="true"/>
         <mapperTableEntries name="System" expression="row4.System " type="id_String" nullable="true"/>
@@ -431,7 +431,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
         <mapperTableEntries name="TableName" expression="&quot;dbt_AA_L_Role_System&quot;" type="id_String" nullable="true"/>
@@ -614,7 +614,7 @@
       <elementValue elementRef="MID" value="&quot;wawa&quot;"/>
       <elementValue elementRef="System" value="&quot;AAc&quot;"/>
       <elementValue elementRef="InActive" value="0"/>
-      <elementValue elementRef="LoadedDate" value="new Double(5131)"/>
+      <elementValue elementRef="LoadedDate" value=""/>
       <elementValue elementRef="RoleCode" value="&quot;blabla&quot;"/>
       <elementValue elementRef="MID" value="&quot;wawa&quot;"/>
       <elementValue elementRef="System" value="&quot;AAc&quot;"/>
@@ -1115,7 +1115,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3" expressionFilter="row21.EndTime!=null&amp;&amp;row21.ErrorMessage!=null" activateExpressionFilter="true">
         <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row20.StartTime )) " type="id_Date" nullable="true"/>
