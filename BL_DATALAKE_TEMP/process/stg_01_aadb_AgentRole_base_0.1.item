@@ -808,7 +808,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
         <mapperTableEntries name="TableName" expression="&quot;AgentRole&quot;" type="id_String" nullable="true"/>
@@ -1027,7 +1027,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout3" expressionFilter="row24.EndTime!=null&amp;&amp;row24.ErrorMessage!=null" activateExpressionFilter="true">
         <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row23.StartTime )) " type="id_Date" nullable="true"/>
@@ -1259,6 +1259,14 @@
       <elementValue elementRef="AgentID" value="new Long(112233)"/>
       <elementValue elementRef="RoleCode" value=""/>
       <elementValue elementRef="ModifiedDate" value="new Double(23468)"/>
+      <elementValue elementRef="LoadedDate" value=""/>
+      <elementValue elementRef="AgentID" value="new Long(88)"/>
+      <elementValue elementRef="RoleCode" value="&quot;datenull&quot;"/>
+      <elementValue elementRef="ModifiedDate" value=""/>
+      <elementValue elementRef="LoadedDate" value="new Double(14135357)"/>
+      <elementValue elementRef="AgentID" value="new Long(889)"/>
+      <elementValue elementRef="RoleCode" value="&quot;datenull&quot;"/>
+      <elementValue elementRef="ModifiedDate" value="new Double(14135357)"/>
       <elementValue elementRef="LoadedDate" value=""/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
