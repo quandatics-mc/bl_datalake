@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_AU280LjqEeiY1cVWJQsxhw" name="repository.metadataGenericSchema" dataPackage="_AU280bjqEeiY1cVWJQsxhw"/>
+  <TalendMetadata:GenericPackage xmi:id="_AU280bjqEeiY1cVWJQsxhw" name="repository.metadataGenericSchema" dataManager="_AU280LjqEeiY1cVWJQsxhw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_AU280rjqEeiY1cVWJQsxhw" id="_UdUSILjlEeiY1cVWJQsxhw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU2807jqEeiY1cVWJQsxhw" name="PaymentID" label="PaymentID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU281LjqEeiY1cVWJQsxhw" name="ReferenceID" label="ReferenceID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU281bjqEeiY1cVWJQsxhw" name="PaymentMethodType" label="PaymentMethodType" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU281rjqEeiY1cVWJQsxhw" name="PaymentMethodCode" label="PaymentMethodCode" length="8" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU2817jqEeiY1cVWJQsxhw" name="BinRange" label="BinRange" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU282LjqEeiY1cVWJQsxhw" name="AuthorizationStatus" label="AuthorizationStatus" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU282bjqEeiY1cVWJQsxhw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU282rjqEeiY1cVWJQsxhw" name="VoidID" label="VoidID" length="200" talendType="id_String">
+        <initialValue xmi:id="_AU2827jqEeiY1cVWJQsxhw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU283LjqEeiY1cVWJQsxhw" name="LPPoints" label="LPPoints" length="-1" talendType="id_Integer">
+        <initialValue xmi:id="_AU283bjqEeiY1cVWJQsxhw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU283rjqEeiY1cVWJQsxhw" name="LPPaymentAmout" label="LPPaymentAmout" length="-1" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU2837jqEeiY1cVWJQsxhw" name="LPCurrency" label="LPCurrency" length="3" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU284LjqEeiY1cVWJQsxhw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
