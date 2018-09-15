@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_trjhMLiuEeiY1cVWJQsxhw" name="repository.metadataGenericSchema" dataPackage="_trjhMbiuEeiY1cVWJQsxhw"/>
+  <TalendMetadata:GenericPackage xmi:id="_trjhMbiuEeiY1cVWJQsxhw" name="repository.metadataGenericSchema" dataManager="_trjhMLiuEeiY1cVWJQsxhw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_trjhMriuEeiY1cVWJQsxhw" id="_R2yZwLiuEeiY1cVWJQsxhw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_trjhM7iuEeiY1cVWJQsxhw" name="BookingID" label="BookingID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_trjhNLiuEeiY1cVWJQsxhw" name="TypeCode" label="TypeCode" length="4" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_trjhNbiuEeiY1cVWJQsxhw" name="EmailAddress" label="EmailAddress" length="200" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_trjhNriuEeiY1cVWJQsxhw" name="FirstName" label="FirstName" length="128" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_trjhN7iuEeiY1cVWJQsxhw" name="LastName" label="LastName" length="128" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_trjhOLiuEeiY1cVWJQsxhw" name="CustomerNumber" label="CustomerNumber" length="80" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_trjhObiuEeiY1cVWJQsxhw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_trjhOriuEeiY1cVWJQsxhw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
