@@ -241,7 +241,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -268,7 +268,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
@@ -286,7 +286,7 @@
         <mapperTableEntries name="ModifiedDate" expression="row12.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" expression="row12.VoidID " type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" expression="row12.LPPoints " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" expression="row12.LPPaymentAmout " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" expression="row12.LPPaymentAmout " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" expression="row12.LPCurrency " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row12.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="&quot;Null Value&quot;" type="id_String" nullable="true"/>
@@ -301,7 +301,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
@@ -320,7 +320,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
@@ -344,7 +344,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -371,7 +371,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
@@ -389,7 +389,7 @@
         <mapperTableEntries name="ModifiedDate" expression="row13.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" expression="row13.VoidID " type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" expression="row13.LPPoints " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" expression="row13.LPPaymentAmout " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" expression="row13.LPPaymentAmout " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" expression="row13.LPCurrency " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row13.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="&quot;Duplicate Record&quot;" type="id_String" nullable="true"/>
@@ -404,7 +404,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
@@ -428,7 +428,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -455,7 +455,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
@@ -473,7 +473,7 @@
         <mapperTableEntries name="ModifiedDate" expression="row14.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" expression="row14.VoidID " type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" expression="row14.LPPoints " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" expression="row14.LPPaymentAmout " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" expression="row14.LPPaymentAmout " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" expression="row14.LPCurrency " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row14.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="&quot;Duplicate Record&quot;" type="id_String" nullable="true"/>
@@ -488,7 +488,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
@@ -512,7 +512,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -539,7 +539,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
@@ -557,7 +557,7 @@
         <mapperTableEntries name="ModifiedDate" expression="row15.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" expression="row15.VoidID " type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" expression="row15.LPPoints " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" expression="row15.LPPaymentAmout " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" expression="row15.LPPaymentAmout " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" expression="row15.LPCurrency " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row15.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="&quot;Whole column matched duplicate record&quot;" type="id_String" nullable="true"/>
@@ -572,7 +572,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
@@ -623,7 +623,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
@@ -631,8 +631,6 @@
   </node>
   <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_AU2VwLjqEeiY1cVWJQsxhw - metadata" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
@@ -655,9 +653,9 @@
       <column comment="" key="false" length="-1" name="BinRange" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="AuthorizationStatus" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
@@ -677,9 +675,9 @@
       <column comment="" key="false" length="-1" name="BinRange" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="AuthorizationStatus" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
@@ -703,7 +701,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
@@ -730,7 +728,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -744,7 +742,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -761,7 +759,7 @@
         <mapperTableEntries name="ModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.ModifiedDate*1000)))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" expression="row6.VoidID " type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" expression="row6.LPPoints " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" expression="row6.LPPaymentAmout " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" expression="row6.LPPaymentAmout " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" expression="row6.LPCurrency " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.LoadedDate*1000)))) " type="id_Date" nullable="true"/>
       </outputTables>
@@ -775,7 +773,7 @@
         <mapperTableEntries name="ModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.ModifiedDate*1000))))  " type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" expression="row6.VoidID  " type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" expression="row6.LPPoints  " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" expression="row6.LPPaymentAmout  " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" expression="row6.LPPaymentAmout  " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" expression="row6.LPCurrency  " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.LoadedDate*1000))))  " type="id_Date" nullable="true"/>
       </outputTables>
@@ -789,7 +787,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Double" nullable="true"/>
         <mapperTableEntries name="VoidID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
       </inputTables>
@@ -851,7 +849,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -865,7 +863,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -879,7 +877,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -940,7 +938,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -954,7 +952,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -968,7 +966,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -995,7 +993,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1022,7 +1020,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1049,7 +1047,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1076,7 +1074,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1099,7 +1097,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1126,7 +1124,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1140,7 +1138,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1157,7 +1155,7 @@
         <mapperTableEntries name="ModifiedDate" expression="row8.ModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" expression="row8.VoidID " type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" expression="row8.LPPoints " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" expression="row8.LPPaymentAmout " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" expression="row8.LPPaymentAmout " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" expression="row8.LPCurrency " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
@@ -1171,7 +1169,7 @@
         <mapperTableEntries name="ModifiedDate" expression="row8.ModifiedDate  " type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" expression="row8.VoidID  " type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" expression="row8.LPPoints  " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" expression="row8.LPPaymentAmout  " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" expression="row8.LPPaymentAmout  " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" expression="row8.LPCurrency  " type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate  " type="id_Date" nullable="true"/>
       </outputTables>
@@ -1185,7 +1183,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
@@ -1199,7 +1197,7 @@
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="VoidID" type="id_String" nullable="true"/>
         <mapperTableEntries name="LPPoints" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LPPaymentAmout" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LPPaymentAmout" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LPCurrency" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
@@ -1223,7 +1221,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1250,7 +1248,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1274,7 +1272,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1292,7 +1290,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1350,7 +1348,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -1400,7 +1398,7 @@
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="VoidID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="LPPoints" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPPaymentAmout" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="LPCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
