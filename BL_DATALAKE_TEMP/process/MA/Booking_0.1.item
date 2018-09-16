@@ -148,7 +148,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Reference">
         <mapperTableEntries name="TableName" expression="&quot;Booking&quot;" type="id_String" nullable="true"/>
@@ -265,7 +265,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord1">
         <mapperTableEntries name="BookingID" expression="row12.BookingID " type="id_Long" nullable="true"/>
@@ -363,7 +363,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord2">
         <mapperTableEntries name="BookingID" expression="row13.BookingID " type="id_Long" nullable="true"/>
@@ -443,7 +443,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord3">
         <mapperTableEntries name="BookingID" expression="row14.BookingID " type="id_Long" nullable="true"/>
@@ -523,7 +523,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord4">
         <mapperTableEntries name="BookingID" expression="row15.BookingID " type="id_Long" nullable="true"/>
@@ -719,7 +719,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="!(row6.BookingID == null &amp;&amp; row6.BookingParentID == null &amp;&amp; row6.Status == null &amp;&amp; (row6.RecordLocator == null || row6.RecordLocator.isEmpty()) &amp;&amp; row6.BookingDate == null &amp;&amp; row6.CreatedAgentID  == null &amp;&amp; (row6.SourceAgentCode == null || row6.SourceAgentCode.isEmpty()) &amp;&amp; row6.CreatedDate == null &amp;&amp; row6.ModifiedDate == null &amp;&amp; row6.LoadedDate == null)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" reject="true">
         <mapperTableEntries name="BookingID" expression="row6.BookingID " type="id_Long" nullable="true"/>
@@ -1093,7 +1093,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Fail" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="BookingID" expression="row8.BookingID " type="id_Long" nullable="true"/>
@@ -1393,7 +1393,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Logging">
         <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row21.StartTime)) " type="id_Date" nullable="true"/>
@@ -1567,9 +1567,9 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="StartTime"/>
-      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,((String)globalMap.get(&quot;StartTime&quot;)))"/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,((String)globalMap.get(&quot;StartTime&quot;)))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EndTime"/>
-      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;))"/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NameOfJob"/>
       <elementValue elementRef="VALUE" value="&quot;Booking&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExecutionStatus"/>
@@ -1613,7 +1613,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="FailLogging">
         <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row24.StartTime)) " type="id_Date" nullable="true"/>
