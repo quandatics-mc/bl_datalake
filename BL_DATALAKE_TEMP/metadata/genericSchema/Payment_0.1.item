@@ -16,7 +16,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU283LjqEeiY1cVWJQsxhw" name="LPPoints" label="LPPoints" length="-1" talendType="id_Integer">
         <initialValue xmi:id="_AU283bjqEeiY1cVWJQsxhw" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU283rjqEeiY1cVWJQsxhw" name="LPPaymentAmout" label="LPPaymentAmout" length="50" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU283rjqEeiY1cVWJQsxhw" name="LPPaymentAmout" label="LPPaymentAmout" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU2837jqEeiY1cVWJQsxhw" name="LPCurrency" label="LPCurrency" length="3" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AU284LjqEeiY1cVWJQsxhw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
     </ownedElement>
