@@ -700,7 +700,7 @@
         <mapperTableEntries name="FirstName" expression="row6.FirstName " type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row6.LastName " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="MatchFail" expressionFilter="!(row1.EmailAddress.equals(row6.EmailAddress)  || row1.FirstName.equals(row6.FirstName) || row1.LastName.equals(row6.LastName))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="MatchFail" expressionFilter="!row1.EmailAddress.equals(row6.EmailAddress)  || !row1.FirstName.equals(row6.FirstName) || !row1.LastName.equals(row6.LastName)" activateExpressionFilter="true">
         <mapperTableEntries name="Invalid" expression="&quot;Fool&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
