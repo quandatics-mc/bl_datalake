@@ -157,7 +157,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="TalendDate.compareDate(row4.LoadedDate  ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="row4.LoadedDate==null" activateExpressionFilter="true">
         <mapperTableEntries name="FeeCode" expression="row4.FeeCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="System" expression="row4.System " type="id_String" nullable="true"/>
         <mapperTableEntries name="Inactive" expression="row4.Inactive " type="id_Integer" nullable="true"/>
@@ -652,13 +652,13 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="FeeCode" expression="row2.FeeCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="System" expression="row2.System " type="id_String" nullable="true"/>
         <mapperTableEntries name="InActive" expression="row2.InActive " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="row2.LoadedDate==null? TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;):TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row2.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="row2.LoadedDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row2.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="FeeCode" type="id_String" nullable="true"/>
