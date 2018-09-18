@@ -255,23 +255,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_7"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="576">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
-    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="0RMsyjmybrE="/>
-    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, name from employee&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
-    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Talend/Studio/6.5.1/workspace/token.properties&quot;"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tBigQueryInput_1"/>
-  </node>
   <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
     <elementParameter field="TEXT" name="TO" value="&quot;receiver@example.com&quot;"/>
@@ -568,6 +551,23 @@
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;DELETE * FROM  `data-mgmt-191603.BL_ODS_DL.dl_CurrencyConversionHistoryDecompressed` ;&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_CurrencyConversionHistoryDecompressed` (ConversionDayID, ConversionDate, FromCurrencyCode, ToCurrencyCode, ConversionRate, ViaCurrency, ConversionAdjustment, RoundFactor, FareRoundFactor, TaxRoundFactor, UserControl, LoadedDate)&#xD;&#xA;SELECT ConversionDayID, ConversionDate, FromCurrencyCode, ToCurrencyCode, ConversionRate, ViaCurrency, ConversionAdjustment, RoundFactor, FareRoundFactor, TaxRoundFactor, UserControl, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_CurrencyConversionHistoryDecompressed`; &#xD;&#xA;&#xD;&#xA;DELETE * FROM  `data-mgmt-191603.BL_ODS_DL.dl_dbt_AA_L_Fee_System` ;&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_dbt_AA_L_Fee_System` (FeeCode, System, Inactive, LoadedDate)&#xD;&#xA;SELECT FeeCode, System, Inactive, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_dbt_AA_L_Fee_System`;&#xD;&#xA;&#xD;&#xA;DELETE * FROM  `data-mgmt-191603.BL_ODS_DL.dl_dbt_AA_L_Role_System` ;&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_dbt_AA_L_Role_System` (RoleCode, MID, System, InActive, LoadedDate)&#xD;&#xA;SELECT RoleCode, MID, System, InActive, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_dbt_AA_L_Role_System`;&#xD;&#xA;&#xD;&#xA;DELETE * FROM  `data-mgmt-191603.BL_ODS_DL.dl_Sat_Jk_SalesChannel` ;&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Sat_Jk_SalesChannel` (saleschannel, rolecode, status, saleschannelrpt, LoadedDate)&#xD;&#xA;SELECT saleschannel, rolecode, status, saleschannelrpt, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_Sat_Jk_SalesChannel`;&#xD;&#xA;&#xD;&#xA;DELETE * FROM  `data-mgmt-191603.BL_ODS_DL.dl_MemberCCards` ;&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_MemberCCards` (No`, CRE_TMS, UPD_TMS, CUST_ID, CARD_NUMBER, CRD_BRN, ACT_IND, LoadedDate)&#xD;&#xA;SELECT `No`, CRE_TMS, UPD_TMS, CUST_ID, CARD_NUMBER, CRD_BRN, ACT_IND, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_MemberCCards`;&#xD;&#xA;&#xD;&#xA;DELETE * FROM  `data-mgmt-191603.BL_ODS_DL.dl_Agent` ;&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Agent`  (AgentID, AgentName, PersonID, ModifiedDate, LoadedDate)&#xD;&#xA;SELECT AgentID, AgentName, PersonID, ModifiedDate, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_Agent` ;&#xD;&#xA;&#xD;&#xA;DELETE FROM  `data-mgmt-191603.BL_ODS_DL.dl_AgentRole` WHERE AgentID IS NOT NULL;&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_AgentRole`  (AgentID, RoleCode, ModifiedDate, LoadedDate)&#xD;&#xA;SELECT AgentID, RoleCode, ModifiedDate, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_AgentRole`;&#xD;&#xA;&#xD;&#xA;DELETE  FROM  `data-mgmt-191603.BL_ODS_DL.dl_Group0_Reference` WHERE TableName IS NOT NULL;&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Group0_Reference`  (TableName, sourceRowCount, stgRowCount, prodRowCount, Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount, prodRowCount, Indicator, LoadedTime FROM `data-mgmt-191603.BL_ODS_STG.stg_Group0_Reference`;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Talend/Studio/6.5.1/workspace/token.properties&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_1"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
@@ -588,12 +588,6 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tBigQueryInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tSendMail_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tWarn_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWarn_1" offsetLabelX="0" offsetLabelY="0" source="tWarn_1" target="tRunJob_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
@@ -633,6 +627,12 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tSendMail_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tWarn_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
@@ -669,11 +669,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
@@ -700,6 +695,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
