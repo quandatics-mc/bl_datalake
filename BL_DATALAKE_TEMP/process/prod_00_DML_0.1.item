@@ -400,6 +400,9 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_11" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_11" target="tBigQueryInput_12">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk11" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_12" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_12" target="tBigQueryInput_13">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk14" show="false"/>
+  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_13" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_13" target="tBigQueryInput_14">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
   </connection>
