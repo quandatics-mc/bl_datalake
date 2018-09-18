@@ -162,7 +162,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="TalendDate.compareDate(row4.LoadedDate ,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;))==0" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="nul" expressionFilter="row4.LoadedDate==null" activateExpressionFilter="true">
         <mapperTableEntries name="saleschannel" expression="row4.saleschannel " type="id_String" nullable="true"/>
         <mapperTableEntries name="rolecode" expression="row4.rolecode " type="id_String" nullable="true"/>
         <mapperTableEntries name="status" expression="row4.status " type="id_String" nullable="true"/>
@@ -681,14 +681,14 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="saleschannel" expression="row2.saleschannel " type="id_String" nullable="true"/>
         <mapperTableEntries name="rolecode" expression="row2.rolecode " type="id_String" nullable="true"/>
         <mapperTableEntries name="status" expression="row2.status " type="id_String" nullable="true"/>
         <mapperTableEntries name="saleschannelrpt" expression="row2.saleschannelrpt " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="row2.LoadedDate==null? TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,&quot;0000-00-00 00:00:00.000&quot;):TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row2.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="row2.LoadedDate==null? null :TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row2.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="saleschannel" type="id_String" nullable="true"/>
