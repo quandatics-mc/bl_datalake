@@ -10,7 +10,7 @@
     <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -133,7 +133,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_1"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_2" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
@@ -151,6 +151,168 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_2"/>
   </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_3" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;DELETE FROM  `data-mgmt-191603.BL_ODS_DL.dl_dbt_AA_L_Fee_System` WHERE FeeCode IS NOT NULL ;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Delete_dbt_AA_L_Fee_System"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_3"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_4" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_dbt_AA_L_Fee_System` (FeeCode, System, Inactive, LoadedDate)&#xD;&#xA;SELECT FeeCode, System, Inactive, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_dbt_AA_L_Fee_System`;&quot; &#xD;&#xA;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_dbt_AA_L_Fee_System"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_4"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_5" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;DELETE FROM  `data-mgmt-191603.BL_ODS_DL.dl_dbt_AA_L_Role_System`  WHERE RoleCode IS NOT NULL;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Delete_dbt_AA_L_Role_System"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_5"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_6" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_dbt_AA_L_Role_System` (RoleCode, MID, System, InActive, LoadedDate)&#xD;&#xA;SELECT RoleCode, MID, System, InActive, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_dbt_AA_L_Role_System`;&quot; &#xD;&#xA;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_dbt_AA_L_Role_System"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_6"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_7" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;DELETE FROM  `data-mgmt-191603.BL_ODS_DL.dl_MemberCCards` WHERE `No` IS NOT NULL;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Delete_dbt_AA_L_Fee_System"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_7"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_8" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_MemberCCards` (No`, CRE_TMS, UPD_TMS, CUST_ID, CARD_NUMBER, CRD_BRN, ACT_IND, LoadedDate)&#xD;&#xA;SELECT `No`, CRE_TMS, UPD_TMS, CUST_ID, CARD_NUMBER, CRD_BRN, ACT_IND, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_MemberCCards`;&quot; &#xD;&#xA;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_dbt_AA_L_Fee_System"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_8"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_9" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;DELETE FROM  `data-mgmt-191603.BL_ODS_DL.dl_Sat_Jk_SalesChannel`  WHERE saleschannel IS NOT NULL;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Delete_Sat_Jk_SalesChannel"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_9"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_10" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Sat_Jk_SalesChannel` (saleschannel, rolecode, status, saleschannelrpt, LoadedDate)&#xD;&#xA;SELECT saleschannel, rolecode, status, saleschannelrpt, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_Sat_Jk_SalesChannel`;&quot; &#xD;&#xA;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_Sat_Jk_SalesChannel"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_10"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tBigQueryInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_2" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_2" target="tBigQueryInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_4" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_4" target="tBigQueryInput_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_5" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_5" target="tBigQueryInput_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_6" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_6" target="tBigQueryInput_9">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_9" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_9" target="tBigQueryInput_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
@@ -158,6 +320,46 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_9" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_10" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
