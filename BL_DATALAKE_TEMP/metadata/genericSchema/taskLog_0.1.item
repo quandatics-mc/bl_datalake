@@ -16,6 +16,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5IWCCbJ2EeiF0q_jFENB1A" name="ErrorMessage" id="6598" label="ErrorMessage" length="-1" precision="-1" sourceType="" talendType="id_String">
         <initialValue xmi:id="_5IWCCrJ2EeiF0q_jFENB1A"/>
       </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vB0SALv6EeiqSa4f6u6Zcw" name="Group" label="Group" talendType="id_String"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
