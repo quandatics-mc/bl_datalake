@@ -498,6 +498,7 @@
       <relatedItems xmi:id="_HMNbkrshEeiPD5Wj-QLohw" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_HMNbk7shEeiPD5Wj-QLohw" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_HMNblLshEeiPD5Wj-QLohw" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_v2b6kLuyEeiPuK27DBWjsg" id="_CkgIYLtUEeioeKoZYB2KxA" version="Latest" type="job"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_KhO48LtVEeioeKoZYB2KxA">
       <baseItem xmi:id="_KhO48btVEeioeKoZYB2KxA" id="_CkgIYLtUEeioeKoZYB2KxA" version="0.1" type="job"/>
