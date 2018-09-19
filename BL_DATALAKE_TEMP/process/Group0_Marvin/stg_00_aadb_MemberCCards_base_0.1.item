@@ -130,7 +130,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT `No`, CRE_TMS, UPD_TMS, CUST_ID, CARD_NUMBER, CRD_BRN, ACT_IND, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.vw_MemberCCards`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT `No`, CRE_TMS, UPD_TMS, CUST_ID, CARD_NUMBER, CRD_BRN, ACT_IND, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.vw_MemberCCards` &#xD;&#xA;WHERE UPD_TMS between '2018-08-01 00:00:00.000 UTC' and '2018-08-15 00:00:00.000 UTC'&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
