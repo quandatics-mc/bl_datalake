@@ -1062,7 +1062,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
         <mapperTableEntries name="TableName" expression="&quot;CurrencyConversionHistoryDecompressed&quot;" type="id_String" nullable="true"/>
@@ -1195,157 +1195,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tUnite_1">
-      <column comment="" key="false" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionRate" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ViaCurrency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionAdjustment" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RoundFactor" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FareRoundFactor" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TaxRoundFactor" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-96" posY="-32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bx58ELF8EeiVN_ty9dxZrA - metadata" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
-    <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ConversionDayID"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ConversionDate"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FromCurrencyCode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ToCurrencyCode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ConversionRate"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ViaCurrency"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ConversionAdjustment"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RoundFactor"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FareRoundFactor"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TaxRoundFactor"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UserControl"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
-      <elementValue elementRef="VALUE" value=""/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
-    <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="ConversionDayID" value=""/>
-      <elementValue elementRef="ConversionDate" value=""/>
-      <elementValue elementRef="FromCurrencyCode" value=""/>
-      <elementValue elementRef="ToCurrencyCode" value=""/>
-      <elementValue elementRef="ConversionRate" value=""/>
-      <elementValue elementRef="ViaCurrency" value=""/>
-      <elementValue elementRef="ConversionAdjustment" value=""/>
-      <elementValue elementRef="RoundFactor" value=""/>
-      <elementValue elementRef="FareRoundFactor" value=""/>
-      <elementValue elementRef="TaxRoundFactor" value=""/>
-      <elementValue elementRef="UserControl" value=""/>
-      <elementValue elementRef="LoadedDate" value=""/>
-      <elementValue elementRef="ConversionDayID" value="new Long(12312)"/>
-      <elementValue elementRef="ConversionDate" value="&quot;0000-00-00T00:00:00&quot;"/>
-      <elementValue elementRef="FromCurrencyCode" value=""/>
-      <elementValue elementRef="ToCurrencyCode" value="&quot;222333&quot;"/>
-      <elementValue elementRef="ConversionRate" value="new Float(0.4)"/>
-      <elementValue elementRef="ViaCurrency" value=""/>
-      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
-      <elementValue elementRef="RoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="UserControl" value="&quot;Y&quot;"/>
-      <elementValue elementRef="LoadedDate" value="new Double(0.00)"/>
-      <elementValue elementRef="ConversionDayID" value="new Long(12312)"/>
-      <elementValue elementRef="ConversionDate" value="&quot;0000-00-00T00:00:00&quot;"/>
-      <elementValue elementRef="FromCurrencyCode" value="&quot;1111&quot;"/>
-      <elementValue elementRef="ToCurrencyCode" value="&quot;2222&quot;"/>
-      <elementValue elementRef="ConversionRate" value="new Float(0.4)"/>
-      <elementValue elementRef="ViaCurrency" value=""/>
-      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
-      <elementValue elementRef="RoundFactor" value="new Float(11.2)"/>
-      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="UserControl" value="&quot;N&quot;"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="ConversionDayID" value="new Long(12312)"/>
-      <elementValue elementRef="ConversionDate" value="&quot;0000-00-00T00:00:00&quot;"/>
-      <elementValue elementRef="FromCurrencyCode" value="&quot;1111&quot;"/>
-      <elementValue elementRef="ToCurrencyCode" value="&quot;2222&quot;"/>
-      <elementValue elementRef="ConversionRate" value="new Float(0.4)"/>
-      <elementValue elementRef="ViaCurrency" value=""/>
-      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
-      <elementValue elementRef="RoundFactor" value="new Float(11.2)"/>
-      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="UserControl" value="&quot;N&quot;"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
-      <elementValue elementRef="ConversionDate" value="&quot;0000-10-00T00:00:00&quot;"/>
-      <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
-      <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
-      <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
-      <elementValue elementRef="ViaCurrency" value=""/>
-      <elementValue elementRef="ConversionAdjustment" value="new Float(0.4)"/>
-      <elementValue elementRef="RoundFactor" value="new Float(11.2)"/>
-      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="UserControl" value="&quot;N&quot;"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
-      <elementValue elementRef="ConversionDate" value="&quot;0000-09-00T00:00:00&quot;"/>
-      <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
-      <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
-      <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
-      <elementValue elementRef="ViaCurrency" value=""/>
-      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
-      <elementValue elementRef="RoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="UserControl" value="&quot;A&quot;"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
-      <elementValue elementRef="ConversionDate" value="&quot;0000-09-00T00:00:00&quot;"/>
-      <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
-      <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
-      <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
-      <elementValue elementRef="ViaCurrency" value=""/>
-      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
-      <elementValue elementRef="RoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="UserControl" value="&quot;A&quot;"/>
-      <elementValue elementRef="LoadedDate" value=""/>
-      <elementValue elementRef="ConversionDayID" value="new Long(222)"/>
-      <elementValue elementRef="ConversionDate" value=""/>
-      <elementValue elementRef="FromCurrencyCode" value="&quot;123&quot;"/>
-      <elementValue elementRef="ToCurrencyCode" value="&quot;223&quot;"/>
-      <elementValue elementRef="ConversionRate" value="new Float(0.8)"/>
-      <elementValue elementRef="ViaCurrency" value=""/>
-      <elementValue elementRef="ConversionAdjustment" value="new Float(11.2)"/>
-      <elementValue elementRef="RoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="FareRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="TaxRoundFactor" value="new Float(0.4)"/>
-      <elementValue elementRef="UserControl" value="&quot;A&quot;"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_1">
       <column comment="" key="false" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -2308,10 +2157,6 @@
   <connection connectorName="FLOW" label="row23" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tFlowMeter_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row23" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row22" lineStyle="10" mergeOrder="2" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tUnite_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFlowMeter_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
