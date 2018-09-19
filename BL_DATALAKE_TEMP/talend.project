@@ -210,6 +210,8 @@
       <relatedItems xmi:id="_kTz1ebGtEeimn70juHPJcw" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kTz1erGtEeimn70juHPJcw" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_kTz1e7GtEeimn70juHPJcw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_5kry0LwFEeiW-4Qcb-Lexg" id="_iZrhsK9VEeiVsYAmnhb2Dg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_5kry0bwFEeiW-4Qcb-Lexg" id="_IMOIYK8rEeiVsYAmnhb2Dg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_kTz1fLGtEeimn70juHPJcw">
       <baseItem xmi:id="_kTz1fbGtEeimn70juHPJcw" id="_g-2iELF8EeiVN_ty9dxZrA" version="0.1" type="job"/>
