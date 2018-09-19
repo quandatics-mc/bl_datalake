@@ -11,7 +11,7 @@
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="256" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="96" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -550,96 +550,6 @@
     <elementParameter field="TEXT" name="LABEL" value="Extract"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tBigQueryInput_1">
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="MID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="System" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InActive" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="-32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tUnite_1">
-      <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="MID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="System" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InActive" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-192" posY="-32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_oV6v4LZWEeiyl5Dva2Pz6w - metadata" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
-    <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="RoleCode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MID"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="System"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="InActive"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
-      <elementValue elementRef="VALUE" value=""/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
-    <elementParameter field="TABLE" name="INTABLE">
-      <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="MID" value=""/>
-      <elementValue elementRef="System" value=""/>
-      <elementValue elementRef="InActive" value=""/>
-      <elementValue elementRef="LoadedDate" value=""/>
-      <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="MID" value=""/>
-      <elementValue elementRef="System" value="&quot;hahaha&quot;"/>
-      <elementValue elementRef="InActive" value="1"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="RoleCode" value="&quot;blabla&quot;"/>
-      <elementValue elementRef="MID" value="&quot;wawa&quot;"/>
-      <elementValue elementRef="System" value="&quot;hahaha&quot;"/>
-      <elementValue elementRef="InActive" value="1"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="RoleCode" value="&quot;blabla&quot;"/>
-      <elementValue elementRef="MID" value="&quot;wawa&quot;"/>
-      <elementValue elementRef="System" value="&quot;hahaha&quot;"/>
-      <elementValue elementRef="InActive" value="1"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="RoleCode" value="&quot;blabla&quot;"/>
-      <elementValue elementRef="MID" value="&quot;wawa&quot;"/>
-      <elementValue elementRef="System" value="&quot;AAc&quot;"/>
-      <elementValue elementRef="InActive" value="1"/>
-      <elementValue elementRef="LoadedDate" value="new Double (5555)"/>
-      <elementValue elementRef="RoleCode" value="&quot;blabla&quot;"/>
-      <elementValue elementRef="MID" value="&quot;wawa&quot;"/>
-      <elementValue elementRef="System" value="&quot;AAc&quot;"/>
-      <elementValue elementRef="InActive" value="0"/>
-      <elementValue elementRef="LoadedDate" value=""/>
-      <elementValue elementRef="RoleCode" value="&quot;blabla&quot;"/>
-      <elementValue elementRef="MID" value="&quot;wawa&quot;"/>
-      <elementValue elementRef="System" value="&quot;AAc&quot;"/>
-      <elementValue elementRef="InActive" value="1"/>
-      <elementValue elementRef="LoadedDate" value="new Double(2346877)"/>
-      <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="MID" value=""/>
-      <elementValue elementRef="System" value=""/>
-      <elementValue elementRef="InActive" value="1"/>
-      <elementValue elementRef="LoadedDate" value="new Double(2346877)"/>
-      <elementValue elementRef="RoleCode" value=""/>
-      <elementValue elementRef="MID" value=""/>
-      <elementValue elementRef="System" value=""/>
-      <elementValue elementRef="InActive" value=""/>
-      <elementValue elementRef="LoadedDate" value="new Double(14135357)"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFixedFlowInput_1">
       <column comment="" key="false" length="0" name="RoleCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="MID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="System" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1296,20 +1206,12 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryOutput_3" offsetLabelX="0" offsetLabelY="0" source="tBigQueryOutput_3" target="tWarn_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="10" mergeOrder="1" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tUnite_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tFlowMeter_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tHashInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tFlowMeter_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row8" lineStyle="10" mergeOrder="2" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tUnite_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFlowMeter_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeter_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
