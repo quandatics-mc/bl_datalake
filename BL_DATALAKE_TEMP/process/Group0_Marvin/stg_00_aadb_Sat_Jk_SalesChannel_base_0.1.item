@@ -931,6 +931,7 @@
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Group" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -943,6 +944,7 @@
         <mapperTableEntries name="NameOfJob" expression="row15.job " type="id_String" nullable="true"/>
         <mapperTableEntries name="ExecutionStatus" expression="row15.message ==&quot;end99&quot;?  &quot;Success&quot;:&quot;Error&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" expression="row15.message ==&quot;end99&quot;?  &quot;None&quot;:  row15.message " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Group" expression="&quot;Group 0&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
@@ -993,6 +995,7 @@
       <column comment="" key="false" length="-1" name="NameOfJob" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ErrorMessage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Group" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1504">
@@ -1374,6 +1377,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="stlog" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="endlog" lineStyle="0" metaname="endlog" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_4" target="tHashOutput_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Group"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="endlog" show="false"/>
   </connection>
