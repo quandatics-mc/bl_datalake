@@ -21,12 +21,12 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsE7yGEeitcIP7RwrZeg" name="BaseFareFlag" label="BaseFareFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsFLyGEeitcIP7RwrZeg" name="GrossFareFlag" label="GrossFareFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsFbyGEeitcIP7RwrZeg" name="AllAddOnsFlag" label="AllAddOnsFlag" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsFryGEeitcIP7RwrZeg" name="CreatedDate" label="CreatedDate" length="-1" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsFryGEeitcIP7RwrZeg" name="CreatedDate" label="CreatedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsF7yGEeitcIP7RwrZeg" name="CreatedBy" label="CreatedBy" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsGLyGEeitcIP7RwrZeg" name="FareSurchargeFlag" label="FareSurchargeFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsGbyGEeitcIP7RwrZeg" name="FarePointsFlag" label="FarePointsFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsGryGEeitcIP7RwrZeg" name="DiscountPointsFlag" label="DiscountPointsFlag" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsG7yGEeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsG7yGEeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
