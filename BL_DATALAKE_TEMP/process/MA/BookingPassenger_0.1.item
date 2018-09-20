@@ -1841,7 +1841,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="StartTime"/>
       <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EndTime"/>
-      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NameOfJob"/>
       <elementValue elementRef="VALUE" value="&quot;Booking Passenger&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExecutionStatus"/>
