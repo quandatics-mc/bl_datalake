@@ -1014,7 +1014,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out6">
       <column key="false" length="255" name="label" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sourceCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="out7">
       <column key="false" length="255" name="label" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1025,7 +1025,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out6" expressionFilter="row17.label ==&quot;insertSourceRowCount&quot;||row17.label ==&quot;updateSourceRowCount&quot;" activateExpressionFilter="true">
         <mapperTableEntries name="label" expression="row17.label " type="id_String" nullable="true"/>
-        <mapperTableEntries name="sourceCount" expression="row17.count " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="count" expression="row17.count " type="id_Integer" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="out7" expressionFilter="row17.label ==&quot;insertStgRowCount&quot;||row17.label ==&quot;updateStgRowCount&quot;" activateExpressionFilter="true">
         <mapperTableEntries name="label" expression="row17.label " type="id_String" nullable="true"/>
@@ -1064,7 +1064,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_5">
       <column key="false" length="255" name="label" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sourceCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="1792">
