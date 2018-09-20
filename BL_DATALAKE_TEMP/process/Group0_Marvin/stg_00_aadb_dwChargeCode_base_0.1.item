@@ -511,7 +511,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.ChargeCodeID == null || uniq.ChargeTypeID  == null || uniq.ChargeCode.isEmpty() || uniq.Name.isEmpty() ||uniq.NotUsedInRevenue== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.ChargeCodeID == null || uniq.ChargeTypeID  == null || uniq.ChargeCode.isEmpty()|| uniq.ChargeCode== null || uniq.Name.isEmpty() || uniq.Name==null || uniq.NotUsedInRevenue== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="ChargeCodeID" expression="uniq.ChargeCodeID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ChargeTypeID" expression="uniq.ChargeTypeID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ChargeCode" expression="uniq.ChargeCode " type="id_String" nullable="true"/>
