@@ -1024,7 +1024,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out6" expressionFilter="row17.label ==&quot;insertSourceRowCount&quot;||row17.label ==&quot;updateSourceRowCount&quot;" activateExpressionFilter="true">
-        <mapperTableEntries name="label" expression="ow17.label ==&quot;insertSourceRowCount&quot; ? &quot;insert&quot;:&quot;update&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="label" expression="row17.label ==&quot;insertSourceRowCount&quot; ? &quot;insert&quot;:&quot;update&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="count" expression="row17.count " type="id_Integer" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="out7" expressionFilter="row17.label ==&quot;insertStgRowCount&quot;||row17.label ==&quot;updateStgRowCount&quot;" activateExpressionFilter="true">
