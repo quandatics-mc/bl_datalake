@@ -8,7 +8,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQtbx4EeitcIP7RwrZeg" name="ChargeCode" label="ChargeCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQtrx4EeitcIP7RwrZeg" name="Name" label="Name" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEB3wLx4EeitcIP7RwrZeg" name="NotUsedInRevenue" label="NotUsedInRevenue" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEB3wbx4EeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEB3wbx4EeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
