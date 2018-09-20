@@ -1051,7 +1051,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.ChargeCodeID == null || uniq.ChargeTypeID  == null || uniq.ChargeCode.isEmpty()|| uniq.ChargeCode== null || uniq.Name.isEmpty() || uniq.Name==null || uniq.NotUsedInRevenue== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.ChargeTypeID == null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="ChargeTypeID" expression="uniq.ChargeTypeID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="PositiveNegativeFlag" expression="uniq.PositiveNegativeFlag " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="FarePriceFlag" expression="uniq.FarePriceFlag " type="id_Integer" nullable="true"/>
