@@ -845,7 +845,7 @@
         <mapperTableEntries name="DOB" expression="row6.DOB" type="id_Double" nullable="true"/>
         <mapperTableEntries name="BookingID" expression="row6.BookingID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="PaxType" expression="row6.PaxType" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FirstName" expression="row7.FirstName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FirstName" expression="row6.FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="MiddleName" expression="row6.MiddleName" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row6.LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="Nationality" expression="row6.Nationality" type="id_String" nullable="true"/>
