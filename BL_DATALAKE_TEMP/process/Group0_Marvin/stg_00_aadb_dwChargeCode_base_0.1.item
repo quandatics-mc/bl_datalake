@@ -1362,7 +1362,7 @@
       <column comment="" key="false" length="-1" name="Group" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="37" offsetLabelY="0" posX="1216" posY="1952">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="37" offsetLabelY="0" posX="1216" posY="1888">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;end99&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="99"/>
@@ -2894,6 +2894,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHashInput_6" offsetLabelX="0" offsetLabelY="0" source="tHashInput_6" target="tWarn_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="out8" lineStyle="0" metaname="out8" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_8" target="tBigQueryOutput_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="LoadedTime"/>
@@ -2921,9 +2924,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryOutput_3" offsetLabelX="0" offsetLabelY="0" source="tBigQueryOutput_3" target="tWarn_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tMap_12">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
