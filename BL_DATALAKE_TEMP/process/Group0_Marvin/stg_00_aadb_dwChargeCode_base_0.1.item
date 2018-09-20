@@ -2275,7 +2275,7 @@
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_ODS_STG&quot;"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;dwChargeCode_History&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_dwChargeCode_History&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
