@@ -1024,11 +1024,11 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out6" expressionFilter="row17.label ==&quot;insertSourceRowCount&quot;||row17.label ==&quot;updateSourceRowCount&quot;" activateExpressionFilter="true">
-        <mapperTableEntries name="label" expression="row17.label " type="id_String" nullable="true"/>
+        <mapperTableEntries name="label" expression="ow17.label ==&quot;insertSourceRowCount&quot; ? &quot;insert&quot;:&quot;update&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="count" expression="row17.count " type="id_Integer" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="out7" expressionFilter="row17.label ==&quot;insertStgRowCount&quot;||row17.label ==&quot;updateStgRowCount&quot;" activateExpressionFilter="true">
-        <mapperTableEntries name="label" expression="row17.label " type="id_String" nullable="true"/>
+        <mapperTableEntries name="label" expression="row17.label ==&quot;insertStgRowCount&quot;? &quot;insert&quot;:&quot;update&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="count" expression="row17.count " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row17" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -1128,7 +1128,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out8" expressionFilter="row18.label==&quot;insertSourceRowCount&quot;&amp;&amp;row19.label==&quot;insertStagingRowCount&quot;" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="out8" expressionFilter="row18.label==&quot;insert&quot;" activateExpressionFilter="true">
         <mapperTableEntries name="TableName" expression="&quot;stg_dwChargeCode_update&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="sourceRowCount" expression="row18.count== null? 0:row18.count" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count == null? 0:row19.count" type="id_Integer" nullable="true"/>
@@ -1136,7 +1136,7 @@
         <mapperTableEntries name="Indicator" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="LoadedTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getDate(&quot;yyyyy-MM-dd HH:mm:ss.SSS&quot;)))) " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="logins" expressionFilter="row18.label==&quot;updateSourceRowCount&quot;&amp;&amp;row19.label==&quot;updateStagingRowCount&quot;" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="logins" expressionFilter="row18.label==&quot;update&quot;" activateExpressionFilter="true">
         <mapperTableEntries name="TableName" expression="&quot;stg_dwChargeCode_insert&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="sourceRowCount" expression="row18.count== null? 0:row18.count" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count == null? 0:row19.count" type="id_Integer" nullable="true"/>
@@ -1148,8 +1148,8 @@
         <mapperTableEntries name="label" type="id_String" nullable="true"/>
         <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row19" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="label" type="id_String" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row19" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="label" expression="row18.label " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="count" type="id_Integer" nullable="true"/>
       </inputTables>
     </nodeData>
