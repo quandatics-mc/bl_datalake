@@ -838,14 +838,14 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Records" expressionFilter="!(row6.PassengerID == null &amp;&amp; row6.DOB == null &amp;&amp; row6.BookingID == null &amp;&amp; (row6.PaxType == null || row6.PaxType.isEmpty()) &amp;&amp; (row6.FirstName == null || row6.FirstName.isEmpty()) &amp;&amp; (row6.LastName == null || row6.LastName.isEmpty()) &amp;&amp; row6.BalanceDue == null &amp;&amp; row6.ModifiedDate == null &amp;&amp; row6.LoadedDate == null)" activateExpressionFilter="true" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="PassengerID" expression="row6.PassengerID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="DOB" expression="row6.DOB" type="id_Double" nullable="true"/>
         <mapperTableEntries name="BookingID" expression="row6.BookingID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="PaxType" expression="row6.PaxType" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FirstName" expression="row6.FirstName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FirstName" expression="row7.FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="MiddleName" expression="row6.MiddleName" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row6.LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="Nationality" expression="row6.Nationality" type="id_String" nullable="true"/>
