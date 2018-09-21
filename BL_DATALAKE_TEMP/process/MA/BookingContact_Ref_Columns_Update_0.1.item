@@ -608,8 +608,8 @@
       <column comment="" key="false" length="128" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="80" name="CustomerNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -621,8 +621,8 @@
         <mapperTableEntries name="FirstName" expression="row1.FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row1.LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="CustomerNumber" expression="row1.CustomerNumber " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="row1.ModifiedDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="row1.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="row1.ModifiedDate " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="row1.LoadedDate " type="id_Double" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="BookingID" type="id_Long" nullable="true"/>
@@ -683,8 +683,8 @@
       <column comment="" key="false" length="128" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="80" name="CustomerNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
@@ -749,8 +749,8 @@
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="CustomerNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
