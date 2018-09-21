@@ -635,8 +635,8 @@
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row16" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="BookingID" expression="Fail.BookingID " type="id_Long" nullable="true" operator="="/>
-        <mapperTableEntries name="TypeCode" expression="Fail.TypeCode " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="BookingID" expression="row1.BookingID " type="id_Long" nullable="true" operator="="/>
+        <mapperTableEntries name="TypeCode" expression="row1.TypeCode " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="EmailAddress" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
