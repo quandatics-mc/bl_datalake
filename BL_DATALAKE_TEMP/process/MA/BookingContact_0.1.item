@@ -152,7 +152,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Reference">
-        <mapperTableEntries name="TableName" expression="&quot;Booking Contact Insert&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TableName" expression="&quot;BookingContact_Insert&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="sourceRowCount" expression="row18.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="prodRowCount" type="id_Integer" nullable="true"/>
@@ -1116,7 +1116,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="EndTime"/>
       <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NameOfJob"/>
-      <elementValue elementRef="VALUE" value="&quot;Booking Contact Insert&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;BookingContact_Insert&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExecutionStatus"/>
       <elementValue elementRef="VALUE" value="&quot;Success&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ErrorMessage"/>
@@ -1401,7 +1401,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="EndTime"/>
       <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NameOfJob"/>
-      <elementValue elementRef="VALUE" value="&quot;Booking Contact Insert&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;BookingContact_Insert&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExecutionStatus"/>
       <elementValue elementRef="VALUE" value="&quot;Fail&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ErrorMessage"/>
