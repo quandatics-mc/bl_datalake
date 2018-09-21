@@ -535,6 +535,7 @@
   </node>
   <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_24" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
@@ -557,7 +558,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;UPDATE `data-mgmt-191603.BL_ODS_DL.dl_dwChargeCode` dl&#xD;&#xA;SET dl.NotUsedInRevenue=stg.NotUsedInRevenue&#xD;&#xA;AND RowType='Updated with Reference Column'&#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_dwChargeCode_update` stg&#xD;&#xA;WHERE dl.ChargeCodeID=stg.ChargeCodeID&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;UPDATE `data-mgmt-191603.BL_ODS_DL.dl_dwChargeCode` dl&#xD;&#xA;SET dl.NotUsedInRevenue=stg.NotUsedInRevenue,RowType = 'Updated with Reference Column'&#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_dwChargeCode_update` stg&#xD;&#xA;WHERE dl.ChargeCodeID=stg.ChargeCodeID&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -673,6 +674,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk23" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryInput_24" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_24" target="tBigQueryInput_25">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk26" show="false"/>
   </connection>
   <subjob>
