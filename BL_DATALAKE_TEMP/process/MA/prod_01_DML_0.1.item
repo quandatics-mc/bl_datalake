@@ -631,7 +631,7 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_4" offsetLabelX="-14" offsetLabelY="30" source="tBigQueryInput_4" target="tBigQueryInput_17">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk14" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_5" offsetLabelX="-20" offsetLabelY="29" source="tBigQueryInput_5" target="tBigQueryInput_25">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_5" offsetLabelX="45" offsetLabelY="2" source="tBigQueryInput_5" target="tBigQueryInput_25">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_6" offsetLabelX="-14" offsetLabelY="33" source="tBigQueryInput_6" target="tBigQueryInput_26">
