@@ -149,7 +149,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Reference">
         <mapperTableEntries name="TableName" expression="&quot;BookingContact_Update&quot;" type="id_String" nullable="true"/>
@@ -193,7 +193,7 @@
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_ODS_STG&quot;"/>
     <elementParameter field="TEXT" name="TABLE" value="&quot;stg_Group1_Reference&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
@@ -612,7 +612,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="ToUpdate" expressionFilter="!(row1.EmailAddress.equals(row16.EmailAddress)) || !(row1.FirstName.equals(row16.FirstName)) || !(row1.LastName.equals(row16.LastName))" activateExpressionFilter="true">
         <mapperTableEntries name="BookingID" expression="row16.BookingID " type="id_Long" nullable="true"/>
@@ -720,7 +720,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="!(row6.BookingID == null &amp;&amp; (row6.TypeCode == null || row6.TypeCode.isEmpty()) &amp;&amp; (row6.EmailAddress == null || row6.EmailAddress.isEmpty()) &amp;&amp; (row6.FirstName == null || row6.FirstName.isEmpty()) &amp;&amp; (row6.LastName == null || row6.LastName.isEmpty()) &amp;&amp; row6.ModifiedDate == null &amp;&amp; row6.LoadedDate == null)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" reject="true">
         <mapperTableEntries name="BookingID" expression="row6.BookingID " type="id_Long" nullable="true"/>
@@ -1029,7 +1029,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Fail" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="BookingID" expression="row8.BookingID " type="id_Long" nullable="true"/>
