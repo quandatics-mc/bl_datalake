@@ -155,7 +155,7 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="480">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_3" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
@@ -174,7 +174,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_3"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="480">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_4" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
@@ -193,7 +193,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_4"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_5" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
@@ -212,7 +212,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_5"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="352">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_6" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
@@ -231,7 +231,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_6"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="352">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_7" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
@@ -290,9 +290,8 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_10" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
@@ -311,14 +310,13 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="256">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_11" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger` &#xD;&#xA;(PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, ModifiedDate, LoadedDate) &#xD;&#xA;SELECT PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, ModifiedDate, LoadedDate &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_BookingPassenger`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger` &#xD;&#xA;(PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, ModifiedDate, LoadedDate, RowType) &#xD;&#xA;SELECT PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, ModifiedDate, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_BookingPassenger`&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -332,9 +330,8 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="256">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_12" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
@@ -353,14 +350,13 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="256">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_13" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Payment` (PaymentID, ReferenceID, PaymentMethodType, PaymentMethodCode, BinRange, AuthorizationStatus, ModifiedDate, VoidID, LPPoints, LPPaymentAmout, LPCurrency, LoadedDate) &#xD;&#xA;SELECT PaymentID, ReferenceID, PaymentMethodType, PaymentMethodCode, BinRange, AuthorizationStatus, ModifiedDate, VoidID, LPPoints, LPPaymentAmout, LPCurrency, LoadedDate &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_Payment`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Payment` (PaymentID, ReferenceID, PaymentMethodType, PaymentMethodCode, BinRange, AuthorizationStatus, ModifiedDate, VoidID, LPPoints, LPPaymentAmout, LPCurrency, LoadedDate, RowType) &#xD;&#xA;SELECT PaymentID, ReferenceID, PaymentMethodType, PaymentMethodCode, BinRange, AuthorizationStatus, ModifiedDate, VoidID, LPPoints, LPPaymentAmout, LPCurrency, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_Payment`&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -434,7 +430,7 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="480">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_17" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
@@ -513,6 +509,86 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_21" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;UPDATE `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger` dl&#xD;&#xA;SET dl.DOB=stg.DOB, dl.FirstName=stg.FirstName, dl.MiddleName=stg.MiddleName, dl.LastName=stg.LastName, dl.RowType='Updated with Reference Column' &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_BookingPassenger_update` stg &#xD;&#xA;WHERE dl.PassengerID=stg.PassengerID&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_BookingPassenger"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_21">
+      <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_22" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger_History` &#xD;&#xA;(PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, ModifiedDate, LoadedDate, RowType) &#xD;&#xA;SELECT PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, ModifiedDate, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_BookingPassenger`&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_BookingPassenge_History"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_22">
+      <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_23" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger_History` &#xD;&#xA;(PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, ModifiedDate, LoadedDate, RowType) &#xD;&#xA;SELECT PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, ModifiedDate, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_BookingPassenger_update`&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_BookingPassenge_Update_History"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_23">
+      <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_24" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Payment_History` (PaymentID, ReferenceID, PaymentMethodType, PaymentMethodCode, BinRange, AuthorizationStatus, ModifiedDate, VoidID, LPPoints, LPPaymentAmout, LPCurrency, LoadedDate, RowType) &#xD;&#xA;SELECT PaymentID, ReferenceID, PaymentMethodType, PaymentMethodCode, BinRange, AuthorizationStatus, ModifiedDate, VoidID, LPPoints, LPPaymentAmout, LPCurrency, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_Payment`&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_Payment_History"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_24">
+      <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_1" offsetLabelX="-2" offsetLabelY="33" source="tBigQueryInput_1" target="tBigQueryInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
@@ -542,16 +618,16 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_10" offsetLabelX="-3" offsetLabelY="30" source="tBigQueryInput_10" target="tBigQueryInput_11">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_11" offsetLabelX="-2" offsetLabelY="33" source="tBigQueryInput_11" target="tBigQueryInput_12">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_11" offsetLabelX="-7" offsetLabelY="29" source="tBigQueryInput_11" target="tBigQueryInput_21">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_12" offsetLabelX="1" offsetLabelY="35" source="tBigQueryInput_12" target="tBigQueryInput_13">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_12" offsetLabelX="-2" offsetLabelY="31" source="tBigQueryInput_12" target="tBigQueryInput_13">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk11" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_13" offsetLabelX="-8" offsetLabelY="31" source="tBigQueryInput_13" target="tBigQueryInput_24">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk21" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_14" offsetLabelX="-12" offsetLabelY="31" source="tBigQueryInput_14" target="tBigQueryInput_16">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
@@ -567,6 +643,18 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_19" offsetLabelX="-5" offsetLabelY="33" source="tBigQueryInput_19" target="tBigQueryInput_20">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_20" offsetLabelX="40" offsetLabelY="11" source="tBigQueryInput_20" target="tBigQueryInput_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk20" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_21" offsetLabelX="-5" offsetLabelY="32" source="tBigQueryInput_21" target="tBigQueryInput_22">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk18" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_22" offsetLabelX="7" offsetLabelY="28" source="tBigQueryInput_22" target="tBigQueryInput_23">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk19" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_23" offsetLabelX="50" offsetLabelY="5" source="tBigQueryInput_23" target="tBigQueryInput_12">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk22" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
@@ -665,6 +753,26 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_20" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_21" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_22" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_23" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_24" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
