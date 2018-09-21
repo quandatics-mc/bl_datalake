@@ -617,12 +617,12 @@
       <outputTables sizeState="INTERMEDIATE" name="ToUpdate" expressionFilter="!(row1.EmailAddress.equals(row16.EmailAddress)) || !(row1.FirstName.equals(row16.FirstName)) || !(row1.LastName.equals(row16.LastName))" activateExpressionFilter="true">
         <mapperTableEntries name="BookingID" expression="row16.BookingID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="TypeCode" expression="row16.TypeCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="EmailAddress" expression="Fail.EmailAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FirstName" expression="Fail.FirstName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LastName" expression="Fail.LastName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CustomerNumber" expression="Fail.CustomerNumber " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="Fail.ModifiedDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="Fail.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EmailAddress" expression="row1.EmailAddress" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FirstName" expression="row1.FirstName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LastName" expression="row1.LastName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerNumber" expression="row1.CustomerNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ModifiedDate" expression="row1.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="row1.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="BookingID" type="id_Long" nullable="true"/>
