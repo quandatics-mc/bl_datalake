@@ -624,7 +624,7 @@
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT BookingID, BookingParentID, Status, RecordLocator, BookingDate, CreatedAgentID, SourceAgentCode, CreatedDate, ModifiedDate, BookingPromoCode, LoadedDate &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.vw_Booking_1` WHERE CreatedDate >= '2018-08-30'&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
-    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
