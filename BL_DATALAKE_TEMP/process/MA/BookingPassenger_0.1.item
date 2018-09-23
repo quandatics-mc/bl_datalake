@@ -697,7 +697,7 @@
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_ODS_STG&quot;"/>
     <elementParameter field="TEXT" name="TABLE" value="&quot;stg_BookingPassenger_Exception&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
@@ -744,7 +744,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, Modifieddate, LoadedDate &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.vw_BookingPassenger_1` LIMIT 50&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT PassengerID, DOB, BookingID, PaxType, FirstName, MiddleName, LastName, Nationality, ResidentCountry, CustomerNumber, BalanceDue, Modifieddate, LoadedDate &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.vw_BookingPassenger_1` WHERE Modifieddate >= '2018-08-30'&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
