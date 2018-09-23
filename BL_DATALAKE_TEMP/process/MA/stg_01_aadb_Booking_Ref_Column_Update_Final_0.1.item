@@ -191,7 +191,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -226,13 +226,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_3"/>
   </node>
-  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="160">
+  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_2" show="false"/>
     <elementParameter field="TEXT" name="PAUSE" value="60"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSleep_2"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -267,7 +267,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_4"/>
   </node>
-  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
+  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_3" show="false"/>
     <elementParameter field="TEXT" name="PAUSE" value="60"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -276,20 +276,20 @@
   <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_1" offsetLabelX="-37" offsetLabelY="-44" source="tRunJob_1" target="tSleep_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSleep_1" offsetLabelX="-50" offsetLabelY="0" source="tSleep_1" target="tRunJob_4">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSleep_1" offsetLabelX="-50" offsetLabelY="4" source="tSleep_1" target="tRunJob_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_3" offsetLabelX="36" offsetLabelY="29" source="tRunJob_3" target="tSleep_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError2" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSleep_2" offsetLabelX="-28" offsetLabelY="34" source="tSleep_2" target="tRunJob_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSleep_2" offsetLabelX="-48" offsetLabelY="32" source="tSleep_2" target="tRunJob_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_4" offsetLabelX="37" offsetLabelY="32" source="tRunJob_4" target="tSleep_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError3" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSleep_3" offsetLabelX="-26" offsetLabelY="30" source="tSleep_3" target="tRunJob_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSleep_3" offsetLabelX="-37" offsetLabelY="32" source="tSleep_3" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
