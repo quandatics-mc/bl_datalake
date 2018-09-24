@@ -627,7 +627,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.InventoryLegID == null || uniq.DepartureDate  == null || uniq.CarrierCode.isEmpty() || uniq.CarrierCode==null || uniq.FlightNumber  == null ||uniq.FlightNumber.isEmpty() || uniq.DepartureStation  == null ||uniq.DepartureStation.isEmpty() || uniq.ArrivalStation  == null ||uniq.ArrivalStation.isEmpty() || uniq.ModifiedDate== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="InventoryLegID" expression="uniq.InventoryLegID " type="id_Long" nullable="true"/>
@@ -791,7 +791,7 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_1">
-      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -839,7 +839,7 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_5">
-      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1138,7 +1138,7 @@
     <elementParameter field="TEXT" name="LABEL" value="exOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_2">
-      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
