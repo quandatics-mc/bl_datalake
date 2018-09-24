@@ -125,12 +125,12 @@
   <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_3OD-IK8qEeiVsYAmnhb2Dg - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_5B1zEL2HEeisAI_Dr-DIQQ - metadata" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT AgentID, AgentName, PersonID, Modifieddate, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.Agent_1`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT InventoryLegID, DepartureDate, CarrierCode, FlightNumber, DepartureStation, ArrivalStation, Modifieddate, STD, STA, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.vw_InventoryLeg` WHERE Modifieddate between '2018-09-01 00:00:00.000' and '2018-09-15 00:00:00.000'&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -141,11 +141,16 @@
     <elementParameter field="TEXT" name="LABEL" value="Extract"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tBigQueryInput_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
@@ -158,11 +163,16 @@
     <elementParameter field="TEXT" name="LABEL" value="sourceRowCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFlowMeter_22">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
@@ -170,7 +180,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -178,27 +188,42 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="AgentID" expression="row11.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="row11.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="row11.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="row11.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="row11.DepartureDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.DepartureDate*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="row11.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="row11.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="row11.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="row11.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="row11.ModifiedDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.ModifiedDate*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="row11.STD==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.STD*1000))))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="row11.STA==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.STA*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row11.LoadedDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.LoadedDate*1000))))) " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row11" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STD" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STA" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -206,16 +231,31 @@
   <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
     <elementParameter field="TABLE" name="UNIQUE_KEY">
-      <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InventoryLegID"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AgentName"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DepartureDate"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PersonID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ArrivalStation"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STA"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
@@ -229,40 +269,70 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUniqRow_1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" name="UNIQUE">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" name="DUPLICATE">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_2" show="false"/>
     <elementParameter field="TABLE" name="UNIQUE_KEY">
-      <elementValue elementRef="SCHEMA_COLUMN" value="AgentID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InventoryLegID"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AgentName"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PersonID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ArrivalStation"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STA"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
@@ -276,24 +346,39 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUniqRow_2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" name="UNIQUE">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" name="DUPLICATE">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
@@ -310,10 +395,15 @@
     <elementParameter field="TEXT" name="LABEL" value="uniqHashOut"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
@@ -330,10 +420,15 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashOut1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
@@ -350,17 +445,22 @@
     <elementParameter field="TEXT" name="LABEL" value="FullRowDuplicate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_7">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bLlUkK9bEeiVsYAmnhb2Dg - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_9hTA8L2HEeisAI_Dr-DIQQ - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -368,11 +468,16 @@
     <elementParameter field="TEXT" name="LABEL" value="uniqHashIn"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_1">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
@@ -380,7 +485,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -388,48 +493,78 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="uniq">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="dup">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="uniq" activateCondensedTool="true" rejectInnerJoin="true">
-        <mapperTableEntries name="AgentID" expression="row5.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="row5.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="row5.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="row5.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="row5.DepartureDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="row5.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="row5.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="row5.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="row5.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="row5.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="row5.STD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="row5.STA " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row5.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="dup">
-        <mapperTableEntries name="AgentID" expression="row5.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="row5.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="row5.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="row5.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="row5.DepartureDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="row5.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="row5.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="row5.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="row5.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="row5.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="row5.STD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="row5.STA " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row5.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="AgentID" expression="row5.AgentID " type="id_Long" nullable="true" operator="="/>
-        <mapperTableEntries name="AgentName" expression="row5.AgentName " type="id_String" nullable="true" operator="="/>
-        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="row5.InventoryLegID " type="id_Long" nullable="true" operator="="/>
+        <mapperTableEntries name="DepartureDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -437,7 +572,7 @@
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bLlUkK9bEeiVsYAmnhb2Dg - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_9hTA8L2HEeisAI_Dr-DIQQ - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -445,11 +580,16 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashIn1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_2">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="416">
@@ -457,7 +597,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_3-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -465,41 +605,68 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="nullability">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="outFinal">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RowType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.AgentName.isEmpty() || uniq.PersonID  == null ||  uniq.ModifiedDate== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
-        <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.InventoryLegID == null || uniq.DepartureDate  == null || uniq.CarrierCode.isEmpty() || uniq.CarrierCode==null || uniq.FlightNumber  == null ||uniq.FlightNumber.isEmpty() || uniq.DepartureStation  == null ||uniq.DepartureStation.isEmpty() || uniq.ArrivalStation  == null ||uniq.ArrivalStation.isEmpty() || uniq.ModifiedDate== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
+        <mapperTableEntries name="InventoryLegID" expression="uniq.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="uniq.DepartureDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="uniq.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="uniq.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="uniq.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="uniq.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="uniq.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="uniq.STD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="uniq.STA " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="outFinal" activateCondensedTool="true" reject="true">
-        <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="uniq.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="uniq.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="uniq.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="uniq.DepartureDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="uniq.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="uniq.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="uniq.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="uniq.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="uniq.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="uniq.STD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="uniq.STA " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="uniq.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="RowType" expression="&quot;New Inserted Column&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="uniq" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -516,12 +683,17 @@
     <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="dupHashOut2"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tHashOutput_3">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tHashOutput_3">
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="512">
@@ -537,10 +709,15 @@
     <elementParameter field="TEXT" name="LABEL" value="nullHashOut"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_4">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
@@ -554,30 +731,36 @@
     <elementParameter field="TEXT" name="LABEL" value="stgRowCount"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowMeter_24">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RowType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutput_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_aadb_Agent.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_aadb_InventoryLeg_insert.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_ODS_STG&quot;"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_Agent&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_InventoryLeg_insert&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;quandatics_talend_project&quot;"/>
-    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_aadb_Agent.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_aadb_InventoryLeg_insert.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
@@ -597,15 +780,23 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RowType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_9hTA8L2HEeisAI_Dr-DIQQ - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -613,11 +804,16 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashIn1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_3">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="608">
@@ -625,7 +821,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_4-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -633,29 +829,44 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
-        <mapperTableEntries name="AgentID" expression="row7.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="row7.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="row7.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="row7.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="row7.DepartureDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="row7.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="row7.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="row7.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="row7.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="row7.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="row7.STD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="row7.STA " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row7.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Exception" expression="&quot;Duplication&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -664,16 +875,23 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnite_1">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_9hTA8L2HEeisAI_Dr-DIQQ - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_3"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -681,11 +899,16 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashIn2"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_4">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="704">
@@ -693,7 +916,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_5-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -701,29 +924,44 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfout2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
-        <mapperTableEntries name="AgentID" expression="row8.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="row8.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="row8.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="row8.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="row8.DepartureDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="row8.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="row8.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="row8.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="row8.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="row8.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="row8.STD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="row8.STA " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Exception" expression="&quot;Duplication&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -731,7 +969,7 @@
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_5" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bLlUkK9bEeiVsYAmnhb2Dg - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_9hTA8L2HEeisAI_Dr-DIQQ - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_4"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -739,11 +977,16 @@
     <elementParameter field="TEXT" name="LABEL" value="nullHashIn"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_5">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="800">
@@ -751,7 +994,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_6-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -759,50 +1002,65 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfcopyOfout2">
-      <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout2">
-        <mapperTableEntries name="AgentID" expression="row9.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="row9.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="row9.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="row9.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="row9.DepartureDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="row9.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="row9.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="row9.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="row9.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="row9.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="row9.STD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="row9.STA " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row9.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Exception" expression="&quot;Nullability&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row9" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutput_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_aadb_Agent_Exception.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_aadb_InventoryLeg_Exception_insert.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_ODS_STG&quot;"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_Agent_Exception&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_InventoryLeg_Exception_insert&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;quandatics_talend_project&quot;"/>
-    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_aadb_Agent_Exception.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_aadb_InventoryLeg_Exception_insert.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
@@ -822,10 +1080,15 @@
     <elementParameter field="TEXT" name="LABEL" value="exOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_2">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
@@ -833,7 +1096,7 @@
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="864">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_8" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bLlUkK9bEeiVsYAmnhb2Dg - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_9hTA8L2HEeisAI_Dr-DIQQ - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_7"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/Studio/6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -841,11 +1104,16 @@
     <elementParameter field="TEXT" name="LABEL" value="FullRowHashIn"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_8">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="864">
@@ -853,7 +1121,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_9-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_9-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -861,29 +1129,44 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfcopyOfcopyOfout2">
-      <column comment="" key="false" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DepartureStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ArrivalStation" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STD" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STA" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout2">
-        <mapperTableEntries name="AgentID" expression="row14.AgentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" expression="row14.AgentName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" expression="row14.PersonID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" expression="row14.InventoryLegID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" expression="row14.DepartureDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" expression="row14.CarrierCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" expression="row14.FlightNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" expression="row14.DepartureStation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" expression="row14.ArrivalStation " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" expression="row14.ModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" expression="row14.STD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" expression="row14.STA " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row14.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Exception" expression="&quot;Full Row Duplicate&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row14" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="AgentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="AgentName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PersonID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="InventoryLegID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="DepartureDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CarrierCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FlightNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DepartureStation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ArrivalStation" type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STA" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -978,7 +1261,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_7-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -1068,7 +1351,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_8-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_8-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -1084,10 +1367,10 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
-        <mapperTableEntries name="TableName" expression="&quot;Agent&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TableName" expression="&quot;InventoryLeg&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="sourceRowCount" expression="row18.count== null? 0:row18.count" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count == null? 0:row19.count" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="prodRowCount" type="id_Integer" nullable="true"/>
@@ -1116,21 +1399,21 @@
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutput_3" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_aadb_group0_reference.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_aadb_group2_reference.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_ODS_STG&quot;"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_Group0_Reference&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_Group2_Reference&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;quandatics_talend_project&quot;"/>
-    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_aadb_group0_reference.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_aadb_group2_reference.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
@@ -1184,7 +1467,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_12-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_12-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -1212,7 +1495,7 @@
         <mapperTableEntries name="NameOfJob" expression="row15.job " type="id_String" nullable="true"/>
         <mapperTableEntries name="ExecutionStatus" expression="row15.message ==&quot;end99&quot;?  &quot;Success&quot;:&quot;Error&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="ErrorMessage" expression="row15.message ==&quot;end99&quot;?  &quot;None&quot;:  row15.message " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Group" expression="&quot;Group 0&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Group" expression="&quot;Group 2&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
@@ -1301,7 +1584,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_-YfPYK8oEeiVsYAmnhb2Dg-tMap_13-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_j5JFkL2IEeisAI_Dr-DIQQ-tMap_13-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -1413,6 +1696,32 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tUniqRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
@@ -1440,10 +1749,62 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="uniq" lineStyle="0" metaname="uniq" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="uniq" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="dup" lineStyle="0" metaname="dup" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tHashOutput_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="dup" show="false"/>
   </connection>
@@ -1452,10 +1813,65 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="nullability" lineStyle="0" metaname="nullability" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_3" target="tHashOutput_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="nullability" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="outFinal" lineStyle="0" metaname="outFinal" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_3" target="tFlowMeter_24">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RowType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="outFinal" show="false"/>
   </connection>
@@ -1471,6 +1887,32 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out2" lineStyle="10" mergeOrder="1" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tUnite_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
   </connection>
@@ -1483,6 +1925,32 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfout2" lineStyle="10" mergeOrder="2" metaname="copyOfout2" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tUnite_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout2" show="false"/>
   </connection>
@@ -1491,6 +1959,32 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfcopyOfout2" lineStyle="10" mergeOrder="3" metaname="copyOfcopyOfout2" offsetLabelX="-50" offsetLabelY="50" source="tMap_6" target="tUnite_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfout2" show="false"/>
   </connection>
@@ -1499,6 +1993,32 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfcopyOfcopyOfout2" lineStyle="10" mergeOrder="4" metaname="copyOfcopyOfcopyOfout2" offsetLabelX="6" offsetLabelY="-6" source="tMap_9" target="tUnite_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="STA"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ArrivalStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InventoryLegID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FlightNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CarrierCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartureStation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfcopyOfout2" show="false"/>
   </connection>
