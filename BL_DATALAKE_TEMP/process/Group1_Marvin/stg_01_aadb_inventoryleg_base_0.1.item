@@ -545,7 +545,7 @@
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;adahh2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12312321&quot;"/>
-      <elementValue elementRef="DepartureStation" value="&quot;?&quot;"/>
+      <elementValue elementRef="DepartureStation" value="&quot;qwe&quot;"/>
       <elementValue elementRef="ArrivalStation" value="&quot;ddsg&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(1123123)"/>
       <elementValue elementRef="STD" value="new Double(1123123)"/>
@@ -555,7 +555,7 @@
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;adaasd2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12232321&quot;"/>
-      <elementValue elementRef="DepartureStation" value="&quot;!&quot;"/>
+      <elementValue elementRef="DepartureStation" value="&quot;sds&quot;"/>
       <elementValue elementRef="ArrivalStation" value="&quot;hhh&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(1123123)"/>
       <elementValue elementRef="STD" value="new Double(1123123)"/>
@@ -565,7 +565,7 @@
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;adrreda2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12312321&quot;"/>
-      <elementValue elementRef="DepartureStation" value="&quot;.&quot;"/>
+      <elementValue elementRef="DepartureStation" value="&quot;gjhd&quot;"/>
       <elementValue elementRef="ArrivalStation" value="&quot;hhh&quot;"/>
       <elementValue elementRef="ModifiedDate" value="new Double(1123123)"/>
       <elementValue elementRef="STD" value="new Double(1123123)"/>
