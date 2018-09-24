@@ -866,7 +866,7 @@
       <relatedItems xmi:id="_-Py-W7_7Eeiu-KAgFhezlw" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-Py-XL_7Eeiu-KAgFhezlw" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-Py-Xb_7Eeiu-KAgFhezlw" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-Py-Xr_7Eeiu-KAgFhezlw" id="_HxMb4L_XEeimJdn0FrYR3g - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_LgaN4L_-Eeiu-KAgFhezlw" id="_wMKrgL_7Eeiu-KAgFhezlw - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_QJzJEK_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_QJzJEa_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
