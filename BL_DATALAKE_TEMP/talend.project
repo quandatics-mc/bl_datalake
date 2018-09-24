@@ -819,7 +819,7 @@
       <relatedItems xmi:id="_-U9lS7_GEeimJdn0FrYR3g" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-U9lTL_GEeimJdn0FrYR3g" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-U9lTb_GEeimJdn0FrYR3g" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-U9lTr_GEeimJdn0FrYR3g" id="_nglGQLb5EeigQr7_99Jhzw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_H26KsL_JEeimJdn0FrYR3g" id="_f8pjAL_GEeimJdn0FrYR3g - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_QJzJEK_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_QJzJEa_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
