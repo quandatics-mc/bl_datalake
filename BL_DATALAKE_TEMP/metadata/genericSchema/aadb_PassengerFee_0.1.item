@@ -3,8 +3,8 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_HxNC8L_XEeimJdn0FrYR3g" name="repository.metadataGenericSchema" dataPackage="_HxNC8b_XEeimJdn0FrYR3g"/>
   <TalendMetadata:GenericPackage xmi:id="_HxNC8b_XEeimJdn0FrYR3g" name="repository.metadataGenericSchema" dataManager="_HxNC8L_XEeimJdn0FrYR3g">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_HxNC8r_XEeimJdn0FrYR3g" id="_mBQWgL_WEeimJdn0FrYR3g" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC87_XEeimJdn0FrYR3g" name="PassengerID" label="PassengerID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC9L_XEeimJdn0FrYR3g" name="FeeNumber" label="FeeNumber" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC87_XEeimJdn0FrYR3g" name="PassengerID" label="PassengerID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC9L_XEeimJdn0FrYR3g" name="FeeNumber" label="FeeNumber" length="-1" talendType="id_Long" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC9b_XEeimJdn0FrYR3g" name="FeeCode" label="FeeCode" length="24" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC9r_XEeimJdn0FrYR3g" name="InventoryLegID" label="InventoryLegID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC97_XEeimJdn0FrYR3g" name="PaymentID" label="PaymentID" length="-1" talendType="id_Long"/>
