@@ -5,7 +5,7 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_kXn7g7-wEeiDRJYBCRsjIQ" id="_0SR20L-vEeiDRJYBCRsjIQ" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7hL-wEeiDRJYBCRsjIQ" name="PassengerID" label="PassengerID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7hb-wEeiDRJYBCRsjIQ" name="SegmentID" label="SegmentID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7hr-wEeiDRJYBCRsjIQ" name="DepartureDate" label="DepartureDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7hr-wEeiDRJYBCRsjIQ" name="DepartureDate" label="DepartureDate" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7h7-wEeiDRJYBCRsjIQ" name="DepartureStation" label="DepartureStation" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7iL-wEeiDRJYBCRsjIQ" name="ArrivalStation" label="ArrivalStation" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7ib-wEeiDRJYBCRsjIQ" name="JourneyNumber" label="JourneyNumber" length="-1" talendType="id_Integer"/>
