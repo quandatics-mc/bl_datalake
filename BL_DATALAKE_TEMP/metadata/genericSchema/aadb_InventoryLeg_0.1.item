@@ -4,7 +4,7 @@
   <TalendMetadata:GenericPackage xmi:id="_5C478b2HEeisAI_Dr-DIQQ" name="repository.metadataGenericSchema" dataManager="_5C478L2HEeisAI_Dr-DIQQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5C478r2HEeisAI_Dr-DIQQ" id="_93mdkL2GEeisAI_Dr-DIQQ" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5C47872HEeisAI_Dr-DIQQ" name="InventoryLegID" label="InventoryLegID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5C479L2HEeisAI_Dr-DIQQ" name="DepartureDate" label="DepartureDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5C479L2HEeisAI_Dr-DIQQ" name="DepartureDate" label="DepartureDate" length="-1" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5C479b2HEeisAI_Dr-DIQQ" name="CarrierCode" label="CarrierCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5C479r2HEeisAI_Dr-DIQQ" name="FlightNumber" label="FlightNumber" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5C47972HEeisAI_Dr-DIQQ" name="DepartureStation" label="DepartureStation" talendType="id_String"/>
