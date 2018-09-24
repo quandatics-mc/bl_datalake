@@ -511,7 +511,7 @@
       <elementValue elementRef="STD" value="new Double(1123123)"/>
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
-      <elementValue elementRef="InventoryLegID" value="new long(12312)"/>
+      <elementValue elementRef="InventoryLegID" value="new Long(12312)"/>
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;asdasD&quot;"/>
@@ -521,7 +521,7 @@
       <elementValue elementRef="STD" value="new Double(1123123)"/>
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
-      <elementValue elementRef="InventoryLegID" value="new long(12312)"/>
+      <elementValue elementRef="InventoryLegID" value="new Long(12312)"/>
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;asdasD&quot;"/>
@@ -531,7 +531,7 @@
       <elementValue elementRef="STD" value="new Double(1123123)"/>
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
-      <elementValue elementRef="InventoryLegID" value="new long(12312)"/>
+      <elementValue elementRef="InventoryLegID" value="new Long(12312)"/>
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;asdasD&quot;"/>
@@ -541,7 +541,7 @@
       <elementValue elementRef="STD" value="new Double(1123123)"/>
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
-      <elementValue elementRef="InventoryLegID" value="new long(2222)"/>
+      <elementValue elementRef="InventoryLegID" value="new Long(2222)"/>
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;adahh2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12312321&quot;"/>
@@ -551,7 +551,7 @@
       <elementValue elementRef="STD" value="new Double(1123123)"/>
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
-      <elementValue elementRef="InventoryLegID" value="new long(2222)"/>
+      <elementValue elementRef="InventoryLegID" value="new Long(2222)"/>
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;adaasd2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12232321&quot;"/>
@@ -561,7 +561,7 @@
       <elementValue elementRef="STD" value="new Double(1123123)"/>
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
-      <elementValue elementRef="InventoryLegID" value="new long(2222)"/>
+      <elementValue elementRef="InventoryLegID" value="new Long(2222)"/>
       <elementValue elementRef="DepartureDate" value="&quot;2018-9-04&quot;"/>
       <elementValue elementRef="CarrierCode" value="&quot;adrreda2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12312321&quot;"/>
@@ -571,7 +571,7 @@
       <elementValue elementRef="STD" value="new Double(1123123)"/>
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
-      <elementValue elementRef="InventoryLegID" value="new long(2424)"/>
+      <elementValue elementRef="InventoryLegID" value="new Long(2424)"/>
       <elementValue elementRef="DepartureDate" value=""/>
       <elementValue elementRef="CarrierCode" value=""/>
       <elementValue elementRef="FlightNumber" value=""/>
