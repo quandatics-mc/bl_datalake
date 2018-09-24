@@ -496,7 +496,7 @@
         <mapperTableEntries name="ChargeAmount" expression="row6.ChargeAmount " type="id_Float" nullable="true"/>
         <mapperTableEntries name="ForeignCurrencyCode" expression="row6.ForeignCurrencyCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="ForeignAmount" expression="row6.ForeignAmount " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" expression="TalendDate.parseDateLocale(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, row6.CreatedDate,&quot;EN&quot;) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedDate" expression="null" type="id_Date" nullable="true"/>
         <mapperTableEntries name="DeleteFlag" expression="row6.DeleteFlag " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ETLModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.ETLModifiedDate*1000)))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.LoadedDate*1000)))) " type="id_Date" nullable="true"/>
@@ -511,7 +511,7 @@
         <mapperTableEntries name="ChargeAmount" expression="row6.ChargeAmount  " type="id_Float" nullable="true"/>
         <mapperTableEntries name="ForeignCurrencyCode" expression="row6.ForeignCurrencyCode  " type="id_String" nullable="true"/>
         <mapperTableEntries name="ForeignAmount" expression="row6.ForeignAmount  " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" expression="TalendDate.parseDateLocale(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;, row6.CreatedDate,&quot;EN&quot;)  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedDate" expression="null" type="id_Date" nullable="true"/>
         <mapperTableEntries name="DeleteFlag" expression="row6.DeleteFlag  " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ETLModifiedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.ETLModifiedDate*1000))))  " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.LoadedDate*1000))))  " type="id_Date" nullable="true"/>
