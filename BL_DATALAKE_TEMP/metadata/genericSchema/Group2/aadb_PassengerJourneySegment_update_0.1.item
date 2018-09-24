@@ -5,20 +5,7 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_kXn7g7-wEeiDRJYBCRsjIQ" id="_0SR20L-vEeiDRJYBCRsjIQ" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7hL-wEeiDRJYBCRsjIQ" name="PassengerID" label="PassengerID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7hb-wEeiDRJYBCRsjIQ" name="SegmentID" label="SegmentID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7hr-wEeiDRJYBCRsjIQ" name="DepartureDate" label="DepartureDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7h7-wEeiDRJYBCRsjIQ" name="DepartureStation" label="DepartureStation" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7iL-wEeiDRJYBCRsjIQ" name="ArrivalStation" label="ArrivalStation" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7ib-wEeiDRJYBCRsjIQ" name="JourneyNumber" label="JourneyNumber" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7ir-wEeiDRJYBCRsjIQ" name="SegmentNumber" label="SegmentNumber" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7i7-wEeiDRJYBCRsjIQ" name="ClassOfService" label="ClassOfService" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7jL-wEeiDRJYBCRsjIQ" name="TripType" label="TripType" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7jb-wEeiDRJYBCRsjIQ" name="CreatedDate" label="CreatedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7jr-wEeiDRJYBCRsjIQ" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7j7-wEeiDRJYBCRsjIQ" name="DeleteFlag" label="DeleteFlag" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7kL-wEeiDRJYBCRsjIQ" name="ETLModifiedDate" label="ETLModifiedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7kb-wEeiDRJYBCRsjIQ" name="FareJourneyType" label="FareJourneyType" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7kr-wEeiDRJYBCRsjIQ" name="ProductClassCode" label="ProductClassCode" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kXn7k7-wEeiDRJYBCRsjIQ" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
