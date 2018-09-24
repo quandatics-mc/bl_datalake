@@ -149,7 +149,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Reference">
         <mapperTableEntries name="TableName" expression="&quot;stg_03_aadb_PassengerFeeCharge_Update&quot;" type="id_String" nullable="true"/>
@@ -261,7 +261,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord1">
         <mapperTableEntries name="PassengerID" expression="row12.PassengerID " type="id_Long" nullable="true"/>
@@ -367,7 +367,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord2">
         <mapperTableEntries name="PassengerID" expression="row13.PassengerID " type="id_Long" nullable="true"/>
@@ -419,7 +419,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord3">
         <mapperTableEntries name="PassengerID" expression="row14.PassengerID " type="id_Long" nullable="true"/>
@@ -471,7 +471,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord4">
         <mapperTableEntries name="PassengerID" expression="row15.PassengerID " type="id_Long" nullable="true"/>
@@ -552,7 +552,7 @@
       <column comment="" key="false" length="-1" name="DeleteFlag" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="!(row6.PassengerID == null &amp;&amp; row6.FeeNumber == null &amp;&amp; row6.ChargeNumber == null &amp;&amp;  row6.DeleteFlag == null)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" reject="true">
         <mapperTableEntries name="PassengerID" expression="row6.PassengerID " type="id_Long" nullable="true"/>
