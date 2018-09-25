@@ -9,8 +9,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso9sByEeiE0sNOeL71dw" name="InventoryLegID" label="InventoryLegID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso98ByEeiE0sNOeL71dw" name="JourneyNumber" label="JourneyNumber" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso-MByEeiE0sNOeL71dw" name="LiftStatus" label="LiftStatus" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso-cByEeiE0sNOeL71dw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso-sByEeiE0sNOeL71dw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso-cByEeiE0sNOeL71dw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso-sByEeiE0sNOeL71dw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
