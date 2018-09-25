@@ -896,7 +896,7 @@
       <relatedItems xmi:id="_7dHV8cCsEeicIe8HbMzXig" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_7dHV8sCsEeicIe8HbMzXig" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_7dHV88CsEeicIe8HbMzXig" id="_PQIVwMCfEeicIe8HbMzXig - metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_7dHV9MCsEeicIe8HbMzXig" id="_yyxkUMCeEeicIe8HbMzXig - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_9E0eEMCtEeicIe8HbMzXig" id="_XBpU0MCgEeicIe8HbMzXig - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <deletedFolders>process/Group0_Marvin/Group2_Marvin</deletedFolders>
     <migrationTask xmi:id="_QJzJEK_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
