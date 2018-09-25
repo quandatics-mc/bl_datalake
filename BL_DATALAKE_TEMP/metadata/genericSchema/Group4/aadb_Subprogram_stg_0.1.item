@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_YvxDgMCgEeicIe8HbMzXig" name="aadb_Subprogram_stg" label="aadb_Subprogram_stg" dataPackage="_XBp74cCgEeicIe8HbMzXig"/>
   <TalendMetadata:GenericPackage xmi:id="_XBp74cCgEeicIe8HbMzXig" name="repository.metadataGenericSchema" dataManager="_YvxDgMCgEeicIe8HbMzXig">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XBp74sCgEeicIe8HbMzXig" id="_ZJr00MCfEeicIe8HbMzXig" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp748CgEeicIe8HbMzXig" name="SubprogramCode" label="SubprogramCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp748CgEeicIe8HbMzXig" name="SubprogramCode" label="SubprogramCode" talendType="id_String" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp75MCgEeicIe8HbMzXig" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp75cCgEeicIe8HbMzXig" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp75sCgEeicIe8HbMzXig" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
