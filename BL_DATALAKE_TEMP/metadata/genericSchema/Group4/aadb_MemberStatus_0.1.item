@@ -7,7 +7,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJMCeEeicIe8HbMzXig" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJcCeEeicIe8HbMzXig" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJsCeEeicIe8HbMzXig" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJ8CeEeicIe8HbMzXig" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJ8CeEeicIe8HbMzXig" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GKMCeEeicIe8HbMzXig" name="Name" label="Name" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GKcCeEeicIe8HbMzXig" name="IsSystemReserved" label="IsSystemReserved" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GKsCeEeicIe8HbMzXig" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
