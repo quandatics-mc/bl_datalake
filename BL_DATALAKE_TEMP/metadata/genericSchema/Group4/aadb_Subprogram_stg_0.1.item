@@ -5,9 +5,9 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XBp74sCgEeicIe8HbMzXig" id="_ZJr00MCfEeicIe8HbMzXig" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp748CgEeicIe8HbMzXig" name="SubprogramCode" label="SubprogramCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp75MCgEeicIe8HbMzXig" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp75cCgEeicIe8HbMzXig" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp75cCgEeicIe8HbMzXig" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp75sCgEeicIe8HbMzXig" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp758CgEeicIe8HbMzXig" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp758CgEeicIe8HbMzXig" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp76MCgEeicIe8HbMzXig" name="Name" label="Name" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp76cCgEeicIe8HbMzXig" name="Description" label="Description" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp76sCgEeicIe8HbMzXig" name="ActiveStatus" label="ActiveStatus" length="-1" talendType="id_Integer"/>
@@ -19,7 +19,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp78MCgEeicIe8HbMzXig" name="YearsDuration" label="YearsDuration" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp78cCgEeicIe8HbMzXig" name="Cost" label="Cost" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp78sCgEeicIe8HbMzXig" name="LinkedSubprogramCode" label="LinkedSubprogramCode" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp788CgEeicIe8HbMzXig" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp788CgEeicIe8HbMzXig" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
