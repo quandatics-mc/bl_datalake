@@ -504,12 +504,9 @@
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="PassengerID_1" expression="row5.PassengerID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SegmentID_1" expression="row5.SegmentID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="LegNumber_1" expression="row5.LegNumber " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="PassengerID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SegmentID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="LegNumber" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="PassengerID" expression="row5.PassengerID " type="id_Long" nullable="true" operator="="/>
+        <mapperTableEntries name="SegmentID" expression="row5.SegmentID " type="id_Long" nullable="true" operator="="/>
+        <mapperTableEntries name="LegNumber" expression="row5.LegNumber " type="id_Long" nullable="true" operator="="/>
         <mapperTableEntries name="InventoryLegID" expression="" type="id_Long" nullable="true"/>
         <mapperTableEntries name="JourneyNumber" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LiftStatus" type="id_Long" nullable="true"/>
@@ -520,6 +517,8 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_TtaS0MByEeiE0sNOeL71dw - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -527,9 +526,6 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashIn1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_2">
-      <column comment="" key="true" length="-1" name="PassengerID_1" nullable="true" originalDbColumnName="PassengerID" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="-1" name="SegmentID_1" nullable="true" originalDbColumnName="SegmentID" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="true" length="-1" name="LegNumber_1" nullable="true" originalDbColumnName="LegNumber" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PassengerID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SegmentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LegNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -566,7 +562,6 @@
       <column comment="" key="false" length="-1" name="PassengerID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SegmentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LegNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InventoryLegID_1" nullable="true" originalDbColumnName="InventoryLegID" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="JourneyNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LiftStatus" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -590,7 +585,6 @@
         <mapperTableEntries name="PassengerID" expression="uniq.PassengerID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="SegmentID" expression="uniq.SegmentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LegNumber" expression="uniq.LegNumber " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="InventoryLegID_1" expression="uniq.InventoryLegID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="InventoryLegID" expression="uniq.InventoryLegID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="JourneyNumber" expression="uniq.JourneyNumber " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LiftStatus" expression="uniq.LiftStatus " type="id_Long" nullable="true"/>
@@ -668,7 +662,6 @@
       <column comment="" key="false" length="-1" name="PassengerID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SegmentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LegNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InventoryLegID_1" nullable="true" originalDbColumnName="InventoryLegID" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="JourneyNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LiftStatus" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -683,7 +676,6 @@
       <column comment="" key="false" length="-1" name="PassengerID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SegmentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LegNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InventoryLegID_1" nullable="true" originalDbColumnName="InventoryLegID" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="JourneyNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LiftStatus" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -727,13 +719,12 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_1">
-      <column comment="" key="false" length="-1" name="PassengerID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SegmentID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LegNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InventoryLegID_1" nullable="true" originalDbColumnName="InventoryLegID" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="JourneyNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LiftStatus" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PassengerID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SegmentID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JourneyNumber" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LiftStatus" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
