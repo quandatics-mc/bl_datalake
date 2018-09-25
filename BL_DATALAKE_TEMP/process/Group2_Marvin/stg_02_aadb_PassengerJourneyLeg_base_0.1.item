@@ -571,7 +571,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.PassengerID == null || uniq.SegmentID  == null || uniq.LegNumber.isEmpty() || uniq.InventoryLegID==null || uniq.JourneyNumber  == null ||uniq.LiftStatus.isEmpty() || uniq.ModifiedDate== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.PassengerID == null || uniq.SegmentID  == null || uniq.LegNumber==null || uniq.InventoryLegID==null || uniq.JourneyNumber  == null ||uniq.LiftStatus==null || uniq.ModifiedDate== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="PassengerID" expression="uniq.PassengerID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="SegmentID" expression="uniq.SegmentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LegNumber" expression="uniq.LegNumber " type="id_Long" nullable="true"/>
