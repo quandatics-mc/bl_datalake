@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_wMy9oL_7Eeiu-KAgFhezlw" name="repository.metadataGenericSchema" dataPackage="_wMy9ob_7Eeiu-KAgFhezlw"/>
+  <TalendMetadata:GenericPackage xmi:id="_wMy9ob_7Eeiu-KAgFhezlw" name="repository.metadataGenericSchema" dataManager="_wMy9oL_7Eeiu-KAgFhezlw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_wMy9or_7Eeiu-KAgFhezlw" id="_JBKEkL_7Eeiu-KAgFhezlw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9o7_7Eeiu-KAgFhezlw" name="PassengerID" label="PassengerID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9pL_7Eeiu-KAgFhezlw" name="SegmentID" label="SegmentID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9pb_7Eeiu-KAgFhezlw" name="ChargeNumber" label="ChargeNumber" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9pr_7Eeiu-KAgFhezlw" name="ChargeType" label="ChargeType" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9p7_7Eeiu-KAgFhezlw" name="ChargeCode" label="ChargeCode" length="24" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9qL_7Eeiu-KAgFhezlw" name="CurrencyCode" label="CurrencyCode" length="12" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9qb_7Eeiu-KAgFhezlw" name="ChargeAmount" label="ChargeAmount" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9qr_7Eeiu-KAgFhezlw" name="ForeignCurrencyCode" label="ForeignCurrencyCode" length="12" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9q7_7Eeiu-KAgFhezlw" name="ForeignAmount" label="ForeignAmount" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9rL_7Eeiu-KAgFhezlw" name="CreatedDate" label="CreatedDate" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9rb_7Eeiu-KAgFhezlw" name="DeleteFlag" label="DeleteFlag" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9rr_7Eeiu-KAgFhezlw" name="ETLModifiedDate" label="ETLModifiedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wMy9r7_7Eeiu-KAgFhezlw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
