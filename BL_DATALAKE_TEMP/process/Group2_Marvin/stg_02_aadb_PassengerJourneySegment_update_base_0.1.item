@@ -419,9 +419,9 @@
       <column comment="" key="false" length="-1" name="DeleteFlag" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.PassengerID == null || uniq.SegmentID  == null || uniq.DepartureDate==null || uniq.DepartureStation==null ||uniq.DepartureStation.isEmpty() || uniq.ArrivalStation  == null || uniq.ArrivalStation.isEmpty()||uniq.JourneyNumber==null || uniq.SegmentNumber  == null ||uniq.ClassOfService.isEmpty() || uniq.ClassOfService==null || uniq.TripType  == null ||uniq.ModifiedDate==null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.PassengerID == null || uniq.SegmentID  == null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="PassengerID" expression="uniq.PassengerID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="SegmentID" expression="uniq.SegmentID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="DeleteFlag" expression="uniq.DeleteFlag " type="id_Integer" nullable="true"/>
