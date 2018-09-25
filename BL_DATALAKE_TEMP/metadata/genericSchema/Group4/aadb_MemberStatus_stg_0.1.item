@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_PQQRkMCfEeicIe8HbMzXig" name="aadb_MemberStatus_stg" label="aadb_MemberStatus_stg" dataPackage="_yz0GIcCeEeicIe8HbMzXig"/>
+  <TalendMetadata:GenericPackage xmi:id="_yz0GIcCeEeicIe8HbMzXig" name="repository.metadataGenericSchema" dataManager="_PQQRkMCfEeicIe8HbMzXig">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_yz0GIsCeEeicIe8HbMzXig" id="_kdKwsMCeEeicIe8HbMzXig" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GI8CeEeicIe8HbMzXig" name="MemberStatusID" label="MemberStatusID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJMCeEeicIe8HbMzXig" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJcCeEeicIe8HbMzXig" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJsCeEeicIe8HbMzXig" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GJ8CeEeicIe8HbMzXig" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GKMCeEeicIe8HbMzXig" name="Name" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GKcCeEeicIe8HbMzXig" name="IsSystemReserved" label="IsSystemReserved" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yz0GKsCeEeicIe8HbMzXig" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
