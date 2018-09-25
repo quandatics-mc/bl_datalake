@@ -799,6 +799,23 @@
       <relatedItems xmi:id="_Z-UiUMCVEeicIe8HbMzXig" id="_TtaS0MByEeiE0sNOeL71dw - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_Z-UiUcCVEeicIe8HbMzXig" id="_RugWIMByEeiE0sNOeL71dw - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_LARcYMCaEeicIe8HbMzXig">
+      <baseItem xmi:id="_LARcYcCaEeicIe8HbMzXig" id="_K_OTgMCaEeicIe8HbMzXig" version="0.1" type="job"/>
+      <relatedItems xmi:id="_LARcYsCaEeicIe8HbMzXig" id="_iZrhsK9VEeiVsYAmnhb2Dg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_LARcY8CaEeicIe8HbMzXig" id="_IMOIYK8rEeiVsYAmnhb2Dg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_LARcZMCaEeicIe8HbMzXig" id="_rIWVsL_iEeie3tkeB_j6Vw" version="Latest" type="job"/>
+      <relatedItems xmi:id="_LARcZcCaEeicIe8HbMzXig" id="_4SxbUL-wEeiDRJYBCRsjIQ" version="Latest" type="job"/>
+      <relatedItems xmi:id="_LARcZsCaEeicIe8HbMzXig" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARcZ8CaEeicIe8HbMzXig" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARcaMCaEeicIe8HbMzXig" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARcacCaEeicIe8HbMzXig" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARcasCaEeicIe8HbMzXig" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARca8CaEeicIe8HbMzXig" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARcbMCaEeicIe8HbMzXig" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARcbcCaEeicIe8HbMzXig" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARcbsCaEeicIe8HbMzXig" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_LARcb8CaEeicIe8HbMzXig" id="TalendStringUtil" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/Group0_Marvin/Group2_Marvin</deletedFolders>
     <migrationTask xmi:id="_QJzJEK_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_QJzJEa_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
