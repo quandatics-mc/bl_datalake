@@ -835,8 +835,8 @@
       <relatedItems xmi:id="_ZMTjsMCiEeicIe8HbMzXig" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ZMTjscCiEeicIe8HbMzXig" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ZMTjssCiEeicIe8HbMzXig" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_ZMTjs8CiEeicIe8HbMzXig" id="_3OD-IK8qEeiVsYAmnhb2Dg - metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_ZMTjtMCiEeicIe8HbMzXig" id="_bLlUkK9bEeiVsYAmnhb2Dg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_2t_1AMCkEeicIe8HbMzXig" id="_PQIVwMCfEeicIe8HbMzXig - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_2t_1AcCkEeicIe8HbMzXig" id="_yyxkUMCeEeicIe8HbMzXig - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_eymdwMCiEeicIe8HbMzXig">
       <baseItem xmi:id="_eymdwcCiEeicIe8HbMzXig" id="_ewu1gMCiEeicIe8HbMzXig" version="0.1" type="job"/>
