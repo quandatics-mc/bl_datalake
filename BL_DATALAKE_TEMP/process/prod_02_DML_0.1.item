@@ -277,7 +277,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_9"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="-35" offsetLabelY="-32" posX="896" posY="288">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="-35" offsetLabelY="-32" posX="896" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_10" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="" show="false"/>
@@ -297,7 +297,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_10"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="4" offsetLabelY="-23" posX="1152" posY="288">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="32" posX="1152" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_11" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
