@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_eVSX8MFYEeik57cswKjnMg" name="lms_Member_stg" label="lms_Member_stg" dataPackage="_ciOJwsFWEeik57cswKjnMg"/>
   <TalendMetadata:GenericPackage xmi:id="_ciOJwsFWEeik57cswKjnMg" name="repository.metadataGenericSchema" dataManager="_eVSX8MFYEeik57cswKjnMg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ciOJw8FWEeik57cswKjnMg" id="_bBnSoMFWEeik57cswKjnMg" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxMFWEeik57cswKjnMg" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxMFWEeik57cswKjnMg" name="MemberID" label="MemberID" length="-1" talendType="id_Long" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxcFWEeik57cswKjnMg" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxsFWEeik57cswKjnMg" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJx8FWEeik57cswKjnMg" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
