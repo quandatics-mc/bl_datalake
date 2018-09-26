@@ -26,7 +26,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pVImIMFXEeik57cswKjnMg" name="CountryCode" label="CountryCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qDFRQMFXEeik57cswKjnMg" name="PostalCode" label="PostalCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_slGiEMFXEeik57cswKjnMg" name="BusOrRes" label="BusOrRes" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_smxWAMFXEeik57cswKjnMg" name="BirthDate" label="BirthDate" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_smxWAMFXEeik57cswKjnMg" name="BirthDate" label="BirthDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_spsHIMFXEeik57cswKjnMg" name="Gender" label="Gender" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_suP3AMFXEeik57cswKjnMg" name="PhoneNumber" label="PhoneNumber" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__she4MFXEeik57cswKjnMg" name="OptIn" label="OptIn" length="-1" talendType="id_Long"/>
