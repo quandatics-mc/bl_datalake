@@ -6,11 +6,11 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxMFWEeik57cswKjnMg" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxcFWEeik57cswKjnMg" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxsFWEeik57cswKjnMg" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJx8FWEeik57cswKjnMg" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJx8FWEeik57cswKjnMg" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k_J50MFWEeik57cswKjnMg" name="ProgramLevelCode" label="ProgramLevelCode" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lA8pkMFWEeik57cswKjnMg" name="ProgramLevelStartDate" label="ProgramLevelStartDate" length="-1" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lCZbEMFWEeik57cswKjnMg" name="ProgramLevelEndDate" label="ProgramLevelEndDate" length="-1" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lD4o0MFWEeik57cswKjnMg" name="MembershipDate" label="MembershipDate" length="-1" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lA8pkMFWEeik57cswKjnMg" name="ProgramLevelStartDate" label="ProgramLevelStartDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lCZbEMFWEeik57cswKjnMg" name="ProgramLevelEndDate" label="ProgramLevelEndDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lD4o0MFWEeik57cswKjnMg" name="MembershipDate" label="MembershipDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TJfDUMFXEeik57cswKjnMg" name="ExpirationActionType" label="ExpirationActionType" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TNuqIMFXEeik57cswKjnMg" name="MemberStatusID" label="MemberStatusID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TR8bwMFXEeik57cswKjnMg" name="LastName" label="LastName" talendType="id_String"/>
@@ -34,8 +34,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__ydHwMFXEeik57cswKjnMg" name="SourceCode" label="SourceCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__0PQcMFXEeik57cswKjnMg" name="Comments" label="Comments" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FxrfQMFYEeik57cswKjnMg" name="ManualLevelChange" label="ManualLevelChange" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OlSC4MFYEeik57cswKjnMg" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FzhSUMFYEeik57cswKjnMg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OlSC4MFYEeik57cswKjnMg" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FzhSUMFYEeik57cswKjnMg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
