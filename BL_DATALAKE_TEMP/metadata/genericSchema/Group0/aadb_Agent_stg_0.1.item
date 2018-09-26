@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_bLlUkq9bEeiVsYAmnhb2Dg" comment="connectionComment" label="connectionLabel" dataPackage="_bLlUk69bEeiVsYAmnhb2Dg"/>
   <TalendMetadata:GenericPackage xmi:id="_bLlUk69bEeiVsYAmnhb2Dg" dataManager="_bLlUkq9bEeiVsYAmnhb2Dg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bLlUlK9bEeiVsYAmnhb2Dg" id="_nivegK9bEeiVsYAmnhb2Dg" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUla9bEeiVsYAmnhb2Dg" name="AgentID" id="4203" label="AgentID" length="-1" sourceType="INTEGER" talendType="id_Long">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUla9bEeiVsYAmnhb2Dg" name="AgentID" id="4203" label="AgentID" length="-1" sourceType="INTEGER" talendType="id_Long" key="true">
         <initialValue xmi:id="_bLlUlq9bEeiVsYAmnhb2Dg"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bLlUl69bEeiVsYAmnhb2Dg" name="AgentName" id="4204" label="AgentName" length="16" sourceType="STRING" talendType="id_String">
