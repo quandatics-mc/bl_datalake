@@ -841,7 +841,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.MemberStatusID == SubprogramCode || uniq.MemberStatusID.isEmpty() || uniq.CreatedUserID  == null || uniq.CreatedUTC==null || uniq.ModifiedUserID  == null ||  uniq.ModifiedUTC== null || uniq.Name== null ||  uniq.Name.isEmpty() ||uniq.Description== null || uniq.Description.isEmpty() || uniq.ActiveStatus==null||uniq.IsPublic==null||uniq.Cost==null||uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.SubprogramCode == null || uniq.SubprogramCode.isEmpty() || uniq.CreatedUserID  == null || uniq.CreatedUTC==null || uniq.ModifiedUserID  == null ||  uniq.ModifiedUTC== null || uniq.Name== null ||  uniq.Name.isEmpty() ||uniq.Description== null || uniq.Description.isEmpty() || uniq.ActiveStatus==null||uniq.IsPublic==null||uniq.Cost==null||uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="SubprogramCode" expression="uniq.SubprogramCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="CreatedUserID" expression="uniq.CreatedUserID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="CreatedUTC" expression="uniq.CreatedUTC " type="id_Date" nullable="true"/>
