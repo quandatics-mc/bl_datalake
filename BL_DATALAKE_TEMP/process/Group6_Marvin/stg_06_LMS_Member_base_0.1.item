@@ -277,8 +277,8 @@
         <mapperTableEntries name="ModifiedUserID" expression="row11.ModifiedUserID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUTC" expression="row11.ModifiedUTC==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.ModifiedUTC*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="ProgramLevelCode" expression="row11.ProgramLevelCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ProgramLevelStartDate" expression="row11.ProgramLevelStartDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row11.ProgramLevelStartDate) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ProgramLevelEndDate" expression="row11.ProgramLevelEndDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row11.ProgramLevelEndDate) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ProgramLevelStartDate" expression="row11.ProgramLevelStartDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row11.ProgramLevelStartDate) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ProgramLevelEndDate" expression="row11.ProgramLevelEndDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row11.ProgramLevelEndDate) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MembershipDate" expression="row11.MembershipDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.MembershipDate*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="ExpirationActionType" expression="row11.ExpirationActionType " type="id_String" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row11.MemberStatusID " type="id_Long" nullable="true"/>
@@ -295,7 +295,7 @@
         <mapperTableEntries name="CountryCode" expression="row11.CountryCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" expression="row11.PostalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" expression="row11.BusOrRes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" expression="row11.BirthDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row11.BirthDate) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BirthDate" expression="row11.BirthDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row11.BirthDate) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" expression="row11.Gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" expression="row11.PhoneNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" expression="row11.OptIn " type="id_Long" nullable="true"/>
