@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_u8IfUMFhEeiz0YNLAifuXg" name="repository.metadataGenericSchema" dataPackage="_u8IfUcFhEeiz0YNLAifuXg"/>
+  <TalendMetadata:GenericPackage xmi:id="_u8IfUcFhEeiz0YNLAifuXg" name="repository.metadataGenericSchema" dataManager="_u8IfUMFhEeiz0YNLAifuXg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_u8IfUsFhEeiz0YNLAifuXg" id="_HpEvoMFhEeiz0YNLAifuXg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfU8FhEeiz0YNLAifuXg" name="PartnerRateCode" label="PartnerRateCode" length="10" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfVMFhEeiz0YNLAifuXg" name="PartnerCode" label="PartnerCode" length="12" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfVcFhEeiz0YNLAifuXg" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfVsFhEeiz0YNLAifuXg" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfV8FhEeiz0YNLAifuXg" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfWMFhEeiz0YNLAifuXg" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfWcFhEeiz0YNLAifuXg" name="Name" label="Name" length="64" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfWsFhEeiz0YNLAifuXg" name="ActiveStatus" label="ActiveStatus" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfW8FhEeiz0YNLAifuXg" name="FixedExpirationMonthPeriod" label="FixedExpirationMonthPeriod" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfXMFhEeiz0YNLAifuXg" name="FixedExpirationDayPeriod" label="FixedExpirationDayPeriod" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u8IfXcFhEeiz0YNLAifuXg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
