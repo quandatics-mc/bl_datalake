@@ -1349,7 +1349,7 @@
       <relatedItems xmi:id="_fkZC28FtEeiz0YNLAifuXg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_fkZC3MFtEeiz0YNLAifuXg" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_fkZC3cFtEeiz0YNLAifuXg" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_fkZC3sFtEeiz0YNLAifuXg" id="_u8GDEMFhEeiz0YNLAifuXg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_qaEhAMFvEeiz0YNLAifuXg" id="_YlkPgMFtEeiz0YNLAifuXg - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <deletedFolders>process/Group0_Marvin/Group2_Marvin</deletedFolders>
     <migrationTask xmi:id="_QJzJEK_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
