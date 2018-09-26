@@ -532,12 +532,12 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="!((row6.PartnerCode == null || row6.PartnerCode.isEmpty()) &amp;&amp; (row6.PartnerRateCode == null || row6.PartnerRateCode.isEmpty()) &amp;&amp;  row6.ModifiedUserID)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" reject="true">
+      <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="!((row6.PartnerCode == null || row6.PartnerCode.isEmpty()) &amp;&amp; (row6.PartnerRateCode == null || row6.PartnerRateCode.isEmpty()) &amp;&amp;  row6.ModifiedUserID == null)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" reject="true">
         <mapperTableEntries name="PartnerCode" expression="row6.PartnerCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PartnerRateCode" expression="row6.PartnerRateCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row6.ModifiedUserID " type="id_Integer" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="NullRecord" expressionFilter="(row6.PartnerCode == null || row6.PartnerCode.isEmpty()) || (row6.PartnerRateCode == null || row6.PartnerRateCode.isEmpty()) ||  row6.ModifiedUserID" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="NullRecord" expressionFilter="(row6.PartnerCode == null || row6.PartnerCode.isEmpty()) || (row6.PartnerRateCode == null || row6.PartnerRateCode.isEmpty()) ||  row6.ModifiedUserID == null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="PartnerCode" expression="row6.PartnerCode  " type="id_String" nullable="true"/>
         <mapperTableEntries name="PartnerRateCode" expression="row6.PartnerRateCode  " type="id_String" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row6.ModifiedUserID  " type="id_Integer" nullable="true"/>
