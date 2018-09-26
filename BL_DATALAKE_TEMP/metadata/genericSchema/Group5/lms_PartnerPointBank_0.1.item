@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Ylk2kMFtEeiz0YNLAifuXg" name="repository.metadataGenericSchema" dataPackage="_Ylk2kcFtEeiz0YNLAifuXg"/>
+  <TalendMetadata:GenericPackage xmi:id="_Ylk2kcFtEeiz0YNLAifuXg" name="repository.metadataGenericSchema" dataManager="_Ylk2kMFtEeiz0YNLAifuXg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Ylk2ksFtEeiz0YNLAifuXg" id="_wsjTEMFsEeiz0YNLAifuXg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2k8FtEeiz0YNLAifuXg" name="PartnerCode" label="PartnerCode" length="12" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2lMFtEeiz0YNLAifuXg" name="PartnerRateCode" label="PartnerRateCode" length="10" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2lcFtEeiz0YNLAifuXg" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2lsFtEeiz0YNLAifuXg" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2l8FtEeiz0YNLAifuXg" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2mMFtEeiz0YNLAifuXg" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2mcFtEeiz0YNLAifuXg" name="Balance" label="Balance" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2msFtEeiz0YNLAifuXg" name="NegativeBalanceLimit" label="NegativeBalanceLimit" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2m8FtEeiz0YNLAifuXg" name="FirstNotificationThreshold" label="FirstNotificationThreshold" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2nMFtEeiz0YNLAifuXg" name="SecondNotificationThreshold" label="SecondNotificationThreshold" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2ncFtEeiz0YNLAifuXg" name="ThirdNotificationThreshold" label="ThirdNotificationThreshold" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ylk2nsFtEeiz0YNLAifuXg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
