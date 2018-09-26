@@ -1401,8 +1401,8 @@
       <relatedItems xmi:id="_cWhNIMF3Eeik57cswKjnMg" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_cWhNIcF3Eeik57cswKjnMg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_cWhNIsF3Eeik57cswKjnMg" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_cWhNI8F3Eeik57cswKjnMg" id="_3OD-IK8qEeiVsYAmnhb2Dg - metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_cWhNJMF3Eeik57cswKjnMg" id="_bLlUkK9bEeiVsYAmnhb2Dg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_FdO2QMF5Eeik57cswKjnMg" id="_LCx6kLx4EeitcIP7RwrZeg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_FdO2QcF5Eeik57cswKjnMg" id="_N4qikLx4EeitcIP7RwrZeg - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <deletedFolders>process/Group0_Marvin/Group2_Marvin</deletedFolders>
     <migrationTask xmi:id="_QJzJEK_SEeiEF75cLc3dlg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
