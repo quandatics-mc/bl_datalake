@@ -999,7 +999,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1034,7 +1034,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1072,7 +1072,7 @@
         <mapperTableEntries name="CountryCode" expression="row5.CountryCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" expression="row5.PostalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" expression="row5.BusOrRes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" expression="row5.BirthDate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" expression="row5.BirthDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" expression="row5.Gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" expression="row5.PhoneNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" expression="row5.OptIn " type="id_Long" nullable="true"/>
@@ -1107,7 +1107,7 @@
         <mapperTableEntries name="CountryCode" expression="row5.CountryCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" expression="row5.PostalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" expression="row5.BusOrRes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" expression="row5.BirthDate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" expression="row5.BirthDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" expression="row5.Gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" expression="row5.PhoneNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" expression="row5.OptIn " type="id_Long" nullable="true"/>
@@ -1180,7 +1180,7 @@
         <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OptIn" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OptIn" expression="" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ToMemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="SourceCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="Comments" type="id_String" nullable="true"/>
@@ -1249,7 +1249,7 @@
     <elementParameter field="TEXT" name="LABEL" value="dupHashOut2"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_3">
-      <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -1272,7 +1272,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1320,7 +1320,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1355,7 +1355,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1367,7 +1367,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.MemberID == null || uniq.CreatedUserID  == null ||  uniq.ModifiedUserID  == null ||  uniq.ModifiedUTC== null ||uniq.ProgramLevelCode== null ||uniq.ProgramLevelCode.isEmpty()||uniq.ProgramLevelStartDate== null ||uniq.MembershipDate== null || uniq.ExpirationActionType== null || uniq.ExpirationActionType.isEmpty() || uniq.MemberStatusID== null ||uniq.FirstName== null || uniq.FirstName.isEmpty ||uniq.LastName== null || uniq.EmailAddress== null || uniq.EmailAddress.isEmpty() || uniq.BirthDate== null || uniq.Gender== null|| uniq.Gender.isEmpty()|| uniq.OptIn== null|| || uniq.ManualLevelChange== null|| uniq.ModifiedDate== null|| uniq.LoadedDate== null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="MemberID" expression="uniq.MemberID " type="id_Long" nullable="true"/>
@@ -1393,7 +1393,7 @@
         <mapperTableEntries name="CountryCode" expression="uniq.CountryCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" expression="uniq.PostalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" expression="uniq.BusOrRes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" expression="uniq.BirthDate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" expression="uniq.BirthDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" expression="uniq.Gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" expression="uniq.PhoneNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" expression="uniq.OptIn " type="id_Long" nullable="true"/>
@@ -1428,7 +1428,7 @@
         <mapperTableEntries name="CountryCode" expression="uniq.CountryCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" expression="uniq.PostalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" expression="uniq.BusOrRes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" expression="uniq.BirthDate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" expression="uniq.BirthDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" expression="uniq.Gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" expression="uniq.PhoneNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" expression="uniq.OptIn " type="id_Long" nullable="true"/>
@@ -1463,7 +1463,7 @@
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" type="id_Long" nullable="true"/>
@@ -1512,7 +1512,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1560,7 +1560,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1595,7 +1595,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1633,7 +1633,7 @@
         <mapperTableEntries name="CountryCode" expression="outFinal.CountryCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" expression="outFinal.PostalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" expression="outFinal.BusOrRes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" expression="outFinal.BirthDate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" expression="outFinal.BirthDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" expression="outFinal.Gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" expression="outFinal.PhoneNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" expression="outFinal.OptIn " type="id_Long" nullable="true"/>
@@ -1668,7 +1668,7 @@
         <mapperTableEntries name="CountryCode" expression="outFinal.CountryCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" expression="outFinal.PostalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" expression="outFinal.BusOrRes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" expression="outFinal.BirthDate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" expression="outFinal.BirthDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" expression="outFinal.Gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" expression="outFinal.PhoneNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" expression="outFinal.OptIn " type="id_Long" nullable="true"/>
@@ -1703,7 +1703,7 @@
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="BusOrRes" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="OptIn" type="id_Long" nullable="true"/>
@@ -1752,7 +1752,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1797,7 +1797,7 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1845,16 +1845,16 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_1">
-      <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUserID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="ProgramLevelCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ProgramLevelStartDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ProgramLevelEndDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MembershipDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="ExpirationActionType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="MiddleName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1868,11 +1868,11 @@
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SourceCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Comments" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ManualLevelChange" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -3070,8 +3070,6 @@
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutput_3" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_lms_group6_reference.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
