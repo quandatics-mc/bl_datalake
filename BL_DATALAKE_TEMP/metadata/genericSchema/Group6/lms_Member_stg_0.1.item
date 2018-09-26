@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_eVSX8MFYEeik57cswKjnMg" name="lms_Member_stg" label="lms_Member_stg" dataPackage="_ciOJwsFWEeik57cswKjnMg"/>
+  <TalendMetadata:GenericPackage xmi:id="_ciOJwsFWEeik57cswKjnMg" name="repository.metadataGenericSchema" dataManager="_eVSX8MFYEeik57cswKjnMg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ciOJw8FWEeik57cswKjnMg" id="_bBnSoMFWEeik57cswKjnMg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxMFWEeik57cswKjnMg" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxcFWEeik57cswKjnMg" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxsFWEeik57cswKjnMg" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJx8FWEeik57cswKjnMg" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_k_J50MFWEeik57cswKjnMg" name="ProgramLevelCode" label="ProgramLevelCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lA8pkMFWEeik57cswKjnMg" name="ProgramLevelStartDate" label="ProgramLevelStartDate" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lCZbEMFWEeik57cswKjnMg" name="ProgramLevelEndDate" label="ProgramLevelEndDate" length="-1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lD4o0MFWEeik57cswKjnMg" name="MembershipDate" label="MembershipDate" length="-1" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TJfDUMFXEeik57cswKjnMg" name="ExpirationActionType" label="ExpirationActionType" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TNuqIMFXEeik57cswKjnMg" name="MemberStatusID" label="MemberStatusID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TR8bwMFXEeik57cswKjnMg" name="LastName" label="LastName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TVVuAMFXEeik57cswKjnMg" name="FirstName" label="FirstName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kEi2QMFXEeik57cswKjnMg" name="MiddleName" label="MiddleName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kGUX4MFXEeik57cswKjnMg" name="Title" label="Title" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kH8IgMFXEeik57cswKjnMg" name="Suffix" label="Suffix" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kKHSwMFXEeik57cswKjnMg" name="EmailAddress" label="EmailAddress" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m63jIMFXEeik57cswKjnMg" name="Address1" label="Address1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m8ViwMFXEeik57cswKjnMg" name="Address2" label="Address2" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oRbGYMFXEeik57cswKjnMg" name="City" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_owRlkMFXEeik57cswKjnMg" name="StateCode" label="StateCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pVImIMFXEeik57cswKjnMg" name="CountryCode" label="CountryCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qDFRQMFXEeik57cswKjnMg" name="PostalCode" label="PostalCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_slGiEMFXEeik57cswKjnMg" name="BusOrRes" label="BusOrRes" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_smxWAMFXEeik57cswKjnMg" name="BirthDate" label="BirthDate" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_spsHIMFXEeik57cswKjnMg" name="Gender" label="Gender" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_suP3AMFXEeik57cswKjnMg" name="PhoneNumber" label="PhoneNumber" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__she4MFXEeik57cswKjnMg" name="OptIn" label="OptIn" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__v7YMMFXEeik57cswKjnMg" name="ToMemberID" label="ToMemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__ydHwMFXEeik57cswKjnMg" name="SourceCode" label="SourceCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__0PQcMFXEeik57cswKjnMg" name="Comments" label="Comments" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FxrfQMFYEeik57cswKjnMg" name="ManualLevelChange" label="ManualLevelChange" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_OlSC4MFYEeik57cswKjnMg" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FzhSUMFYEeik57cswKjnMg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
