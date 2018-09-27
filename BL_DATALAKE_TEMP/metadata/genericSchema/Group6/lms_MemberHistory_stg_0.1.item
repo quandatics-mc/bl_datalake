@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_9UD4AMIuEeiyS53pKo2cTA" name="lms_MemberHistory_stg" label="lms_MemberHistory_stg" dataPackage="_7BKoUcIuEeiyS53pKo2cTA"/>
+  <TalendMetadata:GenericPackage xmi:id="_7BKoUcIuEeiyS53pKo2cTA" name="repository.metadataGenericSchema" dataManager="_9UD4AMIuEeiyS53pKo2cTA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7BKoUsIuEeiyS53pKo2cTA" id="_spwd4MIuEeiyS53pKo2cTA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoU8IuEeiyS53pKo2cTA" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoVMIuEeiyS53pKo2cTA" name="MemberHistoryID" label="MemberHistoryID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoVcIuEeiyS53pKo2cTA" name="CreatedsUserID" label="CreatedsUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoVsIuEeiyS53pKo2cTA" name="Code" label="Code" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoV8IuEeiyS53pKo2cTA" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoWMIuEeiyS53pKo2cTA" name="AgentName" label="AgentName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoWcIuEeiyS53pKo2cTA" name="HistoryType" label="HistoryType" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoWsIuEeiyS53pKo2cTA" name="Action" label="Action" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7BKoW8IuEeiyS53pKo2cTA" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
