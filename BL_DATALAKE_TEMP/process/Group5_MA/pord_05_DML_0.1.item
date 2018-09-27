@@ -115,7 +115,7 @@
     <routinesParameter id="_QUgkQK_SEeiEF75cLc3dlg" name="TalendStringUtil"/>
     <routinesParameter id="_QUMbMK_SEeiEF75cLc3dlg" name="TalendString"/>
   </parameters>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
@@ -129,20 +129,19 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Delete_PassengerJourneyCharge"/>
+    <elementParameter field="TEXT" name="LABEL" value="Delete_Partner"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_1">
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_PassengerJourneyCharge` (PassengerID, SegmentID, ChargeNumber, ChargeType, ChargeCode, CurrencyCode, ChargeAmount, ForeignCurrencyCode, ForeignAmount, CreatedDate, DeleteFlag, ETLModifiedDate, LoadedDate, RowType)&#xD;&#xA;SELECT PassengerID, SegmentID, ChargeNumber, ChargeType, ChargeCode, CurrencyCode, ChargeAmount, ForeignCurrencyCode, ForeignAmount, CreatedDate, DeleteFlag, ETLModifiedDate, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerJourneyCharge`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Partner` (PartnerCode, CreatedUserID, CreatedUTC, ModifiedUserID, ModifiedUTC, Name, ServiceTypeID, ActiveStatus, PartnerRewardPoints, LoyaltyPoints, IsDefault, IsSystemReserved, IsRateEnabled, NameMatching, NameMatchingCharacterCount, PriorityLevel, LoadedDate, RowType)&#xD;&#xA;SELECT PartnerCode, CreatedUserID, CreatedUTC, ModifiedUserID, ModifiedUTC, Name, ServiceTypeID, ActiveStatus, PartnerRewardPoints, LoyaltyPoints, IsDefault, IsSystemReserved, IsRateEnabled, NameMatching, NameMatchingCharacterCount, PriorityLevel, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Partner`&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -150,20 +149,19 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Insert_PassengerJourneyCharge"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_Partner"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_2">
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_3" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;UPDATE `data-mgmt-191603.BL_ODS_DL.dl_PassengerJourneyCharge` dl&#xD;&#xA;SET dl.DeleteFlag=stg.DeleteFlag, dl.RowType='Updated with Reference Column' &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerJourneyCharge_update` stg &#xD;&#xA;WHERE dl.PassengerID=stg.PassengerID&#xD;&#xA;AND dl.SegmentID = stg.SegmentID&#xD;&#xA;AND dl.ChargeNumber = stg.ChargeNumber&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;UPDATE `data-mgmt-191603.BL_LMS_DL.dl_Partner` dl&#xD;&#xA;SET dl.ModifiedUserID=stg.ModifiedUserID, dl.Name=stg.Name, dl.ActiveStatus=stg.ActiveStatus, dl.RowType='Updated with Reference Column' &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Partner` stg &#xD;&#xA;WHERE dl.PartnerCode=stg.PartnerCode&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -171,7 +169,7 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Update_PassengerJourneyCharge"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_Partner"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_3">
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -261,14 +259,13 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_8" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_PassengerJourneyCharge_History` (PassengerID, SegmentID, ChargeNumber, ChargeType, ChargeCode, CurrencyCode, ChargeAmount, ForeignCurrencyCode, ForeignAmount, CreatedDate, DeleteFlag, ETLModifiedDate, LoadedDate, RowType)&#xD;&#xA;SELECT PassengerID, SegmentID, ChargeNumber, ChargeType, ChargeCode, CurrencyCode, ChargeAmount, ForeignCurrencyCode, ForeignAmount, CreatedDate, DeleteFlag, ETLModifiedDate, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerJourneyCharge`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Partner_History` (PartnerCode, CreatedUserID, CreatedUTC, ModifiedUserID, ModifiedUTC, Name, ServiceTypeID, ActiveStatus, PartnerRewardPoints, LoyaltyPoints, IsDefault, IsSystemReserved, IsRateEnabled, NameMatching, NameMatchingCharacterCount, PriorityLevel, LoadedDate, RowType)&#xD;&#xA;SELECT PartnerCode, CreatedUserID, CreatedUTC, ModifiedUserID, ModifiedUTC, Name, ServiceTypeID, ActiveStatus, PartnerRewardPoints, LoyaltyPoints, IsDefault, IsSystemReserved, IsRateEnabled, NameMatching, NameMatchingCharacterCount, PriorityLevel, LoadedDate, RowType &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Partner`&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -276,7 +273,7 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Insert_PJC_History"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_Partner_History"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_8">
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -385,14 +382,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_13"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="64">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_14" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_PassengerJourneyCharge_History` (PassengerID, SegmentID, ChargeNumber, ChargeType, ChargeCode, CurrencyCode, ChargeAmount, ForeignCurrencyCode, ForeignAmount, CreatedDate, DeleteFlag, ETLModifiedDate, LoadedDate, RowType)&#xD;&#xA;SELECT dl.PassengerID, dl.SegmentID, dl.ChargeNumber, dl.ChargeType, dl.ChargeCode, dl.CurrencyCode, dl.ChargeAmount, dl.ForeignCurrencyCode, dl.ForeignAmount, dl.CreatedDate, dl.DeleteFlag, dl.ETLModifiedDate, dl.LoadedDate, stg.RowType&#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_DL.dl_PassengerJourneyCharge` dl&#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_ODS_STG.stg_PassengerJourneyCharge_update` stg&#xD;&#xA;ON dl.PassengerID = stg.PassengerID &#xD;&#xA;AND dl.SegmentID = stg.SegmentID&#xD;&#xA;AND dl.ChargeNumber = stg.ChargeNumber&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Partner_History` (PartnerCode, CreatedUserID, CreatedUTC, ModifiedUserID, ModifiedUTC, Name, ServiceTypeID, ActiveStatus, PartnerRewardPoints, LoyaltyPoints, IsDefault, IsSystemReserved, IsRateEnabled, NameMatching, NameMatchingCharacterCount, PriorityLevel, LoadedDate, RowType)&#xD;&#xA;SELECT dl.PartnerCode, dl.CreatedUserID, dl.CreatedUTC, dl.ModifiedUserID, dl.ModifiedUTC, dl.Name, dl.ServiceTypeID, dl.ActiveStatus, dl.PartnerRewardPoints, dl.LoyaltyPoints, dl.IsDefault, dl.IsSystemReserved, dl.IsRateEnabled, dl.NameMatching, dl.NameMatchingCharacterCount, dl.PriorityLevel, dl.LoadedDate, stg.RowType&#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_DL.dl_Partner` dl&#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_LMS_STG.stg_Partner` stg&#xD;&#xA;ON dl.PartnerCode = stg.PartnerCode&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -400,7 +396,7 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Insert_PJC_Update_History"/>
+    <elementParameter field="TEXT" name="LABEL" value="Insert_Partner_Update_History"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_14">
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -502,15 +498,12 @@
     <metadata connector="FLOW" name="tBigQueryInput_19"/>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_1" offsetLabelX="-2" offsetLabelY="33" source="tBigQueryInput_1" target="tBigQueryInput_2">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_2" offsetLabelX="-2" offsetLabelY="34" source="tBigQueryInput_2" target="tBigQueryInput_3">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_3" offsetLabelX="-10" offsetLabelY="32" source="tBigQueryInput_3" target="tBigQueryInput_8">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_4" offsetLabelX="-2" offsetLabelY="31" source="tBigQueryInput_4" target="tBigQueryInput_5">
@@ -530,7 +523,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_8" offsetLabelX="-12" offsetLabelY="31" source="tBigQueryInput_8" target="tBigQueryInput_14">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_10" offsetLabelX="-13" offsetLabelY="27" source="tBigQueryInput_10" target="tBigQueryInput_11">
