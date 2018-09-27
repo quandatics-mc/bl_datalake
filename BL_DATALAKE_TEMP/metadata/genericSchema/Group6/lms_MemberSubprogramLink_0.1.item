@@ -29,7 +29,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YQ-wcMI6EeiyS53pKo2cTA" name="FromSubprogramCode" label="FromSubprogramCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YSGKwMI6EeiyS53pKo2cTA" name="CollectedAmount" label="CollectedAmount" length="-1" talendType="id_Float"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dGHTYMI6EeiyS53pKo2cTA" name="AccountNumber" label="AccountNumber" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dH-7oMI6EeiyS53pKo2cTA" name="LoadedDate" label="LoadedDate" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dH-7oMI6EeiyS53pKo2cTA" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
