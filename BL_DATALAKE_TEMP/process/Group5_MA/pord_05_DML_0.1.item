@@ -255,14 +255,13 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="448">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_13" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;DELETE  FROM  `data-mgmt-191603.BL_ODS_DL.dl_Group3_Reference` WHERE DATE(LoadedTime)=CURRENT_DATE()&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;DELETE  FROM `data-mgmt-191603.BL_LMS_DL.dl_Group5_Reference` WHERE DATE(LoadedTime)=CURRENT_DATE()&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -294,14 +293,13 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="448">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_15" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Group3_Reference`(TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerJourneyCharge`) &#xD;&#xA;AS prodRowCount, IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerJourneyCharge`)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime FROM `data-mgmt-191603.BL_ODS_STG.stg_Group3_Reference`&#xD;&#xA;WHERE TableName='stg_03_aadb_PassengerJourneyCharge_Insert' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Group5_Reference` (TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_LMS_STG.stg_Partner`) AS prodRowCount,&#xD;&#xA;IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM ``data-mgmt-191603.BL_LMS_STG.stg_Partner``)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Group5_Reference`&#xD;&#xA;WHERE TableName='stg_05_lms_Partner_Insert' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -309,18 +307,17 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Update_PJC_Reference"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_Partner_Reference"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_15"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="544">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_16" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Group3_Reference`(TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerJourneyCharge_update`) AS prodRowCount, &#xD;&#xA;IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerJourneyCharge_update`)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime FROM `data-mgmt-191603.BL_ODS_STG.stg_Group3_Reference`&#xD;&#xA;WHERE TableName='stg_03_aadb_PassengerJourneyCharge_Update' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Group5_Reference` (TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_LMS_STG.stg_Partner_update`) AS prodRowCount,&#xD;&#xA;IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM ``data-mgmt-191603.BL_LMS_STG.stg_Partner_update``)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Group5_Reference`&#xD;&#xA;WHERE TableName='stg_05_lms_Partner_Update' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -328,66 +325,9 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Update_PJC_Update_Reference"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_Partner_Update_Reference"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_16"/>
-  </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_17" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
-    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
-    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Group3_Reference`(TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerFee`) &#xD;&#xA;AS prodRowCount, IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerFee`)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime FROM `data-mgmt-191603.BL_ODS_STG.stg_Group3_Reference`&#xD;&#xA;WHERE TableName='stg_03_aadb_PassengerFee_Insert' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
-    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Update_PassengerFee_Reference"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tBigQueryInput_17"/>
-  </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_18" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
-    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
-    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Group3_Reference`(TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerFeeCharge`) &#xD;&#xA;AS prodRowCount, IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerFeeCharge`)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime FROM `data-mgmt-191603.BL_ODS_STG.stg_Group3_Reference`&#xD;&#xA;WHERE TableName='stg_03_aadb_PassengerFeeCharge_Insert' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
-    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Update_PFC_Reference"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tBigQueryInput_18"/>
-  </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_19" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
-    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
-    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_Group3_Reference`(TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerFeeCharge_update`) &#xD;&#xA;AS prodRowCount, IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM `data-mgmt-191603.BL_ODS_STG.stg_PassengerFeeCharge`)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime FROM `data-mgmt-191603.BL_ODS_STG.stg_Group3_Reference`&#xD;&#xA;WHERE TableName='stg_03_aadb_PassengerFeeCharge_Update' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
-    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="LABEL" value="Update_PFC_Update_Reference"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tBigQueryInput_19"/>
   </node>
   <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_7" show="false"/>
@@ -569,6 +509,96 @@
       <column comment="" key="false" length="-1" name="Booking" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_24" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Group5_Reference` (TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_LMS_STG.stg_PartnerRate`) AS prodRowCount,&#xD;&#xA;IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM ``data-mgmt-191603.BL_LMS_STG.stg_PartnerRate``)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Group5_Reference`&#xD;&#xA;WHERE TableName='stg_05_lms_PartnerRate_Insert' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_PartnerRate_Reference"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_24"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_25" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Group5_Reference` (TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_LMS_STG.stg_PartnerRate_update`) AS prodRowCount,&#xD;&#xA;IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM ``data-mgmt-191603.BL_LMS_STG.stg_PartnerRate_update``)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Group5_Reference`&#xD;&#xA;WHERE TableName='stg_05_lms_PartnerRate_Update' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_PartnerRate_Update_Reference"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_25"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_26" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Group5_Reference` (TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_LMS_STG.stg_PartnerPointBank`) AS prodRowCount,&#xD;&#xA;IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM ``data-mgmt-191603.BL_LMS_STG.stg_PartnerPointBank``)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Group5_Reference`&#xD;&#xA;WHERE TableName='stg_05_lms_PartnerPointBank_Insert' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_PPB_Reference"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_26"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_27" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Group5_Reference` (TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_LMS_STG.stg_PartnerPointBank_update`) AS prodRowCount,&#xD;&#xA;IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM ``data-mgmt-191603.BL_LMS_STG.stg_PartnerPointBank_update``)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Group5_Reference`&#xD;&#xA;WHERE TableName='stg_05_lms_PartnerPointBank_Update' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_PPB_Update_Reference"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_27"/>
+  </node>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_28" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_LMS_DL.dl_Group5_Reference` (TableName, sourceRowCount, stgRowCount,prodRowCount,Indicator, LoadedTime)&#xD;&#xA;SELECT TableName, sourceRowCount, stgRowCount,&#xD;&#xA;(SELECT COUNT(*)FROM `data-mgmt-191603.BL_LMS_STG.stg_PartnerPointBankTransaction`) AS prodRowCount,&#xD;&#xA;IF((sourceRowCount=stgRowCount)AND(stgRowCount=(SELECT COUNT(*)FROM ``data-mgmt-191603.BL_LMS_STG.stg_PartnerPointBankTransaction``)),'Y','N') AS Indicator, CAST(CURRENT_DATETIME() AS TIMESTAMP) AS LoadedTime &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Group5_Reference`&#xD;&#xA;WHERE TableName='stg_05_lms_PartnerPointBankTransaction' AND DATE(LoadedTime)=CURRENT_DATE();&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="Update_PartnerRate_Reference"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_28"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_1" offsetLabelX="-2" offsetLabelY="33" source="tBigQueryInput_1" target="tBigQueryInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
@@ -591,23 +621,16 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_13" offsetLabelX="-18" offsetLabelY="32" source="tBigQueryInput_13" target="tBigQueryInput_15">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_14" offsetLabelX="50" offsetLabelY="0" source="tBigQueryInput_14" target="tBigQueryInput_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk15" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_16" offsetLabelX="-6" offsetLabelY="31" source="tBigQueryInput_16" target="tBigQueryInput_17">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_17" offsetLabelX="15" offsetLabelY="32" source="tBigQueryInput_17" target="tBigQueryInput_18">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk17" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_18" offsetLabelX="-14" offsetLabelY="33" source="tBigQueryInput_18" target="tBigQueryInput_19">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_15" offsetLabelX="-8" offsetLabelY="30" source="tBigQueryInput_15" target="tBigQueryInput_16">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk18" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_16" offsetLabelX="44" offsetLabelY="3" source="tBigQueryInput_16" target="tBigQueryInput_24">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk17" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_7" offsetLabelX="19" offsetLabelY="29" source="tBigQueryInput_7" target="tBigQueryInput_6">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
@@ -632,6 +655,21 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_22" offsetLabelX="7" offsetLabelY="29" source="tBigQueryInput_22" target="tBigQueryInput_23">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk14" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_23" offsetLabelX="9" offsetLabelY="29" source="tBigQueryInput_23" target="tBigQueryInput_13">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_24" offsetLabelX="-5" offsetLabelY="31" source="tBigQueryInput_24" target="tBigQueryInput_25">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk21" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_25" offsetLabelX="17" offsetLabelY="31" source="tBigQueryInput_25" target="tBigQueryInput_26">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk22" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_26" offsetLabelX="-17" offsetLabelY="28" source="tBigQueryInput_26" target="tBigQueryInput_27">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk23" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_27" offsetLabelX="12" offsetLabelY="32" source="tBigQueryInput_27" target="tBigQueryInput_28">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk24" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
@@ -689,21 +727,6 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_17" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_18" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_19" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_7" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
@@ -745,6 +768,31 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_23" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_24" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_25" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_26" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_27" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_28" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
