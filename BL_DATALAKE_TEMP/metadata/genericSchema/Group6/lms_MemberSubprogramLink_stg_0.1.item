@@ -3,9 +3,9 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_hQkhoMI6EeiyS53pKo2cTA" name="lms_MemberSubprogramLink_stg" label="lms_MemberSubprogramLink_stg" dataPackage="_0xpKAcI5EeiyS53pKo2cTA"/>
   <TalendMetadata:GenericPackage xmi:id="_0xpKAcI5EeiyS53pKo2cTA" name="repository.metadataGenericSchema" dataManager="_hQkhoMI6EeiyS53pKo2cTA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0xpKAsI5EeiyS53pKo2cTA" id="_zL4GEMI5EeiyS53pKo2cTA" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKA8I5EeiyS53pKo2cTA" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBMI5EeiyS53pKo2cTA" name="SubprogramCode" label="SubprogramCode" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBcI5EeiyS53pKo2cTA" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKA8I5EeiyS53pKo2cTA" name="MemberID" label="MemberID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBMI5EeiyS53pKo2cTA" name="SubprogramCode" label="SubprogramCode" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBcI5EeiyS53pKo2cTA" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBsI5EeiyS53pKo2cTA" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__tbiIMI5EeiyS53pKo2cTA" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__u3skMI5EeiyS53pKo2cTA" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
