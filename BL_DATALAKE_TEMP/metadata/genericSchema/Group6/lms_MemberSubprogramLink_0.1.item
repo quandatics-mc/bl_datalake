@@ -3,10 +3,33 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_0xpKAMI5EeiyS53pKo2cTA" name="repository.metadataGenericSchema" dataPackage="_0xpKAcI5EeiyS53pKo2cTA"/>
   <TalendMetadata:GenericPackage xmi:id="_0xpKAcI5EeiyS53pKo2cTA" name="repository.metadataGenericSchema" dataManager="_0xpKAMI5EeiyS53pKo2cTA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0xpKAsI5EeiyS53pKo2cTA" id="_zL4GEMI5EeiyS53pKo2cTA" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKA8I5EeiyS53pKo2cTA" name="newColumn" label="newColumn" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBMI5EeiyS53pKo2cTA" name="newColumn1" label="newColumn1" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBcI5EeiyS53pKo2cTA" name="newColumn2" label="newColumn2" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBsI5EeiyS53pKo2cTA" name="newColumn3" label="newColumn3" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKA8I5EeiyS53pKo2cTA" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBMI5EeiyS53pKo2cTA" name="SubprogramCode" label="SubprogramCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBcI5EeiyS53pKo2cTA" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0xpKBsI5EeiyS53pKo2cTA" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__tbiIMI5EeiyS53pKo2cTA" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__u3skMI5EeiyS53pKo2cTA" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__whSYMI5EeiyS53pKo2cTA" name="SubprogramMemberCode" label="SubprogramMemberCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__yNUcMI5EeiyS53pKo2cTA" name="InitialEnrollmentDate" label="InitialEnrollmentDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FGX8wMI6EeiyS53pKo2cTA" name="CurrentEnrollmentDate" label="CurrentEnrollmentDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FIHpMMI6EeiyS53pKo2cTA" name="ExpirationDate" label="ExpirationDate" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FJoFEMI6EeiyS53pKo2cTA" name="ProcessingStatus" label="ProcessingStatus" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FLFdoMI6EeiyS53pKo2cTA" name="IsAutoRenewalOn" label="IsAutoRenewalOn" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LyIqIMI6EeiyS53pKo2cTA" name="IsOptIn" label="IsOptIn" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L9QVAMI6EeiyS53pKo2cTA" name="ProcessingUTC" label="ProcessingUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MBLLsMI6EeiyS53pKo2cTA" name="PurchaseID" label="PurchaseID" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MCxHIMI6EeiyS53pKo2cTA" name="AuthorizationCode" label="AuthorizationCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QH-B8MI6EeiyS53pKo2cTA" name="PaymentResponseType" label="PaymentResponseType" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QJlykMI6EeiyS53pKo2cTA" name="PaymentResponseText" label="PaymentResponseText" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QLOxUMI6EeiyS53pKo2cTA" name="Expired" label="Expired" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QMbrMMI6EeiyS53pKo2cTA" name="Cost" label="Cost" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_V5i_AMI6EeiyS53pKo2cTA" name="DowngradeProcessed" label="DowngradeProcessed" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YNbGIMI6EeiyS53pKo2cTA" name="ActionType" label="ActionType" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YPb4UMI6EeiyS53pKo2cTA" name="ExpirationDateBackup" label="ExpirationDateBackup" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YQ-wcMI6EeiyS53pKo2cTA" name="FromSubprogramCode" label="FromSubprogramCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YSGKwMI6EeiyS53pKo2cTA" name="CollectedAmount" label="CollectedAmount" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dGHTYMI6EeiyS53pKo2cTA" name="AccountNumber" label="AccountNumber" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dH-7oMI6EeiyS53pKo2cTA" name="LoadedDate" label="LoadedDate" talendType="id_String"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
