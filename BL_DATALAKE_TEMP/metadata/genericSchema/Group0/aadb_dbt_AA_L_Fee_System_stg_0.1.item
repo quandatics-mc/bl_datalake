@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_WTUi8bG9EeimZKbbQHUOlA" name="repository.metadataGenericSchema" dataPackage="_WTUi8rG9EeimZKbbQHUOlA"/>
   <TalendMetadata:GenericPackage xmi:id="_WTUi8rG9EeimZKbbQHUOlA" name="repository.metadataGenericSchema" dataManager="_WTUi8bG9EeimZKbbQHUOlA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WTUi87G9EeimZKbbQHUOlA" id="_H9ZmQLG9EeimZKbbQHUOlA" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WTUi9LG9EeimZKbbQHUOlA" name="FeeCode" label="FeeCode" length="6" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WTUi9LG9EeimZKbbQHUOlA" name="FeeCode" label="FeeCode" length="6" talendType="id_String" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WTUi9bG9EeimZKbbQHUOlA" name="System" label="System" length="50" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WTUi9rG9EeimZKbbQHUOlA" name="Inactive" label="Inactive" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WTUi97G9EeimZKbbQHUOlA" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
