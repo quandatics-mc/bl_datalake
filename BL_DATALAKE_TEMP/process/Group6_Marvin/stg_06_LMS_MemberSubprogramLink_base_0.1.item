@@ -265,7 +265,7 @@
         <mapperTableEntries name="SubprogramMemberCode" expression="row11.SubprogramMemberCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="InitialEnrollmentDate" expression="row11.InitialEnrollmentDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.InitialEnrollmentDate*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CurrentEnrollmentDate" expression="row11.CurrentEnrollmentDate==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.CurrentEnrollmentDate*1000))))) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ExpirationDate" expression="(row11.ExpirationDate==null||row11.ExpirationDate.isEmpty())? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, row11.ExpirationDate)) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ExpirationDate" expression="(row11.ExpirationDate==null||row11.ExpirationDate.isEmpty())? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row11.ExpirationDate))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="ProcessingStatus" expression="row11.ProcessingStatus " type="id_Long" nullable="true"/>
         <mapperTableEntries name="IsAutoRenewalOn" expression="row11.IsAutoRenewalOn " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="IsOptIn" expression="row11.IsOptIn " type="id_Integer" nullable="true"/>
@@ -278,7 +278,7 @@
         <mapperTableEntries name="Cost" expression="row11.Cost " type="id_Float" nullable="true"/>
         <mapperTableEntries name="DowngradeProcessed" expression="row11.DowngradeProcessed " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="ActionType" expression="row11.ActionType " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="ExpirationDateBackup" expression="(row11.ExpirationDateBackup==null||row11.ExpirationDateBackup.isEmpty())? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;, row11.ExpirationDateBackup)) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ExpirationDateBackup" expression="(row11.ExpirationDateBackup==null||row11.ExpirationDateBackup.isEmpty())? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd&quot;,  TalendDate.parseDate(&quot;yyyy-MM-dd&quot;,row11.ExpirationDateBackup))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="FromSubprogramCode" expression="row11.FromSubprogramCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="CollectedAmount" expression="row11.CollectedAmount " type="id_Float" nullable="true"/>
         <mapperTableEntries name="AccountNumber" expression="row11.AccountNumber " type="id_String" nullable="true"/>
