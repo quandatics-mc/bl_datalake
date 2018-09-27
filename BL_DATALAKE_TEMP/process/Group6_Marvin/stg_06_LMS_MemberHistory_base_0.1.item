@@ -627,7 +627,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.MemberID == null || uniq.MemberHistoryID  == null ||  uniq.CreatedUserID  == null ||  uniq.Code== null ||uniq.Code.isEmpty() ||uniq.CreatedUTC== null ||uniq.AgentName.isEmpty()||uniq.AgetnName==null||uniq.HistoryType== null ||uniq.Action== null || uniq.LoadedDate== null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.MemberID == null || uniq.MemberHistoryID  == null ||  uniq.CreatedUserID  == null ||  uniq.Code== null ||uniq.Code.isEmpty() ||uniq.CreatedUTC== null ||uniq.AgentName.isEmpty()||uniq.AgentName==null||uniq.HistoryType== null ||uniq.Action== null || uniq.LoadedDate== null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="MemberID" expression="uniq.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="MemberHistoryID" expression="uniq.MemberHistoryID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="CreatedUserID" expression="uniq.CreatedUserID " type="id_Long" nullable="true"/>
