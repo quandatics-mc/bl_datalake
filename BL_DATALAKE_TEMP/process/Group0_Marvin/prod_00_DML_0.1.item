@@ -553,7 +553,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_dwChargeCode_History` (ChargeCodeID, ChargeTypeID, ChargeCode, Name, NotUsedInRevenue, LoadedDate, RowType)&#xD;&#xA;SELECT ChargeCodeID, ChargeTypeID, ChargeCode, Name, NotUsedInRevenue, LoadedDate, RowType FROM `data-mgmt-191603.BL_ODS_STG.stg_dwChargeCode_History`;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;INSERT `data-mgmt-191603.BL_ODS_DL.dl_dwChargeCode_History` (ChargeCodeID, ChargeTypeID, ChargeCode, Name, NotUsedInRevenue, LoadedDate)&#xD;&#xA;SELECT ChargeCodeID, ChargeTypeID, ChargeCode, Name, NotUsedInRevenue, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.stg_dwChargeCode`;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
