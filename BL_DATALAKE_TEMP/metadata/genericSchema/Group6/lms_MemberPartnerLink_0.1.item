@@ -12,6 +12,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_i1qCYMI1EeiyS53pKo2cTA" name="ExternalMemberID" label="ExternalMemberID" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_i6-AMMI1EeiyS53pKo2cTA" name="IsActive" label="IsActive" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pQpv4MI1EeiyS53pKo2cTA" name="SubprogramCode" label="SubprogramCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JdXvAMI2EeiyS53pKo2cTA" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
