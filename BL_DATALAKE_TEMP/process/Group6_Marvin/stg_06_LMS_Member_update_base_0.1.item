@@ -145,7 +145,6 @@
     <metadata connector="FLOW" label="metadata" name="tBigQueryInput_1">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -176,7 +175,6 @@
     <metadata connector="FLOW" label="metadata" name="tFlowMeter_22">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -210,7 +208,6 @@
     <metadata connector="FLOW" name="out1">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -234,7 +231,6 @@
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="MemberID" expression="row11.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row11.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="row11.ModifiedUTC==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.ModifiedUTC*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row11.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row11.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row11.FirstName " type="id_String" nullable="true"/>
@@ -255,7 +251,6 @@
       <inputTables sizeState="INTERMEDIATE" name="row11" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Double" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -282,9 +277,6 @@
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedUserID"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedUTC"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MemberStatusID"/>
@@ -345,7 +337,6 @@
     <metadata connector="FLOW" name="tUniqRow_1">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -366,7 +357,6 @@
     <metadata connector="UNIQUE" name="UNIQUE">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -387,7 +377,6 @@
     <metadata connector="DUPLICATE" name="DUPLICATE">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -413,9 +402,6 @@
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedUserID"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedUTC"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MemberStatusID"/>
@@ -476,7 +462,6 @@
     <metadata connector="FLOW" name="tUniqRow_2">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -497,7 +482,6 @@
     <metadata connector="UNIQUE" name="UNIQUE">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -518,7 +502,6 @@
     <metadata connector="DUPLICATE" name="DUPLICATE">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -552,7 +535,6 @@
     <metadata connector="FLOW" name="tHashOutput_1">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -586,7 +568,6 @@
     <metadata connector="FLOW" name="tHashOutput_2">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -620,7 +601,6 @@
     <metadata connector="FLOW" name="tHashOutput_7">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -641,8 +621,6 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_jcoS4MIhEeiyS53pKo2cTA - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -652,7 +630,6 @@
     <metadata connector="FLOW" label="metadata" name="tHashInput_1">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -665,7 +642,7 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -686,7 +663,6 @@
     <metadata connector="FLOW" name="uniq">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -707,7 +683,6 @@
     <metadata connector="FLOW" name="dup">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -731,7 +706,6 @@
       <outputTables sizeState="INTERMEDIATE" name="uniq" rejectInnerJoin="true">
         <mapperTableEntries name="MemberID" expression="row5.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row5.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="row5.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row5.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row5.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row5.FirstName " type="id_String" nullable="true"/>
@@ -752,7 +726,6 @@
       <outputTables sizeState="INTERMEDIATE" name="dup">
         <mapperTableEntries name="MemberID" expression="row5.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row5.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="row5.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row5.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row5.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row5.FirstName " type="id_String" nullable="true"/>
@@ -773,7 +746,6 @@
       <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Double" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -786,7 +758,7 @@
         <mapperTableEntries name="StateCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="ToMemberID" type="id_Long" nullable="true"/>
@@ -794,7 +766,6 @@
       <inputTables sizeState="INTERMEDIATE" name="row6" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="MemberID" expression="row5.MemberID " type="id_Long" nullable="true" operator="="/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Double" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -807,7 +778,7 @@
         <mapperTableEntries name="StateCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="ToMemberID" type="id_Long" nullable="true"/>
@@ -816,8 +787,6 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_2" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_jcoS4MIhEeiyS53pKo2cTA - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -827,7 +796,6 @@
     <metadata connector="FLOW" label="metadata" name="tHashInput_2">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -840,7 +808,7 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -861,7 +829,6 @@
     <metadata connector="FLOW" name="tHashOutput_3">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -895,7 +862,6 @@
     <metadata connector="FLOW" name="nullability">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -916,7 +882,6 @@
     <metadata connector="FLOW" name="outFinal">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -937,10 +902,9 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.MemberID == null || uniq.ModifiedUserID  == null ||  uniq.ModifiedUTC== null ||  uniq.MemberStatusID== null ||uniq.FirstName== null || uniq.FirstName.isEmpty() ||uniq.LastName== null ||uniq.LastName.isEmpty() || uniq.EmailAddress== null || uniq.EmailAddress.isEmpty() || uniq.BirthDate== null || uniq.Gender== null|| uniq.Gender.isEmpty()" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.MemberID == null || uniq.ModifiedUserID  == null ||   uniq.MemberStatusID== null ||uniq.FirstName== null || uniq.FirstName.isEmpty() ||uniq.LastName== null ||uniq.LastName.isEmpty() || uniq.EmailAddress== null || uniq.EmailAddress.isEmpty() || uniq.BirthDate== null || uniq.Gender== null|| uniq.Gender.isEmpty()" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="MemberID" expression="uniq.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="uniq.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="uniq.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="uniq.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="uniq.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="uniq.FirstName " type="id_String" nullable="true"/>
@@ -961,7 +925,6 @@
       <outputTables sizeState="INTERMEDIATE" name="outFinal" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="MemberID" expression="uniq.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="uniq.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="uniq.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="uniq.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="uniq.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="uniq.FirstName " type="id_String" nullable="true"/>
@@ -982,7 +945,6 @@
       <inputTables sizeState="INTERMEDIATE" name="uniq" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -1017,7 +979,6 @@
     <metadata connector="FLOW" name="tHashOutput_4">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1051,7 +1012,6 @@
     <metadata connector="FLOW" name="DOB">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1072,7 +1032,6 @@
     <metadata connector="FLOW" name="main">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1097,7 +1056,6 @@
       <outputTables sizeState="INTERMEDIATE" name="DOB" expressionFilter="TalendDate.compareDate(outFinal.BirthDate,TalendDate.getCurrentDate())>=0" activateExpressionFilter="true">
         <mapperTableEntries name="MemberID" expression="outFinal.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="outFinal.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="outFinal.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="outFinal.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="outFinal.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="outFinal.FirstName " type="id_String" nullable="true"/>
@@ -1118,7 +1076,6 @@
       <outputTables sizeState="INTERMEDIATE" name="main">
         <mapperTableEntries name="MemberID" expression="outFinal.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="outFinal.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="outFinal.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="outFinal.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="outFinal.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="outFinal.FirstName " type="id_String" nullable="true"/>
@@ -1140,7 +1097,6 @@
       <inputTables sizeState="INTERMEDIATE" name="outFinal" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -1175,7 +1131,6 @@
     <metadata connector="FLOW" name="tHashOutput_10">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1206,7 +1161,6 @@
     <metadata connector="FLOW" name="tFlowMeter_24">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1264,7 +1218,6 @@
     <metadata connector="FLOW" name="tBigQueryOutput_1">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1277,7 +1230,7 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1286,8 +1239,6 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_3" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_jcoS4MIhEeiyS53pKo2cTA - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_2"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -1297,7 +1248,6 @@
     <metadata connector="FLOW" label="metadata" name="tHashInput_3">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1310,7 +1260,7 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1331,7 +1281,6 @@
     <metadata connector="FLOW" name="out2">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1356,7 +1305,6 @@
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="MemberID" expression="row7.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row7.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="row7.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row7.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row7.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row7.FirstName " type="id_String" nullable="true"/>
@@ -1378,7 +1326,6 @@
       <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Double" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -1391,7 +1338,7 @@
         <mapperTableEntries name="StateCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="ToMemberID" type="id_Long" nullable="true"/>
@@ -1404,7 +1351,6 @@
     <metadata connector="FLOW" name="tUnite_1">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1426,8 +1372,6 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_4" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_jcoS4MIhEeiyS53pKo2cTA - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_3"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -1437,7 +1381,6 @@
     <metadata connector="FLOW" label="metadata" name="tHashInput_4">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1450,7 +1393,7 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1471,7 +1414,6 @@
     <metadata connector="FLOW" name="copyOfout2">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1496,7 +1438,6 @@
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
         <mapperTableEntries name="MemberID" expression="row8.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row8.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="row8.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row8.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row8.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row8.FirstName " type="id_String" nullable="true"/>
@@ -1518,7 +1459,6 @@
       <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Double" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -1531,7 +1471,7 @@
         <mapperTableEntries name="StateCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="ToMemberID" type="id_Long" nullable="true"/>
@@ -1540,8 +1480,6 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="832">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_5" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_jcoS4MIhEeiyS53pKo2cTA - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_4"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -1551,7 +1489,6 @@
     <metadata connector="FLOW" label="metadata" name="tHashInput_5">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1564,7 +1501,7 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1585,7 +1522,6 @@
     <metadata connector="FLOW" name="copyOfcopyOfout2">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1610,7 +1546,6 @@
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout2">
         <mapperTableEntries name="MemberID" expression="row9.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row9.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="row9.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row9.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row9.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row9.FirstName " type="id_String" nullable="true"/>
@@ -1632,7 +1567,6 @@
       <inputTables sizeState="INTERMEDIATE" name="row9" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Double" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -1645,7 +1579,7 @@
         <mapperTableEntries name="StateCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="ToMemberID" type="id_Long" nullable="true"/>
@@ -1690,7 +1624,6 @@
     <metadata connector="FLOW" name="tBigQueryOutput_2">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1703,7 +1636,7 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BirthDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BirthDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1712,8 +1645,6 @@
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_8" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eVKcIMFYEeik57cswKjnMg - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_7"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/Studio/6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -1721,21 +1652,13 @@
     <elementParameter field="TEXT" name="LABEL" value="FullRowHashIn"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_8">
-      <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ProgramLevelCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ProgramLevelStartDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ProgramLevelEndDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MembershipDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ExpirationActionType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="MiddleName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Suffix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="EmailAddress" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Address1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Address2" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1743,17 +1666,10 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="SourceCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Comments" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ManualLevelChange" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="896">
@@ -1770,20 +1686,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfcopyOfcopyOfout2">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ProgramLevelCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ProgramLevelStartDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ProgramLevelEndDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MembershipDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="ExpirationActionType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="MiddleName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Suffix" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="EmailAddress" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Address1" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Address2" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1791,17 +1699,10 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BusOrRes" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="BirthDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="OptIn" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="SourceCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Comments" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ManualLevelChange" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -1809,20 +1710,12 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout2">
         <mapperTableEntries name="MemberID" expression="row14.MemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUserID" expression="row14.CreatedUserID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row14.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="row14.ModifiedUTC " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ProgramLevelCode" expression="row14.ProgramLevelCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ProgramLevelStartDate" expression="row14.ProgramLevelStartDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ProgramLevelEndDate" expression="row14.ProgramLevelEndDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="MembershipDate" expression="row14.MembershipDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ExpirationActionType" expression="row14.ExpirationActionType " type="id_String" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row14.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row14.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row14.FirstName " type="id_String" nullable="true"/>
         <mapperTableEntries name="MiddleName" expression="row14.MiddleName " type="id_String" nullable="true"/>
         <mapperTableEntries name="Title" expression="row14.Title " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Suffix" expression="row14.Suffix " type="id_String" nullable="true"/>
         <mapperTableEntries name="EmailAddress" expression="row14.EmailAddress " type="id_String" nullable="true"/>
         <mapperTableEntries name="Address1" expression="row14.Address1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="Address2" expression="row14.Address2 " type="id_String" nullable="true"/>
@@ -1830,35 +1723,20 @@
         <mapperTableEntries name="StateCode" expression="row14.StateCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="CountryCode" expression="row14.CountryCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" expression="row14.PostalCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="BusOrRes" expression="row14.BusOrRes " type="id_String" nullable="true"/>
         <mapperTableEntries name="BirthDate" expression="row14.BirthDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" expression="row14.Gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" expression="row14.PhoneNumber " type="id_String" nullable="true"/>
-        <mapperTableEntries name="OptIn" expression="row14.OptIn " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ToMemberID" expression="row14.ToMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SourceCode" expression="row14.SourceCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Comments" expression="row14.Comments " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ManualLevelChange" expression="row14.ManualLevelChange " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" expression="row14.ModifiedDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" expression="row14.LoadedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Exception" expression="&quot;Full Row Duplicate&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row14" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUserID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ProgramLevelCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ProgramLevelStartDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ProgramLevelEndDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="MembershipDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ExpirationActionType" type="id_String" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="MiddleName" type="id_String" nullable="true"/>
         <mapperTableEntries name="Title" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Suffix" type="id_String" nullable="true"/>
         <mapperTableEntries name="EmailAddress" type="id_String" nullable="true"/>
         <mapperTableEntries name="Address1" type="id_String" nullable="true"/>
         <mapperTableEntries name="Address2" type="id_String" nullable="true"/>
@@ -1866,24 +1744,15 @@
         <mapperTableEntries name="StateCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BusOrRes" type="id_String" nullable="true"/>
         <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OptIn" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ToMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SourceCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Comments" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ManualLevelChange" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="ModifiedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_11" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_jcoS4MIhEeiyS53pKo2cTA - metadata" show="false"/>
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_10"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;C:/Talend/Studio/6.5.1/workspace/in.hash&quot;" show="false"/>
@@ -1893,7 +1762,6 @@
     <metadata connector="FLOW" label="metadata" name="tHashInput_11">
       <column comment="" key="false" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1906,7 +1774,7 @@
       <column comment="" key="false" length="0" name="StateCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CountryCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PostalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="BirthDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Gender" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="PhoneNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -1927,7 +1795,6 @@
     <metadata connector="FLOW" name="out4">
       <column comment="" key="true" length="-1" name="MemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ModifiedUserID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MemberStatusID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1952,7 +1819,6 @@
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="MemberID" expression="row22.MemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" expression="row22.ModifiedUserID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" expression="row22.ModifiedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" expression="row22.MemberStatusID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row22.LastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row22.FirstName " type="id_String" nullable="true"/>
@@ -1974,7 +1840,6 @@
       <inputTables sizeState="INTERMEDIATE" name="row22" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="MemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="ModifiedUserID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="ModifiedUTC" type="id_Double" nullable="true"/>
         <mapperTableEntries name="MemberStatusID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
@@ -1987,7 +1852,7 @@
         <mapperTableEntries name="StateCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="BirthDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BirthDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="PhoneNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="ToMemberID" type="id_Long" nullable="true"/>
