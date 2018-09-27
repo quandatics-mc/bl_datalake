@@ -198,7 +198,7 @@
     <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
     <elementParameter field="TABLE" name="INTABLE">
       <elementValue elementRef="InventoryLegID" value=""/>
-      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString"/>
+      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString()"/>
       <elementValue elementRef="CarrierCode" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="DepartureStation" value="&quot;asdasD&quot;"/>
@@ -208,7 +208,7 @@
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
       <elementValue elementRef="InventoryLegID" value="new Long(12312)"/>
-      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString"/>
+      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString()"/>
       <elementValue elementRef="CarrierCode" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="DepartureStation" value="&quot;asdasD&quot;"/>
@@ -218,7 +218,7 @@
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
       <elementValue elementRef="InventoryLegID" value="new Long(12312)"/>
-      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString"/>
+      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString()"/>
       <elementValue elementRef="CarrierCode" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="DepartureStation" value="&quot;asdasD&quot;"/>
@@ -228,7 +228,7 @@
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
       <elementValue elementRef="InventoryLegID" value="new Long(12312)"/>
-      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString"/>
+      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString()"/>
       <elementValue elementRef="CarrierCode" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;asdasD&quot;"/>
       <elementValue elementRef="DepartureStation" value="&quot;asdasD&quot;"/>
@@ -238,7 +238,7 @@
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
       <elementValue elementRef="InventoryLegID" value="new Long(2222)"/>
-      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString"/>
+      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString()"/>
       <elementValue elementRef="CarrierCode" value="&quot;adahh2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12312321&quot;"/>
       <elementValue elementRef="DepartureStation" value="&quot;qwe&quot;"/>
@@ -248,7 +248,7 @@
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
       <elementValue elementRef="InventoryLegID" value="new Long(2222)"/>
-      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString"/>
+      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString()"/>
       <elementValue elementRef="CarrierCode" value="&quot;adaasd2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12232321&quot;"/>
       <elementValue elementRef="DepartureStation" value="&quot;sds&quot;"/>
@@ -258,7 +258,7 @@
       <elementValue elementRef="STA" value="new Double(1123123)"/>
       <elementValue elementRef="LoadedDate" value="new Double(1123123)"/>
       <elementValue elementRef="InventoryLegID" value="new Long(2222)"/>
-      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString"/>
+      <elementValue elementRef="DepartureDate" value="new Date(&quot;2018-9-04&quot;).toString()"/>
       <elementValue elementRef="CarrierCode" value="&quot;adrreda2&quot;"/>
       <elementValue elementRef="FlightNumber" value="&quot;12312321&quot;"/>
       <elementValue elementRef="DepartureStation" value="&quot;gjhd&quot;"/>
