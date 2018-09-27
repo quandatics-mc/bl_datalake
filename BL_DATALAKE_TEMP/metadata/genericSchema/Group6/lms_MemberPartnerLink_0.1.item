@@ -3,10 +3,15 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_Zl_04MI1EeiyS53pKo2cTA" name="repository.metadataGenericSchema" dataPackage="_Zl_04cI1EeiyS53pKo2cTA"/>
   <TalendMetadata:GenericPackage xmi:id="_Zl_04cI1EeiyS53pKo2cTA" name="repository.metadataGenericSchema" dataManager="_Zl_04MI1EeiyS53pKo2cTA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Zl_04sI1EeiyS53pKo2cTA" id="_UcdIMMI1EeiyS53pKo2cTA" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zl_048I1EeiyS53pKo2cTA" name="newColumn" label="newColumn" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zl_05MI1EeiyS53pKo2cTA" name="newColumn1" label="newColumn1" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zl_05cI1EeiyS53pKo2cTA" name="newColumn2" label="newColumn2" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zl_05sI1EeiyS53pKo2cTA" name="newColumn3" label="newColumn3" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zl_048I1EeiyS53pKo2cTA" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zl_05MI1EeiyS53pKo2cTA" name="PartnerCode" label="PartnerCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zl_05cI1EeiyS53pKo2cTA" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zl_05sI1EeiyS53pKo2cTA" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iyUagMI1EeiyS53pKo2cTA" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iy5CQMI1EeiyS53pKo2cTA" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_i1qCYMI1EeiyS53pKo2cTA" name="ExternalMemberID" label="ExternalMemberID" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_i6-AMMI1EeiyS53pKo2cTA" name="IsActive" label="IsActive" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pQpv4MI1EeiyS53pKo2cTA" name="SubprogramCode" label="SubprogramCode" talendType="id_String"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
