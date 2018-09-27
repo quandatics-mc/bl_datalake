@@ -5,7 +5,6 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ciOJw8FWEeik57cswKjnMg" id="_bBnSoMFWEeik57cswKjnMg" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxMFWEeik57cswKjnMg" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJxsFWEeik57cswKjnMg" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Long"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ciOJx8FWEeik57cswKjnMg" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TNuqIMFXEeik57cswKjnMg" name="MemberStatusID" label="MemberStatusID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TR8bwMFXEeik57cswKjnMg" name="LastName" label="LastName" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TVVuAMFXEeik57cswKjnMg" name="FirstName" label="FirstName" talendType="id_String"/>
