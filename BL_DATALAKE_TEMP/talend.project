@@ -1500,8 +1500,8 @@
       <relatedItems xmi:id="_fT2TIMI2EeiyS53pKo2cTA" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_fT2TIcI2EeiyS53pKo2cTA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_fT2TIsI2EeiyS53pKo2cTA" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_fT2TI8I2EeiyS53pKo2cTA" id="_9T78MMIuEeiyS53pKo2cTA - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_p8YYAMI2EeiyS53pKo2cTA" id="_Zl_N0MI1EeiyS53pKo2cTA - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_VATUwMI4EeiyS53pKo2cTA" id="_wDtYEMI1EeiyS53pKo2cTA - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_sWCXAMI2EeiyS53pKo2cTA">
       <baseItem xmi:id="_sWCXAcI2EeiyS53pKo2cTA" id="_sU35YMI2EeiyS53pKo2cTA" version="0.1" type="job"/>
