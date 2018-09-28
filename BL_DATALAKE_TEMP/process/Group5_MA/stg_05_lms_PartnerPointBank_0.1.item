@@ -665,7 +665,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_11" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -692,7 +692,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InnerJoinFail" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="PartnerCode" expression="row1.PartnerCode " type="id_String" nullable="true"/>
@@ -738,7 +738,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_YlkPgMFtEeiz0YNLAifuXg - metadata" show="false"/>
