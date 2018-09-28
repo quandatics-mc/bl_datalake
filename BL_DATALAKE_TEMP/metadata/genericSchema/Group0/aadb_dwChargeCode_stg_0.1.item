@@ -3,12 +3,12 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_N45zILx4EeitcIP7RwrZeg" name="aadb_dwChargeCode_stg" label="aadb_dwChargeCode_stg" dataPackage="_LEBQsbx4EeitcIP7RwrZeg"/>
   <TalendMetadata:GenericPackage xmi:id="_LEBQsbx4EeitcIP7RwrZeg" name="repository.metadataGenericSchema" dataManager="_N45zILx4EeitcIP7RwrZeg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_LEBQsrx4EeitcIP7RwrZeg" id="_utangLx3EeitcIP7RwrZeg" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQs7x4EeitcIP7RwrZeg" name="ChargeCodeID" label="ChargeCodeID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQs7x4EeitcIP7RwrZeg" name="ChargeCodeID" label="ChargeCodeID" length="-1" talendType="id_Long" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQtLx4EeitcIP7RwrZeg" name="ChargeTypeID" label="ChargeTypeID" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQtbx4EeitcIP7RwrZeg" name="ChargeCode" label="ChargeCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQtrx4EeitcIP7RwrZeg" name="Name" label="Name" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEB3wLx4EeitcIP7RwrZeg" name="NotUsedInRevenue" label="NotUsedInRevenue" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEB3wbx4EeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEB3wbx4EeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
