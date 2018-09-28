@@ -6,7 +6,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9M7GYEeiYZdt4-rZFBw" name="ConversionDayID" label="ConversionDayID" length="-1" talendType="id_Long" key="true">
         <initialValue xmi:id="_zWq9NLGYEeiYZdt4-rZFBw"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9NbGYEeiYZdt4-rZFBw" name="ConversionDate" label="ConversionDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9NbGYEeiYZdt4-rZFBw" name="ConversionDate" label="ConversionDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;">
         <initialValue xmi:id="_zWq9NrGYEeiYZdt4-rZFBw"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9N7GYEeiYZdt4-rZFBw" name="FromCurrencyCode" label="FromCurrencyCode" length="12" talendType="id_String" key="true">
@@ -36,7 +36,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9R7GYEeiYZdt4-rZFBw" name="UserControl" label="UserControl" length="1" talendType="id_String">
         <initialValue xmi:id="_zWq9SLGYEeiYZdt4-rZFBw"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9SbGYEeiYZdt4-rZFBw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zWq9SbGYEeiYZdt4-rZFBw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;">
         <initialValue xmi:id="_zWq9SrGYEeiYZdt4-rZFBw"/>
       </feature>
     </ownedElement>

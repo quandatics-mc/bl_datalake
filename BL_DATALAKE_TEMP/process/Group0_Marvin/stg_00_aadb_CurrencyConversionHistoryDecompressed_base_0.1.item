@@ -127,7 +127,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_1">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -137,7 +137,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
@@ -253,7 +253,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_2">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -263,7 +263,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="448">
@@ -493,7 +493,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_3">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -503,7 +503,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="544">
@@ -579,7 +579,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_4">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -589,7 +589,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="608">
@@ -684,7 +684,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_5">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -694,7 +694,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="704">
@@ -821,7 +821,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashInput_8">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -831,7 +831,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="768">
@@ -1413,7 +1413,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tUniqRow_2">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -1423,11 +1423,11 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" label="metadata" name="UNIQUE">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -1437,11 +1437,11 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" label="metadata" name="DUPLICATE">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -1451,7 +1451,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128">
@@ -1470,7 +1470,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashOutput_1">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -1480,7 +1480,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
@@ -1499,7 +1499,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashOutput_2">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -1509,7 +1509,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
@@ -1528,7 +1528,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tHashOutput_7">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'hh:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ConversionDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="FromCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="true" length="12" name="ToCurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ConversionRate" nullable="true" pattern="" precision="7" type="id_Float" usefulColumn="true"/>
@@ -1538,7 +1538,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-96" posY="96">
@@ -1604,7 +1604,7 @@
       <column comment="" key="false" length="-1" name="Group" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="stlog" expressionFilter="row15.message ==&quot;start01&quot;" activateExpressionFilter="true">
         <mapperTableEntries name="startTime" expression="row15.moment " type="id_Date" nullable="true"/>
@@ -1702,7 +1702,7 @@
       <column comment="" key="false" length="-1" name="Group" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout3" expressionFilter="row21.EndTime!=null&amp;&amp;row21.ErrorMessage!=null" activateExpressionFilter="true">
         <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row20.StartTime )) " type="id_Date" nullable="true"/>
