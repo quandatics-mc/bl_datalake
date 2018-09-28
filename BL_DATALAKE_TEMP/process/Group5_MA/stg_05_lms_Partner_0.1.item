@@ -794,7 +794,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="InnerJoinFail">
+      <outputTables sizeState="INTERMEDIATE" name="InnerJoinFail" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="PartnerCode" expression="row1.PartnerCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="CreatedUserID" expression="row1.CreatedUserID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CreatedUTC" expression="row1.CreatedUTC " type="id_Double" nullable="true"/>
@@ -832,7 +832,7 @@
         <mapperTableEntries name="PriorityLevel" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row16" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row16" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="PartnerCode" expression="row1.PartnerCode " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="CreatedUserID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CreatedUTC" type="id_Double" nullable="true"/>
