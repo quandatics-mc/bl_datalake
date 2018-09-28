@@ -180,7 +180,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Matched" expressionFilter="row1.NotUsedInRevenue!=row24.NotUsedInRevenue || !(row1.ChargeCode.equals(row24.ChargeCode))||!(row1.Name.equals(row24.Name))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Matched" expressionFilter="row1.NotUsedInRevenue!=row24.NotUsedInRevenue || !row1.ChargeCode.equals(row24.ChargeCode)||!row1.Name.equals(row24.Name)" activateExpressionFilter="true">
         <mapperTableEntries name="ChargeCodeID" expression="row1.ChargeCodeID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ChargeTypeID" expression="row1.ChargeTypeID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ChargeCode" expression="row1.ChargeCode " type="id_String" nullable="true"/>
