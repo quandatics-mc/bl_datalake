@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_EppOEME1EeitydaVw7wjkA" name="repository.metadataGenericSchema" dataPackage="_EppOEcE1EeitydaVw7wjkA"/>
+  <TalendMetadata:GenericPackage xmi:id="_EppOEcE1EeitydaVw7wjkA" name="repository.metadataGenericSchema" dataManager="_EppOEME1EeitydaVw7wjkA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_EppOEsE1EeitydaVw7wjkA" id="_YP0Y4ME0EeitydaVw7wjkA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOE8E1EeitydaVw7wjkA" name="PartnerCode" label="PartnerCode" length="12" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOFME1EeitydaVw7wjkA" name="CreatedUserID" label="CreatedUserID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOFcE1EeitydaVw7wjkA" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOFsE1EeitydaVw7wjkA" name="ModifiedUserID" label="ModifiedUserID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOF8E1EeitydaVw7wjkA" name="ModifiedUTC" label="ModifiedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOGME1EeitydaVw7wjkA" name="Name" label="Name" length="64" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOGcE1EeitydaVw7wjkA" name="ServiceTypeID" label="ServiceTypeID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOGsE1EeitydaVw7wjkA" name="ActiveStatus" label="ActiveStatus" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOG8E1EeitydaVw7wjkA" name="PartnerRewardPoints" label="PartnerRewardPoints" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EppOHME1EeitydaVw7wjkA" name="LoyaltyPoints" label="LoyaltyPoints" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Epp1IME1EeitydaVw7wjkA" name="IsDefault" label="IsDefault" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Epp1IcE1EeitydaVw7wjkA" name="IsSystemReserved" label="IsSystemReserved" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Epp1IsE1EeitydaVw7wjkA" name="IsRateEnabled" label="IsRateEnabled" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Epp1I8E1EeitydaVw7wjkA" name="NameMatching" label="NameMatching" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Epp1JME1EeitydaVw7wjkA" name="NameMatchingCharacterCount" label="NameMatchingCharacterCount" length="-1" talendType="id_Integer">
+        <initialValue xmi:id="_Epp1JcE1EeitydaVw7wjkA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Epp1JsE1EeitydaVw7wjkA" name="PriorityLevel" label="PriorityLevel" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Epp1J8E1EeitydaVw7wjkA" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
