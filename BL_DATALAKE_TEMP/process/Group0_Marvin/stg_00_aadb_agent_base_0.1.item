@@ -185,7 +185,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.sss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="AgentID" expression="row11.AgentID " type="id_Long" nullable="true"/>
@@ -371,8 +371,8 @@
       <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
@@ -448,8 +448,8 @@
       <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="416">
@@ -479,7 +479,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.AgentID == null || uniq.AgentName  == null || uniq.AgentName.isEmpty() || uniq.PersonID  == null ||  uniq.ModifiedDate== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="AgentID" expression="uniq.AgentID " type="id_Long" nullable="true"/>
@@ -641,7 +641,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="AgentID" expression="row7.AgentID " type="id_Long" nullable="true"/>
@@ -709,7 +709,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
         <mapperTableEntries name="AgentID" expression="row8.AgentID " type="id_Long" nullable="true"/>
@@ -742,8 +742,8 @@
       <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="800">
@@ -767,7 +767,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout2">
         <mapperTableEntries name="AgentID" expression="row9.AgentID " type="id_Long" nullable="true"/>
@@ -844,8 +844,8 @@
       <column comment="" key="true" length="-1" name="AgentID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="AgentName" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PersonID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="864">
@@ -869,7 +869,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout2">
         <mapperTableEntries name="AgentID" expression="row14.AgentID " type="id_Long" nullable="true"/>
