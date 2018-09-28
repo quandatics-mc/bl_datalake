@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Login" prompt="connection_mysqlstaging_tci_db_Login?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="tci_user"/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Server" prompt="connection_mysqlstaging_tci_db_Server?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="stg-tci2.cvy01nfma6so.ap-southeast-1.rds.amazonaws.com"/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Port" prompt="connection_mysqlstaging_tci_db_Port?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="3306"/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Password" prompt="connection_mysqlstaging_tci_db_Password?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_Password" value="9VH66/52xXNdt5pOihEeVg=="/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Database" prompt="connection_mysqlstaging_tci_db_Database?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="stg-tci"/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_AdditionalParams" prompt="connection_mysqlstaging_tci_db_AdditionalParams?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Login" prompt="connection_mysqlstaging_tci_db_Login?" promptNeeded="false" type="id_String" value="tci_user"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Server" prompt="connection_mysqlstaging_tci_db_Server?" promptNeeded="false" type="id_String" value="stg-tci2.cvy01nfma6so.ap-southeast-1.rds.amazonaws.com"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Port" prompt="connection_mysqlstaging_tci_db_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Password" prompt="connection_mysqlstaging_tci_db_Password?" promptNeeded="false" type="id_Password" value="9VH66/52xXNdt5pOihEeVg=="/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Database" prompt="connection_mysqlstaging_tci_db_Database?" promptNeeded="false" type="id_String" value="stg-tci"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_AdditionalParams" prompt="connection_mysqlstaging_tci_db_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="YYYYMMDD" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="YYYYMMDD" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="Token File" name="resource_file_tokenfile" prompt="resource_file_tokenfile?" promptNeeded="true" type="id_String" value="C:/Program Files (x86)/Talend-Studio/studio6.5.1/workspace/token.properties"/>
@@ -14,12 +14,12 @@
   <context confirmationNeeded="false" name="Production">
     <contextParameter comment="YYYYMMDD" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="YYYYMMDD" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Login" prompt="connection_mysqlstaging_tci_db_Login?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="tci_user"/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Server" prompt="connection_mysqlstaging_tci_db_Server?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="stg-tci.cvy01nfma6so.ap-southeast-1.rds.amazonaws.com"/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Port" prompt="connection_mysqlstaging_tci_db_Port?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="3306"/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Password" prompt="connection_mysqlstaging_tci_db_Password?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_Password" value="9VH66/52xXNdt5pOihEeVg=="/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Database" prompt="connection_mysqlstaging_tci_db_Database?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="stg-tci"/>
-    <contextParameter comment="" name="connection_mysqlstaging_tci_db_AdditionalParams" prompt="connection_mysqlstaging_tci_db_AdditionalParams?" promptNeeded="false" repositoryContextId="_9R6kYHX6Eei3jIQe3HhKjQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Login" prompt="connection_mysqlstaging_tci_db_Login?" promptNeeded="false" type="id_String" value="tci_user"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Server" prompt="connection_mysqlstaging_tci_db_Server?" promptNeeded="false" type="id_String" value="stg-tci.cvy01nfma6so.ap-southeast-1.rds.amazonaws.com"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Port" prompt="connection_mysqlstaging_tci_db_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Password" prompt="connection_mysqlstaging_tci_db_Password?" promptNeeded="false" type="id_Password" value="9VH66/52xXNdt5pOihEeVg=="/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_Database" prompt="connection_mysqlstaging_tci_db_Database?" promptNeeded="false" type="id_String" value="stg-tci"/>
+    <contextParameter comment="" name="connection_mysqlstaging_tci_db_AdditionalParams" prompt="connection_mysqlstaging_tci_db_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="resource_file_tokenfile" prompt="resource_file_tokenfile?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
@@ -135,8 +135,6 @@
   </parameters>
   <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kFKIYHX3Eei3jIQe3HhKjQ - metadata" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;434785495492-q0d8nogibd7qj7agenqfq6fh6h1j13vd.apps.googleusercontent.com&quot;"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="nD9ipHrNcOCxNS7mrKfdW4vHVirt7fD9EDyAz9HHIs8="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;mpdbq1&quot;"/>
@@ -221,8 +219,6 @@
   </node>
   <node componentName="tAmazonMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAmazonMysqlOutput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dMoC8HX6Eei3jIQe3HhKjQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tAmazonMysqlConnection_1" show="false"/>
@@ -746,8 +742,6 @@
   </node>
   <node componentName="tAmazonMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAmazonMysqlConnection_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dMoC8HX6Eei3jIQe3HhKjQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="TEXT" name="HOST" value="context.connection_mysqlstaging_tci_db_Server"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
