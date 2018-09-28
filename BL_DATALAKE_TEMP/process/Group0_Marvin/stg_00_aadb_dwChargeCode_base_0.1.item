@@ -180,7 +180,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Matched" expressionFilter="!(row1.NotUsedInRevenue==row24.NotUsedInRevenue &amp;&amp; row1.ChargeTypeID &amp;&amp; row24.ChargeTypeID &amp;&amp; row1.ChargeCode.equals(row24.ChargeCode) &amp;&amp; row1.Name.equals(row24.Name))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Matched" expressionFilter="!(row1.NotUsedInRevenue==row24.NotUsedInRevenue &amp;&amp; row1.ChargeTypeID==row24.ChargeTypeID &amp;&amp; row1.ChargeCode.equals(row24.ChargeCode) &amp;&amp; row1.Name.equals(row24.Name))" activateExpressionFilter="true">
         <mapperTableEntries name="ChargeCodeID" expression="row1.ChargeCodeID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ChargeTypeID" expression="row1.ChargeTypeID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="ChargeCode" expression="row1.ChargeCode " type="id_String" nullable="true"/>
@@ -416,7 +416,7 @@
       <column comment="" key="false" length="-1" name="RowType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.ChargeCodeID == null || uniq.ChargeTypeID  == null || uniq.ChargeCode.isEmpty()|| uniq.ChargeCode== null || uniq.Name.isEmpty() || uniq.Name==null || uniq.NotUsedInRevenue== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="ChargeCodeID" expression="uniq.ChargeCodeID " type="id_Long" nullable="true"/>
@@ -680,7 +680,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
         <mapperTableEntries name="ChargeCodeID" expression="row8.ChargeCodeID " type="id_Long" nullable="true"/>
@@ -1988,7 +1988,7 @@
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfuniq" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="ChargeCodeID" expression="row32.ChargeCodeID " type="id_Long" nullable="true"/>
@@ -2073,7 +2073,7 @@
       <column comment="" key="false" length="-1" name="RowType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfnullability" expressionFilter="copyOfuniq.ChargeCodeID == null || copyOfuniq.ChargeTypeID  == null || copyOfuniq.ChargeCode.isEmpty()|| copyOfuniq.ChargeCode== null || copyOfuniq.Name.isEmpty() || copyOfuniq.Name==null || copyOfuniq.NotUsedInRevenue== null || copyOfuniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="ChargeCodeID" expression="copyOfuniq.ChargeCodeID " type="id_Long" nullable="true"/>
@@ -2262,7 +2262,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2_0">
         <mapperTableEntries name="ChargeCodeID" expression="row37.ChargeCodeID " type="id_Long" nullable="true"/>
@@ -2324,7 +2324,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout2_0">
         <mapperTableEntries name="ChargeCodeID" expression="row38.ChargeCodeID " type="id_Long" nullable="true"/>
@@ -2399,7 +2399,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout2_0">
         <mapperTableEntries name="ChargeCodeID" expression="row40.ChargeCodeID " type="id_Long" nullable="true"/>
@@ -2506,7 +2506,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfcopyOfout2">
         <mapperTableEntries name="ChargeCodeID" expression="row41.ChargeCodeID " type="id_Long" nullable="true"/>
