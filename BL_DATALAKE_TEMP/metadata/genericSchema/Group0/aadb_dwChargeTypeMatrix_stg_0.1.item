@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_pEy0ULyGEeitcIP7RwrZeg" name="aadb_dwChargeTypeMatrix_stg" label="aadb_dwChargeTypeMatrix_stg" dataPackage="_l-OsAryGEeitcIP7RwrZeg"/>
   <TalendMetadata:GenericPackage xmi:id="_l-OsAryGEeitcIP7RwrZeg" name="repository.metadataGenericSchema" dataManager="_pEy0ULyGEeitcIP7RwrZeg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_l-OsA7yGEeitcIP7RwrZeg" id="_fnu5cLyFEeitcIP7RwrZeg" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsBLyGEeitcIP7RwrZeg" name="ChargeTypeID" label="ChargeTypeID" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsBLyGEeitcIP7RwrZeg" name="ChargeTypeID" label="ChargeTypeID" length="-1" talendType="id_Integer" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsBbyGEeitcIP7RwrZeg" name="PositiveNegativeFlag" label="PositiveNegativeFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsBryGEeitcIP7RwrZeg" name="FarePriceFlag" label="FarePriceFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsB7yGEeitcIP7RwrZeg" name="DiscountFlag" label="DiscountFlag" length="-1" talendType="id_Integer"/>
@@ -21,12 +21,12 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsE7yGEeitcIP7RwrZeg" name="BaseFareFlag" label="BaseFareFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsFLyGEeitcIP7RwrZeg" name="GrossFareFlag" label="GrossFareFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsFbyGEeitcIP7RwrZeg" name="AllAddOnsFlag" label="AllAddOnsFlag" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsFryGEeitcIP7RwrZeg" name="CreatedDate" label="CreatedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsFryGEeitcIP7RwrZeg" name="CreatedDate" label="CreatedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsF7yGEeitcIP7RwrZeg" name="CreatedBy" label="CreatedBy" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsGLyGEeitcIP7RwrZeg" name="FareSurchargeFlag" label="FareSurchargeFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsGbyGEeitcIP7RwrZeg" name="FarePointsFlag" label="FarePointsFlag" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsGryGEeitcIP7RwrZeg" name="DiscountPointsFlag" label="DiscountPointsFlag" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsG7yGEeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l-OsG7yGEeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
