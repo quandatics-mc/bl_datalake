@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_TtqKcMByEeiE0sNOeL71dw" name="aadb_PassengerJourneyLeg_stg" label="aadb_PassengerJourneyLeg_stg" dataPackage="_Rvso8cByEeiE0sNOeL71dw"/>
+  <TalendMetadata:GenericPackage xmi:id="_Rvso8cByEeiE0sNOeL71dw" name="repository.metadataGenericSchema" dataManager="_TtqKcMByEeiE0sNOeL71dw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Rvso8sByEeiE0sNOeL71dw" id="_DYsHIMByEeiE0sNOeL71dw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso88ByEeiE0sNOeL71dw" name="PassengerID" label="PassengerID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso9MByEeiE0sNOeL71dw" name="SegmentID" label="SegmentID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso9cByEeiE0sNOeL71dw" name="LegNumber" label="LegNumber" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso9sByEeiE0sNOeL71dw" name="InventoryLegID" label="InventoryLegID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso98ByEeiE0sNOeL71dw" name="JourneyNumber" label="JourneyNumber" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso-MByEeiE0sNOeL71dw" name="LiftStatus" label="LiftStatus" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso-cByEeiE0sNOeL71dw" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Rvso-sByEeiE0sNOeL71dw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_HxNC8L_XEeimJdn0FrYR3g" name="repository.metadataGenericSchema" dataPackage="_HxNC8b_XEeimJdn0FrYR3g"/>
+  <TalendMetadata:GenericPackage xmi:id="_HxNC8b_XEeimJdn0FrYR3g" name="repository.metadataGenericSchema" dataManager="_HxNC8L_XEeimJdn0FrYR3g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_HxNC8r_XEeimJdn0FrYR3g" id="_mBQWgL_WEeimJdn0FrYR3g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC87_XEeimJdn0FrYR3g" name="PassengerID" label="PassengerID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC9L_XEeimJdn0FrYR3g" name="FeeNumber" label="FeeNumber" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC9b_XEeimJdn0FrYR3g" name="FeeCode" label="FeeCode" length="24" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC9r_XEeimJdn0FrYR3g" name="InventoryLegID" label="InventoryLegID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC97_XEeimJdn0FrYR3g" name="PaymentID" label="PaymentID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC-L_XEeimJdn0FrYR3g" name="CreatedDate" label="CreatedDate" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC-b_XEeimJdn0FrYR3g" name="ModifiedDate" label="ModifiedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC-r_XEeimJdn0FrYR3g" name="DeleteFlag" label="DeleteFlag" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC-7_XEeimJdn0FrYR3g" name="ETLModifiedDate" label="ETLModifiedDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HxNC_L_XEeimJdn0FrYR3g" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

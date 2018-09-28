@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_LEBQsLx4EeitcIP7RwrZeg" name="repository.metadataGenericSchema" dataPackage="_LEBQsbx4EeitcIP7RwrZeg"/>
+  <TalendMetadata:GenericPackage xmi:id="_LEBQsbx4EeitcIP7RwrZeg" name="repository.metadataGenericSchema" dataManager="_LEBQsLx4EeitcIP7RwrZeg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_LEBQsrx4EeitcIP7RwrZeg" id="_utangLx3EeitcIP7RwrZeg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQs7x4EeitcIP7RwrZeg" name="ChargeCodeID" label="ChargeCodeID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQtLx4EeitcIP7RwrZeg" name="ChargeTypeID" label="ChargeTypeID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQtbx4EeitcIP7RwrZeg" name="ChargeCode" label="ChargeCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEBQtrx4EeitcIP7RwrZeg" name="Name" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEB3wLx4EeitcIP7RwrZeg" name="NotUsedInRevenue" label="NotUsedInRevenue" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LEB3wbx4EeitcIP7RwrZeg" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
