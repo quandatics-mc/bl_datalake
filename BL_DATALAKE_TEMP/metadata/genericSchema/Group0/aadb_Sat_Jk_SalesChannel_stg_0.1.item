@@ -7,7 +7,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyBbZkEeiyl5Dva2Pz6w" name="rolecode" label="rolecode" length="50" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyBrZkEeiyl5Dva2Pz6w" name="status" label="status" length="10" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyB7ZkEeiyl5Dva2Pz6w" name="saleschannelrpt" label="saleschannelrpt" length="10" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyCLZkEeiyl5Dva2Pz6w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wjMyCLZkEeiyl5Dva2Pz6w" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;"/>
     </ownedElement>
   </TalendMetadata:GenericPackage>
 </xmi:XMI>
