@@ -162,7 +162,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="dups">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -176,7 +176,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -288,7 +288,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="352">
@@ -315,7 +315,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="nul">
       <column comment="" key="true" length="-1" name="ConversionDayID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -329,7 +329,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -399,7 +399,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="448">
@@ -426,7 +426,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="352">
@@ -476,7 +476,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="16" offsetLabelY="-64" posX="96" posY="544">
@@ -528,7 +528,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -614,7 +614,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -666,7 +666,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -719,7 +719,7 @@
       <column comment="" key="false" length="7" name="FareRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="TaxRoundFactor" nullable="true" pattern="" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="UserControl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -1057,7 +1057,7 @@
       <column comment="" key="false" length="-1" name="stgRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prodRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -1130,7 +1130,7 @@
       <column comment="" key="false" length="-1" name="stgRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prodRowCount" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tGSDelete" componentVersion="0.102" offsetLabelX="8" offsetLabelY="3" posX="704" posY="1408">
@@ -1692,7 +1692,7 @@
       <column comment="" key="false" length="-1" name="Group" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout3" expressionFilter="row21.EndTime!=null&amp;&amp;row21.ErrorMessage!=null" activateExpressionFilter="true">
         <mapperTableEntries name="StartTime" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,row20.StartTime )) " type="id_Date" nullable="true"/>
