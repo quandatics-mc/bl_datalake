@@ -2976,7 +2976,7 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryOutput_2" offsetLabelX="3" offsetLabelY="31" outputId="1" source="tBigQueryOutput_2" target="tFixedFlowInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryOutput_2" offsetLabelX="-50" offsetLabelY="-13" outputId="2" source="tBigQueryOutput_2" target="tFlowMeterCatcher_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tBigQueryOutput_2" offsetLabelX="-50" offsetLabelY="-15" outputId="2" source="tBigQueryOutput_2" target="tFlowMeterCatcher_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
   </connection>
   <subjob>
