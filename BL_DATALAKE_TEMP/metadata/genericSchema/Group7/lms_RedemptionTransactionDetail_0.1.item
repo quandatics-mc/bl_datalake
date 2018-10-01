@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_C1azQMVaEeicEt7XC3_ENw" name="repository.metadataGenericSchema" dataPackage="_C1azQcVaEeicEt7XC3_ENw"/>
+  <TalendMetadata:GenericPackage xmi:id="_C1azQcVaEeicEt7XC3_ENw" name="repository.metadataGenericSchema" dataManager="_C1azQMVaEeicEt7XC3_ENw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_C1azQsVaEeicEt7XC3_ENw" id="_l0PjEMVZEeicEt7XC3_ENw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azQ8VaEeicEt7XC3_ENw" name="TransactionID" label="TransactionID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azRMVaEeicEt7XC3_ENw" name="ReferenceCode" label="ReferenceCode" length="32" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azRcVaEeicEt7XC3_ENw" name="ReferenceNumber" label="ReferenceNumber" length="32" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azRsVaEeicEt7XC3_ENw" name="RedemptionTypeCode" label="RedemptionTypeCode" length="2" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azR8VaEeicEt7XC3_ENw" name="CurrencyCode" label="CurrencyCode" length="3" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azSMVaEeicEt7XC3_ENw" name="Amount" label="Amount" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azScVaEeicEt7XC3_ENw" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azSsVaEeicEt7XC3_ENw" name="RequestDate" label="RequestDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_C1azS8VaEeicEt7XC3_ENw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
