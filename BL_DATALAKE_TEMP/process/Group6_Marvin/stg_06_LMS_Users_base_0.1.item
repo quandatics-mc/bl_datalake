@@ -297,7 +297,7 @@
         <mapperTableEntries name="parentGuardian" expression="row11.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="row11.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row11.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row11.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row11.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="row11.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row11.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row11.state " type="id_String" nullable="true"/>
@@ -1094,7 +1094,7 @@
         <mapperTableEntries name="parentGuardian" expression="row5.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="row5.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row5.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row5.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row5.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="row5.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row5.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row5.state " type="id_String" nullable="true"/>
@@ -1130,7 +1130,7 @@
         <mapperTableEntries name="parentGuardian" expression="row5.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="row5.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row5.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row5.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row5.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="row5.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row5.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row5.state " type="id_String" nullable="true"/>
@@ -1375,7 +1375,7 @@
         <mapperTableEntries name="parentGuardian" expression="uniq.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="uniq.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="uniq.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="uniq.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="uniq.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="uniq.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="uniq.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="uniq.state " type="id_String" nullable="true"/>
@@ -1411,7 +1411,7 @@
         <mapperTableEntries name="parentGuardian" expression="uniq.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="uniq.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="uniq.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="uniq.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="uniq.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="uniq.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="uniq.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="uniq.state " type="id_String" nullable="true"/>
@@ -1803,7 +1803,7 @@
         <mapperTableEntries name="parentGuardian" expression="row7.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="row7.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row7.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row7.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row7.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="row7.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row7.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row7.state " type="id_String" nullable="true"/>
@@ -2018,7 +2018,7 @@
         <mapperTableEntries name="parentGuardian" expression="row8.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="row8.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row8.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row8.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row8.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="row8.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row8.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row8.state " type="id_String" nullable="true"/>
@@ -2192,7 +2192,7 @@
         <mapperTableEntries name="parentGuardian" expression="row9.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="row9.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row9.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row9.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row9.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="row9.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row9.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row9.state " type="id_String" nullable="true"/>
@@ -2439,7 +2439,7 @@
         <mapperTableEntries name="parentGuardian" expression="row14.parentGuardian " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianDocNumber" expression="row14.parentGuardianDocNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row14.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row14.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row14.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="paxType" expression="row14.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row14.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row14.state " type="id_String" nullable="true"/>
