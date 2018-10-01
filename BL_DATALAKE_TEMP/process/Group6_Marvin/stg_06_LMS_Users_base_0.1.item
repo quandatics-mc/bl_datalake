@@ -283,7 +283,7 @@
         <mapperTableEntries name="city" expression="row11.city " type="id_String" nullable="true"/>
         <mapperTableEntries name="country" expression="row11.country " type="id_String" nullable="true"/>
         <mapperTableEntries name="createdAt" expression="row11.createdAt==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.createdAt*1000))))) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="dateofBirth" expression="(row11.dateofBirth==null||row11.dateofBirth.isEmpty())? null:TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, row11.dateofBirth) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="dateofBirth" expression="(row11.dateofBirth==null||row11.dateofBirth.isEmpty())? null:TalendDate.parseDate(&quot;ddMMyyyy&quot;, row11.dateofBirth) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="firstName" expression="row11.firstName " type="id_String" nullable="true"/>
         <mapperTableEntries name="gender" expression="row11.gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="id" expression="row11.id " type="id_String" nullable="true"/>
