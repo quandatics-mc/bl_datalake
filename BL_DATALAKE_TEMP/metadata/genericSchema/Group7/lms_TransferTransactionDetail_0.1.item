@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_gI-swMWCEei2d9UbdD4d1A" name="repository.metadataGenericSchema" dataPackage="_gI-swcWCEei2d9UbdD4d1A"/>
+  <TalendMetadata:GenericPackage xmi:id="_gI-swcWCEei2d9UbdD4d1A" name="repository.metadataGenericSchema" dataManager="_gI-swMWCEei2d9UbdD4d1A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_gI-swsWCEei2d9UbdD4d1A" id="_Tk12wMWCEei2d9UbdD4d1A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gI-sw8WCEei2d9UbdD4d1A" name="TransactionID" label="TransactionID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gI-sxMWCEei2d9UbdD4d1A" name="RecipientMemberID" label="RecipientMemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gI-sxcWCEei2d9UbdD4d1A" name="SenderMemberID" label="SenderMemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gI-sxsWCEei2d9UbdD4d1A" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gI-sx8WCEei2d9UbdD4d1A" name="RequestDate" label="RequestDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gI-syMWCEei2d9UbdD4d1A" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
