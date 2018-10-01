@@ -165,6 +165,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -210,6 +211,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -258,6 +260,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -296,6 +299,7 @@
         <mapperTableEntries name="paxType" expression="row11.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row11.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row11.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="row11.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="row11.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="row11.updatedAt==null? null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row11.updatedAt*1000))))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="row11.username " type="id_String" nullable="true"/>
@@ -331,6 +335,7 @@
         <mapperTableEntries name="paxType" type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" type="id_Double" nullable="true"/>
         <mapperTableEntries name="username" type="id_String" nullable="true"/>
@@ -418,6 +423,9 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
@@ -477,6 +485,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -512,6 +521,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -547,6 +557,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -633,6 +644,9 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
@@ -692,6 +706,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -727,6 +742,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -762,6 +778,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -810,6 +827,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -858,6 +876,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -906,6 +925,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -952,6 +972,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1000,6 +1021,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1035,6 +1057,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1073,6 +1096,7 @@
         <mapperTableEntries name="paxType" expression="row5.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row5.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row5.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="row5.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="row5.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="row5.updatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="row5.username " type="id_String" nullable="true"/>
@@ -1108,6 +1132,7 @@
         <mapperTableEntries name="paxType" expression="row5.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row5.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row5.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="row5.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="row5.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="row5.updatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="row5.username " type="id_String" nullable="true"/>
@@ -1143,6 +1168,7 @@
         <mapperTableEntries name="paxType" type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" type="id_String" nullable="true"/>
@@ -1178,6 +1204,7 @@
         <mapperTableEntries name="paxType" type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" type="id_String" nullable="true"/>
@@ -1225,6 +1252,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1273,6 +1301,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1308,6 +1337,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1321,7 +1351,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.MemberStatusID == null || uniq.CreatedUserID  == null || uniq.CreatedUTC==null || uniq.ModifiedUserID  == null ||  uniq.ModifiedUTC== null || uniq.Name== null ||  uniq.Name.isEmpty() ||uniq.IsSystemReserved== null || uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.addressLine1 == null ||uniq.addressLine1.isEmpty() || uniq.appCode  == null || uniq.city==null || uniq.city.isEmpty() || uniq.country==null || uniq.country.isEmpty() ||uniq.createdAt  == null ||  uniq.dateofBirth== null || uniq.firstName== null ||  uniq.firstName.isEmpty() ||uniq.gender== null ||  uniq.gender.isEmpty() ||uniq.id== null ||  uniq.id.isEmpty() ||uniq.lastName== null ||  uniq.lastName.isEmpty() ||uniq.mobilePhone== null ||  uniq.mobilePhone.isEmpty() ||uniq.nationality== null ||  uniq.nationality.isEmpty() ||uniq.postalCode== null ||  uniq.postalCode.isEmpty() ||uniq.state== null ||  uniq.state.isEmpty() ||uniq.status== null ||  uniq.status.isEmpty() ||uniq.title== null ||  uniq.title.isEmpty() ||uniq.updatedAt== null ||uniq.username== null ||  uniq.username.isEmpty() ||uniq.loyaltyId== null ||uniq.loyaltyId.isEmpty()|| uniq.LoadedDate==null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="activatedAt" expression="uniq.activatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="addressLine1" expression="uniq.addressLine1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="addressLine2" expression="uniq.addressLine2 " type="id_String" nullable="true"/>
@@ -1346,6 +1376,7 @@
         <mapperTableEntries name="paxType" expression="uniq.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="uniq.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="uniq.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="uniq.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="uniq.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="uniq.updatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="uniq.username " type="id_String" nullable="true"/>
@@ -1381,6 +1412,7 @@
         <mapperTableEntries name="paxType" expression="uniq.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="uniq.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="uniq.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="uniq.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="uniq.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="uniq.updatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="uniq.username " type="id_String" nullable="true"/>
@@ -1416,6 +1448,7 @@
         <mapperTableEntries name="paxType" type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" type="id_String" nullable="true"/>
@@ -1465,6 +1498,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1513,6 +1547,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1558,6 +1593,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1629,6 +1665,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1675,6 +1712,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1723,6 +1761,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1762,6 +1801,7 @@
         <mapperTableEntries name="paxType" expression="row7.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row7.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row7.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="row7.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="row7.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="row7.updatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="row7.username " type="id_String" nullable="true"/>
@@ -1798,6 +1838,7 @@
         <mapperTableEntries name="paxType" type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" type="id_String" nullable="true"/>
@@ -1838,6 +1879,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1885,6 +1927,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1933,6 +1976,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -1972,6 +2016,7 @@
         <mapperTableEntries name="paxType" expression="row8.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row8.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row8.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="row8.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="row8.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="row8.updatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="row8.username " type="id_String" nullable="true"/>
@@ -2008,6 +2053,7 @@
         <mapperTableEntries name="paxType" type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" type="id_String" nullable="true"/>
@@ -2055,6 +2101,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -2103,6 +2150,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -2142,6 +2190,7 @@
         <mapperTableEntries name="paxType" expression="row9.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row9.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row9.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="row9.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="row9.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="row9.updatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="row9.username " type="id_String" nullable="true"/>
@@ -2178,6 +2227,7 @@
         <mapperTableEntries name="paxType" type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" type="id_String" nullable="true"/>
@@ -2250,6 +2300,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -2297,6 +2348,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -2345,6 +2397,7 @@
       <column comment="" key="false" length="0" name="paxType" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="updatedAt" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="username" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -2384,6 +2437,7 @@
         <mapperTableEntries name="paxType" expression="row14.paxType " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row14.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row14.state " type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="row14.status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" expression="row14.title " type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" expression="row14.updatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" expression="row14.username " type="id_String" nullable="true"/>
@@ -2420,6 +2474,7 @@
         <mapperTableEntries name="paxType" type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" type="id_String" nullable="true"/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="title" type="id_String" nullable="true"/>
         <mapperTableEntries name="updatedAt" type="id_Date" nullable="true"/>
         <mapperTableEntries name="username" type="id_String" nullable="true"/>
@@ -3078,6 +3133,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
@@ -3224,6 +3282,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="uniq" show="false"/>
@@ -3345,6 +3406,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -3474,6 +3538,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="nullability" show="false"/>
@@ -3595,6 +3662,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -3731,6 +3801,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
@@ -3862,6 +3935,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout2" show="false"/>
@@ -3989,6 +4065,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfout2" show="false"/>
@@ -4114,6 +4193,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="username"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
