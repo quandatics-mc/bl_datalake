@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_s-OW8MUsEeim57gUp1BF7Q" name="repository.metadataGenericSchema" dataPackage="_s-OW8cUsEeim57gUp1BF7Q"/>
+  <TalendMetadata:GenericPackage xmi:id="_s-OW8cUsEeim57gUp1BF7Q" name="repository.metadataGenericSchema" dataManager="_s-OW8MUsEeim57gUp1BF7Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_s-OW8sUsEeim57gUp1BF7Q" id="_d53m8MUsEeim57gUp1BF7Q" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-AMUsEeim57gUp1BF7Q" name="MemberID" label="MemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-AcUsEeim57gUp1BF7Q" name="SubprogramCode" label="SubprogramCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-AsUsEeim57gUp1BF7Q" name="ProcessingUTC" label="ProcessingUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-A8UsEeim57gUp1BF7Q" name="ProcessingStatus" label="ProcessingStatus" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-BMUsEeim57gUp1BF7Q" name="PurchaseID" label="PurchaseID" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-BcUsEeim57gUp1BF7Q" name="AuthorizationCode" label="AuthorizationCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-BsUsEeim57gUp1BF7Q" name="PaymentResponseType" label="PaymentResponseType" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-B8UsEeim57gUp1BF7Q" name="PaymentResponseText" label="PaymentResponseText" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-CMUsEeim57gUp1BF7Q" name="Cost" label="Cost" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s-O-CcUsEeim57gUp1BF7Q" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
