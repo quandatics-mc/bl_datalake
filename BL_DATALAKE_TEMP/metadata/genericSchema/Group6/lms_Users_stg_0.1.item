@@ -27,6 +27,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoWMFBEeik57cswKjnMg" name="paxType" label="paxType" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoWcFBEeik57cswKjnMg" name="postalCode" label="postalCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoWsFBEeik57cswKjnMg" name="state" label="state" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_V9XPIMVHEeim57gUp1BF7Q" name="status" label="status" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoW8FBEeik57cswKjnMg" name="title" label="title" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoXMFBEeik57cswKjnMg" name="updatedAt" label="updatedAt" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoXcFBEeik57cswKjnMg" name="username" label="username" talendType="id_String"/>
