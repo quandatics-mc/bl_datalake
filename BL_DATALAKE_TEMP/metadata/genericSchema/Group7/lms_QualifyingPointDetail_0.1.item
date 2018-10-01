@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_U760sMVREeicEt7XC3_ENw" name="repository.metadataGenericSchema" dataPackage="_U760scVREeicEt7XC3_ENw"/>
+  <TalendMetadata:GenericPackage xmi:id="_U760scVREeicEt7XC3_ENw" name="repository.metadataGenericSchema" dataManager="_U760sMVREeicEt7XC3_ENw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_U760ssVREeicEt7XC3_ENw" id="_dKLsEMVQEeicEt7XC3_ENw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760s8VREeicEt7XC3_ENw" name="TransactionID" label="TransactionID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760tMVREeicEt7XC3_ENw" name="QualifyingPointsDetailID" label="QualifyingPointsDetailID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760tcVREeicEt7XC3_ENw" name="RuleName" label="RuleName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760tsVREeicEt7XC3_ENw" name="RuleSetID" label="RuleSetID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760t8VREeicEt7XC3_ENw" name="RuleID" label="RuleID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760uMVREeicEt7XC3_ENw" name="MergeableStatus" label="MergeableStatus" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760ucVREeicEt7XC3_ENw" name="QualifyingPoints" label="QualifyingPoints" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760usVREeicEt7XC3_ENw" name="BonusCode" label="BonusCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760u8VREeicEt7XC3_ENw" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760vMVREeicEt7XC3_ENw" name="RequestDate" label="RequestDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_U760vcVREeicEt7XC3_ENw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
