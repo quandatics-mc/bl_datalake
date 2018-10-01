@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_7fUksMUzEeicEt7XC3_ENw" name="repository.metadataGenericSchema" dataPackage="_7fUkscUzEeicEt7XC3_ENw"/>
+  <TalendMetadata:GenericPackage xmi:id="_7fUkscUzEeicEt7XC3_ENw" name="repository.metadataGenericSchema" dataManager="_7fUksMUzEeicEt7XC3_ENw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7fUkssUzEeicEt7XC3_ENw" id="_dJpcMMUyEeicEt7XC3_ENw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUks8UzEeicEt7XC3_ENw" name="TransactionID" label="TransactionID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUktMUzEeicEt7XC3_ENw" name="BankedPointsDetailID" label="BankedPointsDetailID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUktcUzEeicEt7XC3_ENw" name="CreditID" label="CreditID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUktsUzEeicEt7XC3_ENw" name="RuleName" label="RuleName" length="64" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUkt8UzEeicEt7XC3_ENw" name="RuleSetID" label="RuleSetID" length="-1" talendType="id_Long">
+        <initialValue xmi:id="_7fUkuMUzEeicEt7XC3_ENw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUkucUzEeicEt7XC3_ENw" name="RuleID" label="RuleID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUkusUzEeicEt7XC3_ENw" name="BankedPoints" label="BankedPoints" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUku8UzEeicEt7XC3_ENw" name="BonusCode" label="BonusCode" length="10" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUkvMUzEeicEt7XC3_ENw" name="IsCost" label="IsCost" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUkvcUzEeicEt7XC3_ENw" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUkvsUzEeicEt7XC3_ENw" name="RequestDate" label="RequestDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7fUkv8UzEeicEt7XC3_ENw" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
