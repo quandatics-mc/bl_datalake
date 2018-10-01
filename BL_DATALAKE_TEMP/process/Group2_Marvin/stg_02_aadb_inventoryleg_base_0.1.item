@@ -456,7 +456,7 @@
     <elementParameter field="TEXT" name="LABEL" value="stgOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_1">
-      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InventoryLegID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DepartureDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CarrierCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FlightNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
