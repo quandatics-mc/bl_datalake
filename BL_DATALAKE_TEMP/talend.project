@@ -1373,6 +1373,11 @@
       <relatedItems xmi:id="_uamHPcIfEeiyS53pKo2cTA" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_uamHPsIfEeiyS53pKo2cTA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_DvPbIMXyEeiBIsXofkD6WQ" id="_o7GfsMXwEeiBIsXofkD6WQ" version="Latest" type="job"/>
+      <relatedItems xmi:id="_09bbkMYQEeiBIsXofkD6WQ" id="_GYcugMXxEeiBIsXofkD6WQ" version="Latest" type="job"/>
+      <relatedItems xmi:id="_09bbkcYQEeiBIsXofkD6WQ" id="_DfiFUMI7EeiyS53pKo2cTA" version="Latest" type="job"/>
+      <relatedItems xmi:id="_09bbksYQEeiBIsXofkD6WQ" id="_9KkfMMUrEeim57gUp1BF7Q" version="Latest" type="job"/>
+      <relatedItems xmi:id="_09bbk8YQEeiBIsXofkD6WQ" id="_sU35YMI2EeiyS53pKo2cTA" version="Latest" type="job"/>
+      <relatedItems xmi:id="_09bblMYQEeiBIsXofkD6WQ" id="_zIE30MUxEeim57gUp1BF7Q" version="Latest" type="job"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_0nNacMIfEeiyS53pKo2cTA">
       <baseItem xmi:id="_0nNaccIfEeiyS53pKo2cTA" id="_0l-rYMIfEeiyS53pKo2cTA" version="0.1" type="job"/>
