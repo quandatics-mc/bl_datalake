@@ -297,7 +297,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="TEXT" name="DATASET" value="&quot;BL_ODS_DL&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;BL_LMS_DL&quot;"/>
     <elementParameter field="TEXT" name="TABLE" value="&quot;dl_log&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
