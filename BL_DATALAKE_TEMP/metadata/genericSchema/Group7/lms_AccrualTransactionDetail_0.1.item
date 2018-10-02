@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_mtS1cMYeEeiVwcMAsbHI6A" name="repository.metadataGenericSchema" dataPackage="_mtTcgMYeEeiVwcMAsbHI6A"/>
+  <TalendMetadata:GenericPackage xmi:id="_mtTcgMYeEeiVwcMAsbHI6A" name="repository.metadataGenericSchema" dataManager="_mtS1cMYeEeiVwcMAsbHI6A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_mtTcgcYeEeiVwcMAsbHI6A" id="_6zMpMMYdEeiVwcMAsbHI6A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcgsYeEeiVwcMAsbHI6A" name="TransactionID" label="TransactionID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcg8YeEeiVwcMAsbHI6A" name="ReferenceNumber" label="ReferenceNumber" length="32" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTchMYeEeiVwcMAsbHI6A" name="PurchaseDate" label="PurchaseDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTchcYeEeiVwcMAsbHI6A" name="ServiceDate" label="ServiceDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTchsYeEeiVwcMAsbHI6A" name="BasePrice" label="BasePrice" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTch8YeEeiVwcMAsbHI6A" name="TotalPrice" label="TotalPrice" length="-1" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTciMYeEeiVwcMAsbHI6A" name="CurrencyCode" label="CurrencyCode" length="3" talendType="id_String">
+        <initialValue xmi:id="_mtTcicYeEeiVwcMAsbHI6A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcisYeEeiVwcMAsbHI6A" name="PartnerBatchID" label="PartnerBatchID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTci8YeEeiVwcMAsbHI6A" name="AccrualType" label="AccrualType" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcjMYeEeiVwcMAsbHI6A" name="Unit1" label="Unit1" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcjcYeEeiVwcMAsbHI6A" name="Unit2" label="Unit2" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcjsYeEeiVwcMAsbHI6A" name="CurrencyCodeOriginal" label="CurrencyCodeOriginal" length="3" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcj8YeEeiVwcMAsbHI6A" name="NotActivity" label="NotActivity" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTckMYeEeiVwcMAsbHI6A" name="OriginalMemberID" label="OriginalMemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTckcYeEeiVwcMAsbHI6A" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double">
+        <initialValue xmi:id="_mtTcksYeEeiVwcMAsbHI6A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTck8YeEeiVwcMAsbHI6A" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
