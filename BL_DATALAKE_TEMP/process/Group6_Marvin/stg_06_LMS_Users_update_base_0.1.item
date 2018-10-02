@@ -1413,7 +1413,7 @@
         <mapperTableEntries name="mobilePhone" expression="row9.mobilePhone " type="id_String" nullable="true"/>
         <mapperTableEntries name="nationality" expression="row9.nationality " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row9.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row9.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row9.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row9.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row9.state " type="id_String" nullable="true"/>
         <mapperTableEntries name="status" expression="row9.status " type="id_String" nullable="true"/>
@@ -1580,7 +1580,7 @@
         <mapperTableEntries name="mobilePhone" expression="row14.mobilePhone " type="id_String" nullable="true"/>
         <mapperTableEntries name="nationality" expression="row14.nationality " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row14.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row14.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row14.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row14.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row14.state " type="id_String" nullable="true"/>
         <mapperTableEntries name="status" expression="row14.status " type="id_String" nullable="true"/>
