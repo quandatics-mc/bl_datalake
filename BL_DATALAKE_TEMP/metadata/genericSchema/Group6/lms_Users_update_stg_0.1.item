@@ -16,7 +16,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoUMFBEeik57cswKjnMg" name="mobilePhone" label="mobilePhone" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoUcFBEeik57cswKjnMg" name="nationality" label="nationality" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoVsFBEeik57cswKjnMg" name="parentGuardianEmail" label="parentGuardianEmail" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoV8FBEeik57cswKjnMg" name="parentGuardinFullName" label="parentGuardinFullName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoV8FBEeik57cswKjnMg" name="parentGuardianFullName" label="parentGuardianFullName" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoWcFBEeik57cswKjnMg" name="postalCode" label="postalCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoWsFBEeik57cswKjnMg" name="state" label="state" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_V9XPIMVHEeim57gUp1BF7Q" name="status" label="status" talendType="id_String"/>
