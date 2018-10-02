@@ -3,7 +3,7 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_mtS1cMYeEeiVwcMAsbHI6A" name="repository.metadataGenericSchema" dataPackage="_mtTcgMYeEeiVwcMAsbHI6A"/>
   <TalendMetadata:GenericPackage xmi:id="_mtTcgMYeEeiVwcMAsbHI6A" name="repository.metadataGenericSchema" dataManager="_mtS1cMYeEeiVwcMAsbHI6A">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_mtTcgcYeEeiVwcMAsbHI6A" id="_6zMpMMYdEeiVwcMAsbHI6A" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcgsYeEeiVwcMAsbHI6A" name="TransactionID" label="TransactionID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcgsYeEeiVwcMAsbHI6A" name="TransactionID" label="TransactionID" length="-1" talendType="id_Long" key="true"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTcg8YeEeiVwcMAsbHI6A" name="ReferenceNumber" label="ReferenceNumber" length="32" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTchMYeEeiVwcMAsbHI6A" name="PurchaseDate" label="PurchaseDate" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mtTchcYeEeiVwcMAsbHI6A" name="ServiceDate" label="ServiceDate" length="-1" talendType="id_Double"/>
