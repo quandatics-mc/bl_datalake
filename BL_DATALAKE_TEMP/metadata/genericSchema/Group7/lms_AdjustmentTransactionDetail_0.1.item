@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_SzcWYMV_Eei2d9UbdD4d1A" name="repository.metadataGenericSchema" dataPackage="_SzcWYcV_Eei2d9UbdD4d1A"/>
+  <TalendMetadata:GenericPackage xmi:id="_SzcWYcV_Eei2d9UbdD4d1A" name="repository.metadataGenericSchema" dataManager="_SzcWYMV_Eei2d9UbdD4d1A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SzcWYsV_Eei2d9UbdD4d1A" id="_9TeN0MV-Eei2d9UbdD4d1A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SzcWY8V_Eei2d9UbdD4d1A" name="TransactionID" label="TransactionID" length="-1" talendType="id_Long" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Szc9cMV_Eei2d9UbdD4d1A" name="AdjustmentReasonCode" label="AdjustmentReasonCode" length="12" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Szc9ccV_Eei2d9UbdD4d1A" name="BulkAdjustmentID" label="BulkAdjustmentID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Szc9csV_Eei2d9UbdD4d1A" name="OriginalMemberID" label="OriginalMemberID" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Szc9c8V_Eei2d9UbdD4d1A" name="CreatedUTC" label="CreatedUTC" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Szc9dMV_Eei2d9UbdD4d1A" name="RequestDate" label="RequestDate" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Szc9dcV_Eei2d9UbdD4d1A" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
