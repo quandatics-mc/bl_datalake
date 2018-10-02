@@ -505,7 +505,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_17"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="-1" offsetLabelY="6" posX="192" posY="448">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="-1" offsetLabelY="6" posX="160" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_19" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
@@ -523,7 +523,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_19"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="-1" offsetLabelY="6" posX="480" posY="448">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="-1" offsetLabelY="6" posX="448" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_21" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
@@ -541,7 +541,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryInput_21"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="-1" offsetLabelY="6" posX="800" posY="448">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="-1" offsetLabelY="6" posX="736" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_22" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
@@ -586,6 +586,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_18" offsetLabelX="-8" offsetLabelY="30" source="tBigQueryInput_18" target="tBigQueryInput_20">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk18" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_20" offsetLabelX="0" offsetLabelY="32" source="tBigQueryInput_20" target="tBigQueryInput_14">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk14" show="false"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_7" offsetLabelX="-2" offsetLabelY="31" source="tBigQueryInput_7" target="tBigQueryInput_8">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
@@ -603,6 +606,18 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_12" offsetLabelX="-2" offsetLabelY="31" source="tBigQueryInput_12" target="tBigQueryInput_13">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk11" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_14" offsetLabelX="3" offsetLabelY="32" source="tBigQueryInput_14" target="tBigQueryInput_17">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk16" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_17" offsetLabelX="-46" offsetLabelY="1" source="tBigQueryInput_17" target="tBigQueryInput_19">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk17" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_19" offsetLabelX="2" offsetLabelY="31" source="tBigQueryInput_19" target="tBigQueryInput_21">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk19" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBigQueryInput_21" offsetLabelX="7" offsetLabelY="34" source="tBigQueryInput_21" target="tBigQueryInput_22">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk20" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
