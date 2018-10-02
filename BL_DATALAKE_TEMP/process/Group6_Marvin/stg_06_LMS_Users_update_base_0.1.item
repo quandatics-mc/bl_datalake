@@ -242,7 +242,7 @@
         <mapperTableEntries name="mobilePhone" expression="row11.mobilePhone " type="id_String" nullable="true"/>
         <mapperTableEntries name="nationality" expression="row11.nationality " type="id_String" nullable="true"/>
         <mapperTableEntries name="parentGuardianEmail" expression="row11.parentGuardianEmail " type="id_String" nullable="true"/>
-        <mapperTableEntries name="parentGuardianFullName" expression="row11.parentGuardinFullName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="parentGuardianFullName" expression="row11.parentGuardianFullName " type="id_String" nullable="true"/>
         <mapperTableEntries name="postalCode" expression="row11.postalCode " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row11.state " type="id_String" nullable="true"/>
         <mapperTableEntries name="status" expression="row11.status " type="id_String" nullable="true"/>
