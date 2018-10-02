@@ -133,7 +133,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_8-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_8-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -152,7 +152,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Reference">
-        <mapperTableEntries name="TableName" expression="&quot;stg_07_lms_TransferTransactionDetail&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TableName" expression="&quot;stg_07_lms_AccrualTransactionDetail&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="sourceRowCount" expression="row18.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="stgRowCount" expression="row19.count " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="prodRowCount" type="id_Integer" nullable="true"/>
@@ -236,11 +236,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_6">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="544">
@@ -248,7 +258,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_3-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -257,11 +267,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="InvalidRecord1">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -269,20 +289,40 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord1">
         <mapperTableEntries name="TransactionID" expression="row12.TransactionID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" expression="row12.RecipientMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" expression="row12.SenderMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="row12.CreatedUTC " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" expression="row12.RequestDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="row12.ReferenceNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" expression="row12.PurchaseDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" expression="row12.ServiceDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" expression="row12.BasePrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" expression="row12.TotalPrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" expression="row12.CurrencyCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" expression="row12.PartnerBatchID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" expression="row12.AccrualType " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" expression="row12.Unit1 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" expression="row12.Unit2 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" expression="row12.CurrencyCodeOriginal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" expression="row12.NotActivity " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" expression="row12.OriginalMemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row12.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="row12.CreatedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="&quot;Null Value&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row12" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="TransactionID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -291,11 +331,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnite_1">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
@@ -309,11 +359,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_3">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="608">
@@ -321,7 +381,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_4-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -330,11 +390,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="InvalidRecord2">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -342,20 +412,40 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord2">
         <mapperTableEntries name="TransactionID" expression="row13.TransactionID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" expression="row13.RecipientMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" expression="row13.SenderMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="row13.CreatedUTC " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" expression="row13.RequestDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="row13.ReferenceNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" expression="row13.PurchaseDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" expression="row13.ServiceDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" expression="row13.BasePrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" expression="row13.TotalPrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" expression="row13.CurrencyCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" expression="row13.PartnerBatchID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" expression="row13.AccrualType " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" expression="row13.Unit1 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" expression="row13.Unit2 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" expression="row13.CurrencyCodeOriginal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" expression="row13.NotActivity " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" expression="row13.OriginalMemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row13.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="row13.CreatedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="&quot;Duplicate Record&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row13" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="TransactionID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -369,11 +459,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_4">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="672">
@@ -381,7 +481,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_5-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -390,11 +490,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="InvalidRecord3">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -402,20 +512,40 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord3">
         <mapperTableEntries name="TransactionID" expression="row14.TransactionID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" expression="row14.RecipientMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" expression="row14.SenderMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="row14.CreatedUTC " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" expression="row14.RequestDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="row14.ReferenceNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" expression="row14.PurchaseDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" expression="row14.ServiceDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" expression="row14.BasePrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" expression="row14.TotalPrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" expression="row14.CurrencyCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" expression="row14.PartnerBatchID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" expression="row14.AccrualType " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" expression="row14.Unit1 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" expression="row14.Unit2 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" expression="row14.CurrencyCodeOriginal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" expression="row14.NotActivity " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" expression="row14.OriginalMemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row14.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="row14.CreatedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="&quot;Duplicate Record&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row14" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="TransactionID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -429,11 +559,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_5">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="736">
@@ -441,7 +581,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_6-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -450,11 +590,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="InvalidRecord4">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -462,40 +612,60 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord4">
         <mapperTableEntries name="TransactionID" expression="row15.TransactionID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" expression="row15.RecipientMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" expression="row15.SenderMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="row15.CreatedUTC " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" expression="row15.RequestDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="row15.ReferenceNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" expression="row15.PurchaseDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" expression="row15.ServiceDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" expression="row15.BasePrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" expression="row15.TotalPrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" expression="row15.CurrencyCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" expression="row15.PartnerBatchID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" expression="row15.AccrualType " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" expression="row15.Unit1 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" expression="row15.Unit2 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" expression="row15.CurrencyCodeOriginal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" expression="row15.NotActivity " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" expression="row15.OriginalMemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row15.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="row15.CreatedUTC " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Indicator" expression="&quot;Whole column matched duplicate record&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="TransactionID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutput_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_lms_TransferTransactionDetail_Exception.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_lms_AccrualTransactionDetail_Exception.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_LMS_STG&quot;"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_TransferTransactionDetail_Exception&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_AccrualTransactionDetail_Exception&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;quandatics_talend_project&quot;"/>
-    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_lms_TransferTransactionDetail_Exception.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_lms_AccrualTransactionDetail_Exception.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
@@ -516,23 +686,33 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_2">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_gI-FsMWCEei2d9UbdD4d1A - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_msvb0MYeEeiVwcMAsbHI6A - metadata" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT TransactionID, RecipientMemberID, SenderMemberID, CreatedUTC, RequestDate, LoadedDate &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.vw_TransferTransactionDetail` LIMIT 1000&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT stg.TransactionID, stg.ReferenceNumber, stg.PurchaseDate, stg.ServiceDate, stg.BasePrice, stg.TotalPrice, stg.CurrencyCode, stg.PartnerBatchID, stg.AccrualType, stg.Unit1, stg.Unit2, stg.CurrencyCodeOriginal, stg.NotActivity, stg.OriginalMemberID, stg.LoadedDate, dl.CreatedUTC &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.vw_AccrualTransactionDetail` stg &#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_LMS_STG.vw_Transaction` dl &#xD;&#xA;ON stg.TransactionID = dl.TransactionID LIMIT 10000&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -544,11 +724,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tBigQueryInput_1">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
@@ -562,11 +752,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFlowMeter_11">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
@@ -574,7 +774,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -583,46 +783,96 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="Output1">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="NullRecord">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="!(row6.TransactionID == null &amp;&amp; row6.RecipientMemberID == null &amp;&amp; row6.SenderMemberID == null &amp;&amp; row6.CreatedUTC == null &amp;&amp; row6.RequestDate == null &amp;&amp;  row6.LoadedDate == null)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" reject="true">
+      <outputTables sizeState="INTERMEDIATE" name="Output1" expressionFilter="!(row6.TransactionID == null &amp;&amp; (row6.ReferenceNumber == null || row6.ReferenceNumber.isEmpty()) &amp;&amp; row6.PurchaseDate == null &amp;&amp; row6.ServiceDate == null &amp;&amp; row6.BasePrice == null &amp;&amp; row6.TotalPrice == null &amp;&amp; row6.AccrualType == null &amp;&amp; row6.Unit1 == null &amp;&amp; row6.Unit2 == null &amp;&amp; row6.NotActivity == null &amp;&amp; row6.LoadedDate == null &amp;&amp; row6.CreatedUTC == null)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" reject="true">
         <mapperTableEntries name="TransactionID" expression="row6.TransactionID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" expression="row6.RecipientMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" expression="row6.SenderMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.CreatedUTC*1000)))) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.RequestDate*1000)))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="row6.ReferenceNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.PurchaseDate*1000)))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.ServiceDate*1000)))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" expression="row6.BasePrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" expression="row6.TotalPrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" expression="row6.CurrencyCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" expression="row6.PartnerBatchID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" expression="row6.AccrualType " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" expression="row6.Unit1 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" expression="row6.Unit2 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" expression="row6.CurrencyCodeOriginal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" expression="row6.NotActivity " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" expression="row6.OriginalMemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.LoadedDate*1000)))) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.CreatedUTC*1000)))) " type="id_Date" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="NullRecord" expressionFilter="row6.TransactionID == null || row6.RecipientMemberID == null || row6.SenderMemberID == null || row6.CreatedUTC == null || row6.RequestDate == null ||  row6.LoadedDate == null" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="NullRecord" expressionFilter="row6.TransactionID == null || (row6.ReferenceNumber == null || row6.ReferenceNumber.isEmpty()) || row6.PurchaseDate == null || row6.ServiceDate == null || row6.BasePrice == null || row6.TotalPrice == null || row6.AccrualType == null || row6.Unit1 == null || row6.Unit2 == null || row6.NotActivity == null || row6.LoadedDate == null || row6.CreatedUTC == null" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="TransactionID" expression="row6.TransactionID  " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" expression="row6.RecipientMemberID  " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" expression="row6.SenderMemberID  " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.CreatedUTC*1000))))  " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.RequestDate*1000))))  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="row6.ReferenceNumber  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.PurchaseDate*1000))))  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.ServiceDate*1000))))  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" expression="row6.BasePrice  " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" expression="row6.TotalPrice  " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" expression="row6.CurrencyCode  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" expression="row6.PartnerBatchID  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" expression="row6.AccrualType  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" expression="row6.Unit1  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" expression="row6.Unit2  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" expression="row6.CurrencyCodeOriginal  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" expression="row6.NotActivity  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" expression="row6.OriginalMemberID  " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.LoadedDate*1000))))  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,new java.util.Date((long)(row6.CreatedUTC*1000))))  " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="TransactionID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="RequestDate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="BasePrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" type="id_Double" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -632,19 +882,49 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="TransactionID"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RecipientMemberID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ReferenceNumber"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SenderMemberID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDate"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedUTC"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ServiceDate"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RequestDate"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyCode"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit1"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit2"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OriginalMemberID"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedUTC"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
     </elementParameter>
@@ -656,27 +936,57 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tUniqRow_3">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" label="Output1" name="UNIQUE">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" label="Output1" name="DUPLICATE">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="160">
@@ -685,19 +995,49 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="TransactionID"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RecipientMemberID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ReferenceNumber"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SenderMemberID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseDate"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedUTC"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ServiceDate"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RequestDate"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyCode"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit1"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit2"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OriginalMemberID"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedUTC"/>
       <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
       <elementValue elementRef="CASE_SENSITIVE" value="false"/>
     </elementParameter>
@@ -709,27 +1049,57 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tUniqRow_4">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" label="Output1" name="UNIQUE">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" label="Output1" name="DUPLICATE">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="160">
@@ -746,11 +1116,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tHashOutput_1">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="256">
@@ -767,11 +1147,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tHashOutput_2">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="256">
@@ -788,11 +1178,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Output1" name="tHashOutput_4">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
@@ -809,11 +1209,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_5">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="352">
@@ -826,11 +1236,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_1">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
@@ -838,7 +1258,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -847,54 +1267,114 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Fail">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="Match">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Fail" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="TransactionID" expression="row8.TransactionID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" expression="row8.RecipientMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" expression="row8.SenderMemberID " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="row8.CreatedUTC " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" expression="row8.RequestDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="row8.ReferenceNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" expression="row8.PurchaseDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" expression="row8.ServiceDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" expression="row8.BasePrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" expression="row8.TotalPrice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" expression="row8.CurrencyCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" expression="row8.PartnerBatchID " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" expression="row8.AccrualType " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" expression="row8.Unit1 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" expression="row8.Unit2 " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" expression="row8.CurrencyCodeOriginal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" expression="row8.NotActivity " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" expression="row8.OriginalMemberID " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="row8.CreatedUTC " type="id_Date" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="Match">
         <mapperTableEntries name="TransactionID" expression="row8.TransactionID  " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" expression="row8.RecipientMemberID  " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" expression="row8.SenderMemberID  " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="row8.CreatedUTC  " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" expression="row8.RequestDate  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="row8.ReferenceNumber  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" expression="row8.PurchaseDate  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" expression="row8.ServiceDate  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" expression="row8.BasePrice  " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" expression="row8.TotalPrice  " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" expression="row8.CurrencyCode  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" expression="row8.PartnerBatchID  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" expression="row8.AccrualType  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" expression="row8.Unit1  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" expression="row8.Unit2  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" expression="row8.CurrencyCodeOriginal  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" expression="row8.NotActivity  " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" expression="row8.OriginalMemberID  " type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" expression="row8.LoadedDate  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="row8.CreatedUTC  " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="TransactionID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="RecipientMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" type="id_Date" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row9" activateCondensedTool="true" columnNameFilter="" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="TransactionID" expression="row8.TransactionID " type="id_Long" nullable="true" operator="="/>
-        <mapperTableEntries name="RecipientMemberID" expression="" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="SenderMemberID" type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CreatedUTC" expression="" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RequestDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ReferenceNumber" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PurchaseDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ServiceDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BasePrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="TotalPrice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="CurrencyCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartnerBatchID" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="AccrualType" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit1" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Unit2" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="CurrencyCodeOriginal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NotActivity" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="OriginalMemberID" type="id_Long" nullable="true"/>
         <mapperTableEntries name="LoadedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedUTC" expression="" type="id_Date" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -908,11 +1388,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_2">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="448">
@@ -929,11 +1419,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashOutput_3">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="352">
@@ -947,30 +1447,40 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowMeter_19">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutput_6" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_lms_TransferTransactionDetail.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_lms_AccrualTransactionDetail.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_LMS_STG&quot;"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_TransferTransactionDetail&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_AccrualTransactionDetail&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;quandatics_talend_project&quot;"/>
-    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_lms_TransferTransactionDetail.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_lms_AccrualTransactionDetail.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
@@ -991,11 +1501,21 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_6">
       <column comment="" key="true" length="-1" name="TransactionID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RecipientMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SenderMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RequestDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="ReferenceNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PurchaseDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BasePrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalPrice" nullable="true" pattern="" precision="0" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PartnerBatchID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccrualType" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit1" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unit2" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyCodeOriginal" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NotActivity" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OriginalMemberID" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedUTC" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="736">
@@ -1008,7 +1528,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="EndTime"/>
       <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NameOfJob"/>
-      <elementValue elementRef="VALUE" value="&quot;stg_07_lms_TransferTransactionDetail&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;stg_07_lms_AccrualTransactionDetail&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExecutionStatus"/>
       <elementValue elementRef="VALUE" value="&quot;Success&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ErrorMessage"/>
@@ -1034,7 +1554,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_9-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_9-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -1142,7 +1662,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_7-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -1296,7 +1816,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="EndTime"/>
       <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NameOfJob"/>
-      <elementValue elementRef="VALUE" value="&quot;stg_07_lms_TransferTransactionDetail&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;stg_07_lms_AccrualTransactionDetail&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExecutionStatus"/>
       <elementValue elementRef="VALUE" value="&quot;Fail&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ErrorMessage"/>
@@ -1322,7 +1842,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_P11OYMWCEei2d9UbdD4d1A-tMap_10-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_yl-ToMYeEeiVwcMAsbHI6A-tMap_10-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -1676,6 +2196,36 @@
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
@@ -1887,6 +2437,36 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -2106,6 +2686,36 @@
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
@@ -2320,6 +2930,36 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -2568,6 +3208,36 @@
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
@@ -2779,6 +3449,36 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -3025,6 +3725,36 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -3279,6 +4009,36 @@
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="InvalidRecord4" show="false"/>
@@ -3450,6 +4210,36 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -3792,6 +4582,36 @@
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
@@ -4008,6 +4828,36 @@
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Fail" show="false"/>
@@ -4221,6 +5071,36 @@
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Match" show="false"/>
@@ -4432,6 +5312,36 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="RecipientMemberID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccrualType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NotActivity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrencyCodeOriginal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unit2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PartnerBatchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TotalPrice"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
