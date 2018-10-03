@@ -175,7 +175,7 @@
       <elementValue elementRef="PARAM_NAME_COLUMN" value="bq_project_id"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.bq_project_id"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="resource_file_bq_token"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.resource_file_bq_token"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;&quot;"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_access_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
