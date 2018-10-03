@@ -17,7 +17,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp77sCgEeicIe8HbMzXig" name="DaysDuration" label="DaysDuration" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp778CgEeicIe8HbMzXig" name="MonthsDuration" label="MonthsDuration" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp78MCgEeicIe8HbMzXig" name="YearsDuration" label="YearsDuration" length="-1" talendType="id_Integer"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp78cCgEeicIe8HbMzXig" name="Cost" label="Cost" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp78cCgEeicIe8HbMzXig" name="Cost" label="Cost" length="-1" talendType="id_Float"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp78sCgEeicIe8HbMzXig" name="LinkedSubprogramCode" label="LinkedSubprogramCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XBp788CgEeicIe8HbMzXig" name="LoadedDate" label="LoadedDate" length="-1" talendType="id_Double"/>
     </ownedElement>
