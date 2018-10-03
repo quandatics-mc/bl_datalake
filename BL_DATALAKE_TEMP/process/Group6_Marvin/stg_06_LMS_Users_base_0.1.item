@@ -1354,7 +1354,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.id==null || uniq.id.isEmpty()||uniq.parentGuardianEmail==null || uniq.parentGuardianEmail.isEmpty()" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.id==null || uniq.id.isEmpty()" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="activatedAt" expression="uniq.activatedAt " type="id_Date" nullable="true"/>
         <mapperTableEntries name="addressLine1" expression="uniq.addressLine1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="addressLine2" expression="uniq.addressLine2 " type="id_String" nullable="true"/>
