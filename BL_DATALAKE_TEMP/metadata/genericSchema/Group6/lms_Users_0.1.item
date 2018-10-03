@@ -3,14 +3,14 @@
   <TalendMetadata:GenericSchemaConnection xmi:id="_dKpoQMFBEeik57cswKjnMg" name="repository.metadataGenericSchema" dataPackage="_dKpoQcFBEeik57cswKjnMg"/>
   <TalendMetadata:GenericPackage xmi:id="_dKpoQcFBEeik57cswKjnMg" name="repository.metadataGenericSchema" dataManager="_dKpoQMFBEeik57cswKjnMg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_dKpoQsFBEeik57cswKjnMg" id="_xgaSYME_Eeik57cswKjnMg" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoQ8FBEeik57cswKjnMg" name="activatedAt" label="activatedAt" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoQ8FBEeik57cswKjnMg" name="activatedAt" label="activatedAt" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoRMFBEeik57cswKjnMg" name="addressLine1" label="addressLine1" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoRcFBEeik57cswKjnMg" name="addressLine2" label="addressLine2" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoRsFBEeik57cswKjnMg" name="addressLine3" label="addressLine3" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoR8FBEeik57cswKjnMg" name="appCode" label="appCode" length="-1" talendType="id_Long"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoSMFBEeik57cswKjnMg" name="city" label="city" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoScFBEeik57cswKjnMg" name="country" label="country" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoSsFBEeik57cswKjnMg" name="createdAt" label="createdAt" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoSsFBEeik57cswKjnMg" name="createdAt" label="createdAt" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoS8FBEeik57cswKjnMg" name="dateofBirth" label="dateofBirth" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoTMFBEeik57cswKjnMg" name="firstName" label="firstName" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoTcFBEeik57cswKjnMg" name="gender" label="gender" talendType="id_String"/>
@@ -23,12 +23,13 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoVMFBEeik57cswKjnMg" name="parentGuardian" label="parentGuardian" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoVcFBEeik57cswKjnMg" name="parentGuardianDocNumber" label="parentGuardianDocNumber" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoVsFBEeik57cswKjnMg" name="parentGuardianEmail" label="parentGuardianEmail" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoV8FBEeik57cswKjnMg" name="parentGuardinFullName" label="parentGuardinFullName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoV8FBEeik57cswKjnMg" name="parentGuardianFullName" label="parentGuardianFullName" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoWMFBEeik57cswKjnMg" name="paxType" label="paxType" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoWcFBEeik57cswKjnMg" name="postalCode" label="postalCode" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoWsFBEeik57cswKjnMg" name="state" label="state" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SXRSMMVHEeim57gUp1BF7Q" name="status" label="status" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoW8FBEeik57cswKjnMg" name="title" label="title" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoXMFBEeik57cswKjnMg" name="updatedAt" label="updatedAt" length="-1" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoXMFBEeik57cswKjnMg" name="updatedAt" label="updatedAt" length="-1" talendType="id_Double"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoXcFBEeik57cswKjnMg" name="username" label="username" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoXsFBEeik57cswKjnMg" name="notificationPreference" label="notificationPreference" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dKpoX8FBEeik57cswKjnMg" name="cultureCode" label="cultureCode" talendType="id_String"/>

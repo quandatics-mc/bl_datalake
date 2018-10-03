@@ -132,7 +132,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT src. MemberID, src.ModifiedUserID , src.MemberStatusID , src.LastName, src.FirstName, src.MiddleName, src.Title, src.EmailAddress, src.Address1, src.Address2, src.City, src.StateCode, src.CountryCode, src.PostalCode, src.BirthDate, src.Gender, src.PhoneNumber, src.ToMemberID FROM `data-mgmt-191603.BL_LMS_STG.vw_Member` src, `data-mgmt-191603.BL_LMS_DL.dl_Member` dl&#xD;&#xA;WHERE src.MemberID=dl.MemberID&#xD;&#xA;AND(src.ModifiedUserID!=dl.ModifiedUserID&#xD;&#xA;OR src.MemberStatusID!=dl.MemberStatusID&#xD;&#xA;OR src.LastName!=dl.LastName&#xD;&#xA;OR src.FirstName!=dl.FirstName&#xD;&#xA;OR src.MiddleName!=dl.MiddleName&#xD;&#xA;OR src.Title!=dl.Title&#xD;&#xA;OR src.EmailAddress!=dl.EmailAddress&#xD;&#xA;OR src.Address1!=dl.Address1&#xD;&#xA;OR src.Address2!=dl.Address2&#xD;&#xA;OR src.City!=dl.City&#xD;&#xA;OR src.StateCode!=dl.StateCode&#xD;&#xA;OR src.CountryCode!=dl.CountryCode&#xD;&#xA;OR src.PostalCode!=dl.PostalCode&#xD;&#xA;OR src.BirthDate!=dl.BirthDate&#xD;&#xA;OR src.Gender!=dl.Gender&#xD;&#xA;OR src.PhoneNumber!=dl.PhoneNumber&#xD;&#xA;OR src.ToMemberID!=dl.ToMemberID)&#xD;&#xA;AND (src.ModifiedUTC&lt;='2018-08-31 23:59:59.999' AND src.ModifiedUTC>='2018-08-31 00:00:00.000')&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;&#xD;&#xA;SELECT src. MemberID, src.ModifiedUserID , src.MemberStatusID , src.LastName, src.FirstName, src.MiddleName, src.Title, src.EmailAddress, src.Address1, src.Address2, src.City, src.StateCode, src.CountryCode, src.PostalCode, src.BirthDate, src.Gender, src.PhoneNumber, src.ToMemberID FROM `data-mgmt-191603.BL_LMS_STG.vw_Member` src, `data-mgmt-191603.BL_LMS_DL.dl_Member` dl&#xD;&#xA;WHERE src.MemberID=dl.MemberID&#xD;&#xA;AND(src.ModifiedUserID!=dl.ModifiedUserID&#xD;&#xA;OR src.MemberStatusID!=dl.MemberStatusID&#xD;&#xA;OR src.LastName!=dl.LastName&#xD;&#xA;OR src.FirstName!=dl.FirstName&#xD;&#xA;OR src.MiddleName!=dl.MiddleName&#xD;&#xA;OR src.Title!=dl.Title&#xD;&#xA;OR src.EmailAddress!=dl.EmailAddress&#xD;&#xA;OR src.Address1!=dl.Address1&#xD;&#xA;OR src.Address2!=dl.Address2&#xD;&#xA;OR src.City!=dl.City&#xD;&#xA;OR src.StateCode!=dl.StateCode&#xD;&#xA;OR src.CountryCode!=dl.CountryCode&#xD;&#xA;OR src.PostalCode!=dl.PostalCode&#xD;&#xA;OR CAST(src.BirthDate AS TIMESTAMP)!=dl.BirthDate&#xD;&#xA;OR src.Gender!=dl.Gender&#xD;&#xA;OR src.PhoneNumber!=dl.PhoneNumber&#xD;&#xA;OR src.ToMemberID!=dl.ToMemberID)&#xD;&#xA;AND (src.ModifiedUTC&lt;='2018-08-31 23:59:59.999' AND src.ModifiedUTC>='2018-08-31 00:00:00.000')&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -226,7 +226,7 @@
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="MemberID" expression="row11.MemberID " type="id_Long" nullable="true"/>
@@ -701,7 +701,7 @@
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="uniq" rejectInnerJoin="true">
         <mapperTableEntries name="MemberID" expression="row5.MemberID " type="id_Long" nullable="true"/>
@@ -900,7 +900,7 @@
       <column comment="" key="false" length="-1" name="ToMemberID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.MemberID == null || uniq.ModifiedUserID  == null ||   uniq.MemberStatusID== null ||uniq.FirstName== null || uniq.FirstName.isEmpty() ||uniq.LastName== null ||uniq.LastName.isEmpty() || uniq.EmailAddress== null || uniq.EmailAddress.isEmpty() || uniq.BirthDate== null || uniq.Gender== null|| uniq.Gender.isEmpty()" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="MemberID" expression="uniq.MemberID " type="id_Long" nullable="true"/>
@@ -1051,7 +1051,7 @@
       <column comment="" key="false" length="-1" name="RowType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="DOB" expressionFilter="TalendDate.compareDate(outFinal.BirthDate,TalendDate.getCurrentDate())>=0" activateExpressionFilter="true">
         <mapperTableEntries name="MemberID" expression="outFinal.MemberID " type="id_Long" nullable="true"/>
@@ -1300,7 +1300,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="MemberID" expression="row7.MemberID " type="id_Long" nullable="true"/>
@@ -1433,7 +1433,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
         <mapperTableEntries name="MemberID" expression="row8.MemberID " type="id_Long" nullable="true"/>
@@ -1541,7 +1541,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout2">
         <mapperTableEntries name="MemberID" expression="row9.MemberID " type="id_Long" nullable="true"/>
@@ -1588,21 +1588,21 @@
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryOutput_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_lms_Member_Exception.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;temp/stg_lms_Member_Exception_update.csv&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;BL_LMS_STG&quot;"/>
-    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_Member_Exception&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;stg_Member_Exception_update&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" value="false" show="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="context.gcp_access_key"/>
     <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="8pW6Nmy2kudbepEs7b1MTZ2YVODZjMoM"/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;quandatics_talend_project&quot;"/>
-    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_lms_Member_Exception.csv&quot;"/>
+    <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://quandatics_talend_project/stg_lms_Member_Exception_update.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
@@ -1706,7 +1706,7 @@
       <column comment="" key="false" length="20" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout2">
         <mapperTableEntries name="MemberID" expression="row14.MemberID " type="id_Long" nullable="true"/>
@@ -1814,7 +1814,7 @@
       <column comment="" key="false" length="-1" name="Exception" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="MemberID" expression="row22.MemberID " type="id_Long" nullable="true"/>
@@ -2055,7 +2055,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out8">
         <mapperTableEntries name="TableName" expression="&quot;Member_update&quot;" type="id_String" nullable="true"/>
