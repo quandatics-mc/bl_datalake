@@ -145,7 +145,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_VhWhAMUlEei1nKQhxjTBxQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_nE9IcMbXEeiS5u0-vM54gQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -294,7 +294,7 @@
     <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Talend Notification&quot;"/>
     <elementParameter field="TEXT" name="CC" value=""/>
     <elementParameter field="TEXT" name="BCC" value=""/>
-    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Process of Data Lake Table Group 0 has been executed Successfully&quot;"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Process of Data Lake Table Group 4 has been executed Successfully&quot;"/>
     <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Talend process of Data Lake Table Group 4 has been executed successfully&#xD;&#xA;&lt;br>&#xD;&#xA;Below is the log:&#xD;&#xA;&lt;br>&#xD;&#xA;&lt;br>&quot; +&#xD;&#xA;&quot;&lt;table border=\&quot;1\&quot;>&lt;tr>&lt;th>Start Time&lt;/th>&lt;th>End Time&lt;/th>&lt;th>Job Name&lt;/th>&lt;th>Status&lt;/th>&lt;/tr>&quot; + context.logBody + &quot;&lt;/table> &#xD;&#xA;&lt;br>&#xD;&#xA;&lt;br>&quot;+&#xD;&#xA;&quot;Below is the row count:&#xD;&#xA;&lt;br>&#xD;&#xA;&lt;br>&quot; +&#xD;&#xA;&quot;&lt;table border=\&quot;1\&quot;>&lt;tr>&lt;th>Table Name&lt;/th>&lt;th>Source Row Count&lt;/th>&lt;th>Staging Row Count&lt;/th>&lt;th>Production Row Count&lt;/th>&lt;th>Indicator&lt;/th>&lt;/tr>&quot; + context.rowCountBody + &quot;&lt;/table>&quot;"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS"/>
@@ -325,7 +325,7 @@
     <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Talend Notification&quot;"/>
     <elementParameter field="TEXT" name="CC" value=""/>
     <elementParameter field="TEXT" name="BCC" value=""/>
-    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Process of Data Lake Table Group 0 FAILED to execute&quot;"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Process of Data Lake Table Group 4 FAILED to execute&quot;"/>
     <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Talend process of Data Lake Table Group 4 FAILED to execute&#xD;&#xA;&lt;br>&#xD;&#xA;Below is the log:&#xD;&#xA;&lt;br>&#xD;&#xA;&lt;br>&quot; +&#xD;&#xA;&quot;&lt;table border=\&quot;1\&quot;>&lt;tr>&lt;th>Start Time&lt;/th>&lt;th>End Time&lt;/th>&lt;th>Job Name&lt;/th>&lt;th>Status&lt;/th>&lt;/tr>&quot; + context.logBody + &quot;&lt;/table>&quot;"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS"/>
@@ -411,7 +411,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_VhWhAMUlEei1nKQhxjTBxQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_nE9IcMbXEeiS5u0-vM54gQ-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
