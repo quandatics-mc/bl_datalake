@@ -1352,7 +1352,7 @@
       <column comment="" key="false" length="-1" name="RowType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="nullability" expressionFilter="uniq.id==null || uniq.id.isEmpty()||uniq.username==null ||uniq.username.isEmpty()||uniq.navitaireCustomerNumber==null||uniq.navitaireCustomerNumber.isEmpty()" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="activatedAt" expression="uniq.activatedAt " type="id_Date" nullable="true"/>
@@ -2277,8 +2277,8 @@
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
     <elementParameter field="CHECK" name="RECORDS_CONTAIN_NULL_VALUE" value="true" show="false"/>
     <elementParameter field="CHECK" name="CHECK_DISK_SPACE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="TEXT" name="LABEL" value="exOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tBigQueryOutput_2">
