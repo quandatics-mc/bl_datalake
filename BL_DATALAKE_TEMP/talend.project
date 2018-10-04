@@ -535,6 +535,7 @@
       <relatedItems xmi:id="_21Ao5LvSEeiS_rGEf0mp0g" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_s_fHYL16EeisAI_Dr-DIQQ" id="_LGxOoLy4Eei0lNT425UgYg" version="Latest" type="job"/>
       <relatedItems xmi:id="_s_fHYb16EeisAI_Dr-DIQQ" id="_O9DTkLx_EeitcIP7RwrZeg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_FSZXYMecEei3EMbN3TfKQg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_m2Z9ELx5EeitcIP7RwrZeg">
       <baseItem xmi:id="_m2Z9Ebx5EeitcIP7RwrZeg" id="_mz3mcLx5EeitcIP7RwrZeg" version="0.1" type="job"/>
