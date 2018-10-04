@@ -1523,6 +1523,7 @@
       <relatedItems xmi:id="_DgWkvcI7EeiyS53pKo2cTA" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_DgWkvsI7EeiyS53pKo2cTA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ONEmEMI7EeiyS53pKo2cTA" id="_fQ2CYMI2EeiyS53pKo2cTA" version="Latest" type="job"/>
+      <relatedItems xmi:id="_hw38oMe8Eei3EMbN3TfKQg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_OiZ7cMLAEeifLJR2PinlJA">
       <baseItem xmi:id="_OiZ7ccLAEeifLJR2PinlJA" id="__WlP0MFyEeiz0YNLAifuXg" version="0.1" type="job"/>
