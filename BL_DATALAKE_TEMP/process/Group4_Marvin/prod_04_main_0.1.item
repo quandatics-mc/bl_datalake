@@ -386,10 +386,6 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
