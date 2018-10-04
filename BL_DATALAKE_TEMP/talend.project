@@ -1977,6 +1977,7 @@
       <relatedItems xmi:id="_h4uMrcXxEeiBIsXofkD6WQ" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_h4uMrsXxEeiBIsXofkD6WQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_B22QEMb4EeiS5u0-vM54gQ" id="_rIWVsL_iEeie3tkeB_j6Vw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_qowMAMerEei3EMbN3TfKQg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_ErvtYMX3EeiBIsXofkD6WQ">
       <baseItem xmi:id="_ErvtYcX3EeiBIsXofkD6WQ" id="_r3U5MMIfEeiyS53pKo2cTA" version="0.1" type="job"/>
