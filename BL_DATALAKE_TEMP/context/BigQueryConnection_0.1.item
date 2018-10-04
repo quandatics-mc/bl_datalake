@@ -5,6 +5,6 @@
   <contextParameter xmi:id="_w3Nac6_SEeiEF75cLc3dlg" comment="" name="bq_client_secret" prompt="bq_client_secret?" promptNeeded="false" type="id_String" value="CqKUcM4YDJY7Y9rw83gnedcF"/>
   <contextParameter xmi:id="_w3NadK_SEeiEF75cLc3dlg" comment="" name="bq_auth_code" prompt="bq_auth_code?" promptNeeded="false" type="id_String" value="4/AAC2g_aeDQJ1I5OfHfGsAEk9YVMQI5Xo3EXEeb1pW_vhP6ML43PPYEM"/>
   <contextParameter xmi:id="_w3Nada_SEeiEF75cLc3dlg" comment="" name="bq_project_id" prompt="bq_project_id?" promptNeeded="false" type="id_String" value="data-mgmt-191603"/>
-  <contextParameter xmi:id="_Puo2IMeDEei3EMbN3TfKQg" comment="" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_Puo2IceDEei3EMbN3TfKQg" comment="" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Puo2IMeDEei3EMbN3TfKQg" comment="" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" type="id_String" value="20180901"/>
+  <contextParameter xmi:id="_Puo2IceDEei3EMbN3TfKQg" comment="" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" type="id_String" value="20180901"/>
 </talendfile:ContextType>
