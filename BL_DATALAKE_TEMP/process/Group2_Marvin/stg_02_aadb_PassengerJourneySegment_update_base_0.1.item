@@ -8,8 +8,8 @@
     <contextParameter comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="C:/AABtoken.properties"/>
     <contextParameter comment="" name="gcp_access_key" prompt="gcp_access_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="GOOG36LCRM3AR2PQOF3J"/>
     <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
-    <contextParameter comment="" name="processStart" prompt="processStart?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="processEnd" prompt="processEnd?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;,&quot;-Xmx4000M&quot;]}" show="false"/>
@@ -130,7 +130,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT src.PassengerID, src.SegmentID, src.DeleteFlag FROM `data-mgmt-191603.BL_ODS_STG.vw_PassengerJourneySegment` src, `data-mgmt-191603.BL_ODS_DL.dl_PassengerJourneySegment` dl&#xD;&#xA;WHERE (src. PassengerID=dl.PassengerID&#xD;&#xA;AND src.SegmentID=dl.SegmentID)&#xD;&#xA;AND src.DeleteFlag!=dl.DeleteFlag&#xD;&#xA;AND (src.ModifiedDate&lt;='2018-08-31 23:59:59.999' AND src.ModifiedDate>='2018-08-31 00:00:00.000')&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT src.PassengerID, src.SegmentID, src.DeleteFlag FROM `data-mgmt-191603.BL_ODS_STG.vw_PassengerJourneySegment` src, `data-mgmt-191603.BL_ODS_DL.dl_PassengerJourneySegment` dl&#xD;&#xA;WHERE (src. PassengerID=dl.PassengerID&#xD;&#xA;AND src.SegmentID=dl.SegmentID)&#xD;&#xA;AND src.DeleteFlag!=dl.DeleteFlag&#xD;&#xA;AND src.ModifiedDate&lt;= '&quot;+context.parameter_inputDateStart+&quot;' &quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>

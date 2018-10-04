@@ -730,6 +730,7 @@
       <relatedItems xmi:id="_rLyEQb_iEeie3tkeB_j6Vw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_rLyEQr_iEeie3tkeB_j6Vw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_H98ZQL_pEeie3tkeB_j6Vw" id="_fZO70L_lEeie3tkeB_j6Vw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_ZJUgsMerEei3EMbN3TfKQg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_VihFMMBwEeiE0sNOeL71dw">
       <baseItem xmi:id="_VihFMcBwEeiE0sNOeL71dw" id="_mth1IMBvEeiE0sNOeL71dw" version="0.1" type="job"/>
