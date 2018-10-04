@@ -1369,7 +1369,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT InventoryLegID, DepartureDate, CarrierCode, FlightNumber, DepartureStation, ArrivalStation, Modifieddate, STD, STA, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.vw_InventoryLeg` WHERE Modifieddate between '2018-09-01 00:00:00.000' and '2018-09-15 00:00:00.000'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT InventoryLegID, DepartureDate, CarrierCode, FlightNumber, DepartureStation, ArrivalStation, Modifieddate, STD, STA, LoadedDate FROM `data-mgmt-191603.BL_ODS_STG.vw_InventoryLeg` &#xD;&#xA;WHERE ModifiedDate Between '&quot;+context.parameter_inputDateStart+&quot;' AND '&quot;+context.parameter_inputDateEnd+&quot;';&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
