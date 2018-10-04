@@ -8,6 +8,8 @@
     <contextParameter comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="C:/AABtoken.properties"/>
     <contextParameter comment="" name="gcp_access_key" prompt="gcp_access_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="GOOG36LCRM3AR2PQOF3J"/>
     <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
+    <contextParameter comment="" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx4096M&quot;]}" show="false"/>
