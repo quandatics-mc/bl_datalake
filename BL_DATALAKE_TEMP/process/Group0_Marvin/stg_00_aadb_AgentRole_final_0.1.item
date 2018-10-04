@@ -8,6 +8,8 @@
     <contextParameter comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="C:/AABtoken.properties"/>
     <contextParameter comment="" name="gcp_access_key" prompt="gcp_access_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="GOOG36LCRM3AR2PQOF3J"/>
     <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
+    <contextParameter comment="" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -162,6 +164,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -203,6 +209,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -244,6 +254,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -285,6 +299,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
