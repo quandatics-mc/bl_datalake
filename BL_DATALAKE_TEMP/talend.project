@@ -823,6 +823,7 @@
       <relatedItems xmi:id="_eymdzcCiEeicIe8HbMzXig" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_eymdzsCiEeicIe8HbMzXig" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_cX9RMMCrEeicIe8HbMzXig" id="_ZK5OYMCiEeicIe8HbMzXig" version="Latest" type="job"/>
+      <relatedItems xmi:id="_f7o7UMemEei3EMbN3TfKQg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_7dHV4MCsEeicIe8HbMzXig">
       <baseItem xmi:id="_7dHV4cCsEeicIe8HbMzXig" id="_7cbZYMCsEeicIe8HbMzXig" version="0.1" type="job"/>
