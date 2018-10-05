@@ -2331,6 +2331,7 @@
       <relatedItems xmi:id="_6U7_68bhEeiS5u0-vM54gQ" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_6U7_7MbhEeiS5u0-vM54gQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_6U7_7cbhEeiS5u0-vM54gQ" id="_msvb0MYeEeiVwcMAsbHI6A - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_AI8vQMh2Eeip8pK0bIU7qg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_6U7_7sbhEeiS5u0-vM54gQ">
       <baseItem xmi:id="_6U7_78bhEeiS5u0-vM54gQ" id="_2WtBAMYjEeiVwcMAsbHI6A" version="0.1" type="job"/>
