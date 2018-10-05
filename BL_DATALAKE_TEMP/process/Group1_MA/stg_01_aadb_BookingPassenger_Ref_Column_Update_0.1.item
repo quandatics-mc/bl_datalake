@@ -548,7 +548,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT stg.PassengerID, stg.DOB, stg.FirstName, stg.LastName, stg.LoadedDate&#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.vw_BookingPassenger_1` stg&#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger` dl&#xD;&#xA;ON stg.PassengerID = dl.PassengerID&#xD;&#xA;WHERE stg.DOB &lt;> dl.DOB&#xD;&#xA;OR stg.FirstName &lt;> dl.FirstName&#xD;&#xA;OR stg.LastName &lt;> dl.LastName&#xD;&#xA;AND (stg.ModifiedDate &lt; '&quot;+context.parameter_inputDateStart+&quot;')&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT stg.PassengerID, stg.DOB, stg.FirstName, stg.LastName, stg.LoadedDate&#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.vw_BookingPassenger_1` stg&#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger` dl&#xD;&#xA;ON stg.PassengerID = dl.PassengerID&#xD;&#xA;WHERE stg.DOB &lt;> dl.DOB&#xD;&#xA;OR stg.FirstName &lt;> dl.FirstName&#xD;&#xA;OR stg.LastName &lt;> dl.LastName&#xD;&#xA;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
