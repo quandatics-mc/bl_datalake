@@ -117,7 +117,7 @@
     <routinesParameter id="_QUgkQK_SEeiEF75cLc3dlg" name="TalendStringUtil"/>
     <routinesParameter id="_QUMbMK_SEeiEF75cLc3dlg" name="TalendString"/>
   </parameters>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
@@ -140,7 +140,7 @@
       <column comment="" key="false" length="255" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -175,7 +175,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="256">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -209,7 +209,7 @@
       <column comment="" key="false" length="255" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="256">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;context.logBody = context.logBody + &quot;&lt;tr>&lt;td>&quot; + input_row.StartTime+&quot;&lt;/td>&lt;td>&quot;+input_row.EndTime+&quot;&lt;/td>&lt;td>&quot;+input_row.NameOfJob+&quot;&lt;/td>&lt;td>&quot;+input_row.ExecutionStatus+&quot;&lt;/td>&lt;/tr>&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -217,7 +217,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="352">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_2" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
@@ -241,7 +241,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -278,7 +278,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;context.rowCountBody = context.rowCountBody + &quot;&lt;tr>&lt;td>&quot; + input_row.TableName+&quot;&lt;/td>&lt;td>&quot;+input_row.sourceRowCount+&quot;&lt;/td>&lt;td>&quot;+input_row.stgRowCount+&quot;&lt;/td>&lt;td>&quot;+input_row.prodRowCount+&quot;&lt;/td>&lt;td>&quot;+input_row.Indicator+&quot;&lt;/td>&lt;/tr>&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -286,7 +286,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2"/>
   </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
     <elementParameter field="TEXT" name="TO" value="&quot;ma.tew@quandatics.com&quot;"/>
     <elementParameter field="TEXT" name="FROM" value="&quot;send@example.com&quot;"/>
@@ -317,7 +317,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSendMail_1"/>
   </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
     <elementParameter field="TEXT" name="TO" value="&quot;marvin.teh@quandatics.com&quot;"/>
     <elementParameter field="TEXT" name="FROM" value="&quot;send@example.com&quot;"/>
@@ -348,7 +348,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSendMail_2"/>
   </node>
-  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_3" show="false"/>
     <elementParameter field="TEXT" name="CLIENT_ID" value="context.bq_client_id"/>
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
@@ -371,7 +371,7 @@
       <column comment="" key="false" length="255" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -406,7 +406,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -440,7 +440,7 @@
       <column comment="" key="false" length="255" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="160">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;context.logBody = context.logBody + &quot;&lt;tr>&lt;td>&quot; + input_row.StartTime+&quot;&lt;/td>&lt;td>&quot;+input_row.EndTime+&quot;&lt;/td>&lt;td>&quot;+input_row.NameOfJob+&quot;&lt;/td>&lt;td>&quot;+input_row.ExecutionStatus+&quot;&lt;/td>&lt;/tr>&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -448,7 +448,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_3"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="256">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -482,6 +482,30 @@
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;inputDateStart&quot;"/>
+      <elementValue elementRef="VALUE" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="KEY" value="&quot;inputDateEnd&quot;"/>
+      <elementValue elementRef="VALUE" value="context.parameter_inputDateEnd"/>
+      <elementValue elementRef="KEY" value="&quot;processStartDate&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="KEY" value="&quot;processEndDate&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="defineGlobalVar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String dtDateStart = ((String)globalMap.get(&quot;inputDateStart&quot;));&#xA;String dtDateEnd = ((String)globalMap.get(&quot;inputDateEnd&quot;));&#xA;Date dtCurr = TalendDate.addDate(TalendDate.getCurrentDate(),-1,&quot;dd&quot;);&#xA;SimpleDateFormat df = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);&#xA;Date dtProcessStart = TalendDate.addDate(TalendDate.getCurrentDate(),-1,&quot;dd&quot;);&#xA;Date dtProcessEnd = TalendDate.getCurrentDate();&#xA;&#xA;if (dtDateStart != null &amp;&amp; dtDateEnd != null &amp;&amp; dtDateStart.length()==8 &amp;&amp; dtDateEnd.length()==8) {&#xA;&#x9;dtProcessStart = TalendDate.parseDate(&quot;yyyyMMdd&quot;, dtDateStart);&#xA;&#x9;dtProcessEnd = TalendDate.addDate(TalendDate.parseDate(&quot;yyyyMMdd&quot;, dtDateEnd),+1,&quot;dd&quot;);&#xA;}&#xA;&#xA;globalMap.put(&quot;processStartDate&quot;, df.format(dtProcessStart));&#xA;globalMap.put(&quot;processEndDate&quot;, df.format(dtProcessEnd));&#xA;System.out.println(&quot;Start &quot; + ((String)globalMap.get(&quot;processStartDate&quot;)));&#xA;System.out.println(&quot;End &quot; + ((String)globalMap.get(&quot;processEndDate&quot;)));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="setDate"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -530,6 +554,12 @@
   <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_1" offsetLabelX="50" offsetLabelY="-16" source="tRunJob_1" target="tBigQueryInput_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_1" offsetLabelX="47" offsetLabelY="-14" source="tSetGlobalVar_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="31" source="tJava_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
@@ -557,6 +587,16 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
