@@ -957,6 +957,7 @@
       <relatedItems xmi:id="_Jpk_LMCuEeicIe8HbMzXig" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Jpk_LcCuEeicIe8HbMzXig" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Jpk_LsCuEeicIe8HbMzXig" id="_f8pjAL_GEeimJdn0FrYR3g - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_2G90UMhyEeip8pK0bIU7qg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Jpk_L8CuEeicIe8HbMzXig">
       <baseItem xmi:id="_Jpk_MMCuEeicIe8HbMzXig" id="_i-qxoMAKEeiu-KAgFhezlw" version="0.1" type="job"/>
