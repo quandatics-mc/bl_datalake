@@ -234,7 +234,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT stg.TransactionID, stg.FromMemberID &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.stg_Transaction` stg&#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_LMS_DL.dl_Transaction` dl&#xD;&#xA;ON stg.TransactionID = dl.TransactionID&#xD;&#xA;WHERE stg.FromMemberID &lt;> dl.FromMemberID&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT stg.TransactionID, stg.FromMemberID &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.vw_Transaction` stg&#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_LMS_DL.dl_Transaction` dl&#xD;&#xA;ON stg.TransactionID = dl.TransactionID&#xD;&#xA;WHERE stg.FromMemberID &lt;> dl.FromMemberID&#xD;&#xA;AND (stg.CreatedUTC &lt; '&quot;+context.parameter_inputDateStart+&quot;')&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
