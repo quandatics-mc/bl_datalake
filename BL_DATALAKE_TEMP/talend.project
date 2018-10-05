@@ -2133,6 +2133,7 @@
       <relatedItems xmi:id="_BUwO1sYaEeiDI8MkNYF7nw" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_BUwO18YaEeiDI8MkNYF7nw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_BUwO2MYaEeiDI8MkNYF7nw" id="_7TkF0MUhEeicEt7XC3_ENw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_syH58Mh0Eeip8pK0bIU7qg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_BUwO2cYaEeiDI8MkNYF7nw">
       <baseItem xmi:id="_BUwO2sYaEeiDI8MkNYF7nw" id="_wgxkIMWOEei2d9UbdD4d1A" version="0.1" type="job"/>
