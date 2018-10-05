@@ -464,6 +464,7 @@
       <relatedItems xmi:id="_06yvFbiuEeiY1cVWJQsxhw" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_06yvFriuEeiY1cVWJQsxhw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_JXjRsLiwEeiY1cVWJQsxhw" id="_tq8dMLiuEeiY1cVWJQsxhw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_tXwI0MhvEeip8pK0bIU7qg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_-wM7oLl3Eeik2uwop4klpA">
       <baseItem xmi:id="_-wM7obl3Eeik2uwop4klpA" id="_-ud2QLl3Eeik2uwop4klpA" version="0.1" type="job"/>
