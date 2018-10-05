@@ -1243,6 +1243,7 @@
       <relatedItems xmi:id="_JpmNUMCuEeicIe8HbMzXig" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_JpmNUcCuEeicIe8HbMzXig" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_JpmNUsCuEeicIe8HbMzXig" id="_wMKrgL_7Eeiu-KAgFhezlw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_Rn7EYMhyEeip8pK0bIU7qg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_JpmNU8CuEeicIe8HbMzXig">
       <baseItem xmi:id="_JpmNVMCuEeicIe8HbMzXig" id="_norCoMAKEeiu-KAgFhezlw" version="0.1" type="job"/>
