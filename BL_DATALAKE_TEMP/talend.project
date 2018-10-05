@@ -2184,6 +2184,7 @@
       <relatedItems xmi:id="_BUz4-8YaEeiDI8MkNYF7nw" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_BUz4_MYaEeiDI8MkNYF7nw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_BUz4_cYaEeiDI8MkNYF7nw" id="_7fT9oMUzEeicEt7XC3_ENw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_IfbugMh1Eeip8pK0bIU7qg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_BUz4_sYaEeiDI8MkNYF7nw">
       <baseItem xmi:id="_BUz4_8YaEeiDI8MkNYF7nw" id="_pYvrwMUxEeicEt7XC3_ENw" version="0.1" type="job"/>
