@@ -151,7 +151,7 @@
       <column comment="" key="false" length="-1" name="LoadedTime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Reference">
         <mapperTableEntries name="TableName" expression="&quot;stg_01_aadb_BookingPassenger_Update&quot;" type="id_String" nullable="true"/>
@@ -263,7 +263,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord1">
         <mapperTableEntries name="PassengerID" expression="row12.PassengerID " type="id_Long" nullable="true"/>
@@ -326,7 +326,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord2">
         <mapperTableEntries name="PassengerID" expression="row13.PassengerID " type="id_Long" nullable="true"/>
@@ -378,7 +378,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord3">
         <mapperTableEntries name="PassengerID" expression="row14.PassengerID " type="id_Long" nullable="true"/>
@@ -430,7 +430,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord4">
         <mapperTableEntries name="PassengerID" expression="row15.PassengerID " type="id_Long" nullable="true"/>
@@ -482,7 +482,7 @@
       <column comment="" key="false" length="255" name="Indicator" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="InvalidRecord5">
         <mapperTableEntries name="PassengerID" expression="row16.PassengerID " type="id_Long" nullable="true"/>
@@ -548,7 +548,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT stg.PassengerID, stg.DOB, stg.FirstName, stg.LastName&#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.vw_BookingPassenger_1` stg&#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger` dl&#xD;&#xA;ON stg.PassengerID = dl.PassengerID&#xD;&#xA;WHERE stg.DOB &lt;> dl.DOB&#xD;&#xA;OR stg.FirstName &lt;> dl.FirstName&#xD;&#xA;OR stg.LastName &lt;> dl.LastName&#xD;&#xA;AND (stg.ModifiedDate &lt; '&quot;+context.parameter_inputDateStart+&quot;')&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT stg.PassengerID, stg.DOB, stg.FirstName, stg.LastName, stg.LoadedDate&#xD;&#xA;FROM `data-mgmt-191603.BL_ODS_STG.vw_BookingPassenger_1` stg&#xD;&#xA;INNER JOIN `data-mgmt-191603.BL_ODS_DL.dl_BookingPassenger` dl&#xD;&#xA;ON stg.PassengerID = dl.PassengerID&#xD;&#xA;WHERE stg.DOB &lt;> dl.DOB&#xD;&#xA;OR stg.FirstName &lt;> dl.FirstName&#xD;&#xA;OR stg.LastName &lt;> dl.LastName&#xD;&#xA;AND (stg.ModifiedDate &lt; '&quot;+context.parameter_inputDateStart+&quot;')&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -563,6 +563,7 @@
       <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFlowMeter" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
@@ -579,6 +580,7 @@
       <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
@@ -598,6 +600,7 @@
       <column comment="" key="false" length="-1" name="DOB" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss.SSS&quot;" precision="0" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="FirstName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="128" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LoadedDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="NullColumns">
       <column comment="" defaultValue="" key="true" length="-1" name="PassengerID" nullable="true" pattern="" precision="0" type="id_Long" usefulColumn="true"/>
@@ -613,6 +616,7 @@
         <mapperTableEntries name="DOB" expression="row6.DOB" type="id_Double" nullable="true"/>
         <mapperTableEntries name="FirstName" expression="row6.FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" expression="row6.LastName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" expression="row6.LoadedDate " type="id_Double" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="NullColumns" expressionFilter="row6.PassengerID == null || row6.DOB == null || (row6.FirstName == null || row6.FirstName.isEmpty()) || (row6.LastName == null || row6.LastName.isEmpty())" activateExpressionFilter="true">
         <mapperTableEntries name="PassengerID" expression="row6.PassengerID " type="id_Long" nullable="true"/>
@@ -625,6 +629,7 @@
         <mapperTableEntries name="DOB" type="id_Double" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -672,6 +677,7 @@
         <mapperTableEntries name="DOB" type="id_Double" nullable="true"/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="LastName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LoadedDate" type="id_Double" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -893,7 +899,7 @@
       <column comment="" key="false" length="128" name="LastName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Fail" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="PassengerID" expression="row8.PassengerID " type="id_Long" nullable="true"/>
@@ -1678,6 +1684,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tBigQueryInput_1" offsetLabelX="0" offsetLabelY="0" source="tBigQueryInput_1" target="tFlowMeter_11">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
@@ -1686,6 +1697,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Records" lineStyle="0" metaname="Records" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_11" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="LoadedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Records" show="false"/>
   </connection>
