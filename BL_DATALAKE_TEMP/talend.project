@@ -447,6 +447,7 @@
       <relatedItems xmi:id="_py557bfYEeifZs8JiYB70w" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_py557rfYEeifZs8JiYB70w" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_py5577fYEeifZs8JiYB70w" id="_nglGQLb5EeigQr7_99Jhzw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_2l1ecMhuEeip8pK0bIU7qg" id="_VZfzQMebEei3EMbN3TfKQg" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_06yIALiuEeiY1cVWJQsxhw">
       <baseItem xmi:id="_06yIAbiuEeiY1cVWJQsxhw" id="_04tEYLiuEeiY1cVWJQsxhw" version="0.1" type="job"/>
