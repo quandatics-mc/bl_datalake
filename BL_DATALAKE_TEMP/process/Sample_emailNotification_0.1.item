@@ -157,7 +157,7 @@
       <column comment="" key="false" length="255" name="ExecutionStatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="StartTime" expression="TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, (new java.util.Date((long)(row1.StartTime*1000)))) " type="id_String" nullable="true"/>
@@ -287,7 +287,7 @@
   <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
     <elementParameter field="TEXT" name="TO" value="&quot;mc.lee@quandatics.com&quot;"/>
-    <elementParameter field="TEXT" name="FROM" value="&quot;send@example.com&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;storage_one@imcsquare.com&quot;"/>
     <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
     <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Talend Notification&quot;"/>
     <elementParameter field="TEXT" name="CC" value=""/>
@@ -299,12 +299,12 @@
     <elementParameter field="TABLE" name="HEADERS"/>
     <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.gmail.com&quot;"/>
     <elementParameter field="TEXT" name="SMTP_PORT" value="465"/>
-    <elementParameter field="CHECK" name="SSL" value="true"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
     <elementParameter field="CHECK" name="STARTTLS" value="false"/>
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
-    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;storage_one@imcsquare.com&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="p2FjNM2tw0r42mOnXDtqvA=="/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;storage_one@imcsquare.com&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="p2FjNM2tw0r42mOnXDtqvA==" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
