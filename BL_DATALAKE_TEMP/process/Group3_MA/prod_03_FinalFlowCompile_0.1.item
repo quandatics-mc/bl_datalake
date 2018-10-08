@@ -323,7 +323,7 @@
   </node>
   <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
-    <elementParameter field="TEXT" name="TO" value="&quot;marvin.teh@quandatics.com&quot;"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;ma.tew@quandatics.com&quot;"/>
     <elementParameter field="TEXT" name="FROM" value="&quot;send@example.com&quot;"/>
     <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
     <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Talend Notification&quot;"/>
