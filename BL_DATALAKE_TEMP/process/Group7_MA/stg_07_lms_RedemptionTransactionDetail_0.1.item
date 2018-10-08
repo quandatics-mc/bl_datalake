@@ -8,6 +8,8 @@
     <contextParameter comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="C:/AABtoken.properties"/>
     <contextParameter comment="" name="gcp_access_key" prompt="gcp_access_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="GOOG36LCRM3AR2PQOF3J"/>
     <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
+    <contextParameter comment="" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -586,7 +588,7 @@
     <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="8pW6Nmy2kucgaytS8brTGiOZ/pi7F0/8OTn/yHZ8rd0="/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="context.bq_project_id"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="context.bq_auth_code"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT TransactionID, ReferenceCode, ReferenceNumber, RedemptionTypeCode, CurrencyCode, Amount, CreatedUTC, RequestDate, LoadedDate &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.vw_RedemptionTransactionDetail` limit 10000&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;#standardSQL\n&#xD;&#xA;SELECT TransactionID, ReferenceCode, ReferenceNumber, RedemptionTypeCode, CurrencyCode, Amount, CreatedUTC, RequestDate, LoadedDate &#xD;&#xA;FROM `data-mgmt-191603.BL_LMS_STG.vw_RedemptionTransactionDetail`&#xD;&#xA;WHERE CreatedUTC Between '&quot;+context.parameter_inputDateStart+&quot;' AND '&quot;+context.parameter_inputDateEnd+&quot;'&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="AUTO"/>
     <elementParameter field="FILE" name="TOKEN_NAME" value="context.resource_file_bq_token"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>

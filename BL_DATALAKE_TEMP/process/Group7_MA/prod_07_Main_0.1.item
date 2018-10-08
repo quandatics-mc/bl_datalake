@@ -8,6 +8,8 @@
     <contextParameter comment="" name="resource_file_bq_token" prompt="resource_file_bq_token?" promptNeeded="true" repositoryContextId="_IMOIYK8rEeiVsYAmnhb2Dg" type="id_String" value="C:/AABtoken.properties"/>
     <contextParameter comment="" name="gcp_access_key" prompt="gcp_access_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="GOOG36LCRM3AR2PQOF3J"/>
     <contextParameter comment="" name="gcp_secret_key" prompt="gcp_secret_key?" promptNeeded="false" repositoryContextId="_iZrhsK9VEeiVsYAmnhb2Dg" type="id_String" value="ZZcSkVAFocT74utquGJmxWgUTbrUcjg09+HAc+oK"/>
+    <contextParameter comment="" name="parameter_inputDateEnd" prompt="parameter_inputDateEnd?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
+    <contextParameter comment="" name="parameter_inputDateStart" prompt="parameter_inputDateStart?" promptNeeded="false" repositoryContextId="_VZfzQMebEei3EMbN3TfKQg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -300,7 +302,7 @@
   </node>
   <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
-    <elementParameter field="TEXT" name="PAUSE" value="30"/>
+    <elementParameter field="TEXT" name="PAUSE" value="2"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSleep_1"/>
   </node>
@@ -449,6 +451,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -484,6 +490,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -519,6 +529,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -554,6 +568,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -589,6 +607,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -624,6 +646,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -659,6 +685,10 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_access_key"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="gcp_secret_key"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.gcp_secret_key"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateStart"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="parameter_inputDateEnd"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.parameter_inputDateEnd"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -743,12 +773,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSleep_2"/>
   </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLogCatcher_1" offsetLabelX="-47" offsetLabelY="31" source="tLogCatcher_1" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tSetGlobalVar_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLogCatcher_1" offsetLabelX="-47" offsetLabelY="31" source="tLogCatcher_1" target="tFixedFlowInput_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row23" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
